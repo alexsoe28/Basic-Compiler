@@ -1,0 +1,6056 @@
+head	1.184;
+access;
+symbols;
+locks;
+comment	@.\" @;
+
+
+1.184
+date	2018.10.17.21.05.00;	author -;	state -;
+branches;
+next	1.183;
+
+1.183
+date	2018.05.16.23.01.25;	author -;	state -;
+branches;
+next	1.182;
+
+1.182
+date	2018.05.16.22.56.54;	author -;	state -;
+branches;
+next	1.181;
+
+1.181
+date	2018.04.19.22.43.18;	author -;	state -;
+branches;
+next	1.180;
+
+1.180
+date	2018.04.19.05.10.27;	author -;	state -;
+branches;
+next	1.179;
+
+1.179
+date	2018.04.19.05.06.36;	author -;	state -;
+branches;
+next	1.178;
+
+1.178
+date	2018.04.19.05.05.37;	author -;	state -;
+branches;
+next	1.177;
+
+1.177
+date	2018.04.19.05.05.04;	author -;	state -;
+branches;
+next	1.176;
+
+1.176
+date	2018.04.19.05.04.03;	author -;	state -;
+branches;
+next	1.175;
+
+1.175
+date	2018.04.19.05.03.36;	author -;	state -;
+branches;
+next	1.174;
+
+1.174
+date	2018.04.19.05.02.21;	author -;	state -;
+branches;
+next	1.173;
+
+1.173
+date	2018.04.19.05.01.31;	author -;	state -;
+branches;
+next	1.172;
+
+1.172
+date	2018.04.19.05.00.08;	author -;	state -;
+branches;
+next	1.171;
+
+1.171
+date	2018.04.19.04.59.51;	author -;	state -;
+branches;
+next	1.170;
+
+1.170
+date	2018.04.19.04.59.34;	author -;	state -;
+branches;
+next	1.169;
+
+1.169
+date	2018.04.19.04.59.09;	author -;	state -;
+branches;
+next	1.168;
+
+1.168
+date	2018.04.19.04.57.35;	author -;	state -;
+branches;
+next	1.167;
+
+1.167
+date	2018.04.19.04.55.15;	author -;	state -;
+branches;
+next	1.166;
+
+1.166
+date	2018.04.19.04.54.12;	author -;	state -;
+branches;
+next	1.165;
+
+1.165
+date	2018.04.19.04.51.48;	author -;	state -;
+branches;
+next	1.164;
+
+1.164
+date	2018.04.19.04.51.20;	author -;	state -;
+branches;
+next	1.163;
+
+1.163
+date	2018.04.19.04.50.41;	author -;	state -;
+branches;
+next	1.162;
+
+1.162
+date	2018.04.19.04.47.05;	author -;	state -;
+branches;
+next	1.161;
+
+1.161
+date	2018.04.19.04.45.39;	author -;	state -;
+branches;
+next	1.160;
+
+1.160
+date	2018.04.19.04.31.13;	author -;	state -;
+branches;
+next	1.159;
+
+1.159
+date	2018.04.19.04.28.13;	author -;	state -;
+branches;
+next	1.158;
+
+1.158
+date	2018.04.19.04.27.17;	author -;	state -;
+branches;
+next	1.157;
+
+1.157
+date	2018.04.19.04.26.18;	author -;	state -;
+branches;
+next	1.156;
+
+1.156
+date	2018.04.19.04.24.43;	author -;	state -;
+branches;
+next	1.155;
+
+1.155
+date	2018.04.19.04.21.15;	author -;	state -;
+branches;
+next	1.154;
+
+1.154
+date	2018.04.19.04.20.11;	author -;	state -;
+branches;
+next	1.153;
+
+1.153
+date	2018.04.19.04.16.00;	author -;	state -;
+branches;
+next	1.152;
+
+1.152
+date	2018.04.19.04.11.19;	author -;	state -;
+branches;
+next	1.151;
+
+1.151
+date	2018.04.19.04.10.53;	author -;	state -;
+branches;
+next	1.150;
+
+1.150
+date	2018.04.18.23.55.43;	author -;	state -;
+branches;
+next	1.149;
+
+1.149
+date	2018.04.18.23.55.18;	author -;	state -;
+branches;
+next	1.148;
+
+1.148
+date	2018.04.18.23.54.28;	author -;	state -;
+branches;
+next	1.147;
+
+1.147
+date	2018.04.18.23.53.42;	author -;	state -;
+branches;
+next	1.146;
+
+1.146
+date	2018.04.18.23.53.19;	author -;	state -;
+branches;
+next	1.145;
+
+1.145
+date	2018.04.18.23.52.57;	author -;	state -;
+branches;
+next	1.144;
+
+1.144
+date	2018.04.18.23.52.44;	author -;	state -;
+branches;
+next	1.143;
+
+1.143
+date	2018.04.18.23.51.10;	author -;	state -;
+branches;
+next	1.142;
+
+1.142
+date	2018.04.18.23.50.25;	author -;	state -;
+branches;
+next	1.141;
+
+1.141
+date	2018.04.18.23.49.14;	author -;	state -;
+branches;
+next	1.140;
+
+1.140
+date	2018.04.18.23.49.04;	author -;	state -;
+branches;
+next	1.139;
+
+1.139
+date	2018.04.18.23.48.45;	author -;	state -;
+branches;
+next	1.138;
+
+1.138
+date	2018.04.18.23.47.55;	author -;	state -;
+branches;
+next	1.137;
+
+1.137
+date	2018.04.18.23.47.33;	author -;	state -;
+branches;
+next	1.136;
+
+1.136
+date	2018.04.18.23.45.48;	author -;	state -;
+branches;
+next	1.135;
+
+1.135
+date	2018.04.18.23.39.17;	author -;	state -;
+branches;
+next	1.134;
+
+1.134
+date	2018.04.18.23.38.05;	author -;	state -;
+branches;
+next	1.133;
+
+1.133
+date	2018.04.18.23.37.26;	author -;	state -;
+branches;
+next	1.132;
+
+1.132
+date	2018.04.18.23.36.58;	author -;	state -;
+branches;
+next	1.131;
+
+1.131
+date	2018.04.18.23.36.08;	author -;	state -;
+branches;
+next	1.130;
+
+1.130
+date	2018.04.18.23.35.29;	author -;	state -;
+branches;
+next	1.129;
+
+1.129
+date	2018.04.18.23.31.48;	author -;	state -;
+branches;
+next	1.128;
+
+1.128
+date	2018.04.18.23.30.16;	author -;	state -;
+branches;
+next	1.127;
+
+1.127
+date	2018.04.18.23.29.18;	author -;	state -;
+branches;
+next	1.126;
+
+1.126
+date	2018.04.18.23.28.27;	author -;	state -;
+branches;
+next	1.125;
+
+1.125
+date	2018.04.18.23.27.55;	author -;	state -;
+branches;
+next	1.124;
+
+1.124
+date	2018.04.18.23.27.28;	author -;	state -;
+branches;
+next	1.123;
+
+1.123
+date	2018.04.18.23.27.07;	author -;	state -;
+branches;
+next	1.122;
+
+1.122
+date	2018.04.18.23.26.21;	author -;	state -;
+branches;
+next	1.121;
+
+1.121
+date	2018.04.18.23.24.13;	author -;	state -;
+branches;
+next	1.120;
+
+1.120
+date	2018.04.18.23.22.43;	author -;	state -;
+branches;
+next	1.119;
+
+1.119
+date	2018.04.18.23.18.50;	author -;	state -;
+branches;
+next	1.118;
+
+1.118
+date	2018.04.18.23.08.27;	author -;	state -;
+branches;
+next	1.117;
+
+1.117
+date	2018.04.18.22.17.08;	author -;	state -;
+branches;
+next	1.116;
+
+1.116
+date	2018.04.18.22.14.08;	author -;	state -;
+branches;
+next	1.115;
+
+1.115
+date	2018.04.18.22.13.37;	author -;	state -;
+branches;
+next	1.114;
+
+1.114
+date	2018.04.18.22.12.23;	author -;	state -;
+branches;
+next	1.113;
+
+1.113
+date	2018.04.18.22.08.38;	author -;	state -;
+branches;
+next	1.112;
+
+1.112
+date	2018.04.18.22.07.11;	author -;	state -;
+branches;
+next	1.111;
+
+1.111
+date	2018.04.18.22.06.43;	author -;	state -;
+branches;
+next	1.110;
+
+1.110
+date	2018.04.18.22.05.31;	author -;	state -;
+branches;
+next	1.109;
+
+1.109
+date	2018.04.18.22.02.31;	author -;	state -;
+branches;
+next	1.108;
+
+1.108
+date	2018.04.18.22.01.51;	author -;	state -;
+branches;
+next	1.107;
+
+1.107
+date	2018.04.18.22.01.09;	author -;	state -;
+branches;
+next	1.106;
+
+1.106
+date	2018.04.18.22.00.03;	author -;	state -;
+branches;
+next	1.105;
+
+1.105
+date	2018.04.18.21.58.07;	author -;	state -;
+branches;
+next	1.104;
+
+1.104
+date	2018.04.18.21.57.23;	author -;	state -;
+branches;
+next	1.103;
+
+1.103
+date	2018.04.18.21.56.57;	author -;	state -;
+branches;
+next	1.102;
+
+1.102
+date	2018.04.18.21.55.45;	author -;	state -;
+branches;
+next	1.101;
+
+1.101
+date	2018.04.18.21.55.31;	author -;	state -;
+branches;
+next	1.100;
+
+1.100
+date	2018.04.18.21.53.30;	author -;	state -;
+branches;
+next	1.99;
+
+1.99
+date	2018.04.18.21.50.38;	author -;	state -;
+branches;
+next	1.98;
+
+1.98
+date	2018.04.18.21.49.30;	author -;	state -;
+branches;
+next	1.97;
+
+1.97
+date	2018.04.18.21.47.54;	author -;	state -;
+branches;
+next	1.96;
+
+1.96
+date	2018.04.18.21.47.11;	author -;	state -;
+branches;
+next	1.95;
+
+1.95
+date	2018.04.18.21.46.40;	author -;	state -;
+branches;
+next	1.94;
+
+1.94
+date	2018.04.17.23.55.35;	author -;	state -;
+branches;
+next	1.93;
+
+1.93
+date	2017.11.13.20.56.16;	author -;	state -;
+branches;
+next	1.92;
+
+1.92
+date	2017.11.06.19.45.31;	author -;	state -;
+branches;
+next	1.91;
+
+1.91
+date	2017.11.06.19.44.08;	author -;	state -;
+branches;
+next	1.90;
+
+1.90
+date	2017.10.28.00.17.23;	author -;	state -;
+branches;
+next	1.89;
+
+1.89
+date	2017.10.12.22.32.14;	author -;	state -;
+branches;
+next	1.88;
+
+1.88
+date	2017.10.12.22.31.53;	author -;	state -;
+branches;
+next	1.87;
+
+1.87
+date	2017.10.12.22.31.07;	author -;	state -;
+branches;
+next	1.86;
+
+1.86
+date	2017.10.12.22.30.42;	author -;	state -;
+branches;
+next	1.85;
+
+1.85
+date	2017.10.12.22.29.43;	author -;	state -;
+branches;
+next	1.84;
+
+1.84
+date	2017.10.12.22.09.35;	author -;	state -;
+branches;
+next	1.83;
+
+1.83
+date	2017.10.12.22.09.06;	author -;	state -;
+branches;
+next	1.82;
+
+1.82
+date	2017.10.12.22.07.30;	author -;	state -;
+branches;
+next	1.81;
+
+1.81
+date	2017.10.12.22.06.56;	author -;	state -;
+branches;
+next	1.80;
+
+1.80
+date	2017.10.12.22.06.30;	author -;	state -;
+branches;
+next	1.79;
+
+1.79
+date	2017.10.12.22.03.31;	author -;	state -;
+branches;
+next	1.78;
+
+1.78
+date	2017.10.12.22.02.14;	author -;	state -;
+branches;
+next	1.77;
+
+1.77
+date	2017.10.12.22.01.58;	author -;	state -;
+branches;
+next	1.76;
+
+1.76
+date	2017.10.12.22.01.44;	author -;	state -;
+branches;
+next	1.75;
+
+1.75
+date	2017.10.12.22.01.23;	author -;	state -;
+branches;
+next	1.74;
+
+1.74
+date	2017.10.12.22.00.40;	author -;	state -;
+branches;
+next	1.73;
+
+1.73
+date	2017.10.12.22.00.07;	author -;	state -;
+branches;
+next	1.72;
+
+1.72
+date	2017.10.12.21.59.29;	author -;	state -;
+branches;
+next	1.71;
+
+1.71
+date	2017.10.12.21.58.34;	author -;	state -;
+branches;
+next	1.70;
+
+1.70
+date	2017.10.12.21.57.48;	author -;	state -;
+branches;
+next	1.69;
+
+1.69
+date	2017.10.12.21.56.59;	author -;	state -;
+branches;
+next	1.68;
+
+1.68
+date	2017.10.12.21.56.27;	author -;	state -;
+branches;
+next	1.67;
+
+1.67
+date	2017.10.12.21.56.09;	author -;	state -;
+branches;
+next	1.66;
+
+1.66
+date	2017.10.12.21.55.37;	author -;	state -;
+branches;
+next	1.65;
+
+1.65
+date	2017.10.12.21.54.47;	author -;	state -;
+branches;
+next	1.64;
+
+1.64
+date	2017.10.12.21.53.30;	author -;	state -;
+branches;
+next	1.63;
+
+1.63
+date	2017.10.12.21.52.37;	author -;	state -;
+branches;
+next	1.62;
+
+1.62
+date	2017.10.12.21.50.41;	author -;	state -;
+branches;
+next	1.61;
+
+1.61
+date	2017.10.12.21.50.13;	author -;	state -;
+branches;
+next	1.60;
+
+1.60
+date	2017.10.12.21.49.37;	author -;	state -;
+branches;
+next	1.59;
+
+1.59
+date	2017.10.12.21.48.35;	author -;	state -;
+branches;
+next	1.58;
+
+1.58
+date	2017.10.12.21.47.42;	author -;	state -;
+branches;
+next	1.57;
+
+1.57
+date	2017.10.12.21.47.05;	author -;	state -;
+branches;
+next	1.56;
+
+1.56
+date	2017.10.12.21.45.39;	author -;	state -;
+branches;
+next	1.55;
+
+1.55
+date	2017.10.12.21.45.08;	author -;	state -;
+branches;
+next	1.54;
+
+1.54
+date	2017.10.12.21.43.55;	author -;	state -;
+branches;
+next	1.53;
+
+1.53
+date	2017.10.12.21.41.23;	author -;	state -;
+branches;
+next	1.52;
+
+1.52
+date	2017.10.12.21.30.36;	author -;	state -;
+branches;
+next	1.51;
+
+1.51
+date	2017.10.12.21.30.12;	author -;	state -;
+branches;
+next	1.50;
+
+1.50
+date	2017.10.12.21.29.23;	author -;	state -;
+branches;
+next	1.49;
+
+1.49
+date	2017.10.12.21.28.49;	author -;	state -;
+branches;
+next	1.48;
+
+1.48
+date	2017.10.12.21.28.19;	author -;	state -;
+branches;
+next	1.47;
+
+1.47
+date	2017.10.12.21.26.00;	author -;	state -;
+branches;
+next	1.46;
+
+1.46
+date	2017.10.12.21.24.12;	author -;	state -;
+branches;
+next	1.45;
+
+1.45
+date	2017.10.12.21.23.30;	author -;	state -;
+branches;
+next	1.44;
+
+1.44
+date	2017.10.12.21.18.27;	author -;	state -;
+branches;
+next	1.43;
+
+1.43
+date	2017.10.12.21.17.13;	author -;	state -;
+branches;
+next	1.42;
+
+1.42
+date	2017.10.12.21.15.26;	author -;	state -;
+branches;
+next	1.41;
+
+1.41
+date	2017.10.12.21.14.04;	author -;	state -;
+branches;
+next	1.40;
+
+1.40
+date	2017.10.12.21.13.39;	author -;	state -;
+branches;
+next	1.39;
+
+1.39
+date	2017.10.12.21.12.52;	author -;	state -;
+branches;
+next	1.38;
+
+1.38
+date	2017.10.12.21.10.58;	author -;	state -;
+branches;
+next	1.37;
+
+1.37
+date	2017.10.12.21.10.05;	author -;	state -;
+branches;
+next	1.36;
+
+1.36
+date	2017.10.12.21.05.27;	author -;	state -;
+branches;
+next	1.35;
+
+1.35
+date	2017.05.10.22.04.54;	author -;	state -;
+branches;
+next	1.34;
+
+1.34
+date	2017.04.20.20.13.30;	author -;	state -;
+branches;
+next	1.33;
+
+1.33
+date	2016.11.03.22.11.56;	author -;	state -;
+branches;
+next	1.32;
+
+1.32
+date	2016.10.24.19.10.48;	author -;	state -;
+branches;
+next	1.31;
+
+1.31
+date	2016.09.06.20.51.12;	author -;	state -;
+branches;
+next	1.30;
+
+1.30
+date	2016.09.06.20.49.16;	author -;	state -;
+branches;
+next	1.29;
+
+1.29
+date	2016.09.06.20.48.34;	author -;	state -;
+branches;
+next	1.28;
+
+1.28
+date	2016.04.20.01.27.00;	author -;	state -;
+branches;
+next	1.27;
+
+1.27
+date	2016.04.20.01.25.52;	author -;	state -;
+branches;
+next	1.26;
+
+1.26
+date	2016.04.20.01.25.31;	author -;	state -;
+branches;
+next	1.25;
+
+1.25
+date	2016.04.20.01.25.12;	author -;	state -;
+branches;
+next	1.24;
+
+1.24
+date	2016.04.20.01.24.47;	author -;	state -;
+branches;
+next	1.23;
+
+1.23
+date	2016.04.20.01.24.17;	author -;	state -;
+branches;
+next	1.22;
+
+1.22
+date	2016.04.20.01.23.32;	author -;	state -;
+branches;
+next	1.21;
+
+1.21
+date	2016.04.20.01.22.28;	author -;	state -;
+branches;
+next	1.20;
+
+1.20
+date	2016.04.20.01.21.21;	author -;	state -;
+branches;
+next	1.19;
+
+1.19
+date	2016.04.20.01.20.52;	author -;	state -;
+branches;
+next	1.18;
+
+1.18
+date	2016.04.20.01.20.00;	author -;	state -;
+branches;
+next	1.17;
+
+1.17
+date	2016.04.20.01.18.07;	author -;	state -;
+branches;
+next	1.16;
+
+1.16
+date	2016.04.14.23.52.21;	author -;	state -;
+branches;
+next	1.15;
+
+1.15
+date	2016.04.14.23.51.07;	author -;	state -;
+branches;
+next	1.14;
+
+1.14
+date	2016.04.14.23.49.46;	author -;	state -;
+branches;
+next	1.13;
+
+1.13
+date	2016.04.14.23.48.27;	author -;	state -;
+branches;
+next	1.12;
+
+1.12
+date	2016.04.14.23.45.53;	author -;	state -;
+branches;
+next	1.11;
+
+1.11
+date	2016.04.14.23.44.56;	author -;	state -;
+branches;
+next	1.10;
+
+1.10
+date	2016.04.14.23.44.28;	author -;	state -;
+branches;
+next	1.9;
+
+1.9
+date	2016.04.14.23.44.10;	author -;	state -;
+branches;
+next	1.8;
+
+1.8
+date	2016.04.14.23.43.57;	author -;	state -;
+branches;
+next	1.7;
+
+1.7
+date	2016.04.14.23.43.31;	author -;	state -;
+branches;
+next	1.6;
+
+1.6
+date	2016.04.14.23.41.58;	author -;	state -;
+branches;
+next	1.5;
+
+1.5
+date	2016.04.14.23.41.39;	author -;	state -;
+branches;
+next	1.4;
+
+1.4
+date	2016.04.14.23.41.21;	author -;	state -;
+branches;
+next	1.3;
+
+1.3
+date	2016.04.14.23.40.39;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2016.04.14.23.39.21;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2016.04.14.23.36.01;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.184
+log
+@-
+@
+text
+@.so Tmac.mm-etc
+.if t .Newcentury-fonts
+.INITR* \n[.F]
+.SIZE 12 14
+.TITLE CMPS-104A Fall\~2018 Project\~3 \
+"LALR(1) Parser using \f[CB]bison\f[P]"
+.RCS "$Id: asg3-parser.mm,v 1.1 2018-10-17 14:04:04-07 - - $"
+.PWD
+.URL
+.GETST* META_NOTATION Figure_META_NOTATION
+.GETST* OC_GRAMMAR Figure_OC_GRAMMAR
+.GETST* OPER_PRECEDENCE Figure_OPER_PRECEDENCE
+.GETST* EXAMPLE_CODE Figure_EXAMPLE_CODE
+.GETST* EXAMPLE_AST_1 Figure_EXAMPLE_AST_1
+.GETST* EXAMPLE_AST_2 Figure_EXAMPLE_AST_2
+.GETST* CONFIG_OPTIONS Figure_CONFIG_OPTIONS
+.GETST* PARSER_BEGIN Figure_PARSER_BEGIN
+.nr Grammar_Pi \n[Pi]*11/4
+.nr Margin_Pi \n[Pi]/3
+.ds STICK \s+2\v'+1p'|\v'-1p'\s-2
+.ds OBRACK \s+2[\s-2
+.ds CBRACK \s+2]\s-2
+.ds PICDOTS \[bu]\0\[bu]\0\[bu]
+.ds ARROW \[->]\0
+.nr ARROW_SIZE \w'\*[ARROW]'
+.nr STICK_SIZE \w'\*[STICK]'
+.nr CONT_ADJUST \n[ARROW_SIZE]-\n[STICK_SIZE]
+.de *|
+.   RB \*[STICK]
+.   *Continuation 0 \\$@@
+..
+.de *[
+.   RI \*[OBRACK]
+.   *Continuation 0 \\$@@
+..
+.de *]
+.   RI \*[CBRACK]
+.   *Continuation 0 \\$@@
+..
+.de *]...
+.   RI \*[CBRACK]\|.\|.\|.\&
+.   *Continuation 0 \\$@@
+..
+.de RULE
+.   LI "\\$[1]"
+.   RI \*[ARROW]
+.   *Continuation 1 \\$@@
+..
+.de CONT
+.   LI "\0"
+.   RI \h'\\n[CONT_ADJUST]u'
+.   *Continuation 0 \\$@@
+..
+.nr SUBST_COUNT 0 1
+.de SUBST_LIST
+.   V= \\$[1] \\$[2]
+.   ds SUBST_LIST_\\n+[SUBST_COUNT] \\$[1]
+.   SETR SUBST_HEADER_\\n[SUBST_COUNT]
+..
+.de SUBST_PRINT_HN
+.   GETHN SUBST_HEADER_\\n[SUBST_INDEX] SUBST_HN
+.   V= \\*[SUBST_LIST_\\n[SUBST_INDEX]] \~(\[sc]\\*[SUBST_HN])\\$[1]
+..
+.de SUBST_PRINT
+.   nr SUBST_INDEX 0 1
+.   br
+.   while \\n+[SUBST_INDEX]<\\n[SUBST_COUNT] \{\
+.      SUBST_PRINT_HN ,
+.      if \\n[SUBST_INDEX]%4==0 .br
+.   \}
+.   SUBST_PRINT_HN \&.
+.   br
+..
+.H 1 Overview
+Augment your string table and scanner by adding an
+.V= oc
+parser to the project.
+The output of this project will be an abstract syntax tree written to
+the file
+.IV program .ast ,
+in addition to the files generated from the previous two projects.
+All specifications from the first two projects apply,
+and in addition, the
+.V= -y
+flag must turn on
+.V= yydebug .
+.SH=BVL
+.MANPAGE=LI SYNOPSIS
+.V= oc
+.=V \|[ -ly ]
+.=V \|[ -@@
+.IR flag \|.\|.\|.]
+.=V \|[ -D
+.IR string ]
+.IR \|program \f[CB].oc\f[P]
+.LE
+.P
+The main function will open a pipe to the C preprocessor as before,
+but will never call
+.V= yylex() .
+Instead it makes a single call to
+.V= yyparse() ,
+which will call
+.V= yylex()
+as needed.
+When 
+.V= yyparse()
+returns, the main function will call a function to dump the AST.
+The function
+.V= yyparse()
+calls
+.V= yyerror()
+to print an error message
+whenever it detects a syntax error and has to recover.
+The
+.V= -y
+flag must turn on the
+.V= yydebug
+switch.
+Generate a file called
+.IV program .ast
+based on the input file name,
+and also generate all files specified in earlier projects.
+.H 1 "The Metagrammar"
+When reading the grammar of
+.V= oc ,
+it is important to distinguish between the grammar and the
+metagrammar. 
+the metagrammar is the grammar that describes the grammar.
+You must also use your knowledge of C to fill in what
+is only implied.
+The metalanguage redundantly uses fonts and typography
+to represent concepts for the benefit of those reading
+this document via simple ASCII text.
+It looks prettier in the Postscript version.
+Note that the meta-brackets and meta-stick are slightly larger
+than normal type.
+The notation used is shown in Figure \*[Figure_META_NOTATION].
+.br
+.DF
+\&
+.br
+.B1
+.SP
+.VL \n[Grammar_Pi] \n[Margin_Pi] 1
+.LI "\*[OBRACK] \f[BI]x\f[R] \*[CBRACK]"
+Brackets indicate the the symbols are optional.
+.LI "\*[OBRACK] \f[BI]x\f[R] \*[CBRACK]\|.\|.\|.\&"
+Brackets and dots mean that the symbols
+occur zero or more times.
+.LI "\f[BI]x\f[R] \*[STICK] \f[BI]y\f[R]"
+A bar indicates alternation between its left and right operands.
+.LI "`\f[CB]while\f[R]'"
+Symbols themselves
+and written in
+.V= "Courier bold"
+and quoted. 
+.LI "symbol"
+Nonterminal symbols are written in lower case Roman.
+.LI "\fI\s-3TOKEN\s+3\fP"
+Token classes
+are written in \s-3\f[I]UPPER CASE SMALL ITALIC\f[R]\s+3.
+.SP
+.B2
+.FG "\f[B]Metagrammar for \f[CB]oc\f[P]\f[R]" "" 0 META_NOTATION
+.DE
+.H 1 "The Grammar of \f[CB]oc\f[P]"
+The context-free grammar of
+.V= oc 
+is shown in Figure \*[Figure_OC_GRAMMAR].
+Your task is to translate that descriptive user-grammar into
+LALR(1) form acceptable to
+.V= bison .
+You may, of course,
+take advantage of 
+.V= bison 's
+ability to handle ambiguous grammars via the use of precedence
+and associativity declarations.
+The dangling
+.V= else
+problem should also be handled in that way.
+.P
+You will not be able to feed the grammar above to
+.V= bison ,
+because it will not be able to handle
+.*SI BINOP
+and
+.*SI UNOP
+as you might expect.
+You will need to explicitly enumerate all possible rules
+with operators in them.
+However, using
+.V= bison 's
+operator precedence declarations,
+the number of necessary rules will be reduced.
+Operator precedence and associativity is shown in
+Figure \*[Figure_OPER_PRECEDENCE].
+.P
+There is actually more information there than that which will
+be useful in 
+.V= %left
+and
+.V= %right
+declarations.
+In addition,
+it is necessary to eliminate the metagrammar's
+optional and repetitive brackets,
+a feature that
+.V= bison
+does not have.
+.br
+.DF
+\&
+.br
+.B1
+.SP
+.VL \n[Grammar_Pi] \n[Margin_Pi] 1
+.RULE program *[ *R structdef *| *R function *| *R globaldecl *]...
+.RULE structdef *'V struct *SI TYPEID \
+*'V { *[ *R fielddecl *'V ; *]... *'V }
+.RULE fielddecl *R basetype *[ *'V [] *] *SI FIELD
+.RULE basetype *'V void *| *'V int *| *'V string *| *SI TYPEID
+.RULE globaldecl *R identdecl *'V = *R constant *'V ;
+.RULE function *R identdecl \
+*'V ( *[ *R identdecl *[ *'V , *R identdecl *]... *] *'V ) *R fnbody
+.RULE identdecl *R basetype *[ *'V [] *] *SI DECLID
+.RULE fnbody *'V { *[ *R localdecl *]... *[ *R statement *]... *'V } *| *'V ;
+.RULE localdecl *R identdecl *'V = *R expr *'V ;
+.RULE statement *R block \
+*| *R while *| *R ifelse *| *R return *| *R expr *'V ; *| *'V ;
+.RULE block *'V { *[ *R statement *]... *'V }
+.RULE while *'V while *'V ( *R expr *'V ) *R statement
+.RULE ifelse *'V if *'V ( *R expr *'V ) *R statement \
+*[ *'V else *R statement *]
+.RULE return *'V return *[ *R expr *] *'V ;
+.RULE expr *R expr *SI BINOP *R expr *| *SI UNOP *R expr \
+*| *'V new *R allocation *| *R call
+.CONT *| *'V ( *R expr *'V ) *| *R variable *| *R constant
+.RULE allocation *SI TYPEID *| *'V string *'V ( *R expr *'V ) \
+*| *R basetype *'V [ *R expr *'V ]
+.RULE call *SI IDENT *'V ( *[ *R expr *[ *'V , *R expr *]... *] *'V )
+.RULE variable *SI IDENT *| *R expr *'V [ *R expr *'V ] \
+*| *R expr *'V -> *SI FIELD
+.RULE constant *SI INTCON *| *SI CHARCON *| *SI STRINGCON *| *'V null
+.LE
+.SP
+.B2
+.FG "\f[B]Grammar of \f[CB]oc\f[P]\f[R]" "" 0 OC_GRAMMAR
+.DE
+.DF
+.TS
+expand box tab(|); |l |l |l |l |lw(111p) |.
+Precedence|Associativity|Arity|Fixity|\fROperators\FP
+_
+lowest|right|binary/ternary|matchfix|T{
+.fi
+.V= \&if\0
+.V= \&else\0
+T}
+|right|binary|infix|T{
+.fi
+.V= \&=\0
+T}
+|left|binary|infix|T{
+.fi
+.V= \&==\0
+.V= \&!=\0
+.V= \&<\0
+.V= \&<=\0
+.V= \&>\0
+.V= \&>=
+T}
+|left|binary|infix|T{
+.fi
+.V= \&+\0
+.V= \&-\0
+T}
+|left|binary|infix|T{
+.fi
+.V= \&*\0
+.V= \&/\0
+.V= \&%\0
+T}
+|right|unary|prefix|T{
+.fi
+.V= \&+\0
+.V= \&-\0
+.V= \&not\0
+.V= \&new\0
+T}
+|left|binary/variadic\0|postfix|T{
+.fi
+.V= \&\fIe\fP[\fIe\fP]\0
+.V= \&\fIe\fP->\fIi\fP\0
+.V= \&\fIf\fP(\fI...\fP)
+T}
+highest|\[em]|unary|matchfix|T{
+.fi
+.V= \&(\fIe\fP)\0
+T}
+.TE
+.SP .75v
+.FG "\f[B]Operator precedence in \f[CB]oc\f[R]" "" 0 OPER_PRECEDENCE
+.DE
+.H 1 "Constructing the Abstract Syntax Tree"
+The abstract syntax tree (AST) is constructed in such a way 
+that all operators and operator-like tokens are the parents of
+their operands, 
+which are adopted as their children.
+The children may be leaf nodes (identifiers or constants)
+or other expressions.
+Constants and identifiers are always leaf nodes.
+In general,
+interior nodes may have an arbitrarily large number of children.
+This is the case wherever the grammar shows ``\|.\|.\|.\|''
+indicating repetition.
+.P
+There are also several situations where the scanner can not
+distinguish between tokens which have the same lexical structure,
+but become different syntactically.
+For example,
+the operators
+.V= +
+and
+.V= -
+may be either unary or binary,
+and a sequence of characters like
+.V= -123
+must be scanned as two separate tokens.
+.P
+Also,
+the difference between an identifier and a type id can only
+be determined by the parser, 
+not the scanner,
+as can the overloaded use of
+.V= =
+as either a variable declaration initializer or an assignment operator.
+.H 2 "The Root Token"
+At the root of the entire AST is the root token,
+with code 
+.SUBST_LIST TOK_ROOT .
+This is a token synthesized by the parser,
+since there are no characters at the beginning of the program
+for the scanner to make with this.
+The parser creates this root token as its first action,
+when reducing the empty right hand side to a 
+.V= program .
+.H 2 "Identifiers"
+There are multiple different tokens all of which have the appearance of
+being identifiers.
+The scanner distinguishes and returns special token codes for
+reserved words,
+but returns all others as
+.V= TOK_IDENT .
+The parser must then substitute
+.V= TOK_IDENT
+depending on the context.
+This makes the symbol table and type checker easier to implement.
+.ALX a ()
+.LI
+In a field declaration,
+substitute
+.V= TOK_FIELD .
+.LI
+In a variable or function declaration,
+substitute
+.SUBST_LIST TOK_DECLID .
+A
+.V= TOK_DECLID
+and a
+.V= TOK_IDENT
+are exactly the same,
+except that the first appears in a declaration and the second in
+a variable or function reference.
+.LI
+In a structure type declaration,
+or a use of a structure type in a variable declaration or
+function return type,
+substitute
+.V= TOK_TYPEID .
+.LE
+.H 2 "Structure Definitions"
+A structure defines a new data type and may only appear as a global
+statement.
+The
+.V= struct
+keyword can serve as the root,
+with the braces and internal semicolons being discarded.
+The
+.V= TYPEID
+name is the first child,
+similar to a call statement,
+with each of the field definitions following as the other children
+in their declared order.
+The scanner will return the
+.V= TYPEID
+name as a
+.V= TOK_IDENT ,
+so change it to
+.SUBST_LIST TOK_TYPEID .
+.H 2 "Operators"
+Operators are interior nodes whose children are their operands.
+.H 3 "Binary operators"
+The binary operators each have two children,
+the left being the first,
+and the right being the second.
+.ALX a ()
+.LI
+The field selector
+.=V ( -> )
+behaves syntactically as a binary operator,
+but its right operand is a field selector,
+not an identifier,
+so change the right operand's token code to 
+.SUBST_LIST TOK_FIELD .
+.LI
+The array indexing operator
+.=V ( [] )
+is syntactically a postfix matchfix operator.
+Use the left bracket as the operator and change its token code to
+.SUBST_LIST TOK_INDEX .
+Discard the right bracket.
+The left child is the left operand and the right child is
+the expression between the brackets.
+.H 3 "Unary operators"
+The unary operators have one child each,
+but since additon
+.=V ( + )
+and subtraction
+.=V ( \- )
+are overloaded,
+at the time the parser has these operators adopt the child,
+The token codes should be changed to
+.SUBST_LIST TOK_POS
+and
+.SUBST_LIST TOK_NEG ,
+respectively.
+.H 3 "Variadic operators"
+Variadic operators take a variable number of children as arguments.
+They can take a variable number of arguments.
+The only one in
+.V= oc
+is the
+.V= TOK_CALL 
+operator, whose first child is always an identifier,
+and whose later children are the arguments found between the
+parentheses of the argument list.
+Use the left parenthesis as the operator itself and change its token
+code to
+.SUBST_LIST TOK_CALL 
+before adopting the children.
+Discard the right parenthesis.
+.H 3 "Allocator operator \f[CB]new\f[P]"
+The allocator operator
+.V= new
+is used to allocate a structure object or an array.
+Since constructors are not supported,
+.V= string
+is treated as a special case.
+.ALX a ()
+.LI
+If the word following
+.V= new
+is an
+.V= IDENT ,
+change the token code to
+.V= TYPEID ,
+and have
+.V= TOK_NEW 
+adopt it as its only child.
+.LI
+In the case of allocating an array,
+change the token code to 
+.SUBST_LIST TOK_NEWARRAY
+as a binary operator and make the two children the
+.V= TYPEID
+and the dimension expression.
+.LI
+If a 
+.V= string
+is being allocated,
+change the token code to
+.SUBST_LIST TOK_NEWSTR
+as a unary operator with the expression as its child.
+.H 3 "Grouping parentheses"
+Parentheses which are used to override precedence are discarded
+from the abstrct syntax tree, since the tree structure itself
+shows the order of evaluation.
+The AST for the parenthesized expression is just the expression.
+Both parentheses are discarded.
+.H 2 "Statement Keywords as Operators"
+The statement keywords
+.V= while ,
+.V= if ,
+and
+.V= return
+have ``operands'' which will be adopted as their children.
+These are not really operators in the sense of returning results,
+but syntactically they function in the same way.
+Blocks and variable declarations are also statements which must have
+some kind of operator at the root.
+.H 3 "The \f[CB]while\f[P] statement"
+The 
+.V= while
+statement always has two ``operands'' and so should adopt two
+children, the first one being the root of the expression,
+and the second being the root of the statement following it.
+Discard the parentheses around the expression.
+.H 3 "The \f[CB]if\f[P]-\f[CB]else\f[P] statement"
+The
+.V= if
+statement might have two or three children,
+depending on whether or not the optional
+.V= else
+is present.
+The first child is the expression 
+and the second child is the statement following it.
+Discard the parentheses around the expression.
+.ALX a ()
+.LI
+If an
+.V= else
+is present,
+the
+.V= else
+token is discarded and the
+.V= if
+token adopts the statement following the else as the third child.
+The token code
+.SUBST_LIST TOK_IF
+may have either two or three children\(::
+two if the
+.V= else
+is missing,
+and three if it is there.
+.LI
+If there is no
+.V= else ,
+then the two children are the expression and the statement.
+.LE
+.H 3 "The \f[CB]return\f[P] statement"
+The
+.V= return
+keyword may or may not have an operand.
+It is marked optional in the grammar,
+because the parser has no way to determine whether or not an
+operand to
+.V= return
+is required or prohibited.
+The latter decision is made by later semantic routines.
+The semicolon is discarded.
+If
+.V= return
+has an expression, it is adopted as its child.
+.H 3 "The block statement"
+A block is a series of statements enclosed between braces.
+The left brace has its token code changed to
+.SUBST_LIST TOK_BLOCK ,
+and adopts the roots of each of the interior statements.
+The right brace is discarded.
+.H 3 "The semicolons statement"
+A semicolon by itself is just a vacuous block,
+and the semicolon itself is the AST.
+This also distinguishes a function definition from a prototype.
+.H 3 "The expression statement"
+When an expression is used as a statement,
+the root of the expression becomes the root of the statement.
+The semicolon is discarded.
+.H 3 "The variable declaration statement"
+A variable declaration has as its root the equal symbol which links the
+actual declaration with its initial value.
+The left child is an identifier declaration and the right
+child is the expression.
+To avoid confusion with the assignment operator,
+the token code of the equal symbol here is changed to
+.SUBST_LIST TOK_VARDECL .
+.H 2 "Function Definitions"
+The most complicated part of parsing global units is the function.
+It has a prototype and either a body or just a semicolon.
+The prototype consists of an identifier declaration and a parameter
+list.
+.P
+It consists of a
+.SUBST_LIST TOK_FUNCTION
+with three children\(::
+the identifier declaration,
+the parameter list,
+and the block.
+For the parameter list, 
+change the open parenthesis token code to 
+.SUBST_LIST TOK_PARAM
+and have it adopt each of the parameters.
+It will always be there but may possibly have no children.
+Like
+.V= TOK_ROOT ,
+the
+.V= TOK_FUNCTION
+node can be spontaneously generated with the serial number of
+the first token in the function.
+.P
+If instead of a block,
+there is only a semicolon,
+then the parent node in a function is a
+.SUBST_LIST TOK_PROTO ,
+and it has only two children.
+.H 2 "Miscellaneous"
+A few miscellaneous ideas do not strictly belong to a unique one
+of the categories above.
+.ALX a ()
+.LI
+.BR "Synthesized tokens\(::"
+There are three tokens that are not identified and returned by
+the scanner\(::
+.V= TOK_ROOT ,
+.V= TOK_FUNCTION ,
+and
+.V= TOK_PROTOTYPE .
+Semantic actions that are part of the parser will create these
+tokens.
+Use the serial number
+.V= 0.0.0
+for 
+.V= TOK_ROOT ,
+and the serial number from the first token of a function for
+.V= TOK_FUNCTION ,
+or prototype for
+.V= TOK_PROTOTYPE .
+.LI
+.BR "Identifier declarations\(::"
+Identifier declarations are part of a declaration,
+but otherwise can not exist on their own.
+They are always associated with an initialized variable declaration,
+a structure field,
+or a parameter list,
+or a function definition.
+The type itself can serve as a root,
+with the identifier being its child.
+In the case of an array,
+which is a generic data type,
+the array token
+.V= TOK_ARRAY
+can be the root,
+with the base type and identifier being children.
+Note that
+.V= TOK_ARRAY ,
+lexical
+.=V ( [] )
+is a single token,
+different from the left
+.=V ( [ )
+and and right 
+.=V ( ] )
+bracket tokens.
+.LI
+.BR "Substituted token codes\(::"
+In order to make the later phases of the compiler simpler and
+capable of having individual components chosen by a large
+.V= switch
+statement,
+the parser substitutes a token code initialized by the scanner
+to something else.
+.LI
+.BR "Parser's token codes\(::"
+Following are the synthesized and substituted token codes
+described above which are introduced by
+the parser, with the sections wherein they were defined\(::
+.P
+.SUBST_PRINT
+.LE
+.H 1 "The Parser"
+Start out with a
+.V= parser.y
+which will generate a header file and a C source file.
+Develop it incrementally,
+possibly using routines from the example 
+.V= expr-smc ,
+bearing in mind that that code does not exactly fit this project.
+Use the declarations shown in Figure \*[Figure_CONFIG_OPTIONS]
+in section 1 of the grammar to configure your parser.
+.br
+.DF
+\&
+.br
+.B1
+.SP
+.ft CB
+.nf
+.in \n[Margin_Pi]
+%debug
+%defines
+%error-verbose
+%token-table
+%verbose
+%start start
+\&
+.B2
+.FG "Parser configuration options" "" 0 CONFIG_OPTIONS
+.DE
+.P
+.ne 3
+Your program will need to perform some syntax error checking and
+recovery,
+although not much sophistication is required.
+Use the code shown in Figure \*[Figure_PARSER_BEGIN]
+at the beginning of your grammar section 
+to set up the root of the AST and return it back to main.
+When there is a syntax error,
+an attempt to recover will be done by searching forward for a
+closing brace or a semicolon.
+.br
+.DF
+\&
+.br
+.B1
+.SP
+.ft CB
+.nf
+.in \n[Margin_Pi]
+start    : program            { yyparse_astree = $1; }
+         ;
+program  : program structdef  { $$ = $1->adopt ($2); }
+         | program function   { $$ = $1->adopt ($2); }
+         | program statement  { $$ = $1->adopt ($2); }
+         | program error '}'  { $$ = $1; }
+         | program error ';'  { $$ = $1; }
+         |                    { $$ = parser::root; }
+         ;
+.SP
+.B2
+.FG "Beginning parser code" "" 0 PARSER_BEGIN
+.DE
+.P
+All other AST nodes are adopted by the root,
+which is a synthetically manufactured token
+(not created by the scanner).
+The parser needs a way to communicate with the main function,
+but has no communication results or parameters,
+so the global variable
+.V= parser::root
+will be used for that purpose.
+.P
+All actions in the parser should be simple.
+Use function calls when that is not the case.
+Actions should be of one of the following two forms\(::
+.VTCODE* 1 "{ $$ = \fIsimple expression\fP; }
+.VTCODE* 1 "{ $$ = \fIfncall (args\|.\|.\|.\|)\fP; }
+.P
+Neatly line up all of the nonterminals in the first column,
+all of the colon
+.=V ( : ),
+alternation 
+.=V ( | ),
+and action
+.=V ( { )
+characters so that the grammar is easy to read.
+You should use
+.V= valgrind
+to detect uninitialized variables and memory leak.
+.H 1 "Displaying the AST"
+After constructing an AST from a file called
+.IV program .oc ,
+write a file called
+.IV program .ast ,
+containing a representation of the AST in text form,
+printed using a depth-first pre-order traversal,
+showing depth via indententation.
+.P
+Each line is indented to show its distance from the root,
+with a line upward immediately to its right that points at its parent.
+After the indentation print the symbolic token code,
+lexical information in
+double quotation marks,
+and the serial number consisting of a file number,
+a line number, and an offset.
+During project 4,
+this will also have type information following it.
+.P
+All functions and global declarations will appear
+under the root,
+.V= TOK_ROOT .
+If an include file is present,
+the contents of that file will also be printed
+under
+.V= TOK_ROOT
+as well,
+with only the file numbers leaving a clue as to where the code
+originated.
+.P
+The program shown in Figure \*[Figure_EXAMPLE_CODE]
+would be printed as an AST as shown in Figure \*[Figure_EXAMPLE_AST_1]
+and Figure \*[Figure_EXAMPLE_AST_2].
+To avoid clutter, the prefix
+.V= TOK_
+has been omitted from the printed tree.
+The prefix was used in the C code to avoid possible name clashes.
+The following, using pointer arithmetic,
+can be used to eliminate the prefix\(::
+.DS
+.VTCODE* 1 "const char *tname = get_yytname (symbol);"
+.VTCODE* 1 "if (strstr (tname, \[Dq]TOK_\[Dq]) == tname) tname += 4;"
+.DE
+.br
+.DF
+\&
+.br
+.B1
+\&
+.ft CR
+     0  #include "oclib.h"
+     1  int fac (int n) {
+     2     int f = 1;
+     3     while (n > 1) {
+     4        f = f * n;
+     5        n = n - 1;
+     6     }
+     7     return f;
+     8  }
+     9  int main() {
+    10     int n = 1;
+    11     while (n <= 5) {
+    12        putint (fac (n));
+    13        n = n + 1;
+    14     }
+    15     return EXIT_SUCCESS;
+    16  }
+.SP
+.B2
+.FG "Example program" "" 0 EXAMPLE_CODE
+.DE
+.DF
+.B1
+\&
+.br
+.ft CR
+.nf
+.in \n[Margin_Pi]
+.ds ; |\0\0
+ROOT "" 5.0.0
+\*;FUNCTION "" 5.1.0
+\*;\*;INT "int" 5.1.0
+\*;\*;\*;DECLID "fac" 5.1.4
+\*;\*;PARAM "(" 5.1.8
+\*;\*;\*;INT "int" 5.1.9
+\*;\*;\*;\*;DECLID "n" 5.1.13
+\*;\*;BLOCK "{" 5.1.15
+\*;\*;\*;VARDECL "=" 5.2.9
+\*;\*;\*;\*;INT "int" 5.2.3
+\*;\*;\*;\*;\*;DECLID "f" 5.2.7
+\*;\*;\*;\*;INTCON "1" 5.2.9
+\*;\*;\*;WHILE "while" 5.3.3
+\*;\*;\*;\*;GT ">" 5.3.10
+\*;\*;\*;\*;\*;IDENT "n" 5.3.8
+\*;\*;\*;\*;\*;INTCON "1" 5.3.12
+.SP
+.B2
+.FG "Example AST" "" 0 EXAMPLE_AST_1
+.DE
+.DF
+\&
+.br
+.B1
+\&
+.br
+.ft CR
+.nf
+.in \n[Margin_Pi]
+.ds ; |\0\0
+\*;\*;\*;\*;BLOCK "{" 5.3.14
+\*;\*;\*;\*;\*;'=' "=" 5.4.8
+\*;\*;\*;\*;\*;\*;IDENT "f" 5.4.6
+\*;\*;\*;\*;\*;\*;'*' "*" 5.4.12
+\*;\*;\*;\*;\*;\*;\*;IDENT "f" 5.4.10
+\*;\*;\*;\*;\*;\*;\*;IDENT "n" 5.4.12
+\*;\*;\*;\*;\*;'=' "=" 5.5.8
+\*;\*;\*;\*;\*;\*;IDENT "n" 5.5.6
+\*;\*;\*;\*;\*;\*;'-' "-" 5.5.12
+\*;\*;\*;\*;\*;\*;\*;IDENT "n" 5.5.10
+\*;\*;\*;\*;\*;\*;\*;INTCON "1" 5.5.12
+\*;\*;\*;RETURN "return" 5.7.3
+\*;\*;\*;\*;IDENT "f" 5.7.10
+\*;FUNCTION "" 5.9.0
+\*;\*;INT "int" 5.9.0
+\*;\*;\*;DECLID "main" 5.9.4
+\*;\*;PARAM "(" 5.9.8
+\*;\*;BLOCK "{" 5.9.11
+\*;\*;\*;VARDECL "=" 5.10.9
+\*;\*;\*;\*;INT "int" 5.10.3
+\*;\*;\*;\*;\*;DECLID "f" 5.10.7
+\*;\*;\*;\*;INTCON "1" 5.10.9
+\*;\*;\*;WHILE "while" 5.10.3
+\*;\*;\*;\*;GT "<=" 5.10.10
+\*;\*;\*;\*;\*;IDENT "n" 5.10.8
+\*;\*;\*;\*;\*;INTCON "5" 5.10.13
+\*;\*;\*;\*;BLOCK "{" 5.10.14
+\*;\*;\*;\*;\*;CALL "(" 5.12.3
+\*;\*;\*;\*;\*;\*;IDENT "putint" 5.12.9
+\*;\*;\*;\*;\*;\*;CALL "(" 5.12.13 
+\*;\*;\*;\*;\*;\*;\*;IDENT "fac" 5.12.11 
+\*;\*;\*;\*;\*;\*;\*;IDENT "n" 5.12.15 
+\*;\*;\*;\*;\*;'=' "=" 5.13.5
+\*;\*;\*;\*;\*;\*;IDENT "n" 5.13.3
+\*;\*;\*;\*;\*;\*;'+' "+" 5.13.9
+\*;\*;\*;\*;\*;\*;\*;IDENT "n" 5.13.7
+\*;\*;\*;\*;\*;\*;\*;INTCON "1" 5.13.11 
+\*;\*;\*;RETURN "return" 5.15.3
+\*;\*;\*;\*;INTCON "0" 5.15.10
+.SP
+.B2
+.FG "Example AST (continued)" "" 0 EXAMPLE_AST_2
+.DE
+.FINISH
+@
+
+
+1.183
+log
+@-
+@
+text
+@d5 1
+a5 1
+.TITLE CMPS-104A Fall\~2017 Project\~3 \
+d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.182 2018-05-16 15:56:54-07 - - $"
+@
+
+
+1.182
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.181 2018-04-19 15:43:18-07 - - $"
+d809 1
+@
+
+
+1.181
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.180 2018-04-18 22:10:27-07 - - $"
+d894 10
+a903 10
+\*;\*;\*;CALL "(" 5.12.3
+\*;\*;\*;\*;IDENT "putint" 5.12.9
+\*;\*;\*;\*;CALL "(" 5.12.13 
+\*;\*;\*;\*;\*;IDENT "fac" 5.12.11 
+\*;\*;\*;\*;\*;IDENT "n" 5.12.15 
+\*;\*;\*;'=' "=" 5.13.5
+\*;\*;\*;\*;IDENT "n" 5.13.3
+\*;\*;\*;\*;'+' "+" 5.13.9
+\*;\*;\*;\*;\*;IDENT "n" 5.13.7
+\*;\*;\*;\*;\*;INTCON "1" 5.13.11 
+@
+
+
+1.180
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.179 2018-04-18 22:06:36-07 - - $"
+d62 1
+a62 1
+.   V= \\*[SUBST_LIST_\\n[SUBST_INDEX]] \~(\\*[SUBST_HN])\\$[1]
+@
+
+
+1.179
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.178 2018-04-18 22:05:37-07 - - $"
+d529 7
+a535 3
+Change the token code to
+.SUBST_LIST TOK_IFELSE 
+as a ternary operator.
+@
+
+
+1.178
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.177 2018-04-18 22:05:04-07 - - $"
+d786 2
+a787 2
+would be printed as an AST as shown in Figures \*[Figure_EXAMPLE_AST_1]
+and \*[Figure_EXAMPLE_AST_2].
+d904 1
+a904 1
+.FG "Example AST" "" 0 EXAMPLE_AST_2
+@
+
+
+1.177
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.176 2018-04-18 22:04:03-07 - - $"
+d795 2
+a796 3
+.ft CB
+const char *tname = get_yytname (symbol);
+if (strstr (tname, \[Dq]TOK_\[Dq]) == tname) tname += 4;
+@
+
+
+1.176
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.175 2018-04-18 22:03:36-07 - - $"
+d794 5
+a798 2
+.VTCODE* 1 "char *tname = get_yytname (symbol);"
+.VTCODE* 1 "if (strstr (tname, \[Dq]TOK_\[Dq]) == tname) tname += 4;"
+@
+
+
+1.175
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.174 2018-04-18 22:02:21-07 - - $"
+d708 2
+@
+
+
+1.174
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.173 2018-04-18 22:01:31-07 - - $"
+d695 12
+a725 11
+.P
+.ne 3
+Your program will need to perform some syntax error checking and
+recovery,
+although not much sophistication is required.
+Use the code shown in Figure \*[Figure_PARSER_BEGIN]
+at the beginning of your grammar section 
+to set up the root of the AST and return it back to main.
+When there is a syntax error,
+an attempt to recover will be done by searching forward for a
+closing brace or a semicolon.
+@
+
+
+1.173
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.172 2018-04-18 22:00:08-07 - - $"
+d715 1
+@
+
+
+1.172
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.171 2018-04-18 21:59:51-07 - - $"
+d483 1
+a483 1
+.SUBST_LIST TOK_NEWSTRING
+d587 1
+a587 1
+.SUBST_LIST TOK_PARAMLIST
+d600 1
+a600 1
+.SUBST_LIST TOK_PROTOTYPE ,
+@
+
+
+1.171
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.170 2018-04-18 21:59:34-07 - - $"
+d69 1
+a69 1
+.      if \\n[SUBST_INDEX]%4==4 .br
+@
+
+
+1.170
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.169 2018-04-18 21:59:09-07 - - $"
+d69 1
+a69 1
+.      if \\n[SUBST_INDEX]%4=4 .br
+@
+
+
+1.169
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.168 2018-04-18 21:57:35-07 - - $"
+d69 1
+a69 1
+.      if \\n+[SUBST_INDEX]%4=4 .br
+@
+
+
+1.168
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.167 2018-04-18 21:55:15-07 - - $"
+d69 1
+@
+
+
+1.167
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.166 2018-04-18 21:54:12-07 - - $"
+a65 1
+.   nr ADJUST_PRINT \\n[.j]
+a66 1
+.   na
+a71 1
+.   ad \\n[ADJUST_PRINT]
+@
+
+
+1.166
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.165 2018-04-18 21:51:48-07 - - $"
+a67 1
+.   nh
+a74 1
+.   hy 1
+@
+
+
+1.165
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.164 2018-04-18 21:51:20-07 - - $"
+d68 1
+d76 1
+@
+
+
+1.164
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.163 2018-04-18 21:50:41-07 - - $"
+d62 1
+a62 1
+.   V= \\*[SUBST_LIST_\\n[SUBST_INDEX]] (\\*[SUBST_HN])\\$[1]
+@
+
+
+1.163
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.162 2018-04-18 21:47:05-07 - - $"
+d62 1
+a62 2
+.   V= \\*[SUBST_LIST_\\n[SUBST_INDEX]]
+.   nop (\\*[SUBST_HN])\\$[1]
+@
+
+
+1.162
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.161 2018-04-18 21:45:39-07 - - $"
+a63 1
+.   if \\n[SUBST_INDEX]%4=0 .br
+d67 3
+d74 2
+@
+
+
+1.161
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.160 2018-04-18 21:31:13-07 - - $"
+a546 2
+.ALX a ()
+.LI
+a549 5
+.LI
+If not,
+change the token code to
+.SUBST_LIST TOK_RETURNVOID .
+.LE
+@
+
+
+1.160
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.159 2018-04-18 21:28:13-07 - - $"
+d64 1
+a70 1
+.   nop and
+@
+
+
+1.159
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.158 2018-04-18 21:27:17-07 - - $"
+a58 1
+.   tm SUBST_HEADER_\\n[SUBST_COUNT]
+a61 1
+.   tm SUBST_PRINT_HN: SUBST_HEADER_\\n[SUBST_INDEX] \\*[SUBST_HN]
+a67 1
+.      tm SUBST_PRINT: \\n[SUBST_INDEX]<\\n[SUBST_COUNT]
+@
+
+
+1.158
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.157 2018-04-18 21:26:18-07 - - $"
+d63 1
+a63 1
+.   tm SUBST_PRINT_HN: SUBST_HEADER_\\n[SUBST_INDEX]
+@
+
+
+1.157
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.156 2018-04-18 21:24:43-07 - - $"
+d70 1
+a70 1
+.      tm SUBST_PRINT: \\n+[SUBST_INDEX]<\\n[SUBST_COUNT]
+@
+
+
+1.156
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.155 2018-04-18 21:21:15-07 - - $"
+d63 1
+a63 1
+.   tm SUBST_HEADER_\\n[SUBST_INDEX]
+d70 1
+@
+
+
+1.155
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.154 2018-04-18 21:20:11-07 - - $"
+d63 1
+@
+
+
+1.154
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.153 2018-04-18 21:16:00-07 - - $"
+d227 1
+a227 1
+.RULE fnbody *'V { *[ *R localdecl *]... \| *[ *R statement *]... *'V } *| *'V ;
+@
+
+
+1.153
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.152 2018-04-18 21:11:19-07 - - $"
+d227 1
+a227 2
+.RULE fnbody *'V { *[ *R localdecl *]... \| \
+*[ *R statement *]... *'V } *| *'V ;
+@
+
+
+1.152
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.151 2018-04-18 21:10:53-07 - - $"
+d59 1
+@
+
+
+1.151
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.150 2018-04-18 16:55:43-07 - - $"
+d826 81
+a906 81
+.\".DF
+.\".B1
+.\"\&
+.\".br
+.\".ft CR
+.\".nf
+.\".in \n[Margin_Pi]
+.\".ds ; |\0\0
+.\"ROOT "" 5.0.0
+.\"\*;FUNCTION "" 5.1.0
+.\"\*;\*;INT "int" 5.1.0
+.\"\*;\*;\*;DECLID "fac" 5.1.4
+.\"\*;\*;PARAM "(" 5.1.8
+.\"\*;\*;\*;INT "int" 5.1.9
+.\"\*;\*;\*;\*;DECLID "n" 5.1.13
+.\"\*;\*;BLOCK "{" 5.1.15
+.\"\*;\*;\*;VARDECL "=" 5.2.9
+.\"\*;\*;\*;\*;INT "int" 5.2.3
+.\"\*;\*;\*;\*;\*;DECLID "f" 5.2.7
+.\"\*;\*;\*;\*;INTCON "1" 5.2.9
+.\"\*;\*;\*;WHILE "while" 5.3.3
+.\"\*;\*;\*;\*;GT ">" 5.3.10
+.\"\*;\*;\*;\*;\*;IDENT "n" 5.3.8
+.\"\*;\*;\*;\*;\*;INTCON "1" 5.3.12
+.\".SP
+.\".B2
+.\".FG "Example AST" "" 0 EXAMPLE_AST_1
+.\".DE
+.\".DF
+.\"\&
+.\".br
+.\".B1
+.\"\&
+.\".br
+.\".ft CR
+.\".nf
+.\".in \n[Margin_Pi]
+.\".ds ; |\0\0
+.\"\*;\*;\*;\*;BLOCK "{" 5.3.14
+.\"\*;\*;\*;\*;\*;'=' "=" 5.4.8
+.\"\*;\*;\*;\*;\*;\*;IDENT "f" 5.4.6
+.\"\*;\*;\*;\*;\*;\*;'*' "*" 5.4.12
+.\"\*;\*;\*;\*;\*;\*;\*;IDENT "f" 5.4.10
+.\"\*;\*;\*;\*;\*;\*;\*;IDENT "n" 5.4.12
+.\"\*;\*;\*;\*;\*;'=' "=" 5.5.8
+.\"\*;\*;\*;\*;\*;\*;IDENT "n" 5.5.6
+.\"\*;\*;\*;\*;\*;\*;'-' "-" 5.5.12
+.\"\*;\*;\*;\*;\*;\*;\*;IDENT "n" 5.5.10
+.\"\*;\*;\*;\*;\*;\*;\*;INTCON "1" 5.5.12
+.\"\*;\*;\*;RETURN "return" 5.7.3
+.\"\*;\*;\*;\*;IDENT "f" 5.7.10
+.\"\*;FUNCTION "" 5.9.0
+.\"\*;\*;INT "int" 5.9.0
+.\"\*;\*;\*;DECLID "main" 5.9.4
+.\"\*;\*;PARAM "(" 5.9.8
+.\"\*;\*;BLOCK "{" 5.9.11
+.\"\*;\*;\*;VARDECL "=" 5.10.9
+.\"\*;\*;\*;\*;INT "int" 5.10.3
+.\"\*;\*;\*;\*;\*;DECLID "f" 5.10.7
+.\"\*;\*;\*;\*;INTCON "1" 5.10.9
+.\"\*;\*;\*;WHILE "while" 5.10.3
+.\"\*;\*;\*;\*;GT "<=" 5.10.10
+.\"\*;\*;\*;\*;\*;IDENT "n" 5.10.8
+.\"\*;\*;\*;\*;\*;INTCON "5" 5.10.13
+.\"\*;\*;\*;\*;BLOCK "{" 5.10.14
+.\"\*;\*;\*;CALL "(" 5.12.3
+.\"\*;\*;\*;\*;IDENT "putint" 5.12.9
+.\"\*;\*;\*;\*;CALL "(" 5.12.13 
+.\"\*;\*;\*;\*;\*;IDENT "fac" 5.12.11 
+.\"\*;\*;\*;\*;\*;IDENT "n" 5.12.15 
+.\"\*;\*;\*;'=' "=" 5.13.5
+.\"\*;\*;\*;\*;IDENT "n" 5.13.3
+.\"\*;\*;\*;\*;'+' "+" 5.13.9
+.\"\*;\*;\*;\*;\*;IDENT "n" 5.13.7
+.\"\*;\*;\*;\*;\*;INTCON "1" 5.13.11 
+.\"\*;\*;\*;RETURN "return" 5.15.3
+.\"\*;\*;\*;\*;INTCON "0" 5.15.10
+.\".SP
+.\".B2
+.\".FG "Example AST" "" 0 EXAMPLE_AST_2
+.\".DE
+@
+
+
+1.150
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.149 2018-04-18 16:55:18-07 - - $"
+d826 81
+a906 81
+.DF
+.B1
+\&
+.br
+.ft CR
+.nf
+.in \n[Margin_Pi]
+.ds ; |\0\0
+ROOT "" 5.0.0
+\*;FUNCTION "" 5.1.0
+\*;\*;INT "int" 5.1.0
+\*;\*;\*;DECLID "fac" 5.1.4
+\*;\*;PARAM "(" 5.1.8
+\*;\*;\*;INT "int" 5.1.9
+\*;\*;\*;\*;DECLID "n" 5.1.13
+\*;\*;BLOCK "{" 5.1.15
+\*;\*;\*;VARDECL "=" 5.2.9
+\*;\*;\*;\*;INT "int" 5.2.3
+\*;\*;\*;\*;\*;DECLID "f" 5.2.7
+\*;\*;\*;\*;INTCON "1" 5.2.9
+\*;\*;\*;WHILE "while" 5.3.3
+\*;\*;\*;\*;GT ">" 5.3.10
+\*;\*;\*;\*;\*;IDENT "n" 5.3.8
+\*;\*;\*;\*;\*;INTCON "1" 5.3.12
+.SP
+.B2
+.FG "Example AST" "" 0 EXAMPLE_AST_1
+.DE
+.DF
+\&
+.br
+.B1
+\&
+.br
+.ft CR
+.nf
+.in \n[Margin_Pi]
+.ds ; |\0\0
+\*;\*;\*;\*;BLOCK "{" 5.3.14
+\*;\*;\*;\*;\*;'=' "=" 5.4.8
+\*;\*;\*;\*;\*;\*;IDENT "f" 5.4.6
+\*;\*;\*;\*;\*;\*;'*' "*" 5.4.12
+\*;\*;\*;\*;\*;\*;\*;IDENT "f" 5.4.10
+\*;\*;\*;\*;\*;\*;\*;IDENT "n" 5.4.12
+\*;\*;\*;\*;\*;'=' "=" 5.5.8
+\*;\*;\*;\*;\*;\*;IDENT "n" 5.5.6
+\*;\*;\*;\*;\*;\*;'-' "-" 5.5.12
+\*;\*;\*;\*;\*;\*;\*;IDENT "n" 5.5.10
+\*;\*;\*;\*;\*;\*;\*;INTCON "1" 5.5.12
+\*;\*;\*;RETURN "return" 5.7.3
+\*;\*;\*;\*;IDENT "f" 5.7.10
+\*;FUNCTION "" 5.9.0
+\*;\*;INT "int" 5.9.0
+\*;\*;\*;DECLID "main" 5.9.4
+\*;\*;PARAM "(" 5.9.8
+\*;\*;BLOCK "{" 5.9.11
+\*;\*;\*;VARDECL "=" 5.10.9
+\*;\*;\*;\*;INT "int" 5.10.3
+\*;\*;\*;\*;\*;DECLID "f" 5.10.7
+\*;\*;\*;\*;INTCON "1" 5.10.9
+\*;\*;\*;WHILE "while" 5.10.3
+\*;\*;\*;\*;GT "<=" 5.10.10
+\*;\*;\*;\*;\*;IDENT "n" 5.10.8
+\*;\*;\*;\*;\*;INTCON "5" 5.10.13
+\*;\*;\*;\*;BLOCK "{" 5.10.14
+\*;\*;\*;CALL "(" 5.12.3
+\*;\*;\*;\*;IDENT "putint" 5.12.9
+\*;\*;\*;\*;CALL "(" 5.12.13 
+\*;\*;\*;\*;\*;IDENT "fac" 5.12.11 
+\*;\*;\*;\*;\*;IDENT "n" 5.12.15 
+\*;\*;\*;'=' "=" 5.13.5
+\*;\*;\*;\*;IDENT "n" 5.13.3
+\*;\*;\*;\*;'+' "+" 5.13.9
+\*;\*;\*;\*;\*;IDENT "n" 5.13.7
+\*;\*;\*;\*;\*;INTCON "1" 5.13.11 
+\*;\*;\*;RETURN "return" 5.15.3
+\*;\*;\*;\*;INTCON "0" 5.15.10
+.SP
+.B2
+.FG "Example AST" "" 0 EXAMPLE_AST_2
+.DE
+@
+
+
+1.149
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.148 2018-04-18 16:54:28-07 - - $"
+a68 2
+.      nr rem4 \\*[SUBST_INDEX]%4
+.      tm \\n[rem4]
+d70 1
+@
+
+
+1.148
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.136 2018-04-18 16:45:48-07 - - $"
+d72 1
+a72 1
+.   SUBST_PRINT_HN .
+@
+
+
+1.147
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.125 2018-04-18 16:27:55-07 - - $"
+d14 2
+a15 1
+.GETST* EXAMPLE_AST Figure_EXAMPLE_AST
+d69 2
+d790 2
+a791 1
+would be printed as an AST as shown in Figure \*[Figure_EXAMPLE_AST].
+d821 1
+a821 1
+    15     return 0;
+d828 1
+a830 1
+.B1
+d851 14
+d878 26
+d906 1
+a906 1
+.FG "Example AST" "" 0 EXAMPLE_AST
+a907 36
+.\"    .DF
+.\"    \&
+.\"    .br
+.\"    .ft CR
+.\"    .in \n[Margin_Pi]
+.\"    .ds ; |\0\0
+.\"    \*;FUNCTION "" 5.9.0
+.\"    \*;\*;INT "int" 5.9.0
+.\"    \*;\*;\*;DECLID "main" 5.9.4
+.\"    \*;\*;PARAM "(" 5.9.8
+.\"    \*;\*;BLOCK "{" 5.9.11
+.\"    \*;\*;\*;VARDECL "=" 5.10.9
+.\"    \*;\*;\*;\*;INT "int" 5.10.3
+.\"    \*;\*;\*;\*;\*;DECLID "f" 5.10.7
+.\"    \*;\*;\*;\*;INTCON "1" 5.10.9
+.\"    \*;\*;\*;WHILE "while" 5.10.3
+.\"    \*;\*;\*;\*;GT "<=" 5.10.10
+.\"    \*;\*;\*;\*;\*;IDENT "n" 5.10.8
+.\"    \*;\*;\*;\*;\*;INTCON "5" 5.10.13
+.\"    \*;\*;\*;\*;BLOCK "{" 5.10.14
+.\"    \*;\*;\*;CALL "(" 5.12.3
+.\"    \*;\*;\*;\*;IDENT "puti" 5.12.9
+.\"    \*;\*;\*;\*;CALL "(" 5.12.13 
+.\"    \*;\*;\*;\*;\*;IDENT "fac" 5.12.11 
+.\"    \*;\*;\*;\*;\*;IDENT "n" 5.12.15 
+.\"    \*;\*;\*;'=' "=" 5.13.5
+.\"    \*;\*;\*;\*;IDENT "n" 5.13.3
+.\"    \*;\*;\*;\*;'+' "+" 5.13.9
+.\"    \*;\*;\*;\*;\*;IDENT "n" 5.13.7
+.\"    \*;\*;\*;\*;\*;INTCON "1" 5.13.11 
+.\"    \*;\*;\*;RETURN "return" 5.15.3
+.\"    \*;\*;\*;\*;INTCON "0" 5.15.10
+.\"    .SP
+.\"    .B2
+.\"    .FG "Example AST" "" 0 EXAMPLE_AST
+.\"    .DE
+@
+
+
+1.146
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.145 2018-04-18 16:52:57-07 - - $"
+d14 1
+a14 2
+.GETST* EXAMPLE_AST_1 Figure_EXAMPLE_AST_1
+.GETST* EXAMPLE_AST_2 Figure_EXAMPLE_AST_2
+d64 7
+a70 7
+.\".de SUBST_PRINT
+.\".   nr SUBST_INDEX 0 1
+.\".   while \\n+[SUBST_INDEX]<\\n[SUBST_COUNT] \{\
+.\".      SUBST_PRINT_HN ,
+.\".   \}
+.\".   SUBST_PRINT_HN .
+.\"..
+d669 1
+a669 1
+.\".SUBST_PRINT
+d787 1
+a787 2
+would be printed as an AST as shown in Figures \*[Figure_EXAMPLE_AST_1]
+and \*[Figure_EXAMPLE_AST_2].
+a823 1
+.B1
+d826 1
+a846 12
+.SP
+.B2
+.FG "Example AST" "" 0 EXAMPLE_AST_1
+.DE
+.DF
+.B1
+\&
+.br
+.ft CR
+.nf
+.in \n[Margin_Pi]
+.ds ; |\0\0
+a859 26
+\*;FUNCTION "" 5.9.0
+\*;\*;INT "int" 5.9.0
+\*;\*;\*;DECLID "main" 5.9.4
+\*;\*;PARAM "(" 5.9.8
+\*;\*;BLOCK "{" 5.9.11
+\*;\*;\*;VARDECL "=" 5.10.9
+\*;\*;\*;\*;INT "int" 5.10.3
+\*;\*;\*;\*;\*;DECLID "f" 5.10.7
+\*;\*;\*;\*;INTCON "1" 5.10.9
+\*;\*;\*;WHILE "while" 5.10.3
+\*;\*;\*;\*;GT "<=" 5.10.10
+\*;\*;\*;\*;\*;IDENT "n" 5.10.8
+\*;\*;\*;\*;\*;INTCON "5" 5.10.13
+\*;\*;\*;\*;BLOCK "{" 5.10.14
+\*;\*;\*;CALL "(" 5.12.3
+\*;\*;\*;\*;IDENT "puti" 5.12.9
+\*;\*;\*;\*;CALL "(" 5.12.13 
+\*;\*;\*;\*;\*;IDENT "fac" 5.12.11 
+\*;\*;\*;\*;\*;IDENT "n" 5.12.15 
+\*;\*;\*;'=' "=" 5.13.5
+\*;\*;\*;\*;IDENT "n" 5.13.3
+\*;\*;\*;\*;'+' "+" 5.13.9
+\*;\*;\*;\*;\*;IDENT "n" 5.13.7
+\*;\*;\*;\*;\*;INTCON "1" 5.13.11 
+\*;\*;\*;RETURN "return" 5.15.3
+\*;\*;\*;\*;INTCON "0" 5.15.10
+d862 1
+a862 1
+.FG "Example AST" "" 0 EXAMPLE_AST_2
+d864 36
+@
+
+
+1.145
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.144 2018-04-18 16:52:44-07 - - $"
+d670 1
+a670 1
+.SUBST_PRINT
+@
+
+
+1.144
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.143 2018-04-18 16:51:10-07 - - $"
+d71 1
+a71 1
+..
+@
+
+
+1.143
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.133 2018-04-18 16:37:26-07 - - $"
+d65 6
+a70 6
+.de SUBST_PRINT
+.   nr SUBST_INDEX 0 1
+.   while \\n+[SUBST_INDEX]<\\n[SUBST_COUNT] \{\
+.      SUBST_PRINT_HN ,
+.   \}
+.   SUBST_PRINT_HN .
+@
+
+
+1.142
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.134 2018-04-18 16:38:05-07 - - $"
+a853 2
+\&
+.br
+@
+
+
+1.141
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.135 2018-04-18 16:39:17-07 - - $"
+d819 1
+a819 1
+    15     return EXIT_SUCCESS;
+d891 1
+a891 1
+\*;\*;\*;\*;IDENT "putint" 5.12.9
+@
+
+
+1.140
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.136 2018-04-18 16:45:48-07 - - $"
+a68 2
+.      nr rem4 \\*[SUBST_INDEX]%4
+.      tm \\n[rem4]
+@
+
+
+1.139
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.137 2018-04-18 16:47:33-07 - - $"
+d69 1
+a69 1
+.      nr rem4 \\n[SUBST_INDEX]%4
+@
+
+
+1.138
+log
+@-
+@
+text
+@d69 2
+@
+
+
+1.137
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.136 2018-04-18 16:45:48-07 - - $"
+a68 2
+.      nr rem4 \\n[SUBST_INDEX]%4
+.      tm \\n[rem4]
+@
+
+
+1.136
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.135 2018-04-18 16:39:17-07 - - $"
+d69 1
+a69 1
+.      nr rem4 \\*[SUBST_INDEX]%4
+@
+
+
+1.135
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.134 2018-04-18 16:38:05-07 - - $"
+d69 2
+@
+
+
+1.134
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.133 2018-04-18 16:37:26-07 - - $"
+d819 1
+a819 1
+    15     return 0;
+d891 1
+a891 1
+\*;\*;\*;\*;IDENT "puti" 5.12.9
+@
+
+
+1.133
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.132 2018-04-18 16:36:58-07 - - $"
+d854 2
+@
+
+
+1.132
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.131 2018-04-18 16:36:08-07 - - $"
+a848 11
+\*;\*;\*;\*;BLOCK "{" 5.3.14
+\*;\*;\*;\*;\*;'=' "=" 5.4.8
+\*;\*;\*;\*;\*;\*;IDENT "f" 5.4.6
+\*;\*;\*;\*;\*;\*;'*' "*" 5.4.12
+\*;\*;\*;\*;\*;\*;\*;IDENT "f" 5.4.10
+\*;\*;\*;\*;\*;\*;\*;IDENT "n" 5.4.12
+\*;\*;\*;\*;\*;'=' "=" 5.5.8
+\*;\*;\*;\*;\*;\*;IDENT "n" 5.5.6
+\*;\*;\*;\*;\*;\*;'-' "-" 5.5.12
+\*;\*;\*;\*;\*;\*;\*;IDENT "n" 5.5.10
+\*;\*;\*;\*;\*;\*;\*;INTCON "1" 5.5.12
+d861 11
+@
+
+
+1.131
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.130 2018-04-18 16:35:29-07 - - $"
+a859 2
+\*;\*;\*;RETURN "return" 5.7.3
+\*;\*;\*;\*;IDENT "f" 5.7.10
+d872 2
+@
+
+
+1.130
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.129 2018-04-18 16:31:48-07 - - $"
+d789 1
+a789 1
+and \*[Figure_EXAMPLE_AST_1].
+@
+
+
+1.129
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.128 2018-04-18 16:30:16-07 - - $"
+d15 1
+a15 1
+.GETST* EXAMPLE_AST_1 Figure_EXAMPLE_AST_1
+@
+
+
+1.128
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.127 2018-04-18 16:29:18-07 - - $"
+d14 2
+a15 1
+.GETST* EXAMPLE_AST Figure_EXAMPLE_AST
+d788 2
+a789 1
+would be printed as an AST as shown in Figure \*[Figure_EXAMPLE_AST].
+d864 1
+a864 1
+.FG "Example AST" "" 0 EXAMPLE_AST
+d902 1
+a902 1
+.FG "Example AST" "" 0 EXAMPLE_AST
+@
+
+
+1.127
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.126 2018-04-18 16:28:27-07 - - $"
+d869 1
+@
+
+
+1.126
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.125 2018-04-18 16:27:55-07 - - $"
+d864 37
+a900 36
+.\"    .DF
+.\"    \&
+.\"    .br
+.\"    .ft CR
+.\"    .in \n[Margin_Pi]
+.\"    .ds ; |\0\0
+.\"    \*;FUNCTION "" 5.9.0
+.\"    \*;\*;INT "int" 5.9.0
+.\"    \*;\*;\*;DECLID "main" 5.9.4
+.\"    \*;\*;PARAM "(" 5.9.8
+.\"    \*;\*;BLOCK "{" 5.9.11
+.\"    \*;\*;\*;VARDECL "=" 5.10.9
+.\"    \*;\*;\*;\*;INT "int" 5.10.3
+.\"    \*;\*;\*;\*;\*;DECLID "f" 5.10.7
+.\"    \*;\*;\*;\*;INTCON "1" 5.10.9
+.\"    \*;\*;\*;WHILE "while" 5.10.3
+.\"    \*;\*;\*;\*;GT "<=" 5.10.10
+.\"    \*;\*;\*;\*;\*;IDENT "n" 5.10.8
+.\"    \*;\*;\*;\*;\*;INTCON "5" 5.10.13
+.\"    \*;\*;\*;\*;BLOCK "{" 5.10.14
+.\"    \*;\*;\*;CALL "(" 5.12.3
+.\"    \*;\*;\*;\*;IDENT "puti" 5.12.9
+.\"    \*;\*;\*;\*;CALL "(" 5.12.13 
+.\"    \*;\*;\*;\*;\*;IDENT "fac" 5.12.11 
+.\"    \*;\*;\*;\*;\*;IDENT "n" 5.12.15 
+.\"    \*;\*;\*;'=' "=" 5.13.5
+.\"    \*;\*;\*;\*;IDENT "n" 5.13.3
+.\"    \*;\*;\*;\*;'+' "+" 5.13.9
+.\"    \*;\*;\*;\*;\*;IDENT "n" 5.13.7
+.\"    \*;\*;\*;\*;\*;INTCON "1" 5.13.11 
+.\"    \*;\*;\*;RETURN "return" 5.15.3
+.\"    \*;\*;\*;\*;INTCON "0" 5.15.10
+.\"    .SP
+.\"    .B2
+.\"    .FG "Example AST" "" 0 EXAMPLE_AST
+.\"    .DE
+@
+
+
+1.125
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.124 2018-04-18 16:27:28-07 - - $"
+d824 1
+a826 1
+.B1
+@
+
+
+1.124
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.123 2018-04-18 16:27:07-07 - - $"
+d828 1
+@
+
+
+1.123
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.122 2018-04-18 16:26:21-07 - - $"
+d801 1
+a802 1
+.nf
+@
+
+
+1.122
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.121 2018-04-18 16:24:13-07 - - $"
+a797 1
+.B1
+d800 1
+a823 1
+.B1
+d826 1
+@
+
+
+1.121
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.120 2018-04-18 16:22:43-07 - - $"
+a826 1
+.S -1 -2
+a827 1
+.nf
+a858 26
+\*;FUNCTION "" 5.9.0
+\*;\*;INT "int" 5.9.0
+\*;\*;\*;DECLID "main" 5.9.4
+\*;\*;PARAM "(" 5.9.8
+\*;\*;BLOCK "{" 5.9.11
+\*;\*;\*;VARDECL "=" 5.10.9
+\*;\*;\*;\*;INT "int" 5.10.3
+\*;\*;\*;\*;\*;DECLID "f" 5.10.7
+\*;\*;\*;\*;INTCON "1" 5.10.9
+\*;\*;\*;WHILE "while" 5.10.3
+\*;\*;\*;\*;GT "<=" 5.10.10
+\*;\*;\*;\*;\*;IDENT "n" 5.10.8
+\*;\*;\*;\*;\*;INTCON "5" 5.10.13
+\*;\*;\*;\*;BLOCK "{" 5.10.14
+\*;\*;\*;CALL "(" 5.12.3
+\*;\*;\*;\*;IDENT "puti" 5.12.9
+\*;\*;\*;\*;CALL "(" 5.12.13 
+\*;\*;\*;\*;\*;IDENT "fac" 5.12.11 
+\*;\*;\*;\*;\*;IDENT "n" 5.12.15 
+\*;\*;\*;'=' "=" 5.13.5
+\*;\*;\*;\*;IDENT "n" 5.13.3
+\*;\*;\*;\*;'+' "+" 5.13.9
+\*;\*;\*;\*;\*;IDENT "n" 5.13.7
+\*;\*;\*;\*;\*;INTCON "1" 5.13.11 
+\*;\*;\*;RETURN "return" 5.15.3
+\*;\*;\*;\*;INTCON "0" 5.15.10
+a859 1
+.S +1 +2
+d863 36
+@
+
+
+1.120
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.119 2018-04-18 16:18:50-07 - - $"
+d796 2
+a797 1
+.SP
+d799 2
+a800 1
+.SP
+d822 3
+a824 2
+.br
+.bp
+a826 2
+.B1
+.SP
+d891 1
+@
+
+
+1.119
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.118 2018-04-18 16:08:27-07 - - $"
+d869 17
+a885 4
+\*;\*;\*;WHILE "while" 5.3.3
+\*;\*;\*;\*;GT "<=" 5.3.10
+\*;\*;\*;\*;\*;IDENT "n" 5.3.8
+\*;\*;\*;\*;\*;INTCON "5" 5.3.13
+@
+
+
+1.118
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.117 2018-04-18 15:17:08-07 - - $"
+d809 8
+a816 5
+     9  int n = 1;
+    10  while (n <= 5) {
+    11     puti (fac (n));
+    12     n = n + 1;
+    13  }
+d860 1
+a860 1
+\*;VARDECL "=" 5.9.6
+d862 11
+a872 17
+\*;\*;\*;DECLID "n" 5.9.8
+\*;\*;INTCON "1" 5.9.4
+\*;WHILE "while" 5.10.0
+\*;\*;LE "<=" 5.10.9
+\*;\*;\*;IDENT "n" 5.10.7
+\*;\*;\*;INTCON "5" 5.10.12
+\*;\*;BLOCK "{" 5.10.15
+\*;\*;\*;CALL "(" 5.11.3
+\*;\*;\*;\*;IDENT "puti" 5.11.9
+\*;\*;\*;\*;CALL "(" 5.11.13
+\*;\*;\*;\*;\*;IDENT "fac" 5.11.11
+\*;\*;\*;\*;\*;IDENT "n" 5.11.15
+\*;\*;\*;'=' "=" 5.12.5
+\*;\*;\*;\*;IDENT "n" 5.12.3
+\*;\*;\*;\*;'+' "+" 5.12.9
+\*;\*;\*;\*;\*;IDENT "n" 5.12.7
+\*;\*;\*;\*;\*;INTCON "1" 5.12.11
+@
+
+
+1.117
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.116 2018-04-18 15:14:08-07 - - $"
+a68 1
+.   nop and
+@
+
+
+1.116
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.115 2018-04-18 15:13:37-07 - - $"
+d776 1
+a776 1
+All global statements, functions, and declarations will appear
+@
+
+
+1.115
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.114 2018-04-18 15:12:23-07 - - $"
+a701 2
+\&
+.br
+@
+
+
+1.114
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.113 2018-04-18 15:08:38-07 - - $"
+d701 21
+a798 21
+.br
+.DF
+.br
+.B1
+.SP
+.ft CB
+.nf
+.in \n[Margin_Pi]
+start    : program            { yyparse_astree = $1; }
+         ;
+program  : program structdef  { $$ = $1->adopt ($2); }
+         | program function   { $$ = $1->adopt ($2); }
+         | program statement  { $$ = $1->adopt ($2); }
+         | program error '}'  { $$ = $1; }
+         | program error ';'  { $$ = $1; }
+         |                    { $$ = parser::root; }
+         ;
+.SP
+.B2
+.FG "Beginning parser code" "" 0 PARSER_BEGIN
+.DE
+@
+
+
+1.113
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.112 2018-04-18 15:07:11-07 - - $"
+a671 40
+.H 1 "Displaying the AST"
+After constructing an AST from a file called
+.IV program .oc ,
+write a file called
+.IV program .ast ,
+containing a representation of the AST in text form,
+printed using a depth-first pre-order traversal,
+showing depth via indententation.
+.P
+Each line is indented to show its distance from the root,
+with a line upward immediately to its right that points at its parent.
+After the indentation print the symbolic token code,
+lexical information in
+double quotation marks,
+and the serial number consisting of a file number,
+a line number, and an offset.
+During project 4,
+this will also have type information following it.
+.P
+All global statements, functions, and declarations will appear
+under the root,
+.V= TOK_ROOT .
+If an include file is present,
+the contents of that file will also be printed
+under
+.V= TOK_ROOT
+as well,
+with only the file numbers leaving a clue as to where the code
+originated.
+.P
+The program shown in Figure \*[Figure_EXAMPLE_CODE]
+would be printed as an AST as shown in Figure \*[Figure_EXAMPLE_AST].
+To avoid clutter, the prefix
+.V= TOK_
+has been omitted from the printed tree.
+The prefix was used in the C code to avoid possible name clashes.
+The following, using pointer arithmetic,
+can be used to eliminate the prefix\(::
+.VTCODE* 1 "char *tname = get_yytname (symbol);"
+.VTCODE* 1 "if (strstr (tname, \[Dq]TOK_\[Dq]) == tname) tname += 4;"
+d738 40
+@
+
+
+1.112
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.110 2018-04-18 15:05:31-07 - - $"
+d722 19
+a778 19
+.DF
+\&
+.br
+.B1
+.SP
+.ft CB
+.nf
+.in \n[Margin_Pi]
+%debug
+%defines
+%error-verbose
+%token-table
+%verbose
+\&
+%start start
+\&
+.B2
+.FG "Parser configuration options" "" 0 CONFIG_OPTIONS
+.DE
+@
+
+
+1.111
+log
+@-
+@
+text
+@a721 19
+.br
+.DF
+\&
+.br
+.B1
+.SP
+.ft CB
+.nf
+.in \n[Margin_Pi]
+%debug
+%defines
+%error-verbose
+%token-table
+%verbose
+\&
+%start start
+\&
+.B2
+.FG "Parser configuration options" "" 0 CONFIG_OPTIONS
+d759 19
+@
+
+
+1.110
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.109 2018-04-18 15:02:31-07 - - $"
+d722 19
+a777 19
+.br
+.DF
+\&
+.br
+.B1
+.SP
+.ft CB
+.nf
+.in \n[Margin_Pi]
+%debug
+%defines
+%error-verbose
+%token-table
+%verbose
+\&
+%start start
+\&
+.B2
+.FG "Parser configuration options" "" 0 CONFIG_OPTIONS
+@
+
+
+1.109
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.108 2018-04-18 15:01:51-07 - - $"
+d760 1
+a760 4
+.bp
+\&
+.br
+.bp
+d778 2
+a780 1
+.SP
+d798 1
+a798 1
+\&
+@
+
+
+1.108
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.107 2018-04-18 15:01:09-07 - - $"
+a249 2
+\&
+.br
+@
+
+
+1.107
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.106 2018-04-18 15:00:03-07 - - $"
+d253 1
+a253 1
+center box tab(|); |l |l |l |l |lw(111p) |.
+@
+
+
+1.106
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.105 2018-04-18 14:58:07-07 - - $"
+d257 1
+d262 1
+d266 1
+d275 1
+d280 1
+d286 1
+d293 1
+d299 1
+@
+
+
+1.105
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.104 2018-04-18 14:57:23-07 - - $"
+d194 2
+a195 2
+Figure \*[Figure_OPER_PRECEDENCE] shows 
+operator precedence and associativity.
+d249 49
+a754 46
+.SP
+.TS
+center box tab(|); |l |l |l |l |lw(111p) |.
+Precedence|Associativity|Arity|Fixity|\fROperators\FP
+_
+lowest|right|binary/ternary|matchfix|T{
+.V= \&if\0
+.V= \&else\0
+T}
+|right|binary|infix|T{
+.V= \&=\0
+T}
+|left|binary|infix|T{
+.V= \&==\0
+.V= \&!=\0
+.V= \&<\0
+.V= \&<=\0
+.V= \&>\0
+.V= \&>=
+T}
+|left|binary|infix|T{
+.V= \&+\0
+.V= \&-\0
+T}
+|left|binary|infix|T{
+.V= \&*\0
+.V= \&/\0
+.V= \&%\0
+T}
+|right|unary|prefix|T{
+.V= \&+\0
+.V= \&-\0
+.V= \&not\0
+.V= \&new\0
+T}
+|left|binary/variadic\0|postfix|T{
+.V= \&\fIe\fP[\fIe\fP]\0
+.V= \&\fIe\fP->\fIi\fP\0
+.V= \&\fIf\fP(\fI...\fP)
+T}
+highest|\[em]|unary|matchfix|T{
+.V= \&(\fIe\fP)\0
+T}
+.TE
+.SP .75v
+.FG "\f[B]Operator precedence in \f[CB]oc\f[R]" "" 0 OPER_PRECEDENCE
+@
+
+
+1.104
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.103 2018-04-18 14:56:57-07 - - $"
+d166 3
+a168 3
+Figure \*[Figure_OC_GRAMMAR]
+shows the context-free grammar of
+.V= oc .
+@
+
+
+1.103
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.102 2018-04-18 14:55:45-07 - - $"
+d212 1
+a212 1
+.SP
+@
+
+
+1.102
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.101 2018-04-18 14:55:31-07 - - $"
+d209 40
+a705 35
+.B1
+.SP
+.VL \n[Grammar_Pi] \n[Margin_Pi] 1
+.RULE program *[ *R structdef *| *R function *| *R globaldecl *]...
+.RULE structdef *'V struct *SI TYPEID \
+*'V { *[ *R fielddecl *'V ; *]... *'V }
+.RULE fielddecl *R basetype *[ *'V [] *] *SI FIELD
+.RULE basetype *'V void *| *'V int *| *'V string *| *SI TYPEID
+.RULE globaldecl *R identdecl *'V = *R constant *'V ;
+.RULE function *R identdecl \
+*'V ( *[ *R identdecl *[ *'V , *R identdecl *]... *] *'V ) *R fnbody
+.RULE identdecl *R basetype *[ *'V [] *] *SI DECLID
+.RULE fnbody *'V { *[ *R localdecl *]... \| \
+*[ *R statement *]... *'V } *| *'V ;
+.RULE localdecl *R identdecl *'V = *R expr *'V ;
+.RULE statement *R block \
+*| *R while *| *R ifelse *| *R return *| *R expr *'V ; *| *'V ;
+.RULE block *'V { *[ *R statement *]... *'V }
+.RULE while *'V while *'V ( *R expr *'V ) *R statement
+.RULE ifelse *'V if *'V ( *R expr *'V ) *R statement \
+*[ *'V else *R statement *]
+.RULE return *'V return *[ *R expr *] *'V ;
+.RULE expr *R expr *SI BINOP *R expr *| *SI UNOP *R expr \
+*| *'V new *R allocation *| *R call
+.CONT *| *'V ( *R expr *'V ) *| *R variable *| *R constant
+.RULE allocation *SI TYPEID *| *'V string *'V ( *R expr *'V ) \
+*| *R basetype *'V [ *R expr *'V ]
+.RULE call *SI IDENT *'V ( *[ *R expr *[ *'V , *R expr *]... *] *'V )
+.RULE variable *SI IDENT *| *R expr *'V [ *R expr *'V ] \
+*| *R expr *'V -> *SI FIELD
+.RULE constant *SI INTCON *| *SI CHARCON *| *SI STRINGCON *| *'V null
+.LE
+.SP
+.B2
+.FG "\f[B]Grammar of \f[CB]oc\f[P]\f[R]" "" 0 OC_GRAMMAR
+@
+
+
+1.101
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.100 2018-04-18 14:53:30-07 - - $"
+d137 1
+@
+
+
+1.100
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.94 2018-04-17 16:55:35-07 - - $"
+d137 27
+a664 26
+\&
+.br
+.B1
+.SP
+.VL \n[Grammar_Pi] \n[Margin_Pi] 1
+.LI "\*[OBRACK] \f[BI]x\f[R] \*[CBRACK]"
+Brackets indicate the the symbols are optional.
+.LI "\*[OBRACK] \f[BI]x\f[R] \*[CBRACK]\|.\|.\|.\&"
+Brackets and dots mean that the symbols
+occur zero or more times.
+.LI "\f[BI]x\f[R] \*[STICK] \f[BI]y\f[R]"
+A bar indicates alternation between its left and right operands.
+.LI "`\f[CB]while\f[R]'"
+Symbols themselves
+and written in
+.V= "Courier bold"
+and quoted. 
+.LI "symbol"
+Nonterminal symbols are written in lower case Roman.
+.LI "\fI\s-3TOKEN\s+3\fP"
+Token classes
+are written in \s-3\f[I]UPPER CASE SMALL ITALIC\f[R]\s+3.
+.SP
+.B2
+.FG "\f[B]Metagrammar for \f[CB]oc\f[P]\f[R]" "" 0 META_NOTATION
+.SP
+@
+
+
+1.99
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.98 2018-04-18 14:49:30-07 - - $"
+a136 28
+.br
+.DF
+\&
+.br
+.B1
+.SP
+.VL \n[Grammar_Pi] \n[Margin_Pi] 1
+.LI "\*[OBRACK] \f[BI]x\f[R] \*[CBRACK]"
+Brackets indicate the the symbols are optional.
+.LI "\*[OBRACK] \f[BI]x\f[R] \*[CBRACK]\|.\|.\|.\&"
+Brackets and dots mean that the symbols
+occur zero or more times.
+.LI "\f[BI]x\f[R] \*[STICK] \f[BI]y\f[R]"
+A bar indicates alternation between its left and right operands.
+.LI "`\f[CB]while\f[R]'"
+Symbols themselves
+and written in
+.V= "Courier bold"
+and quoted. 
+.LI "symbol"
+Nonterminal symbols are written in lower case Roman.
+.LI "\fI\s-3TOKEN\s+3\fP"
+Token classes
+are written in \s-3\f[I]UPPER CASE SMALL ITALIC\f[R]\s+3.
+.SP
+.B2
+.FG "\f[B]Metagrammar for \f[CB]oc\f[P]\f[R]" "" 0 META_NOTATION
+.DE
+d138 3
+a140 3
+The context-free grammar of
+.V= oc
+is shown in Figure \*[Figure_OC_GRAMMAR].
+a180 40
+.br
+.br
+.DF
+\&
+.SP
+.B1
+.SP
+.VL \n[Grammar_Pi] \n[Margin_Pi] 1
+.RULE program *[ *R structdef *| *R function *| *R globaldecl *]...
+.RULE structdef *'V struct *SI TYPEID \
+*'V { *[ *R fielddecl *'V ; *]... *'V }
+.RULE fielddecl *R basetype *[ *'V [] *] *SI FIELD
+.RULE basetype *'V void *| *'V int *| *'V string *| *SI TYPEID
+.RULE globaldecl *R identdecl *'V = *R constant *'V ;
+.RULE function *R identdecl \
+*'V ( *[ *R identdecl *[ *'V , *R identdecl *]... *] *'V ) *R fnbody
+.RULE identdecl *R basetype *[ *'V [] *] *SI DECLID
+.RULE fnbody *'V { *[ *R localdecl *]... \| \
+*[ *R statement *]... *'V } *| *'V ;
+.RULE localdecl *R identdecl *'V = *R expr *'V ;
+.RULE statement *R block \
+*| *R while *| *R ifelse *| *R return *| *R expr *'V ; *| *'V ;
+.RULE block *'V { *[ *R statement *]... *'V }
+.RULE while *'V while *'V ( *R expr *'V ) *R statement
+.RULE ifelse *'V if *'V ( *R expr *'V ) *R statement \
+*[ *'V else *R statement *]
+.RULE return *'V return *[ *R expr *] *'V ;
+.RULE expr *R expr *SI BINOP *R expr *| *SI UNOP *R expr \
+*| *'V new *R allocation *| *R call
+.CONT *| *'V ( *R expr *'V ) *| *R variable *| *R constant
+.RULE allocation *SI TYPEID *| *'V string *'V ( *R expr *'V ) \
+*| *R basetype *'V [ *R expr *'V ]
+.RULE call *SI IDENT *'V ( *[ *R expr *[ *'V , *R expr *]... *] *'V )
+.RULE variable *SI IDENT *| *R expr *'V [ *R expr *'V ] \
+*| *R expr *'V -> *SI FIELD
+.RULE constant *SI INTCON *| *SI CHARCON *| *SI STRINGCON *| *'V null
+.LE
+.SP
+.B2
+.FG "\f[B]Grammar of \f[CB]oc\f[P]\f[R]" "" 0 OC_GRAMMAR
+d636 63
+a698 1
+.DE
+@
+
+
+1.98
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.97 2018-04-18 14:47:54-07 - - $"
+d209 40
+d704 1
+a704 37
+.br
+.SP
+.B1
+.SP
+.VL \n[Grammar_Pi] \n[Margin_Pi] 1
+.RULE program *[ *R structdef *| *R function *| *R globaldecl *]...
+.RULE structdef *'V struct *SI TYPEID \
+*'V { *[ *R fielddecl *'V ; *]... *'V }
+.RULE fielddecl *R basetype *[ *'V [] *] *SI FIELD
+.RULE basetype *'V void *| *'V int *| *'V string *| *SI TYPEID
+.RULE globaldecl *R identdecl *'V = *R constant *'V ;
+.RULE function *R identdecl \
+*'V ( *[ *R identdecl *[ *'V , *R identdecl *]... *] *'V ) *R fnbody
+.RULE identdecl *R basetype *[ *'V [] *] *SI DECLID
+.RULE fnbody *'V { *[ *R localdecl *]... \| \
+*[ *R statement *]... *'V } *| *'V ;
+.RULE localdecl *R identdecl *'V = *R expr *'V ;
+.RULE statement *R block \
+*| *R while *| *R ifelse *| *R return *| *R expr *'V ; *| *'V ;
+.RULE block *'V { *[ *R statement *]... *'V }
+.RULE while *'V while *'V ( *R expr *'V ) *R statement
+.RULE ifelse *'V if *'V ( *R expr *'V ) *R statement \
+*[ *'V else *R statement *]
+.RULE return *'V return *[ *R expr *] *'V ;
+.RULE expr *R expr *SI BINOP *R expr *| *SI UNOP *R expr \
+*| *'V new *R allocation *| *R call
+.CONT *| *'V ( *R expr *'V ) *| *R variable *| *R constant
+.RULE allocation *SI TYPEID *| *'V string *'V ( *R expr *'V ) \
+*| *R basetype *'V [ *R expr *'V ]
+.RULE call *SI IDENT *'V ( *[ *R expr *[ *'V , *R expr *]... *] *'V )
+.RULE variable *SI IDENT *| *R expr *'V [ *R expr *'V ] \
+*| *R expr *'V -> *SI FIELD
+.RULE constant *SI INTCON *| *SI CHARCON *| *SI STRINGCON *| *'V null
+.LE
+.SP
+.B2
+.FG "\f[B]Grammar of \f[CB]oc\f[P]\f[R]" "" 0 OC_GRAMMAR
+@
+
+
+1.97
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.96 2018-04-18 14:47:11-07 - - $"
+d166 3
+a168 3
+Figure \*[Figure_OC_GRAMMAR]
+shows the context-free grammar of
+.V= oc .
+@
+
+
+1.96
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.95 2018-04-18 14:46:40-07 - - $"
+a163 1
+.SP
+@
+
+
+1.95
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.94 2018-04-17 16:55:35-07 - - $"
+d137 1
+d164 1
+@
+
+
+1.94
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.35 2018-04-17 16:47:07-07 - - $"
+d137 27
+a663 26
+.bp
+\&
+.br
+.B1
+.SP
+.VL \n[Grammar_Pi] \n[Margin_Pi] 1
+.LI "\*[OBRACK] \f[BI]x\f[R] \*[CBRACK]"
+Brackets indicate the the symbols are optional.
+.LI "\*[OBRACK] \f[BI]x\f[R] \*[CBRACK]\|.\|.\|.\&"
+Brackets and dots mean that the symbols
+occur zero or more times.
+.LI "\f[BI]x\f[R] \*[STICK] \f[BI]y\f[R]"
+A bar indicates alternation between its left and right operands.
+.LI "`\f[CB]while\f[R]'"
+Symbols themselves
+and written in
+.V= "Courier bold"
+and quoted. 
+.LI "symbol"
+Nonterminal symbols are written in lower case Roman.
+.LI "\fI\s-3TOKEN\s+3\fP"
+Token classes
+are written in \s-3\f[I]UPPER CASE SMALL ITALIC\f[R]\s+3.
+.SP
+.B2
+.FG "\f[B]Metagrammar for \f[CB]oc\f[P]\f[R]" "" 0 META_NOTATION
+@
+
+
+1.93
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.92 2017-11-06 11:45:31-08 - - $"
+d17 1
+a17 1
+.nr Grammar_Pi \n[Pi]*5/2
+d25 1
+a25 1
+.nr STICK_SIZE \w'\*[STICK] '
+d286 1
+a286 1
+.=V ( . )
+d635 1
+a635 12
+to detect memory errors,
+although you can ignore memory leak.
+A good set of options to use when compiling C code is
+.VTCODE* 1 "g++ -g -O0 -Wall -Wextra -std=gnu++14"
+However, you may prefer to avoid
+.V= -Wall
+and
+.V= -Wextra
+with code generated by
+.V= flex
+and
+.V= bison .
+d667 1
+a667 1
+.RULE program *[ *R structdef *| *R function *| *R statement *]...
+d672 1
+d674 1
+a674 1
+*'V ( *[ *R identdecl *[ *'V , *R identdecl *]... *] *'V ) *R block
+d676 6
+a681 4
+.RULE block *'V { *[ *R statement *]... *'V } *| *'V ;
+.RULE statement *R block *| *R vardecl *| *R while *| *R ifelse \
+*| *R return *| *R expr *'V ;
+.RULE vardecl *R identdecl *'V = *R expr *'V ;
+d687 4
+a690 5
+*| *R allocator *| *R call *| *'V ( *R expr *'V )
+.CONT *| *R variable *| *R constant
+.RULE allocator *'V new *SI TYPEID *'V ( *'V ) \
+*| *'V new *'V string *'V ( *R expr *'V )
+.CONT *| *'V new *R basetype *'V [ *R expr *'V ]
+d693 1
+a693 1
+*| *R expr *'V . *SI FIELD
+d731 1
+a731 1
+.V= \&!\0
+d736 1
+a736 1
+.V= \&\fIe\fP.\fIi\fP\0
+@
+
+
+1.92
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.91 2017-11-06 11:44:08-08 - - $"
+d810 1
+a810 1
+    12     n = n + 1
+@
+
+
+1.91
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.90 2017-10-27 17:17:23-07 - - $"
+d788 1
+a788 1
+         |                    { $$ = new_parseroot (); }
+@
+
+
+1.90
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.89 2017-10-12 15:32:14-07 - - $"
+d616 1
+a616 1
+.V= yyparse_astree
+@
+
+
+1.89
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.88 2017-10-12 15:31:53-07 - - $"
+d821 1
+a821 1
+.S C -2
+d875 1
+a875 1
+.S C +2
+@
+
+
+1.88
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.87 2017-10-12 15:31:07-07 - - $"
+d710 1
+a710 1
+center box tab(|); |l |l |l |l |lw(110p) |.
+@
+
+
+1.87
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.86 2017-10-12 15:30:42-07 - - $"
+d726 1
+a726 1
+.V= \&>=\0
+@
+
+
+1.86
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.85 2017-10-12 15:29:43-07 - - $"
+d710 1
+a710 1
+center box tab(|); |l |l |l |l |lw(100p) |.
+@
+
+
+1.85
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.84 2017-10-12 15:09:35-07 - - $"
+d710 1
+a710 1
+center box tab(|); |l |l |l |l |l |.
+@
+
+
+1.84
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.83 2017-10-12 15:09:06-07 - - $"
+d710 1
+a710 1
+center box tab(|); |l |l |l |l |lfCB |.
+d713 30
+a742 6
+lowest|right|binary/ternary|matchfix|if\0 else
+|right|binary|infix|\&=
+|left|binary|infix|==\0 !=\0 <\0 <=\0 >\0 >=
+|left|binary|infix|+\0 -
+|left|binary|infix|*\0 /\0 %
+|right|unary|prefix|+\0 -\0 !\0 new\0
+d744 6
+a749 1
+\fIe\fP[\fIe\fP]\0 \fIe\fP.\fIi\fP\0 \fIf\fP(\fI...\fP)
+a750 1
+highest|\[em]|unary|matchfix|(\fIe\fP)
+@
+
+
+1.83
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.82 2017-10-12 15:07:30-07 - - $"
+d624 1
+@
+
+
+1.82
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.81 2017-10-12 15:06:56-07 - - $"
+a577 2
+The parser has no direct idea about the names of the files that the
+tokens came from.
+@
+
+
+1.81
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.80 2017-10-12 15:06:30-07 - - $"
+d294 1
+a294 1
+.=V ( [\~] )
+@
+
+
+1.80
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.79 2017-10-12 15:03:31-07 - - $"
+d793 1
+@
+
+
+1.79
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.78 2017-10-12 15:02:14-07 - - $"
+d725 1
+a725 1
+.SP .5v
+d747 1
+a787 2
+.B1
+.S C -2
+d792 2
+@
+
+
+1.78
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.77 2017-10-12 15:01:58-07 - - $"
+d728 4
+a731 1
+.SP
+d789 4
+a792 1
+.SP
+@
+
+
+1.77
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.76 2017-10-12 15:01:44-07 - - $"
+d650 1
+@
+
+
+1.76
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.75 2017-10-12 15:01:23-07 - - $"
+a649 1
+xxx
+@
+
+
+1.75
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.74 2017-10-12 15:00:40-07 - - $"
+d651 1
+@
+
+
+1.74
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.73 2017-10-12 15:00:07-07 - - $"
+d650 1
+a650 1
+\&
+@
+
+
+1.73
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.72 2017-10-12 14:59:29-07 - - $"
+d650 1
+a650 1
+.SP
+@
+
+
+1.72
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.71 2017-10-12 14:58:34-07 - - $"
+a673 1
+.DS
+a726 2
+.DE
+.DS
+a761 2
+.DE
+.DS
+a782 2
+.DE
+.DS
+a841 1
+.DE
+@
+
+
+1.71
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.70 2017-10-12 14:57:48-07 - - $"
+a649 2
+.sp .5v
+.DS
+a673 1
+.DE
+@
+
+
+1.70
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.69 2017-10-12 14:56:59-07 - - $"
+a623 1
+.DS
+a625 1
+.DE
+@
+
+
+1.69
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.68 2017-10-12 14:56:27-07 - - $"
+a588 1
+.DS
+a590 1
+.DE
+@
+
+
+1.68
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.67 2017-10-12 14:56:09-07 - - $"
+d653 2
+a654 1
+.ne 10i
+@
+
+
+1.67
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.66 2017-10-12 14:55:37-07 - - $"
+d652 1
+@
+
+
+1.66
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.65 2017-10-12 14:54:47-07 - - $"
+d652 1
+@
+
+
+1.65
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.64 2017-10-12 14:53:30-07 - - $"
+a651 2
+.bp
+\&\v'-2v'
+@
+
+
+1.64
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.63 2017-10-12 14:52:37-07 - - $"
+d653 1
+a653 1
+\&\v'-1v'
+@
+
+
+1.63
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.62 2017-10-12 14:50:41-07 - - $"
+d653 1
+a653 1
+.sp .1v
+@
+
+
+1.62
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.61 2017-10-12 14:50:13-07 - - $"
+d653 1
+a653 1
+.sp 0v
+@
+
+
+1.61
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.60 2017-10-12 14:49:37-07 - - $"
+d653 1
+a653 1
+\&
+@
+
+
+1.60
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.59 2017-10-12 14:48:35-07 - - $"
+d653 1
+@
+
+
+1.59
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.58 2017-10-12 14:47:42-07 - - $"
+d652 1
+a793 2
+.ne 10i
+\&
+@
+
+
+1.58
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.57 2017-10-12 14:47:05-07 - - $"
+a121 1
+.br
+a136 1
+.br
+a223 2
+.br
+.ne 5
+a360 2
+.br
+.ne 5
+a651 1
+.br
+@
+
+
+1.57
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.56 2017-10-12 14:45:39-07 - - $"
+d659 1
+a659 1
+.DF L
+d685 1
+a685 1
+.DF L
+d740 1
+a740 1
+.DF L
+@
+
+
+1.56
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.53 2017-10-12 14:41:23-07 - - $"
+a122 26
+.DF L
+.SP
+.B1
+.SP
+.VL \n[Grammar_Pi] \n[Margin_Pi] 1
+.LI "\*[OBRACK] \f[BI]x\f[R] \*[CBRACK]"
+Brackets indicate the the symbols are optional.
+.LI "\*[OBRACK] \f[BI]x\f[R] \*[CBRACK]\|.\|.\|.\&"
+Brackets and dots mean that the symbols
+occur zero or more times.
+.LI "\f[BI]x\f[R] \*[STICK] \f[BI]y\f[R]"
+A bar indicates alternation between its left and right operands.
+.LI "`\f[CB]while\f[R]'"
+Symbols themselves
+and written in
+.V= "Courier bold"
+and quoted. 
+.LI "symbol"
+Nonterminal symbols are written in lower case Roman.
+.LI "\fI\s-3TOKEN\s+3\fP"
+Token classes
+are written in \s-3\f[I]UPPER CASE SMALL ITALIC\f[R]\s+3.
+.SP
+.B2
+.FG "\f[B]Metagrammar for \f[CB]oc\f[P]\f[R]" "" 0 META_NOTATION
+.DE
+a138 55
+.DF L
+.SP
+.B1
+.SP
+.VL \n[Grammar_Pi] \n[Margin_Pi] 1
+.RULE program *[ *R structdef *| *R function *| *R statement *]...
+.RULE structdef *'V struct *SI TYPEID \
+*'V { *[ *R fielddecl *'V ; *]... *'V }
+.RULE fielddecl *R basetype *[ *'V [] *] *SI FIELD
+.RULE basetype *'V void *| *'V int *| *'V string *| *SI TYPEID
+.RULE function *R identdecl \
+*'V ( *[ *R identdecl *[ *'V , *R identdecl *]... *] *'V ) *R block
+.RULE identdecl *R basetype *[ *'V [] *] *SI DECLID
+.RULE block *'V { *[ *R statement *]... *'V } *| *'V ;
+.RULE statement *R block *| *R vardecl *| *R while *| *R ifelse \
+*| *R return *| *R expr *'V ;
+.RULE vardecl *R identdecl *'V = *R expr *'V ;
+.RULE while *'V while *'V ( *R expr *'V ) *R statement
+.RULE ifelse *'V if *'V ( *R expr *'V ) *R statement \
+*[ *'V else *R statement *]
+.RULE return *'V return *[ *R expr *] *'V ;
+.RULE expr *R expr *SI BINOP *R expr *| *SI UNOP *R expr \
+*| *R allocator *| *R call *| *'V ( *R expr *'V )
+.CONT *| *R variable *| *R constant
+.RULE allocator *'V new *SI TYPEID *'V ( *'V ) \
+*| *'V new *'V string *'V ( *R expr *'V )
+.CONT *| *'V new *R basetype *'V [ *R expr *'V ]
+.RULE call *SI IDENT *'V ( *[ *R expr *[ *'V , *R expr *]... *] *'V )
+.RULE variable *SI IDENT *| *R expr *'V [ *R expr *'V ] \
+*| *R expr *'V . *SI FIELD
+.RULE constant *SI INTCON *| *SI CHARCON *| *SI STRINGCON *| *'V null
+.LE
+.SP
+.B2
+.FG "\f[B]Grammar of \f[CB]oc\f[P]\f[R]" "" 0 OC_GRAMMAR
+.SP
+.TS
+center box tab(|); |l |l |l |l |lfCB |.
+Precedence|Associativity|Arity|Fixity|\fROperators\FP
+_
+lowest|right|binary/ternary|matchfix|if\0 else
+|right|binary|infix|\&=
+|left|binary|infix|==\0 !=\0 <\0 <=\0 >\0 >=
+|left|binary|infix|+\0 -
+|left|binary|infix|*\0 /\0 %
+|right|unary|prefix|+\0 -\0 !\0 new\0
+|left|binary/variadic\0|postfix|T{
+\fIe\fP[\fIe\fP]\0 \fIe\fP.\fIi\fP\0 \fIf\fP(\fI...\fP)
+T}
+highest|\[em]|unary|matchfix|(\fIe\fP)
+.TE
+.SP .5v
+.FG "\f[B]Operator precedence in \f[CB]oc\f[R]" "" 0 OPER_PRECEDENCE
+\&
+.DE
+d659 81
+@
+
+
+1.55
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.54 2017-10-12 14:43:55-07 - - $"
+d123 26
+d165 55
+a739 81
+.DF L
+.SP
+.B1
+.SP
+.VL \n[Grammar_Pi] \n[Margin_Pi] 1
+.LI "\*[OBRACK] \f[BI]x\f[R] \*[CBRACK]"
+Brackets indicate the the symbols are optional.
+.LI "\*[OBRACK] \f[BI]x\f[R] \*[CBRACK]\|.\|.\|.\&"
+Brackets and dots mean that the symbols
+occur zero or more times.
+.LI "\f[BI]x\f[R] \*[STICK] \f[BI]y\f[R]"
+A bar indicates alternation between its left and right operands.
+.LI "`\f[CB]while\f[R]'"
+Symbols themselves
+and written in
+.V= "Courier bold"
+and quoted. 
+.LI "symbol"
+Nonterminal symbols are written in lower case Roman.
+.LI "\fI\s-3TOKEN\s+3\fP"
+Token classes
+are written in \s-3\f[I]UPPER CASE SMALL ITALIC\f[R]\s+3.
+.SP
+.B2
+.FG "\f[B]Metagrammar for \f[CB]oc\f[P]\f[R]" "" 0 META_NOTATION
+.DE
+.DF L
+.SP
+.B1
+.SP
+.VL \n[Grammar_Pi] \n[Margin_Pi] 1
+.RULE program *[ *R structdef *| *R function *| *R statement *]...
+.RULE structdef *'V struct *SI TYPEID \
+*'V { *[ *R fielddecl *'V ; *]... *'V }
+.RULE fielddecl *R basetype *[ *'V [] *] *SI FIELD
+.RULE basetype *'V void *| *'V int *| *'V string *| *SI TYPEID
+.RULE function *R identdecl \
+*'V ( *[ *R identdecl *[ *'V , *R identdecl *]... *] *'V ) *R block
+.RULE identdecl *R basetype *[ *'V [] *] *SI DECLID
+.RULE block *'V { *[ *R statement *]... *'V } *| *'V ;
+.RULE statement *R block *| *R vardecl *| *R while *| *R ifelse \
+*| *R return *| *R expr *'V ;
+.RULE vardecl *R identdecl *'V = *R expr *'V ;
+.RULE while *'V while *'V ( *R expr *'V ) *R statement
+.RULE ifelse *'V if *'V ( *R expr *'V ) *R statement \
+*[ *'V else *R statement *]
+.RULE return *'V return *[ *R expr *] *'V ;
+.RULE expr *R expr *SI BINOP *R expr *| *SI UNOP *R expr \
+*| *R allocator *| *R call *| *'V ( *R expr *'V )
+.CONT *| *R variable *| *R constant
+.RULE allocator *'V new *SI TYPEID *'V ( *'V ) \
+*| *'V new *'V string *'V ( *R expr *'V )
+.CONT *| *'V new *R basetype *'V [ *R expr *'V ]
+.RULE call *SI IDENT *'V ( *[ *R expr *[ *'V , *R expr *]... *] *'V )
+.RULE variable *SI IDENT *| *R expr *'V [ *R expr *'V ] \
+*| *R expr *'V . *SI FIELD
+.RULE constant *SI INTCON *| *SI CHARCON *| *SI STRINGCON *| *'V null
+.LE
+.SP
+.B2
+.FG "\f[B]Grammar of \f[CB]oc\f[P]\f[R]" "" 0 OC_GRAMMAR
+.SP
+.TS
+center box tab(|); |l |l |l |l |lfCB |.
+Precedence|Associativity|Arity|Fixity|\fROperators\FP
+_
+lowest|right|binary/ternary|matchfix|if\0 else
+|right|binary|infix|\&=
+|left|binary|infix|==\0 !=\0 <\0 <=\0 >\0 >=
+|left|binary|infix|+\0 -
+|left|binary|infix|*\0 /\0 %
+|right|unary|prefix|+\0 -\0 !\0 new\0
+|left|binary/variadic\0|postfix|T{
+\fIe\fP[\fIe\fP]\0 \fIe\fP.\fIi\fP\0 \fIf\fP(\fI...\fP)
+T}
+highest|\[em]|unary|matchfix|(\fIe\fP)
+.TE
+.SP .5v
+.FG "\f[B]Operator precedence in \f[CB]oc\f[R]" "" 0 OPER_PRECEDENCE
+\&
+.DE
+@
+
+
+1.54
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.53 2017-10-12 14:41:23-07 - - $"
+a138 81
+.DF L
+.SP
+.B1
+.SP
+.VL \n[Grammar_Pi] \n[Margin_Pi] 1
+.LI "\*[OBRACK] \f[BI]x\f[R] \*[CBRACK]"
+Brackets indicate the the symbols are optional.
+.LI "\*[OBRACK] \f[BI]x\f[R] \*[CBRACK]\|.\|.\|.\&"
+Brackets and dots mean that the symbols
+occur zero or more times.
+.LI "\f[BI]x\f[R] \*[STICK] \f[BI]y\f[R]"
+A bar indicates alternation between its left and right operands.
+.LI "`\f[CB]while\f[R]'"
+Symbols themselves
+and written in
+.V= "Courier bold"
+and quoted. 
+.LI "symbol"
+Nonterminal symbols are written in lower case Roman.
+.LI "\fI\s-3TOKEN\s+3\fP"
+Token classes
+are written in \s-3\f[I]UPPER CASE SMALL ITALIC\f[R]\s+3.
+.SP
+.B2
+.FG "\f[B]Metagrammar for \f[CB]oc\f[P]\f[R]" "" 0 META_NOTATION
+.DE
+.DF L
+.SP
+.B1
+.SP
+.VL \n[Grammar_Pi] \n[Margin_Pi] 1
+.RULE program *[ *R structdef *| *R function *| *R statement *]...
+.RULE structdef *'V struct *SI TYPEID \
+*'V { *[ *R fielddecl *'V ; *]... *'V }
+.RULE fielddecl *R basetype *[ *'V [] *] *SI FIELD
+.RULE basetype *'V void *| *'V int *| *'V string *| *SI TYPEID
+.RULE function *R identdecl \
+*'V ( *[ *R identdecl *[ *'V , *R identdecl *]... *] *'V ) *R block
+.RULE identdecl *R basetype *[ *'V [] *] *SI DECLID
+.RULE block *'V { *[ *R statement *]... *'V } *| *'V ;
+.RULE statement *R block *| *R vardecl *| *R while *| *R ifelse \
+*| *R return *| *R expr *'V ;
+.RULE vardecl *R identdecl *'V = *R expr *'V ;
+.RULE while *'V while *'V ( *R expr *'V ) *R statement
+.RULE ifelse *'V if *'V ( *R expr *'V ) *R statement \
+*[ *'V else *R statement *]
+.RULE return *'V return *[ *R expr *] *'V ;
+.RULE expr *R expr *SI BINOP *R expr *| *SI UNOP *R expr \
+*| *R allocator *| *R call *| *'V ( *R expr *'V )
+.CONT *| *R variable *| *R constant
+.RULE allocator *'V new *SI TYPEID *'V ( *'V ) \
+*| *'V new *'V string *'V ( *R expr *'V )
+.CONT *| *'V new *R basetype *'V [ *R expr *'V ]
+.RULE call *SI IDENT *'V ( *[ *R expr *[ *'V , *R expr *]... *] *'V )
+.RULE variable *SI IDENT *| *R expr *'V [ *R expr *'V ] \
+*| *R expr *'V . *SI FIELD
+.RULE constant *SI INTCON *| *SI CHARCON *| *SI STRINGCON *| *'V null
+.LE
+.SP
+.B2
+.FG "\f[B]Grammar of \f[CB]oc\f[P]\f[R]" "" 0 OC_GRAMMAR
+.SP
+.TS
+center box tab(|); |l |l |l |l |lfCB |.
+Precedence|Associativity|Arity|Fixity|\fROperators\FP
+_
+lowest|right|binary/ternary|matchfix|if\0 else
+|right|binary|infix|\&=
+|left|binary|infix|==\0 !=\0 <\0 <=\0 >\0 >=
+|left|binary|infix|+\0 -
+|left|binary|infix|*\0 /\0 %
+|right|unary|prefix|+\0 -\0 !\0 new\0
+|left|binary/variadic\0|postfix|T{
+\fIe\fP[\fIe\fP]\0 \fIe\fP.\fIi\fP\0 \fIf\fP(\fI...\fP)
+T}
+highest|\[em]|unary|matchfix|(\fIe\fP)
+.TE
+.SP .5v
+.FG "\f[B]Operator precedence in \f[CB]oc\f[R]" "" 0 OPER_PRECEDENCE
+\&
+.DE
+d659 81
+@
+
+
+1.53
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.52 2017-10-12 14:30:36-07 - - $"
+d123 16
+a164 16
+.H 1 "The Metagrammar"
+When reading the grammar of
+.V= oc ,
+it is important to distinguish between the grammar and the
+metagrammar. 
+the metagrammar is the grammar that describes the grammar.
+You must also use your knowledge of C to fill in what
+is only implied.
+The metalanguage redundantly uses fonts and typography
+to represent concepts for the benefit of those reading
+this document via simple ASCII text.
+It looks prettier in the Postscript version.
+Note that the meta-brackets and meta-stick are slightly larger
+than normal type.
+The notation used is shown in Figure \*[Figure_META_NOTATION].
+.br
+@
+
+
+1.52
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.51 2017-10-12 14:30:12-07 - - $"
+d810 48
+a857 48
+ROOT "" 0.0.0
+\*;FUNCTION "" 0.1.0
+\*;\*;INT "int" 0.1.0
+\*;\*;\*;DECLID "fac" 0.1.4
+\*;\*;PARAM "(" 0.1.8
+\*;\*;\*;INT "int" 0.1.9
+\*;\*;\*;\*;DECLID "n" 0.1.13
+\*;\*;BLOCK "{" 0.1.15
+\*;\*;\*;VARDECL "=" 0.2.9
+\*;\*;\*;\*;INT "int" 0.2.3
+\*;\*;\*;\*;\*;DECLID "f" 0.2.7
+\*;\*;\*;\*;INTCON "1" 0.2.9
+\*;\*;\*;WHILE "while" 0.3.3
+\*;\*;\*;\*;GT ">" 0.3.10
+\*;\*;\*;\*;\*;IDENT "n" 0.3.8
+\*;\*;\*;\*;\*;INTCON "1" 0.3.12
+\*;\*;\*;\*;BLOCK "{" 0.3.14
+\*;\*;\*;\*;\*;'=' "=" 0.4.8
+\*;\*;\*;\*;\*;\*;IDENT "f" 0.4.6
+\*;\*;\*;\*;\*;\*;'*' "*" 0.4.12
+\*;\*;\*;\*;\*;\*;\*;IDENT "f" 0.4.10
+\*;\*;\*;\*;\*;\*;\*;IDENT "n" 0.4.12
+\*;\*;\*;\*;\*;'=' "=" 0.5.8
+\*;\*;\*;\*;\*;\*;IDENT "n" 0.5.6
+\*;\*;\*;\*;\*;\*;'-' "-" 0.5.12
+\*;\*;\*;\*;\*;\*;\*;IDENT "n" 0.5.10
+\*;\*;\*;\*;\*;\*;\*;INTCON "1" 0.5.12
+\*;\*;\*;RETURN "return" 0.7.3
+\*;\*;\*;\*;IDENT "f" 0.7.10
+\*;VARDECL "=" 0.9.6
+\*;\*;INT "int" 0.9.0
+\*;\*;\*;DECLID "n" 0.9.8
+\*;\*;INTCON "1" 0.9.4
+\*;WHILE "while" 0.10.0
+\*;\*;LE "<=" 0.10.9
+\*;\*;\*;IDENT "n" 0.10.7
+\*;\*;\*;INTCON "5" 0.10.12
+\*;\*;BLOCK "{" 0.10.15
+\*;\*;\*;CALL "(" 0.11.3
+\*;\*;\*;\*;IDENT "puti" 0.11.9
+\*;\*;\*;\*;CALL "(" 0.11.13
+\*;\*;\*;\*;\*;IDENT "fac" 0.11.11
+\*;\*;\*;\*;\*;IDENT "n" 0.11.15
+\*;\*;\*;'=' "=" 0.12.5
+\*;\*;\*;\*;IDENT "n" 0.12.3
+\*;\*;\*;\*;'+' "+" 0.12.9
+\*;\*;\*;\*;\*;IDENT "n" 0.12.7
+\*;\*;\*;\*;\*;INTCON "1" 0.12.11
+@
+
+
+1.51
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.50 2017-10-12 14:29:23-07 - - $"
+d804 1
+a804 1
+.S C -1
+d859 1
+a859 1
+.S C +1
+@
+
+
+1.50
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.49 2017-10-12 14:28:49-07 - - $"
+d804 1
+a804 1
+.S C -2
+d859 1
+a859 1
+.S C +2
+@
+
+
+1.49
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.48 2017-10-12 14:28:19-07 - - $"
+d855 1
+a855 1
+\*;\*;\*;\*;'-' "-" 0.12.9
+@
+
+
+1.48
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.47 2017-10-12 14:26:00-07 - - $"
+a779 1
+.S C -2
+a796 1
+.S C +2
+@
+
+
+1.47
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.46 2017-10-12 14:24:12-07 - - $"
+a679 37
+.DF L
+.SP
+.B1
+.SP
+.ft CB
+.nf
+.in \n[Margin_Pi]
+%debug
+%defines
+%error-verbose
+%token-table
+%verbose
+\&
+%start start
+\&
+.B2
+.FG "Parser configuration options" "" 0 CONFIG_OPTIONS
+.SP
+.B1
+.SP
+.ft CB
+.nf
+.in \n[Margin_Pi]
+start    : program            { yyparse_astree = $1; }
+         ;
+program  : program structdef  { $$ = $1->adopt ($2); }
+         | program function   { $$ = $1->adopt ($2); }
+         | program statement  { $$ = $1->adopt ($2); }
+         | program error '}'  { $$ = $1; }
+         | program error ';'  { $$ = $1; }
+         |                    { $$ = new_parseroot (); }
+         ;
+.SP
+.B2
+.FG "Beginning parser code" "" 0 PARSER_BEGIN
+\&
+.DE
+d740 37
+@
+
+
+1.46
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.42 2017-10-12 14:15:26-07 - - $"
+a635 23
+.DF L
+.SP
+.B1
+.SP
+.ft CR
+.nf
+     1  int fac (int n) {
+     2     int f = 1;
+     3     while (n > 1) {
+     4        f = f * n;
+     5        n = n - 1;
+     6     }
+     7     return f;
+     8  }
+     9  int n = 1;
+    10  while (n <= 5) {
+    11     puti (fac (n));
+    12     n = n + 1
+    13  }
+.SP
+.B2
+.FG "Example program" "" 0 EXAMPLE_CODE
+.DE
+d777 25
+@
+
+
+1.45
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.44 2017-10-12 14:18:27-07 - - $"
+d636 23
+a801 23
+.DS
+.SP
+.B1
+.SP
+.ft CR
+.nf
+     1  int fac (int n) {
+     2     int f = 1;
+     3     while (n > 1) {
+     4        f = f * n;
+     5        n = n - 1;
+     6     }
+     7     return f;
+     8  }
+     9  int n = 1;
+    10  while (n <= 5) {
+    11     puti (fac (n));
+    12     n = n + 1
+    13  }
+.SP
+.B2
+.FG "Example program" "" 0 EXAMPLE_CODE
+.DE
+@
+
+
+1.44
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.43 2017-10-12 14:17:13-07 - - $"
+d779 1
+a779 1
+.DF L
+d802 1
+a802 1
+.DF L
+@
+
+
+1.43
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.42 2017-10-12 14:15:26-07 - - $"
+a635 84
+.DF L
+.SP
+.B1
+.SP
+.ft CR
+.nf
+     1  int fac (int n) {
+     2     int f = 1;
+     3     while (n > 1) {
+     4        f = f * n;
+     5        n = n - 1;
+     6     }
+     7     return f;
+     8  }
+     9  int n = 1;
+    10  while (n <= 5) {
+    11     puti (fac (n));
+    12     n = n + 1
+    13  }
+.SP
+.B2
+.FG "Example program" "" 0 EXAMPLE_CODE
+.DE
+.DF L
+.B1
+.S C -2
+.SP
+.ft CR
+.nf
+.in \n[Margin_Pi]
+.ds ; |\0\0
+ROOT "" 0.0.0
+\*;FUNCTION "" 0.1.0
+\*;\*;INT "int" 0.1.0
+\*;\*;\*;DECLID "fac" 0.1.4
+\*;\*;PARAM "(" 0.1.8
+\*;\*;\*;INT "int" 0.1.9
+\*;\*;\*;\*;DECLID "n" 0.1.13
+\*;\*;BLOCK "{" 0.1.15
+\*;\*;\*;VARDECL "=" 0.2.9
+\*;\*;\*;\*;INT "int" 0.2.3
+\*;\*;\*;\*;\*;DECLID "f" 0.2.7
+\*;\*;\*;\*;INTCON "1" 0.2.9
+\*;\*;\*;WHILE "while" 0.3.3
+\*;\*;\*;\*;GT ">" 0.3.10
+\*;\*;\*;\*;\*;IDENT "n" 0.3.8
+\*;\*;\*;\*;\*;INTCON "1" 0.3.12
+\*;\*;\*;\*;BLOCK "{" 0.3.14
+\*;\*;\*;\*;\*;'=' "=" 0.4.8
+\*;\*;\*;\*;\*;\*;IDENT "f" 0.4.6
+\*;\*;\*;\*;\*;\*;'*' "*" 0.4.12
+\*;\*;\*;\*;\*;\*;\*;IDENT "f" 0.4.10
+\*;\*;\*;\*;\*;\*;\*;IDENT "n" 0.4.12
+\*;\*;\*;\*;\*;'=' "=" 0.5.8
+\*;\*;\*;\*;\*;\*;IDENT "n" 0.5.6
+\*;\*;\*;\*;\*;\*;'-' "-" 0.5.12
+\*;\*;\*;\*;\*;\*;\*;IDENT "n" 0.5.10
+\*;\*;\*;\*;\*;\*;\*;INTCON "1" 0.5.12
+\*;\*;\*;RETURN "return" 0.7.3
+\*;\*;\*;\*;IDENT "f" 0.7.10
+\*;VARDECL "=" 0.9.6
+\*;\*;INT "int" 0.9.0
+\*;\*;\*;DECLID "n" 0.9.8
+\*;\*;INTCON "1" 0.9.4
+\*;WHILE "while" 0.10.0
+\*;\*;LE "<=" 0.10.9
+\*;\*;\*;IDENT "n" 0.10.7
+\*;\*;\*;INTCON "5" 0.10.12
+\*;\*;BLOCK "{" 0.10.15
+\*;\*;\*;CALL "(" 0.11.3
+\*;\*;\*;\*;IDENT "puti" 0.11.9
+\*;\*;\*;\*;CALL "(" 0.11.13
+\*;\*;\*;\*;\*;IDENT "fac" 0.11.11
+\*;\*;\*;\*;\*;IDENT "n" 0.11.15
+\*;\*;\*;'=' "=" 0.12.5
+\*;\*;\*;\*;IDENT "n" 0.12.3
+\*;\*;\*;\*;'-' "-" 0.12.9
+\*;\*;\*;\*;\*;IDENT "n" 0.12.7
+\*;\*;\*;\*;\*;INTCON "1" 0.12.11
+.SP
+.S C +2
+.B2
+.FG "Example AST" "" 0 EXAMPLE_AST
+.DE
+d779 84
+@
+
+
+1.42
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.41 2017-10-12 14:14:04-07 - - $"
+d659 61
+a862 61
+.DS
+.B1
+.S C -2
+.SP
+.ft CR
+.nf
+.in \n[Margin_Pi]
+.ds ; |\0\0
+ROOT "" 0.0.0
+\*;FUNCTION "" 0.1.0
+\*;\*;INT "int" 0.1.0
+\*;\*;\*;DECLID "fac" 0.1.4
+\*;\*;PARAM "(" 0.1.8
+\*;\*;\*;INT "int" 0.1.9
+\*;\*;\*;\*;DECLID "n" 0.1.13
+\*;\*;BLOCK "{" 0.1.15
+\*;\*;\*;VARDECL "=" 0.2.9
+\*;\*;\*;\*;INT "int" 0.2.3
+\*;\*;\*;\*;\*;DECLID "f" 0.2.7
+\*;\*;\*;\*;INTCON "1" 0.2.9
+\*;\*;\*;WHILE "while" 0.3.3
+\*;\*;\*;\*;GT ">" 0.3.10
+\*;\*;\*;\*;\*;IDENT "n" 0.3.8
+\*;\*;\*;\*;\*;INTCON "1" 0.3.12
+\*;\*;\*;\*;BLOCK "{" 0.3.14
+\*;\*;\*;\*;\*;'=' "=" 0.4.8
+\*;\*;\*;\*;\*;\*;IDENT "f" 0.4.6
+\*;\*;\*;\*;\*;\*;'*' "*" 0.4.12
+\*;\*;\*;\*;\*;\*;\*;IDENT "f" 0.4.10
+\*;\*;\*;\*;\*;\*;\*;IDENT "n" 0.4.12
+\*;\*;\*;\*;\*;'=' "=" 0.5.8
+\*;\*;\*;\*;\*;\*;IDENT "n" 0.5.6
+\*;\*;\*;\*;\*;\*;'-' "-" 0.5.12
+\*;\*;\*;\*;\*;\*;\*;IDENT "n" 0.5.10
+\*;\*;\*;\*;\*;\*;\*;INTCON "1" 0.5.12
+\*;\*;\*;RETURN "return" 0.7.3
+\*;\*;\*;\*;IDENT "f" 0.7.10
+\*;VARDECL "=" 0.9.6
+\*;\*;INT "int" 0.9.0
+\*;\*;\*;DECLID "n" 0.9.8
+\*;\*;INTCON "1" 0.9.4
+\*;WHILE "while" 0.10.0
+\*;\*;LE "<=" 0.10.9
+\*;\*;\*;IDENT "n" 0.10.7
+\*;\*;\*;INTCON "5" 0.10.12
+\*;\*;BLOCK "{" 0.10.15
+\*;\*;\*;CALL "(" 0.11.3
+\*;\*;\*;\*;IDENT "puti" 0.11.9
+\*;\*;\*;\*;CALL "(" 0.11.13
+\*;\*;\*;\*;\*;IDENT "fac" 0.11.11
+\*;\*;\*;\*;\*;IDENT "n" 0.11.15
+\*;\*;\*;'=' "=" 0.12.5
+\*;\*;\*;\*;IDENT "n" 0.12.3
+\*;\*;\*;\*;'-' "-" 0.12.9
+\*;\*;\*;\*;\*;IDENT "n" 0.12.7
+\*;\*;\*;\*;\*;INTCON "1" 0.12.11
+.SP
+.S C +2
+.B2
+.FG "Example AST" "" 0 EXAMPLE_AST
+.DE
+@
+
+
+1.41
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.40 2017-10-12 14:13:39-07 - - $"
+d804 1
+a804 1
+.S -1 -2
+d859 1
+a859 1
+.S +1 +2
+@
+
+
+1.40
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.39 2017-10-12 14:12:52-07 - - $"
+d804 1
+a804 1
+.S -2 -2
+d859 1
+a859 1
+.S +2 +2
+@
+
+
+1.39
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.38 2017-10-12 14:10:58-07 - - $"
+d804 1
+a804 1
+.S -1 -1
+d859 1
+a859 1
+.S +1 +1
+@
+
+
+1.38
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.37 2017-10-12 14:10:05-07 - - $"
+d853 5
+a857 5
+\*;\*;\*;'=' "=" 0.12.8
+\*;\*;\*;\*;IDENT "n" 0.12.6
+\*;\*;\*;\*;'-' "-" 0.12.12
+\*;\*;\*;\*;\*;IDENT "n" 0.12.10
+\*;\*;\*;\*;\*;INTCON "1" 0.12.12
+@
+
+
+1.37
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.36 2017-10-12 14:05:27-07 - - $"
+d642 11
+a652 11
+     1	int fac (int n) {
+     2	   int f = 1;
+     3	   while (n > 1) {
+     4	      f = f * n;
+     5	      n = n - 1;
+     6	   }
+     7	   return f;
+     8	}
+     9	int n = 1;
+    10	while (n <= 5) {
+    11	   puti (fac (n));
+d654 1
+a654 1
+    13	}
+@
+
+
+1.36
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.35 2017-05-10 15:04:54-07 - - $"
+d653 2
+a654 1
+    12	}
+d853 5
+@
+
+
+1.35
+log
+@-
+@
+text
+@d5 1
+a5 1
+.TITLE CMPS-104A Spring\~2017 Project\~3 \
+d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.34 2017-04-20 13:13:30-07 - - $"
+@
+
+
+1.34
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.2 2017-04-20 13:12:34-07 - - $"
+d727 3
+a729 3
+program  : program structdef  { $$ = adopt1 ($1, $2); }
+         | program function   { $$ = adopt1 ($1, $2); }
+         | program statement  { $$ = adopt1 ($1, $2); }
+@
+
+
+1.33
+log
+@-
+@
+text
+@d5 1
+a5 1
+.TITLE CMPS-104A Fall\~2016 Project\~3 \
+d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.32 2016-10-24 12:10:48-07 - - $"
+@
+
+
+1.32
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.31 2016-09-06 13:51:12-07 - - $"
+d174 1
+a174 2
+.RULE basetype *'V void *| *'V char *| *'V int \
+*| *'V string *| *SI TYPEID
+@
+
+
+1.31
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.30 2016-09-06 13:49:16-07 - - $"
+d211 1
+a211 1
+|right|unary|prefix|+\0 -\0 !\0 new\0 ord\0 chr
+@
+
+
+1.30
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.29 2016-09-06 13:48:34-07 - - $"
+d17 1
+a17 1
+.nr Grammar_Pi \n[Pi]*2
+@
+
+
+1.29
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.28 2016-04-19 18:27:00-07 - - $"
+d174 1
+a174 1
+.RULE basetype *'V void *| *'V bool *| *'V char *| *'V int \
+d196 1
+a196 2
+.RULE constant *SI INTCON *| *SI CHARCON *| *SI STRINGCON \
+*| *'V false *| *'V true *| *'V null
+@
+
+
+1.28
+log
+@-
+@
+text
+@d5 1
+a5 1
+.TITLE CMPS-104A Fall\~2015 Project\~3 \
+d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.27 2016-04-19 18:25:52-07 - - $"
+@
+
+
+1.27
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.26 2016-04-19 18:25:31-07 - - $"
+d802 1
+a802 1
+.SP .1i
+d805 1
+d855 1
+@
+
+
+1.26
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.25 2016-04-19 18:25:12-07 - - $"
+d802 1
+a802 1
+\&
+@
+
+
+1.25
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.24 2016-04-19 18:24:47-07 - - $"
+a803 1
+.SP
+@
+
+
+1.24
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.23 2016-04-19 18:24:17-07 - - $"
+a801 1
+.br
+@
+
+
+1.23
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.22 2016-04-19 18:23:32-07 - - $"
+d802 2
+@
+
+
+1.22
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.21 2016-04-19 18:22:28-07 - - $"
+d801 1
+@
+
+
+1.21
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.20 2016-04-19 18:21:21-07 - - $"
+a659 58
+.DF L
+.SP
+.B1
+.SP
+.ft CR
+.nf
+.in \n[Margin_Pi]
+.S -1 -1
+.ds ; |\0\0
+ROOT "" 0.0.0
+\*;FUNCTION "" 0.1.0
+\*;\*;INT "int" 0.1.0
+\*;\*;\*;DECLID "fac" 0.1.4
+\*;\*;PARAM "(" 0.1.8
+\*;\*;\*;INT "int" 0.1.9
+\*;\*;\*;\*;DECLID "n" 0.1.13
+\*;\*;BLOCK "{" 0.1.15
+\*;\*;\*;VARDECL "=" 0.2.9
+\*;\*;\*;\*;INT "int" 0.2.3
+\*;\*;\*;\*;\*;DECLID "f" 0.2.7
+\*;\*;\*;\*;INTCON "1" 0.2.9
+\*;\*;\*;WHILE "while" 0.3.3
+\*;\*;\*;\*;GT ">" 0.3.10
+\*;\*;\*;\*;\*;IDENT "n" 0.3.8
+\*;\*;\*;\*;\*;INTCON "1" 0.3.12
+\*;\*;\*;\*;BLOCK "{" 0.3.14
+\*;\*;\*;\*;\*;'=' "=" 0.4.8
+\*;\*;\*;\*;\*;\*;IDENT "f" 0.4.6
+\*;\*;\*;\*;\*;\*;'*' "*" 0.4.12
+\*;\*;\*;\*;\*;\*;\*;IDENT "f" 0.4.10
+\*;\*;\*;\*;\*;\*;\*;IDENT "n" 0.4.12
+\*;\*;\*;\*;\*;'=' "=" 0.5.8
+\*;\*;\*;\*;\*;\*;IDENT "n" 0.5.6
+\*;\*;\*;\*;\*;\*;'-' "-" 0.5.12
+\*;\*;\*;\*;\*;\*;\*;IDENT "n" 0.5.10
+\*;\*;\*;\*;\*;\*;\*;INTCON "1" 0.5.12
+\*;\*;\*;RETURN "return" 0.7.3
+\*;\*;\*;\*;IDENT "f" 0.7.10
+\*;VARDECL "=" 0.9.6
+\*;\*;INT "int" 0.9.0
+\*;\*;\*;DECLID "n" 0.9.8
+\*;\*;INTCON "1" 0.9.4
+\*;WHILE "while" 0.10.0
+\*;\*;LE "<=" 0.10.9
+\*;\*;\*;IDENT "n" 0.10.7
+\*;\*;\*;INTCON "5" 0.10.12
+\*;\*;BLOCK "{" 0.10.15
+\*;\*;\*;CALL "(" 0.11.3
+\*;\*;\*;\*;IDENT "puti" 0.11.9
+\*;\*;\*;\*;CALL "(" 0.11.13
+\*;\*;\*;\*;\*;IDENT "fac" 0.11.11
+\*;\*;\*;\*;\*;IDENT "n" 0.11.15
+.SP
+.S +1 +1
+.B2
+.FG "Example AST" "" 0 EXAMPLE_AST
+.SP 2v
+.DE
+d801 55
+@
+
+
+1.20
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.19 2016-04-19 18:20:52-07 - - $"
+d716 1
+a716 1
+\&
+@
+
+
+1.19
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.18 2016-04-19 18:20:00-07 - - $"
+d667 1
+a667 1
+.S -.5 -.5
+d713 1
+a713 1
+.S +.5 +.5
+@
+
+
+1.18
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.17 2016-04-19 18:18:07-07 - - $"
+d667 1
+a667 1
+.S -1 -1
+d713 1
+a713 1
+.S +1 +1
+@
+
+
+1.17
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.16 2016-04-14 16:52:21-07 - - $"
+d667 1
+d713 1
+@
+
+
+1.16
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.15 2016-04-14 16:51:07-07 - - $"
+d660 56
+a856 56
+.DF L
+.SP
+.B1
+.SP
+.ft CR
+.nf
+.in \n[Margin_Pi]
+.ds ; |\0\0
+ROOT "" 0.0.0
+\*;FUNCTION "" 0.1.0
+\*;\*;INT "int" 0.1.0
+\*;\*;\*;DECLID "fac" 0.1.4
+\*;\*;PARAM "(" 0.1.8
+\*;\*;\*;INT "int" 0.1.9
+\*;\*;\*;\*;DECLID "n" 0.1.13
+\*;\*;BLOCK "{" 0.1.15
+\*;\*;\*;VARDECL "=" 0.2.9
+\*;\*;\*;\*;INT "int" 0.2.3
+\*;\*;\*;\*;\*;DECLID "f" 0.2.7
+\*;\*;\*;\*;INTCON "1" 0.2.9
+\*;\*;\*;WHILE "while" 0.3.3
+\*;\*;\*;\*;GT ">" 0.3.10
+\*;\*;\*;\*;\*;IDENT "n" 0.3.8
+\*;\*;\*;\*;\*;INTCON "1" 0.3.12
+\*;\*;\*;\*;BLOCK "{" 0.3.14
+\*;\*;\*;\*;\*;'=' "=" 0.4.8
+\*;\*;\*;\*;\*;\*;IDENT "f" 0.4.6
+\*;\*;\*;\*;\*;\*;'*' "*" 0.4.12
+\*;\*;\*;\*;\*;\*;\*;IDENT "f" 0.4.10
+\*;\*;\*;\*;\*;\*;\*;IDENT "n" 0.4.12
+\*;\*;\*;\*;\*;'=' "=" 0.5.8
+\*;\*;\*;\*;\*;\*;IDENT "n" 0.5.6
+\*;\*;\*;\*;\*;\*;'-' "-" 0.5.12
+\*;\*;\*;\*;\*;\*;\*;IDENT "n" 0.5.10
+\*;\*;\*;\*;\*;\*;\*;INTCON "1" 0.5.12
+\*;\*;\*;RETURN "return" 0.7.3
+\*;\*;\*;\*;IDENT "f" 0.7.10
+\*;VARDECL "=" 0.9.6
+\*;\*;INT "int" 0.9.0
+\*;\*;\*;DECLID "n" 0.9.8
+\*;\*;INTCON "1" 0.9.4
+\*;WHILE "while" 0.10.0
+\*;\*;LE "<=" 0.10.9
+\*;\*;\*;IDENT "n" 0.10.7
+\*;\*;\*;INTCON "5" 0.10.12
+\*;\*;BLOCK "{" 0.10.15
+\*;\*;\*;CALL "(" 0.11.3
+\*;\*;\*;\*;IDENT "puti" 0.11.9
+\*;\*;\*;\*;CALL "(" 0.11.13
+\*;\*;\*;\*;\*;IDENT "fac" 0.11.11
+\*;\*;\*;\*;\*;IDENT "n" 0.11.15
+.SP
+.B2
+.FG "Example AST" "" 0 EXAMPLE_AST
+\&
+.DE
+@
+
+
+1.15
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.14 2016-04-14 16:49:46-07 - - $"
+a659 56
+.DF L
+.SP
+.B1
+.SP
+.ft CR
+.nf
+.in \n[Margin_Pi]
+.ds ; |\0\0
+ROOT "" 0.0.0
+\*;FUNCTION "" 0.1.0
+\*;\*;INT "int" 0.1.0
+\*;\*;\*;DECLID "fac" 0.1.4
+\*;\*;PARAM "(" 0.1.8
+\*;\*;\*;INT "int" 0.1.9
+\*;\*;\*;\*;DECLID "n" 0.1.13
+\*;\*;BLOCK "{" 0.1.15
+\*;\*;\*;VARDECL "=" 0.2.9
+\*;\*;\*;\*;INT "int" 0.2.3
+\*;\*;\*;\*;\*;DECLID "f" 0.2.7
+\*;\*;\*;\*;INTCON "1" 0.2.9
+\*;\*;\*;WHILE "while" 0.3.3
+\*;\*;\*;\*;GT ">" 0.3.10
+\*;\*;\*;\*;\*;IDENT "n" 0.3.8
+\*;\*;\*;\*;\*;INTCON "1" 0.3.12
+\*;\*;\*;\*;BLOCK "{" 0.3.14
+\*;\*;\*;\*;\*;'=' "=" 0.4.8
+\*;\*;\*;\*;\*;\*;IDENT "f" 0.4.6
+\*;\*;\*;\*;\*;\*;'*' "*" 0.4.12
+\*;\*;\*;\*;\*;\*;\*;IDENT "f" 0.4.10
+\*;\*;\*;\*;\*;\*;\*;IDENT "n" 0.4.12
+\*;\*;\*;\*;\*;'=' "=" 0.5.8
+\*;\*;\*;\*;\*;\*;IDENT "n" 0.5.6
+\*;\*;\*;\*;\*;\*;'-' "-" 0.5.12
+\*;\*;\*;\*;\*;\*;\*;IDENT "n" 0.5.10
+\*;\*;\*;\*;\*;\*;\*;INTCON "1" 0.5.12
+\*;\*;\*;RETURN "return" 0.7.3
+\*;\*;\*;\*;IDENT "f" 0.7.10
+\*;VARDECL "=" 0.9.6
+\*;\*;INT "int" 0.9.0
+\*;\*;\*;DECLID "n" 0.9.8
+\*;\*;INTCON "1" 0.9.4
+\*;WHILE "while" 0.10.0
+\*;\*;LE "<=" 0.10.9
+\*;\*;\*;IDENT "n" 0.10.7
+\*;\*;\*;INTCON "5" 0.10.12
+\*;\*;BLOCK "{" 0.10.15
+\*;\*;\*;CALL "(" 0.11.3
+\*;\*;\*;\*;IDENT "puti" 0.11.9
+\*;\*;\*;\*;CALL "(" 0.11.13
+\*;\*;\*;\*;\*;IDENT "fac" 0.11.11
+\*;\*;\*;\*;\*;IDENT "n" 0.11.15
+.SP
+.B2
+.FG "Example AST" "" 0 EXAMPLE_AST
+\&
+.DE
+d801 56
+@
+
+
+1.14
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.13 2016-04-14 16:48:27-07 - - $"
+d856 1
+@
+
+
+1.13
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.12 2016-04-14 16:45:53-07 - - $"
+d214 1
+a214 1
+\fIe\fP[\fIe\fP]\0 \fIe\fP.\fIi\fP\0 \fIf\fP(...)
+@
+
+
+1.12
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.11 2016-04-14 16:44:56-07 - - $"
+d214 1
+a214 1
+\fIe\fP[\fIe\fP]\0 \fIe\fP.\fIi\fP\0 \fIf\fP(\fI...\fP)
+@
+
+
+1.11
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.10 2016-04-14 16:44:28-07 - - $"
+d164 1
+@
+
+
+1.10
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.9 2016-04-14 16:44:10-07 - - $"
+d122 1
+@
+
+
+1.9
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.8 2016-04-14 16:43:57-07 - - $"
+d17 1
+a17 1
+.nr Grammar_Pi \n[Pi]*5/2
+@
+
+
+1.8
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.7 2016-04-14 16:43:31-07 - - $"
+d17 1
+a17 1
+.nr Grammar_Pi \n[Pi]*11/4
+@
+
+
+1.7
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.6 2016-04-14 16:41:58-07 - - $"
+d17 2
+a18 2
+.nr Grammar_Pi \n[Pi]*2
+.nr Margin_Pi \n[Pi]/4
+@
+
+
+1.6
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.5 2016-04-14 16:41:39-07 - - $"
+d130 1
+a130 1
+Brackets and three dots mean that the symbol(s)
+d135 1
+a135 1
+Symbols representing themselves
+d140 1
+a140 1
+Nonterminal symbols in the grammar are written in lower case Roman.
+d142 1
+a142 1
+Token classes with lexical information
+@
+
+
+1.5
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.4 2016-04-14 16:41:21-07 - - $"
+d17 1
+a17 1
+.nr Grammar_Pi \n[Pi]*5/3
+@
+
+
+1.4
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.3 2016-04-14 16:40:39-07 - - $"
+d17 1
+a17 1
+.nr Grammar_Pi \n[Pi]*3/2
+@
+
+
+1.3
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.2 2016-04-14 16:39:21-07 - - $"
+d17 2
+a18 2
+.nr Grammar_Pi \n[Pi]*2
+.nr Margin_Pi \n[Pi]/3
+@
+
+
+1.2
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.1 2016-04-14 16:36:01-07 - - $"
+d18 4
+a21 4
+.nr Margin_Pi \n[Pi]/2
+.ds STICK \s+3\v'+1p'|\v'-1p'\s-3
+.ds OBRACK \s+3[\s-3
+.ds CBRACK \s+3]\s-3
+@
+
+
+1.1
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg3-parser.mm,v 1.2 2016-04-14 16:19:01-07 - - $"
+d17 1
+a17 1
+.nr Grammar_Pi \n[Pi]*11/4
+@

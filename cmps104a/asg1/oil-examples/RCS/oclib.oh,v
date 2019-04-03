@@ -1,0 +1,73 @@
+head	1.1;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.1
+date	2011.11.19.01.18.35;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@-
+@
+text
+@// $Id: oclib.oh,v 1.21 2011-11-18 17:14:45-08 - - $
+
+#ifndef __OCLIB_OH__
+#define __OCLIB_OH__
+
+#ifdef __OCLIB_C__
+    typedef unsigned char ubyte;
+#   define __(ID)         __##ID
+#   define NONE__         void
+#   define ubyte          unsigned char
+#   define VOID__(ID)     void __##ID
+#   define BOOL__(ID)     ubyte __##ID
+#   define CHAR__(ID)     ubyte __##ID
+#   define INT__(ID)      int __##ID
+#   define STRING__(ID)   ubyte *__##ID
+#   define STRING__S(ID)  ubyte **__##ID
+#   define null           0
+#   define false          0
+#   define true           1
+    void *xcalloc (int nelem, int size);
+#else
+#   define EOF            (-1)
+#   define __(ID)         ID
+#   define NONE__
+#   define VOID__(ID)     void ID
+#   define BOOL__(ID)     bool ID
+#   define CHAR__(ID)     char ID
+#   define INT__(ID)      int ID
+#   define STRING__(ID)   string ID
+#   define STRING__S(ID)  string[] ID
+    VOID__ (__assert_fail) \
+           (STRING__ (expr), STRING__ (file), INT__ (line));
+#endif
+
+VOID__ (putb) (BOOL__ (b));
+VOID__ (putc) (CHAR__ (c));
+VOID__ (puti) (INT__ (i));
+VOID__ (puts) (STRING__ (s));
+VOID__ (endl) (NONE__);
+INT__ (getc) (NONE__);
+STRING__ (getw) (NONE__);
+STRING__ (getln) (NONE__);
+STRING__S (getargv) (NONE__);
+VOID__ (exit) (int status);
+
+#define assert(expr) \
+        {if (! (expr)) __(__assert_fail) (#expr, __FILE__, __LINE__);}
+
+#endif
+
+@

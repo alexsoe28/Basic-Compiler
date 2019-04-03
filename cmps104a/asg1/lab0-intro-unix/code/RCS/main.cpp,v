@@ -1,0 +1,62 @@
+head	1.2;
+access;
+symbols;
+locks;
+comment	@// @;
+
+
+1.2
+date	2018.09.26.23.37.28;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2018.04.02.22.31.00;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@-
+@
+text
+@// $Id: main.cpp,v 1.1 2018-04-02 15:31:00-07 - - $
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "extern.h"
+
+void yyerror (const char* error) {
+   printf ("%s\n", error);
+}
+
+int main () {
+   yyparse();
+   return EXIT_SUCCESS;
+}
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: main.cpp,v 1.5 2018-04-02 15:30:53-07 - - $
+a7 2
+int status = EXIT_SUCCESS;
+
+a9 1
+   status = EXIT_FAILURE;
+d14 1
+a14 1
+   return status;
+@

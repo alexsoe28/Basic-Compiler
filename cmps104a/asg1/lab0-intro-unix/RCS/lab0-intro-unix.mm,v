@@ -1,0 +1,496 @@
+head	1.14;
+access;
+symbols;
+locks;
+comment	@.\" @;
+
+
+1.14
+date	2019.02.26.22.16.33;	author -;	state -;
+branches;
+next	1.13;
+
+1.13
+date	2018.08.22.00.48.22;	author -;	state -;
+branches;
+next	1.12;
+
+1.12
+date	2018.04.06.22.19.50;	author -;	state -;
+branches;
+next	1.11;
+
+1.11
+date	2018.04.02.22.39.56;	author -;	state -;
+branches;
+next	1.10;
+
+1.10
+date	2018.04.02.22.39.23;	author -;	state -;
+branches;
+next	1.9;
+
+1.9
+date	2018.04.02.22.39.01;	author -;	state -;
+branches;
+next	1.8;
+
+1.8
+date	2018.04.02.22.38.26;	author -;	state -;
+branches;
+next	1.7;
+
+1.7
+date	2018.04.02.22.18.10;	author -;	state -;
+branches;
+next	1.6;
+
+1.6
+date	2018.04.02.22.16.43;	author -;	state -;
+branches;
+next	1.5;
+
+1.5
+date	2018.04.02.22.15.59;	author -;	state -;
+branches;
+next	1.4;
+
+1.4
+date	2018.04.02.22.15.31;	author -;	state -;
+branches;
+next	1.3;
+
+1.3
+date	2018.04.02.22.14.37;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2018.04.02.22.13.53;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2018.04.02.22.10.49;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.14
+log
+@-
+@
+text
+@.so Tmac.mm-etc
+.if t .Newcentury-fonts
+.INITR* \n[.F]
+.SIZE 12 14
+.TITLE Lab0 "Introduction to Unix"
+.RCS "$Id: lab0-intro-unix.mm,v 1.13 2018-08-21 17:48:22-07 - - $"
+.PWD
+.URL
+.P
+It is assumed that everyone in class is familiar with Unix (Linux),
+the UCSC
+.V= submit
+command, and using
+.V= Makefile s.
+.P
+TAs should review the use of the Linux command line for those
+few students who might not be familiar with it.  All programming
+projects in this course will be done on the
+.V= unix.ucsc.edu
+servers or the workstations in BE/105.
+.P
+Most students will, of course, develop on their own computers.
+However, the production environment will be the Linux servers,
+and all code must run there.
+.P
+Use of the
+.V= submit
+command\(::
+All programs will be submitted via submit on the campus
+Linux hosts\(::
+.VTCODE* 1 "submit cmps104a-wm.s19 lab0 \fIfiles\|.\|.\|.\fP"
+Substitute for lab0 the names of later assignments.
+.P
+Accessing the command line from home.
+.VTCODE* 1 "ssh -X \fIusername\fP@@unix.ucsc.edu"
+The option
+.V= -X
+works if you are doing X11 forwarding.
+.P
+Using
+.V= make \(::
+Write a simple program in C++ using several modules,
+header files, and separate compilation.
+Write a
+.V= Makefile
+that can build it.
+.P
+Submit the source code and
+.V= Makefile
+as
+.V= lab0 .
+.P
+While we will be using C++ in this course, all students are
+expected to know C (prerequisite),
+and may use their own discretion as to how much of C++
+to use and how much just to code in C.
+.P
+Simplified, source code files should have the suffices
+.V= \&.h
+or
+.V= \&.cpp ,
+and we use g++ to compile source code.
+It is recommended that the containers from the standard library
+be used instead of coding containers yourself.
+.P
+This lab will not be graded.
+There is no credit for it.
+If the above interaction with Linux is not completely obvious,
+attend the first couple of labs to be brought up to speed by the TA.
+.P
+See the
+.V= code/
+subdirectory for the solution to this lab and a sample of how
+to mix
+.V= flex ,
+.V= bison ,
+and C++.
+.FINISH
+@
+
+
+1.13
+log
+@-
+@
+text
+@d6 1
+a6 1
+.RCS "$Id: lab0-intro-unix.mm,v 1.12 2018-04-06 15:19:50-07 - - $"
+d31 1
+a31 1
+.VTCODE* 1 "submit cmps104a-wm.f18 lab0 \fIfiles\|.\|.\|.\fP"
+@
+
+
+1.12
+log
+@-
+@
+text
+@d6 1
+a6 1
+.RCS "$Id: lab0-intro-unix.mm,v 1.11 2018-04-02 15:39:56-07 - - $"
+d31 1
+a31 1
+.VTCODE* 1 "submit cmps104a-wm.s18 lab0 \fIfiles\|.\|.\|.\fP"
+@
+
+
+1.11
+log
+@-
+@
+text
+@d6 1
+a6 1
+.RCS "$Id: lab0-intro-unix.mm,v 1.10 2018-04-02 15:39:23-07 - - $"
+d9 1
+a9 1
+.SP
+d15 1
+a15 1
+.SP
+d21 1
+a21 1
+.SP
+d25 1
+a25 1
+.SP
+d33 1
+a33 1
+.SP
+d39 1
+a39 1
+.SP
+d47 1
+a47 1
+.SP
+d52 1
+a52 1
+.SP
+d57 1
+a57 1
+.SP
+d65 1
+a65 1
+.SP
+d70 1
+a70 1
+.SP
+@
+
+
+1.10
+log
+@-
+@
+text
+@d6 1
+a6 1
+.RCS "$Id: lab0-intro-unix.mm,v 1.9 2018-04-02 15:39:01-07 - - $"
+d78 1
+@
+
+
+1.9
+log
+@-
+@
+text
+@d6 1
+a6 1
+.RCS "$Id: lab0-intro-unix.mm,v 1.8 2018-04-02 15:38:26-07 - - $"
+d35 1
+a35 1
+.VTCODE* 1 "ssh -X username@@unix.ucsc.edu"
+@
+
+
+1.8
+log
+@-
+@
+text
+@d6 1
+a6 1
+.RCS "$Id: lab0-intro-unix.mm,v 1.7 2018-04-02 15:18:10-07 - - $"
+d28 1
+a28 1
+command.
+d41 1
+a41 1
+.V= make .
+@
+
+
+1.7
+log
+@-
+@
+text
+@d6 1
+a6 1
+.RCS "$Id: lab0-intro-unix.mm,v 1.6 2018-04-02 15:16:43-07 - - $"
+d9 1
+a9 1
+.P
+d15 1
+a15 1
+.P
+d21 1
+a21 1
+.P
+d25 1
+a25 1
+.P
+d31 1
+a31 1
+.VTCODE* 1 "submit cmps104a-wm.s18 lab0 files..."
+d33 1
+a33 1
+.P
+d39 1
+a39 1
+.P
+d47 1
+a47 1
+.P
+d52 1
+a52 1
+.P
+d57 1
+a57 1
+.P
+d65 1
+a65 1
+.P
+d70 1
+a70 1
+.P
+@
+
+
+1.6
+log
+@-
+@
+text
+@d6 1
+a6 1
+.RCS "$Id: lab0-intro-unix.mm,v 1.5 2018-04-02 15:15:59-07 - - $"
+d70 8
+@
+
+
+1.5
+log
+@-
+@
+text
+@d6 1
+a6 1
+.RCS "$Id: lab0-intro-unix.mm,v 1.4 2018-04-02 15:15:31-07 - - $"
+d25 1
+a25 2
+.ALX 1
+.LI
+d31 1
+a31 1
+.TVCODE* 0 "submit cmps104a-wm.s18 lab0 files..."
+d33 1
+a33 1
+.LI
+d35 1
+a35 1
+.VTCODE* 0 "ssh -X username@@unix.ucsc.edu"
+d39 1
+a39 1
+.LI
+d47 1
+a47 1
+.LI
+d52 1
+a52 1
+.LI
+d57 1
+a57 1
+.LI
+d65 1
+a65 1
+.LI
+a69 1
+.LE
+@
+
+
+1.4
+log
+@-
+@
+text
+@d6 1
+a6 1
+.RCS "$Id: lab0-intro-unix.mm,v 1.3 2018-04-02 15:14:37-07 - - $"
+d53 1
+a53 1
+.P
+@
+
+
+1.3
+log
+@-
+@
+text
+@d6 1
+a6 1
+.RCS "$Id: lab0-intro-unix.mm,v 1.2 2018-04-02 15:13:53-07 - - $"
+d45 4
+a48 2
+Write a Makefile that can build it.
+
+d58 1
+a58 1
+.P
+d65 1
+a65 1
+ be used instead of coding containers yourself.
+@
+
+
+1.2
+log
+@-
+@
+text
+@d6 1
+a6 1
+.RCS "$Id: lab0-intro-unix.mm,v 1.1 2018-04-02 15:10:49-07 - - $"
+d69 1
+a69 2
+.SP
+$Id: lab0-intro-unix.mm,v 1.1 2018-04-02 15:10:49-07 - - $
+@
+
+
+1.1
+log
+@-
+@
+text
+@d6 1
+a6 1
+.RCS "$Id$"
+d10 5
+a14 2
+It is assumed that everyone in class is familiar with Unix
+(Linux), the UCSC submit command, and using Makefiles.
+d18 2
+a19 1
+projects in this course will be done on the unix.ucsc.edu
+d27 3
+a29 2
+Use of the submit command.
+
+d31 2
+a32 4
+Linux hosts:
+
+submit cmps104a-wm.s18 lab0 files...
+
+d36 4
+a39 5
+
+ssh -X username@@unix.ucsc.edu
+
+The option -X works if you are doing X11 forwarding.
+
+d41 11
+a51 8
+Using make
+
+Write a simple program in C++ using several modules, header
+files, and separate compilation.  Write a Makefile that can
+build it.
+
+Submit the source code and Makefile as lab0.
+
+d53 11
+a63 9
+expected to know C (prerequisite), and may use their own
+discretion as to how much of C++ to use and how much just to
+code in C.
+
+Simplified, source code files should have the suffices .h or
+.cpp, and we use g++ to compile source code.  It is recommended
+that the containers from the STL be used instead of coding
+containers yourself.
+
+d65 6
+a70 7
+Not graded.
+
+This lab will not be graded.  There is no credit for it.  If the
+above interaction with Linux is not completely obvious, attend
+the first couple of labs to be brought up to speed by the TA.
+
+$Id: lab0-intro-unix.html,v 1.4 2018-03-26 16:06:12-07 - - $
+@

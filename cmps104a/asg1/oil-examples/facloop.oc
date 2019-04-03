@@ -1,0 +1,21 @@
+// $Id: facloop.oc,v 1.2 2011-11-18 17:18:35-08 - - $
+//
+// Function uses a loop to compute factorial.
+//
+
+#include "oclib.oh"
+
+int fac (int n) {
+   int f = 1;
+   while (n > 1) {
+      f = f * n;
+      n = n - 1;
+   }
+   return f;
+}
+
+int n = 1;
+while (n <= 5) {
+   puti (fac (n));
+}
+

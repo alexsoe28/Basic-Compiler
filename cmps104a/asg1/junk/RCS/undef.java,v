@@ -1,0 +1,32 @@
+head	1.1;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.1
+date	2011.11.15.04.35.25;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@-
+@
+text
+@class undef {
+   static int a = f();
+   static int f() {
+      return a;
+   }
+   public static void main (String[] args) {
+      System.out.println (a);
+   }
+}
+@

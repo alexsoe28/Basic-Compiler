@@ -1,0 +1,173 @@
+head	1.7;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.7
+date	2018.11.06.22.43.05;	author -;	state -;
+branches;
+next	1.6;
+
+1.6
+date	2018.04.17.23.55.18;	author -;	state -;
+branches;
+next	1.5;
+
+1.5
+date	2018.04.03.21.55.47;	author -;	state -;
+branches;
+next	1.4;
+
+1.4
+date	2018.03.30.17.19.09;	author -;	state -;
+branches;
+next	1.3;
+
+1.3
+date	2018.03.30.00.46.39;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2018.03.30.00.44.54;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2011.11.02.05.02.19;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.7
+log
+@-
+@
+text
+@// $Id: 93-semantics.oc,v 1.6 2018-04-17 16:55:18-07 - - $
+// This code should scan and parse correctly,
+// but fail to type check.
+int[] a = null;
+int[] b = null;
+
+void[] f() {}; // can't have void[]
+
+int main() {
+   int c = a + b; // can't add arrays
+   void n = null; // can't have void vars
+   bool x = a < b; // can't compare pointers <
+   bool y = a==b; // this is ok
+   return "foobar";
+}
+
+@
+
+
+1.6
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: 93-semantics.oc,v 1.5 2018-04-03 14:55:47-07 - - $
+d7 2
+a10 1
+   void[] f() {}; // can't hae void[]
+@
+
+
+1.5
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: 93-semantics.oc,v 1.4 2018-03-30 10:19:09-07 - - $
+d13 1
+@
+
+
+1.4
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: 93-semantics.oc,v 1.1 2011-11-01 22:02:19-07 - - $
+d7 1
+a7 1
+void main() {
+@
+
+
+1.3
+log
+@-
+@
+text
+@d1 5
+a5 5
+//()$Id: 93-semantics.oc,v 1.2 2018-03-29 17:44:54-07 - - $
+//()This code should scan and parse correctly,
+//()but fail to type check.
+int[]()a = null;
+int[]()b = null;
+d7 6
+a12 6
+void()main() {
+()  int c = a + b; // can't add arrays
+()  void[] f() {}; // can't hae void[]
+()  void n = null; // can't have void vars
+()  bool x = a < b; // can't compare pointers <
+()  bool y = a==b; // this is ok
+@
+
+
+1.2
+log
+@-
+@
+text
+@d1 5
+a5 5
+// $Id: 93-semantics.oc,v 1.1 2011-11-01 22:02:19-07 - - $
+// This code should scan and parse correctly,
+// but fail to type check.
+int[] a = null;
+int[] b = null;
+d7 6
+a12 6
+void main() {
+   int c = a + b; // can't add arrays
+   void[] f() {}; // can't hae void[]
+   void n = null; // can't have void vars
+   bool x = a < b; // can't compare pointers <
+   bool y = a==b; // this is ok
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id$
+d6 9
+a14 5
+int c = a + b; // can't add arrays
+void[] f() {}; // can't hae void[]
+void n = null; // can't have void vars
+bool x = a < b; // can't compare pointers <
+bool y = a==b; // this is ok
+@

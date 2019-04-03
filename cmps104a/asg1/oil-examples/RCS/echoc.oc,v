@@ -1,0 +1,35 @@
+head	1.1;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.1
+date	2011.11.19.01.18.35;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@-
+@
+text
+@// $Id: 14-ocecho.oc,v 1.1 2011-11-16 20:29:54-08 - - $
+
+#include "oclib.oh"
+
+string[] argv = getargv ();
+int argi = 1;
+while (argv[argi] != null) {
+   if (argi > 1) putc (' ');
+   puts (argv[argi]);
+}
+endl ();
+
+@

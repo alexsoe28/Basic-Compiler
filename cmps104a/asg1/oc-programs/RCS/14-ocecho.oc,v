@@ -1,0 +1,220 @@
+head	1.9;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.9
+date	2018.04.17.23.55.18;	author -;	state -;
+branches;
+next	1.8;
+
+1.8
+date	2018.04.06.20.16.02;	author -;	state -;
+branches;
+next	1.7;
+
+1.7
+date	2018.04.03.22.51.25;	author -;	state -;
+branches;
+next	1.6;
+
+1.6
+date	2018.04.03.21.55.47;	author -;	state -;
+branches;
+next	1.5;
+
+1.5
+date	2018.03.30.17.19.09;	author -;	state -;
+branches;
+next	1.4;
+
+1.4
+date	2018.03.30.00.46.39;	author -;	state -;
+branches;
+next	1.3;
+
+1.3
+date	2018.03.30.00.44.54;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2011.11.17.07.08.30;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2011.11.17.04.29.54;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.9
+log
+@-
+@
+text
+@// $Id: 14-ocecho.oc,v 1.8 2018-04-06 13:16:02-07 - - $
+
+#include "oclib.h"
+
+int main(int argc, string[] argv) {
+   int argi = 1;
+   while (argi < argc) {
+      if (argi > 1) putchar (' ');
+      putstr (argv[argi]);
+      argi = argi + 1;
+   }
+   putstr ("\n");
+   return EXIT_SUCCESS;
+}
+
+@
+
+
+1.8
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: 14-ocecho.oc,v 1.7 2018-04-03 15:51:25-07 - - $
+d3 1
+a3 1
+#include "oclib.oh"
+d13 1
+@
+
+
+1.7
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: 14-ocecho.oc,v 1.6 2018-04-03 14:55:47-07 - - $
+d8 2
+a9 2
+      if (argi > 1) putc (' ');
+      puts (argv[argi]);
+d12 1
+a12 1
+   putc ('\n');
+@
+
+
+1.6
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: 14-ocecho.oc,v 1.5 2018-03-30 10:19:09-07 - - $
+d12 1
+a12 1
+   endl();
+@
+
+
+1.5
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: 14-ocecho.oc,v 1.2 2011-11-16 23:08:30-08 - - $
+d5 1
+a5 1
+void main(int argc, string[] argv) {
+@
+
+
+1.4
+log
+@-
+@
+text
+@d1 1
+a1 1
+//()$Id: 14-ocecho.oc,v 1.3 2018-03-29 17:44:54-07 - - $
+d3 1
+a3 1
+#include()"oclib.oh"
+d5 8
+a12 8
+void()main (int argc, string[] argv) {
+()  int argi = 1;
+()  while (argi < argc) {
+()     if (argi > 1) putc (' ');
+()     puts (argv[argi]);
+()     argi = argi + 1;
+()  }
+()  endl();
+@
+
+
+1.3
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: 14-ocecho.oc,v 1.2 2011-11-16 23:08:30-08 - - $
+d3 1
+a3 1
+#include "oclib.oh"
+d5 8
+a12 8
+void main (int argc, string[] argv) {
+   int argi = 1;
+   while (argi < argc) {
+      if (argi > 1) putc (' ');
+      puts (argv[argi]);
+      argi = argi + 1;
+   }
+   endl();
+@
+
+
+1.2
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: 14-ocecho.oc,v 1.1 2011-11-16 20:29:54-08 - - $
+d5 8
+a12 6
+string[] argv = getargv ();
+int argi = 1;
+while (argv[argi] != null) {
+   if (argi > 1) putc (' ');
+   puts (argv[argi]);
+   argi = argi + 1;
+a13 1
+endl ();
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id$
+d10 1
+@

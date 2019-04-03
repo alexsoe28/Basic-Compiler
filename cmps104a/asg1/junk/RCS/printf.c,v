@@ -1,0 +1,48 @@
+head	1.2;
+access;
+symbols;
+locks;
+comment	@ * @;
+
+
+1.2
+date	2011.11.17.06.08.38;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2011.11.17.06.08.20;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@-
+@
+text
+@void printf (char *s, int n) {
+   puts (s);
+   putchar (n);
+}
+int main () {
+   printf ("%s",65);
+}
+@
+
+
+1.1
+log
+@-
+@
+text
+@a0 3
+int main () {
+   printf ("%s",65);
+}
+d5 3
+@

@@ -1,0 +1,11 @@
+#!/bin/sh
+for file in bar.cpp extern.c foo.c
+do
+   case $file in
+      *.c) cc -c $file;;
+      *.cpp) g++ -c $file;;
+   esac
+   echo ======== $file ========
+   cat -nv $file
+   nm `echo $file | sed 's/\..*/.o/'`
+done

@@ -1,0 +1,59 @@
+head	1.3;
+access;
+symbols;
+locks;
+comment	@ * @;
+
+
+1.3
+date	2011.11.03.04.40.04;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2011.11.03.04.39.50;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2011.11.03.04.38.39;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@-
+@
+text
+@void f (int x) {
+   int a;
+   if (1) { int a; } else {int a; {int a;}}
+}
+@
+
+
+1.2
+log
+@-
+@
+text
+@d3 1
+a3 1
+   if (1) { int a; } else {int a; }
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 1
+a1 1
+void f (int a) {
+@

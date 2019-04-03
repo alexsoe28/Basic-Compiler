@@ -1,0 +1,16 @@
+.\" references for ./asg4-symbols-types
+.ds qrf*ref-TYPECHECK-hn 2.3
+.ds qrf*ref-TYPECHECK-pn 3
+.ds qrf*ref-TYPECHECK-xx 1
+.ds qrf*ref-SYMBOL_NODE-hn 2.4
+.ds qrf*ref-SYMBOL_NODE-pn 5
+.ds qrf*ref-SYMBOL_NODE-xx 2
+.ds qrf*ref-SYM_EXAMPLE-hn 5.
+.ds qrf*ref-SYM_EXAMPLE-pn 8
+.ds qrf*ref-SYM_EXAMPLE-xx 3
+.ds qrf*ref-SYM_TABLE-hn 5.
+.ds qrf*ref-SYM_TABLE-pn 8
+.ds qrf*ref-SYM_TABLE-xx 4
+.ds qrf*ref-END-PNR-hn 
+.ds qrf*ref-END-PNR-pn 8
+.ds qrf*ref-END-PNR-xx 8

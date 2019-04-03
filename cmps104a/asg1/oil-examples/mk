@@ -1,0 +1,7 @@
+#!/bin/sh -x
+# $Id: mk,v 1.2 2011-11-17 21:52:41-08 - - $
+cid +0 ocl *.oc
+ocl echoc facloop facrec strcmp
+cpp oclib.oh >oclib.oh-oc-header
+cpp -D__OCLIB_C__ oclib.oh >oclib.oh-c-header
+mkpspdf Listing.ps oclib.oh* oclib.c *.oc *.oil

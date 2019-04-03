@@ -1,0 +1,57 @@
+head	1.1;
+access;
+symbols;
+locks;
+comment	@ * @;
+
+
+1.1
+date	2017.10.26.22.07.21;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@-
+@
+text
+@%{
+// $Id: jamscanner.l,v 1.5 2014-10-24 16:34:59-07 - - $
+
+#include <stdio.h>
+
+#define YY_USER_ACTION { printf ("token=\"%s\" - ", yytext); }
+
+%}
+
+%option 8bit
+%option debug
+%option nobackup
+%option nodefault
+%option noinput
+%option nounput
+%option noyywrap
+%option warn
+
+STRING   (\"([^\\"\n]|\\[\\'"0nt])*\")
+
+%%
+
+{STRING}  { printf ("string=\"%s\"\n", yytext); }
+"+"       { printf ("+\n"); }
+" \t\n"   { }
+.         { printf ("other \"%c\"\n", yytext);
+
+%%
+
+int main() {
+   yy_flex_debug = 0;
+   while (yylex());
+   return 0;
+}
+@

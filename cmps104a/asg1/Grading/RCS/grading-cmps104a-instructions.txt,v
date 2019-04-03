@@ -1,0 +1,69 @@
+head	1.1;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.1
+date	2018.12.07.02.40.22;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@-
+@
+text
+@
+FOR STUDENTS WORKING ALONE, OR FOR THE SUBMITTING PARTNER:
+
+1. Copy all files from ../.score into student's directory.
+
+2. Run mk.build and mk.tests, then determine which project
+   the student has submitted.
+
+   if      *.oil files generated - grade according to SCORE.asg5
+   else if *.sym files generated - grade according to SCORE.asg4
+   else if *.ast files generated - grade according to SCORE.asg3
+   else if *.tok files generated - grade according to SCORE.asg2
+   else    *.str files generated - grade according to SCORE.asg1
+
+   DELETE SCORE.asg? files that are not relevant to the grading.
+   Only one SCORE.asg? file should be present when grading.
+
+3. If mk.build failed, look at the code to determine what 
+   modules have been attempted, and grade the SOURCE CODE
+   section with the appropriate SCORE.asg? file.
+   In that case, assign 0 to PROGRAM TESTING.
+
+4. If pair programming, grade according to SCORE.pair and
+   deduct points from that file and enter into the SCORE.asg?
+   that remains.
+
+5. ln -s SCORE.asg? -> SCORE
+   That is the SCORE.asg file that remains should be a local
+   symlink to SCORE (not an absolute symlink).
+
+FOR PARTNERS:
+
+Grade only one partner of the pair.
+For the non-submitting partner, make TWO symlinks:
+   SCORE.asg? -> ../(partner)/SCORE.asg?
+   SOCRE -> ../(partner)/SCORE
+
+AFTER GRADING:
+
+cd asg3
+ls -la | wc -l
+ls -la */SCORE.asg? | wc -l
+ls -la */SCORE | wc -l
+should all show the same number of lines.
+
+$Id: instructions-cmps104a-grading.txt,v 1.1 2018-11-27 14:43:08-08 - - $
+@

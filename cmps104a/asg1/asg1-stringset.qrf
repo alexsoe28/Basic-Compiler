@@ -1,0 +1,7 @@
+.\" references for ./asg1-stringset
+.ds qrf*ref-HASH_OUTPUT-hn 2.
+.ds qrf*ref-HASH_OUTPUT-pn 2
+.ds qrf*ref-HASH_OUTPUT-xx 1
+.ds qrf*ref-END-PNR-hn 
+.ds qrf*ref-END-PNR-pn 4
+.ds qrf*ref-END-PNR-xx 4

@@ -1,0 +1,1542 @@
+head	1.49;
+access;
+symbols;
+locks;
+comment	@.\" @;
+
+
+1.49
+date	2018.10.09.19.04.54;	author -;	state -;
+branches;
+next	1.48;
+
+1.48
+date	2018.10.09.19.02.13;	author -;	state -;
+branches;
+next	1.47;
+
+1.47
+date	2018.10.09.19.00.49;	author -;	state -;
+branches;
+next	1.46;
+
+1.46
+date	2018.10.09.19.00.00;	author -;	state -;
+branches;
+next	1.45;
+
+1.45
+date	2018.10.09.18.59.42;	author -;	state -;
+branches;
+next	1.44;
+
+1.44
+date	2018.10.09.18.59.17;	author -;	state -;
+branches;
+next	1.43;
+
+1.43
+date	2018.10.09.18.58.03;	author -;	state -;
+branches;
+next	1.42;
+
+1.42
+date	2018.10.09.18.56.15;	author -;	state -;
+branches;
+next	1.41;
+
+1.41
+date	2018.10.09.18.52.00;	author -;	state -;
+branches;
+next	1.40;
+
+1.40
+date	2018.10.09.18.51.36;	author -;	state -;
+branches;
+next	1.39;
+
+1.39
+date	2018.10.08.22.26.06;	author -;	state -;
+branches;
+next	1.38;
+
+1.38
+date	2018.10.08.22.24.57;	author -;	state -;
+branches;
+next	1.37;
+
+1.37
+date	2018.04.03.21.53.55;	author -;	state -;
+branches;
+next	1.36;
+
+1.36
+date	2018.03.30.00.30.41;	author -;	state -;
+branches;
+next	1.35;
+
+1.35
+date	2018.03.30.00.30.21;	author -;	state -;
+branches;
+next	1.34;
+
+1.34
+date	2018.03.07.22.33.11;	author -;	state -;
+branches;
+next	1.33;
+
+1.33
+date	2017.10.11.21.26.22;	author -;	state -;
+branches;
+next	1.32;
+
+1.32
+date	2017.10.11.21.25.02;	author -;	state -;
+branches;
+next	1.31;
+
+1.31
+date	2017.10.10.23.41.27;	author -;	state -;
+branches;
+next	1.30;
+
+1.30
+date	2017.10.10.23.39.38;	author -;	state -;
+branches;
+next	1.29;
+
+1.29
+date	2017.10.10.23.39.22;	author -;	state -;
+branches;
+next	1.28;
+
+1.28
+date	2017.10.10.23.38.44;	author -;	state -;
+branches;
+next	1.27;
+
+1.27
+date	2017.10.10.23.37.47;	author -;	state -;
+branches;
+next	1.26;
+
+1.26
+date	2017.10.10.23.37.34;	author -;	state -;
+branches;
+next	1.25;
+
+1.25
+date	2017.09.27.19.29.53;	author -;	state -;
+branches;
+next	1.24;
+
+1.24
+date	2017.09.27.19.28.25;	author -;	state -;
+branches;
+next	1.23;
+
+1.23
+date	2017.09.27.19.27.35;	author -;	state -;
+branches;
+next	1.22;
+
+1.22
+date	2017.09.27.19.25.45;	author -;	state -;
+branches;
+next	1.21;
+
+1.21
+date	2017.04.07.21.26.08;	author -;	state -;
+branches;
+next	1.20;
+
+1.20
+date	2017.04.07.21.25.10;	author -;	state -;
+branches;
+next	1.19;
+
+1.19
+date	2017.04.07.21.22.22;	author -;	state -;
+branches;
+next	1.18;
+
+1.18
+date	2017.04.07.19.59.21;	author -;	state -;
+branches;
+next	1.17;
+
+1.17
+date	2017.04.07.19.58.21;	author -;	state -;
+branches;
+next	1.16;
+
+1.16
+date	2017.04.07.19.56.14;	author -;	state -;
+branches;
+next	1.15;
+
+1.15
+date	2016.11.03.22.11.05;	author -;	state -;
+branches;
+next	1.14;
+
+1.14
+date	2016.10.07.21.09.22;	author -;	state -;
+branches;
+next	1.13;
+
+1.13
+date	2016.09.16.21.36.37;	author -;	state -;
+branches;
+next	1.12;
+
+1.12
+date	2016.09.16.21.35.56;	author -;	state -;
+branches;
+next	1.11;
+
+1.11
+date	2016.09.16.21.34.55;	author -;	state -;
+branches;
+next	1.10;
+
+1.10
+date	2016.09.16.21.34.07;	author -;	state -;
+branches;
+next	1.9;
+
+1.9
+date	2016.09.16.21.33.17;	author -;	state -;
+branches;
+next	1.8;
+
+1.8
+date	2016.09.16.21.32.44;	author -;	state -;
+branches;
+next	1.7;
+
+1.7
+date	2016.09.16.21.32.27;	author -;	state -;
+branches;
+next	1.6;
+
+1.6
+date	2016.09.16.21.31.32;	author -;	state -;
+branches;
+next	1.5;
+
+1.5
+date	2016.09.06.20.44.53;	author -;	state -;
+branches;
+next	1.4;
+
+1.4
+date	2016.09.06.20.43.07;	author -;	state -;
+branches;
+next	1.3;
+
+1.3
+date	2016.09.06.20.42.53;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2016.09.06.20.42.24;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2016.04.02.00.48.45;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.49
+log
+@-
+@
+text
+@.so Tmac.mm-etc
+.if t .Newcentury-fonts
+.INITR* \n[.F]
+.SIZE 12 14
+.TITLE CMPS-104A Fall\~2018 Project\~2 \
+"Lexical Analyzer using \f[CB]flex\f[P]"
+.RCS "$Id: asg2-scanner.mm,v 1.48 2018-10-09 12:02:13-07 - - $"
+.PWD
+.URL
+.H 1 "Overview"
+Augment your string table manager from the previous project
+by adding to it a scanner written in
+.V= flex .
+Continue to use the module
+.V= auxlib .
+Include token creation routines in the modules
+.V= astree ,
+.V= auxlib ,
+and
+.V= lyutils 
+from
+.V= Assignments/util-code .
+.SH=BVL
+.MANPAGE=LI SYNOPSIS
+.V= oc
+.=V \|[ -ly ]
+.=V \|[ -@@
+.IR flag \|.\|.\|.]
+.=V \|[ -D
+.IR string ]
+.IR \|program \f[CB].oc\f[P]
+.LE
+.P
+For this project,
+given an input file called
+.IV program .oc ,
+you will generate output files called
+.IV program .str
+(as before) and also
+.IV program .tok .
+All specifications from project 1 apply to this project.
+In addition, the
+.V= -l
+flag must turn on 
+.V= yy_flex_debug ,
+and the
+.V= -y
+flag must turn on
+.V= yy_debug .
+.H 1 "Tokens in the \f[CB]oc\f[P] language"
+The
+.V= oc
+language has the following tokens\(::
+.ALX a ()
+.LI
+Special symbols\(::
+.br
+\0\0
+.V= \&+\0
+.V= \&-\0
+.V= \&*\0
+.V= \&/\0
+.V= \&%\0
+.V= \&=\0
+.V= \&==\0
+.V= \&!=\0
+.V= \&<\0
+.V= \&<=\0
+.V= \&>\0
+.V= \&>=\0
+.V= \&->\0
+.V= \&,\0
+.V= \&;\0
+.V= \&(\0
+.V= \&)\0
+.V= \&[\0
+.V= \&]\0
+.V= \&{\0
+.V= \&}\0
+.V= \&[]\0
+.br
+Single-character tokens may be represented by their ASCII values,
+but multiple-character tokens must be represented by a 
+.V= bison -generated
+set of names.
+Note the hack that
+.V= []
+is a single token, 
+added to the language to eliminate a difficult shift/reduce
+conflict in project 3.
+.LI
+Reserved words\(::
+.br
+\0\0
+.V= \&if\0
+.V= \&else\0
+.V= \&while\0
+.V= \&return\0
+.V= \&int\0
+.V= \&string\0
+.V= \&struct\0
+.V= \&void\0
+.V= \&new\0
+.V= \&null\0
+.V= \&not\0
+.br
+Reserved words may be just added to the scanner as patterns,
+but must precede recognition of identifiers.
+.LI
+Identifiers are any sequence of upper- or lower-case ASCII
+letters, digits, and underscores, but may not begin with a digit.
+ISO-8859 characters beyond ASCII are not recognized,
+nor are Unicode characters.
+.VTCODE* 0 https://en.wikipedia.org/wiki/ASCII
+.VTCODE* 0 https://en.wikipedia.org/wiki/ISO/IEC_8859
+.VTCODE* 0 https://en.wikipedia.org/wiki/Unicode
+.LI
+Decimal integer constants
+which consist of any sequence of one or more decimal digits,
+not beginning with a
+.V= 0 .
+Octal integer constants begin with a digit
+.V= 0
+and are followed by zero or more octal digits.
+Hexadecimal integer constants begin with the sequence
+.V= 0x
+or
+.V= 0X
+and are followed by one or more hexadecimal digits,
+with the alphabetic digits accepting either upper-
+or lower-case.
+.LI
+Character constants consist of a pair of single quote marks with a
+single character or escape between them\(::
+.ds ESCAPE \[rs]\[rs][\[rs]\[rs]'\[Dq]0nt]
+.VTCODE* 1 \0('([\[ha]\[rs]\[rs]'\[rs]n]|\*[ESCAPE])')
+.LI
+String constants consist of a pair of double quote marks with zero
+or more characters or escapes between them\(::
+.VTCODE* 1 \
+\0(\[rs]\[Dq]([\[ha]\[rs]\[rs]\[Dq]\[rs]n]|\*[ESCAPE])*\[rs]\[Dq])
+Backslash, single quote, and newline may not appear in a character
+or string constants unless escaped.
+.LI
+Comments and white space are consistent with the C preprocessor,
+which removes comments from the input stream.
+All C preprocessor statements are handled by
+.V= cpp .
+.LI
+Output directives from
+.V= cpp
+of the form
+.VCODE* 1 "# \f[I]line\f[CB] \[Dq]\f[I]filename\f[CB]\[Dq]"
+must be scanned explicitly and used to indicate coordinates
+for printing error messages from source code.
+.LI
+Also recognize invalid identifiers (beginning with a digit),
+and invalid character and string constants (missing a final quote
+or a character following an escape).
+Make sure the scanner report does not show any jamming states.
+.LE
+.H 1 "The scanner"
+Create a file
+.V= scanner.l
+which is used to generate 
+.V= yylex.cpp .
+.ALX a ()
+.LI
+The only C code that should appear in the
+.V= %{ \|.\|.\|. \|%}
+at the start of your scanner should be
+.V= #include
+and
+.V= #define
+preprocessor statements.
+In the first part of the scanner, use the following options\(::
+.DS
+.VTCODE* 1 "%option 8bit"
+.VTCODE* 1 "%option debug"
+.VTCODE* 1 "%option nodefault"
+.VTCODE* 1 "%option nounput"
+.VTCODE* 1 "%option noyywrap"
+.VTCODE* 1 "%option warn"
+.DE
+.LI
+Retrofit your first project so that the external variable
+.V= "FILE *yyin"
+is used to read the pipe from 
+.V= cpp .
+Every time
+.V= yylex()
+is called, it reads from that external variable.
+Your main function will repeatedly call 
+.V= yylex()
+until it returnsa value of
+.V= YYEOF .
+.LI
+The file
+.V= utility-code/parser.y
+contains a dummy parser which will not be called from this project,
+but which must be included so that the internal names of tokens can be
+printed.
+Copy that file and be sure that your
+.V= Makefile
+uses it to build
+.V= yyparse.h
+and
+.V= yyparse.cpp .
+The function
+.V= get_yytname ,
+given an integer symbol,
+will return a string representation of that symbol.
+.LI
+In the parser provided,
+the first group of token definitions will be used by the scanner
+to return codes that are not represented by a single character.
+The second group of tokens are not recognized by the scanner,
+but are used in project 3 to edit the AST in order to prepare it for
+the later projects.
+.LE
+.H 1 "A sample compiler"
+Look in the directory
+.V= Examples/e08.expr-smc
+for a sample compiler for a simple language.
+You will want to copy code from that directory,
+especially the modules
+.V= auxlib ,
+.V= astree ,
+and
+.V= lyutils .
+Copy the
+.V= Makefile
+as well and edit it as appropriate.
+.ALX a ()
+.LI
+Module
+.V= auxlib ,
+which you are already using for project 1 has several useful
+additions to the standard library,
+and macros for generating debugging information.
+.LI
+Module 
+.V= astree
+has code useful for creating the abstract syntax tree,
+which you will need for this project,
+even though no AST will actually be assembled.
+The scanner creates ASTs for each token that it finds.
+.LI
+Since an AST is a n-way tree with some nodes having an arbigrary
+number of children,
+it is easiest to represent the children by a C++
+.V= vector<astree*>
+field, for which
+.V= push_back
+can be used to add a new rightmost child.
+.LI
+Module
+.V= lyutils
+contains useful declarations and functions for interfacing with code
+generated by 
+.V= flex
+and
+.V= bison .
+Do not include C code (except function calls) in your scanner.
+Instead, make calls to functions in this module.
+.H 1 "Output format"
+Your program will produce output similar to that shown here\(::
+.VTCODE* 1 "# 16 \[Dq]foobar.oc\[Dq]"
+.VTCODE* 1 "   2  16.003  264  KW_RETURN   return"
+.VTCODE* 1 "   2  16.010   61  '='         ="
+.VTCODE* 1 "   2  20.008  258  IDENT       hello"
+.VTCODE* 1 "   2  20.010  271  LIT_INT     1234"
+.VTCODE* 1 "   2  25.002  123  '{'         {"
+.VTCODE* 1 "   2  26.008  272  LIT_STRING  \[Dq]beep\[Dq]"
+.ALX a ()
+.LI
+It models the information in the
+.V= "struct astree"
+constucted by the scanner,
+ignoring the pointers to other AST nodes,
+which have not yet been determined.
+Output will be printed to a file ending with the suffix
+.V= \&.tok .
+.LI
+Everytime a file directive is found,
+it is printed to the output token file,
+and also scanned to update the coordinate information.
+.LI
+Each token is also printed to the output file in neatly aligned
+columns\(::
+.ALX i () "" 0
+.LI
+Index into filename vector, incremented for each
+.V= # -directive.
+.LI
+The line number within the given file where the token was found,
+and the character offset of the first character of the token within
+that line.
+.LI
+The integer token code stored in the AST node.
+.LI
+The name of the token as determined by
+.V= get_yytname .
+.LI
+The lexical information associated with the token.
+.LE
+.LE
+.H 1 "Fragments of a \f[CB]Makefile\f[P]"
+Some of the macro definitions in the
+.V= Makefile
+might be\(::
+.DS
+.VTCODE* 1 "LSOURCES  = scanner.l"
+.VTCODE* 1 "YSOURCES  = parser.y"
+.VTCODE* 1 "CLGEN     = yylex.cpp"
+.VTCODE* 1 "HYGEN     = yyparse.h"
+.VTCODE* 1 "CYGEN     = yyparse.cpp"
+.VTCODE* 1 "LREPORT   = yylex.output"
+.VTCODE* 1 "YREPORT   = yyparse.output"
+.DE
+Then we may use
+.V= flex
+and
+.V= bison
+to build the scanner and parser with the following recipes\(::
+.DS
+.ds tab \0\0\0\0\0\0\0\0
+.VTCODE* 1 "${CLGEN} : ${LSOURCES}
+.VTCODE* 1 "\*[tab]flex --outfile=${CLGEN} ${LSOURCES}
+\&
+.VTCODE* 1 "${CYGEN} ${HYGEN} : ${YSOURCES}
+.VTCODE* 1 \
+"\*[tab]bison --defines=${HYGEN} --output=${CYGEN} ${YSOURCES}
+.DE
+As usual, use
+.V= g++
+to compile your code,
+but omit the warning
+.=V ( -W )
+options when compiling code generated by 
+.V= flex .
+.H 1 "Some utility code"
+The subdirectory
+.V= code/utility-code/
+contains some files that should be incorporated into your compiler.
+.ALX a ()
+.LI
+.V= astree.{h,cpp}
+contains the definition and implemenetation
+of an n-way abstract syntax tree.
+.LI
+.V= auxlib.{h,cpp}
+are useful auxiliary functions.
+.LI
+.V= lyutils.{h,cpp}
+are definitions of functions and variables exported by
+.V= yylex
+and
+.V= yyparse ,
+and some useful lexer functions.
+.V= stringset.{h,cpp}
+is the string set from project 1.
+.LI
+.V= yyparse.h
+and
+.V= parser.y
+is a dummy header file and dummy parser to be used with project 2
+and discarded with project 3.
+.LI
+.V= string_set.{h,cpp}
+are from the first project.
+.LE
+.H 1 "What to Submit"
+Submit
+.V= README ,
+.V= Makefile ,
+.V= scanner.l ,
+.V= parser.y
+(for this project, the dummy parser),
+and all of the header and C++ implementation files.
+.E= "Do not"
+submit the file generated by 
+.V= flex .
+.FINISH
+@
+
+
+1.48
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg2-scanner.mm,v 1.47 2018-10-09 12:00:49-07 - - $"
+a63 1
+.V= \&!\0
+@
+
+
+1.47
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg2-scanner.mm,v 1.46 2018-10-09 12:00:00-07 - - $"
+a133 2
+There are no floating point constants.
+.LI
+a137 2
+.br
+.ne 5
+a221 2
+.br
+.ne 5
+a308 2
+.br
+.ne 5
+a321 1
+.ne 5
+@
+
+
+1.46
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg2-scanner.mm,v 1.45 2018-10-09 11:59:42-07 - - $"
+d230 1
+a230 1
+.VTCODE* 1 /afs/cats.ucsc.edu/courses/cmps104a-wm/Examples/e08.expr-smc
+a382 3
+.P
+Also see\(::
+.V= Examples/e08.expr-smc/ .
+@
+
+
+1.45
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg2-scanner.mm,v 1.44 2018-10-09 11:59:17-07 - - $"
+d315 2
+@
+
+
+1.44
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg2-scanner.mm,v 1.43 2018-10-09 11:58:03-07 - - $"
+d274 1
+a274 3
+Your program will produce output similar to that shown in here\(::
+.DS
+.ft
+a281 1
+.DE
+@
+
+
+1.43
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg2-scanner.mm,v 1.42 2018-10-09 11:56:15-07 - - $"
+d276 8
+a283 8
+.ft CB
+# 16 \[Dq]foobar.oc\[Dq]
+   2  16.003  264  KW_RETURN   return
+   2  16.010   61  '='         =
+   2  20.008  258  IDENT       hello
+   2  20.010  271  LIT_INT     1234
+   2  25.002  123  '{'         {
+   2  26.008  272  LIT_STRING  \[Dq]beep\[Dq]
+@
+
+
+1.42
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg2-scanner.mm,v 1.41 2018-10-09 11:52:00-07 - - $"
+d276 8
+a283 7
+.VTCODE* 1 "# 16 \[Dq]foobar.oc\[Dq]"
+.VTCODE* 1 "   2  16.003  264  TOK_KW_RETURN   |return|"
+.VTCODE* 1 "   2  16.010   61  '='             |=|"
+.VTCODE* 1 "   2  20.008  258  TOK_IDENT       |hello|"
+.VTCODE* 1 "   2  20.010  271  TOK_LIT_INT     |1234|"
+.VTCODE* 1 "   2  25.002  123  '{'             |{|"
+.VTCODE* 1 "   2  26.008  272  TOK_LIT_STRING  |\[Dq]beep\[Dq]|"
+@
+
+
+1.41
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg2-scanner.mm,v 1.40 2018-10-09 11:51:36-07 - - $"
+d277 6
+a282 6
+.VTCODE* 1 "   2  16.003  264  TOK_KW_RETURN   (return)"
+.VTCODE* 1 "   2  16.010   61  '='             (=)"
+.VTCODE* 1 "   2  20.008  258  TOK_IDENT       (hello)"
+.VTCODE* 1 "   2  20.010  271  TOK_LIT_INT     (1234)"
+.VTCODE* 1 "   2  25.002  123  '{'             ({)"
+.VTCODE* 1 "   2  26.008  272  TOK_LIT_STRING  (\[Dq]beep\[Dq])"
+d287 1
+a287 1
+.V= "struct astree_rep"
+d305 2
+a306 3
+The line number within the given file where the token was found.
+.LI
+The character offset of the first character of the token within
+@
+
+
+1.40
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg2-scanner.mm,v 1.39 2018-10-08 15:26:06-07 - - $"
+d226 2
+@
+
+
+1.39
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg2-scanner.mm,v 1.38 2018-10-08 15:24:57-07 - - $"
+d140 2
+@
+
+
+1.38
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg2-scanner.mm,v 1.1 2018-10-01 15:16:52-07 - - $"
+d380 3
+@
+
+
+1.37
+log
+@-
+@
+text
+@d5 1
+a5 1
+.TITLE CMPS-104A Spring\~2018 Project\~2 \
+d7 1
+a7 1
+.RCS "$Id: asg2-scanner.mm,v 1.36 2018-03-29 17:30:41-07 - - $"
+a185 1
+.VTCODE* 1 "%option verbose"
+@
+
+
+1.36
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg2-scanner.mm,v 1.35 2018-03-29 17:30:21-07 - - $"
+d106 1
+@
+
+
+1.35
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg2-scanner.mm,v 1.34 2018-03-07 14:33:11-08 - - $"
+d72 1
+a73 1
+.V= \&->\0
+@
+
+
+1.34
+log
+@-
+@
+text
+@d7 1
+a7 1
+.RCS "$Id: asg2-scanner.mm,v 1.5 2018-01-23 16:17:52-08 - - $"
+d73 1
+a73 1
+.V= \&.\0
+@
+
+
+1.33
+log
+@-
+@
+text
+@d5 1
+a5 2
+.ds HP 12 12 12 12 12 12 12\"       |heading point sizes
+.TITLE CMPS-104A Fall\~2017 Project\~2 \
+d7 1
+a7 1
+.RCS "$Id: asg2-scanner.mm,v 1.32 2017-10-11 14:25:02-07 - - $"
+d118 16
+a133 3
+Integer constants which consist of any sequence of decimal digits.
+Octal and hexadecimal constants are not supported.
+There is no floating point.
+d343 6
+a348 5
+.VTCODE* 1 "g++ -g -O0 -Wall -Wextra -std=gnu++14"
+to compile your code and run it by
+.V= checksource .
+However,
+do not check the generated code with these options.
+@
+
+
+1.32
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.31 2017-10-10 16:41:27-07 - - $"
+d363 3
+@
+
+
+1.31
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.30 2017-10-10 16:39:38-07 - - $"
+d190 1
+a190 1
+.V= misc-code/parser.y
+@
+
+
+1.30
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.29 2017-10-10 16:39:22-07 - - $"
+d46 5
+a50 1
+.V= yy_flex_debug .
+@
+
+
+1.29
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.28 2017-10-10 16:38:44-07 - - $"
+a54 1
+.S +1
+a79 1
+.S -1
+a91 1
+.S +1
+a103 1
+.S -1
+@
+
+
+1.28
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.27 2017-10-10 16:37:47-07 - - $"
+d94 1
+d107 1
+@
+
+
+1.27
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.26 2017-10-10 16:37:34-07 - - $"
+d55 1
+d81 1
+@
+
+
+1.26
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.25 2017-09-27 12:29:53-07 - - $"
+d56 23
+a78 23
+.V= \&+\0\|
+.V= \&-\0\|
+.V= \&*\0\|
+.V= \&/\0\|
+.V= \&%\0\|
+.V= \&!\0\|
+.V= \&=\0\|
+.V= \&==\0\|
+.V= \&!=\0\|
+.V= \&<\0\|
+.V= \&<=\0\|
+.V= \&>\0\|
+.V= \&>=\0\|
+.V= \&,\0\|
+.V= \&.\0\|
+.V= \&;\0\|
+.V= \&(\0\|
+.V= \&)\0\|
+.V= \&[\0\|
+.V= \&]\0\|
+.V= \&{\0\|
+.V= \&}\0\|
+.V= \&[]\0\|
+@
+
+
+1.25
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.24 2017-09-27 12:28:25-07 - - $"
+d56 23
+a78 23
+.V= \&+\0
+.V= \&-\0
+.V= \&*\0
+.V= \&/\0
+.V= \&%\0
+.V= \&!\0
+.V= \&=\0
+.V= \&==\0
+.V= \&!=\0
+.V= \&<\0
+.V= \&<=\0
+.V= \&>\0
+.V= \&>=\0
+.V= \&,\0
+.V= \&.\0
+.V= \&;\0
+.V= \&(\0
+.V= \&)\0
+.V= \&[\0
+.V= \&]\0
+.V= \&{\0
+.V= \&}\0
+.V= \&[]\0
+@
+
+
+1.24
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.23 2017-09-27 12:27:35-07 - - $"
+a53 2
+.br
+/\h'\n[Pi]n'/
+@
+
+
+1.23
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.22 2017-09-27 12:25:45-07 - - $"
+d55 2
+a56 1
+.tm \n[Pi]
+@
+
+
+1.22
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.21 2017-04-07 14:26:08-07 - - $"
+d55 1
+@
+
+
+1.21
+log
+@-
+@
+text
+@d6 1
+a6 1
+.TITLE CMPS-104A Spring\~2017 Project\~2 \
+d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.20 2017-04-07 14:25:10-07 - - $"
+@
+
+
+1.20
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.19 2017-04-07 14:22:22-07 - - $"
+d320 1
+a320 2
+.VTCODE* 1 "\*[tab]flex --outfile=${CLGEN} ${LSOURCES} 2>${LREPORT}
+.VTCODE* 1 "\*[tab]- grep -v '^  ' ${LREPORT}
+@
+
+
+1.19
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.18 2017-04-07 12:59:21-07 - - $"
+d111 3
+@
+
+
+1.18
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.17 2017-04-07 12:58:21-07 - - $"
+d107 1
+a107 1
+Identifiers are any sequence of upper- or lower-case ASCII (not Unicode)
+d109 2
+@
+
+
+1.17
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.16 2017-04-07 12:56:14-07 - - $"
+d93 1
+d95 2
+a96 1
+.V= \&if\0
+a97 3
+.V= \&new\0
+.V= \&null\0
+.V= \&return\0
+d101 2
+a102 1
+.V= \&while\0
+@
+
+
+1.16
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.15 2016-11-03 15:11:05-07 - - $"
+a55 6
+.V= \&!=\0
+.V= \&!\0
+.V= \&%\0
+.V= \&(\0
+.V= \&)\0
+.V= \&*\0
+a56 1
+.V= \&,\0
+d58 1
+a58 1
+.V= \&.\0
+d60 6
+a65 1
+.V= \&;\0
+d67 1
+a67 3
+.V= \&<\0
+.V= \&==\0
+.V= \&=\0
+d69 5
+a73 1
+.V= \&>\0
+a74 1
+.V= \&[]\0
+d78 1
+@
+
+
+1.15
+log
+@-
+@
+text
+@d6 1
+a6 1
+.TITLE CMPS-104A Fall\~2016 Project\~2 \
+d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.14 2016-10-07 14:09:22-07 - - $"
+@
+
+
+1.14
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.13 2016-09-16 14:36:37-07 - - $"
+a92 1
+.V= \&char\0
+@
+
+
+1.13
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.12 2016-09-16 14:35:56-07 - - $"
+d148 1
+a148 1
+.V= yylex.cc .
+d191 1
+a191 1
+.V= yyparse.cc .
+d301 1
+a301 1
+.VTCODE* 1 "CLGEN     = yylex.cc"
+d303 1
+a303 1
+.VTCODE* 1 "CYGEN     = yyparse.cc"
+@
+
+
+1.12
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.11 2016-09-16 14:34:55-07 - - $"
+d55 1
+d92 1
+@
+
+
+1.11
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.10 2016-09-16 14:34:07-07 - - $"
+d91 11
+a101 11
+.V= \h'\\n[VCODENWIDTH]u'void
+.V= \|char
+.V= \|int
+.V= \|string
+.V= \|struct
+.V= \|if
+.V= \|else
+.V= \|while
+.V= \|return
+.V= \|null
+.V= \|new
+@
+
+
+1.10
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.9 2016-09-16 14:33:17-07 - - $"
+d55 23
+a77 23
+.V= !=\&
+.V= !\&
+.V= %\&
+.V= (\&
+.V= )\&
+.V= *\&
+.V= +\&
+.V= ,\&
+.V= -\&
+.V= .\&
+.V= /\&
+.V= ;\&
+.V= <=\&
+.V= <\&
+.V= ==\&
+.V= =\&
+.V= >=\&
+.V= >\&
+.V= [\&
+.V= []\&
+.V= ]\&
+.V= {\&
+.V= }\&
+@
+
+
+1.9
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.8 2016-09-16 14:32:44-07 - - $"
+d55 23
+a77 23
+.V= \h'\\n[VCODENWIDTH]u'!=\&
+.V= \0!\&
+.V= \0%\&
+.V= \0(\&
+.V= \0)\&
+.V= \0*\&
+.V= \0+\&
+.V= \0,\&
+.V= \0-\&
+.V= \0.\&
+.V= \0/\&
+.V= \0;\&
+.V= \0<=\&
+.V= \0<\&
+.V= \0==\&
+.V= \0=\&
+.V= \0>=\&
+.V= \0>\&
+.V= \0[\&
+.V= \0[]\&
+.V= \0]\&
+.V= \0{\&
+.V= \0}\&
+@
+
+
+1.8
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.7 2016-09-16 14:32:27-07 - - $"
+d55 1
+a55 1
+.V= \0!=\&
+@
+
+
+1.7
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.6 2016-09-16 14:31:32-07 - - $"
+d55 3
+a57 1
+.V= \0[]\&
+d60 13
+d74 1
+a77 16
+.V= \0;\&
+.V= \0,\&
+.V= \0.\&
+.V= \0=\&
+.V= \0==\&
+.V= \0!=\&
+.V= \0<\&
+.V= \0<=\&
+.V= \0>\&
+.V= \0>=\&
+.V= \0+\&
+.V= \0-\&
+.V= \0*\&
+.V= \0/\&
+.V= \0%\&
+.V= \0!\&
+@
+
+
+1.6
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.5 2016-09-06 13:44:53-07 - - $"
+d55 1
+a55 1
+.V= \h'\\n[VCODENWIDTH]u'[]\&
+@
+
+
+1.5
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.4 2016-09-06 13:43:07-07 - - $"
+a100 2
+.V= \|ord
+.V= \|chr
+@
+
+
+1.4
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.3 2016-09-06 13:42:53-07 - - $"
+d92 12
+a103 14
+.V= \0char
+.V= \0int
+.V= \0string
+.V= \0struct
+.V= \0if
+.V= \0else
+.V= \0while
+.V= \0return
+.\".br
+.\".V= \h'\\n[VCODENWIDTH]u'null
+.V= \0null
+.V= \0ord
+.V= \0chr
+.V= \0new
+@
+
+
+1.3
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.2 2016-09-06 13:42:24-07 - - $"
+d100 1
+a100 1
+.br
+@
+
+
+1.2
+log
+@-
+@
+text
+@d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.1 2016-04-01 17:48:45-07 - - $"
+d101 2
+a102 1
+.V= \h'\\n[VCODENWIDTH]u'null
+@
+
+
+1.1
+log
+@-
+@
+text
+@d6 1
+a6 1
+.TITLE CMPS-104A Spring\~2016 Project\~2 \
+d8 1
+a8 1
+.RCS "$Id: asg2-scanner.mm,v 1.4 2016-04-01 17:48:28-07 - - $"
+a91 1
+.V= \0bool
+d101 1
+a101 3
+.V= \h'\\n[VCODENWIDTH]u'false
+.V= \0true
+.V= \0null
+@

@@ -1,0 +1,79 @@
+head	1.2;
+access;
+symbols;
+locks;
+comment	@ * @;
+
+
+1.2
+date	2018.09.26.23.37.28;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2018.04.02.22.31.00;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@-
+@
+text
+@/* $Id: lexer.l,v 1.1 2018-04-02 15:31:00-07 - - $ */
+
+%{
+
+#include "extern.h"
+
+%}
+
+%option noyywrap
+
+MANTISSA    ([[:digit:]]+\.?[[:digit:]]*|\.[[:digit:]]+)
+EXPONENT    ([Ee][+-]?[[:digit:]]+)
+INFINITY    ([Ii][Nn][Ff][[:isalnum:]]*)
+NAN         ([Nn][Aa][Nn][[:isalnum:]]*)
+NUMBER      ({MANTISSA})({EXPONENT})?|INFINITY|NAN
+
+
+%%
+
+"#".*      { ECHO; }
+[ \t]+     { ECHO; }
+\n         { ECHO; return '\n'; }
+{NUMBER}   { ECHO; return NUMBER; }
+"+"        { ECHO; return '+'; }
+"-"        { ECHO; return '-'; }
+"*"        { ECHO; return '*'; }
+"/"        { ECHO; return '/'; }
+.          { ECHO; printf ("\ninvalid character \\0%o\n", *yytext); }
+
+%%
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 1
+a1 1
+/* $Id: lexer.l,v 1.7 2018-04-02 15:30:53-07 - - $ */
+d20 9
+a28 8
+"#".*
+[ \t]+
+\n         { return '\n'; }
+{NUMBER}   { return NUMBER; }
+"+"        { return '+'; }
+"-"        { return '-'; }
+"*"        { return '*'; }
+"/"        { return '/'; }
+@

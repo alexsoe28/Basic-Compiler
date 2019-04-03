@@ -1,0 +1,6 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ mkc: starting macros.cpp
+macros.cpp:
+     $Id: macros.cpp,v 1.1 2018-01-22 14:07:15-08 - - $
+g++ -g -O0 -Wall -Wextra -fdiagnostics-color=never -std=gnu++17 -Wold-style-cast macros.cpp -o macros -lm
+rm -f macros.o
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ mkc: finished macros.cpp

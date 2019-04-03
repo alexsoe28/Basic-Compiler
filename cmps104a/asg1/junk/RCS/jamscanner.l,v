@@ -1,0 +1,142 @@
+head	1.5;
+access;
+symbols;
+locks;
+comment	@ * @;
+
+
+1.5
+date	2014.10.24.23.34.59;	author -;	state -;
+branches;
+next	1.4;
+
+1.4
+date	2014.10.24.02.39.32;	author -;	state -;
+branches;
+next	1.3;
+
+1.3
+date	2014.10.24.02.39.06;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2014.10.24.02.34.13;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2014.10.24.02.31.45;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.5
+log
+@-
+@
+text
+@%{
+// $Id: jamscanner.l,v 1.4 2014-10-23 19:39:32-07 - - $
+
+#include <stdio.h>
+
+#define YY_USER_ACTION { printf ("token=\"%s\" - ", yytext); }
+
+%}
+
+%option 8bit
+%option debug
+%option nobackup
+%option nodefault
+%option noinput
+%option nounput
+%option noyywrap
+%option warn
+
+%%
+
+[a-z]+             printf ("identifier\n");
+[0-9]+             printf ("number\n");
+'[^'\n']*'         printf ("string\n");
+[!@@#$%^&*()_+=-]+  printf ("symbols\n");
+[ \t\n]+           printf ("white space\n");
+.                  printf ("error char %c\n", *yytext);
+
+%%
+
+int main() {
+   yy_flex_debug = 0;
+   while (yylex());
+   return 0;
+}
+@
+
+
+1.4
+log
+@-
+@
+text
+@d2 1
+a2 1
+// $Id: jamscanner.l,v 1.3 2014-10-23 19:39:06-07 - - $
+d12 1
+a16 1
+%option verbose
+@
+
+
+1.3
+log
+@-
+@
+text
+@d2 1
+a2 1
+// $Id: jamscanner.l,v 1.2 2014-10-23 19:34:13-07 - - $
+d13 1
+@
+
+
+1.2
+log
+@-
+@
+text
+@d2 1
+a2 1
+// $Id: jamscanner.l,v 1.1 2014-10-23 19:31:45-07 - - $
+a14 1
+%option outfile="jamscanner.c"
+@
+
+
+1.1
+log
+@-
+@
+text
+@d2 1
+a2 1
+// $Id$
+d6 1
+a6 1
+#define YY_USER_ACTION { printf ("token=\"%s\"\n", yytext); }
+a12 1
+%option outfile=
+d15 1
+d21 6
+a26 6
+[a-z]+             printf ("identifier");
+[0-9]+             printf ("number");
+'[^'\n']*'         printf ("string");
+[!@@#$%^&*()_+=-]+  printf ("symbols");
+[ \t\n]+           printf ("white space");
+.                  printf ("error char %c", *yytext);
+d31 1
+@

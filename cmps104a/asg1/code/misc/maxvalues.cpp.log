@@ -1,0 +1,6 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ mkc: starting maxvalues.cpp
+maxvalues.cpp:
+     $Id: maxvalues.cpp,v 1.1 2018-01-22 14:07:16-08 - - $
+g++ -g -O0 -Wall -Wextra -fdiagnostics-color=never -std=gnu++17 -Wold-style-cast maxvalues.cpp -o maxvalues -lm
+rm -f maxvalues.o
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ mkc: finished maxvalues.cpp

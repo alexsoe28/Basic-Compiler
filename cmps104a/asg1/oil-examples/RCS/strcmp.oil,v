@@ -1,0 +1,72 @@
+head	1.1;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.1
+date	2012.10.05.02.14.40;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@-
+@
+text
+@/*
+     8	int strcmp (string s1, string s2) {
+     9	   int index = 0;
+    10	   bool contin = true;
+    11	   while (contin) {
+    12	      char s1c = s1[index];
+    13	      char s2c = s2[index];
+    14	      int cmp = ord s1c - ord s2c;
+    15	      if (cmp != 0) return cmp;
+    16	      if (s1c == '\0') contin = false;
+    17	      index = index + 1;
+    18	   }
+    19	   return 0;
+    20	}
+*/
+
+#define __OCLIB_C__
+#include "oclib.oh"
+
+int __strcmp (
+	ubyte *_1_s1,
+	ubyte *_1_s2)
+{
+	int _2_index = 0;
+	ubyte _2_contin = 1;
+while_5_11_3:;
+	if (!_2_contin) goto break_5_11_3;
+	ubyte b1 = _1_s1[_2_index];
+	ubyte _2_s1c = b1;
+	ubyte b2 = _1_s2[_2_index];
+	ubyte _2_s2c = b2;
+	int i3 = (int) _2_s1c;
+	int i4 = (int) _2_s2c;
+	int i5 = i3 - i4;
+	int _2_cmp = i5;
+	ubyte b6 = _2_cmp != 0;
+	if (!b6) goto fi_5_15_6;
+	return _2_cmp;
+fi_5_15_6:;
+	ubyte b7 = _2_s1c == '\0';
+	if (!b7) goto fi_5_16_6;
+	_2_contin = 0;
+fi_5_16_6:;
+	int i8 = _2_index + 1;
+	_2_index = i8;
+	goto while_5_11_3;
+break_5_11_3:;
+	return 0;
+}
+@

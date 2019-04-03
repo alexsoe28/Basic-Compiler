@@ -1,0 +1,50 @@
+head	1.2;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.2
+date	2011.11.18.05.52.41;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2011.11.18.05.38.04;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@-
+@
+text
+@#!/bin/sh
+# $Id: mk,v 1.1 2011-11-17 21:38:04-08 - - $
+ocl echoc facloop facrec strcmp.oïl
+cpp oclib.oh >oclib.oh-oc-header
+cpp -D__OCLIB_C__ oclib.oh >oclib.oh-c-header
+mkpspdf Listing.ps oclib.oh* oclib.c *.oïl
+@
+
+
+1.1
+log
+@-
+@
+text
+@d2 1
+a2 1
+# $Id$
+d4 3
+a6 3
+cpp oclib.oh >oclib.oc-header
+cpp -D__OCLIB_C__ oclib.oh >oclib.c-header
+mkpspdf Listing.ps oclib.oh oclib.c oclib.*header *.oïl
+@

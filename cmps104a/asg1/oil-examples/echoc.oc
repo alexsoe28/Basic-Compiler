@@ -1,0 +1,12 @@
+// $Id: echoc.oc,v 1.1 2011-11-18 17:18:35-08 - - $
+
+#include "oclib.oh"
+
+string[] argv = getargv ();
+int argi = 1;
+while (argv[argi] != null) {
+   if (argi > 1) putc (' ');
+   puts (argv[argi]);
+}
+endl ();
+

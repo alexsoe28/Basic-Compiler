@@ -1,0 +1,28 @@
+head	1.1;
+access;
+symbols;
+locks;
+comment	@ * @;
+
+
+1.1
+date	2011.09.26.21.11.36;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@-
+@
+text
+@int main (int argc, char **argv) {
+   for (int i = 0; argv[i]; ++i) {
+      printf ("argv[%d]=\"%s\"\n", i, argv[i]);
+   }
+}
+@

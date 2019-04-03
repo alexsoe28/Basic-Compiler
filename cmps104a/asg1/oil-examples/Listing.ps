@@ -1,0 +1,1919 @@
+%!PS-Adobe-3.0
+%%BoundingBox: 38 24 574 768
+%%Title: Enscript Output
+%%For: Wesley Mackey,,,,
+%%Creator: GNU enscript 1.6.4
+%%CreationDate: Fri Nov 16 21:10:51 2012
+%%Orientation: Portrait
+%%Pages: (atend)
+%%DocumentMedia: Letter 612 792 0 () ()
+%%DocumentNeededResources: (atend)
+%%EndComments
+%%BeginProlog
+%%BeginResource: procset Enscript-Prolog 1.6 4
+%
+% Procedures.
+%
+
+/_S {	% save current state
+  /_s save def
+} def
+/_R {	% restore from saved state
+  _s restore
+} def
+
+/S {	% showpage protecting gstate
+  gsave
+  showpage
+  grestore
+} bind def
+
+/MF {	% fontname newfontname -> -	make a new encoded font
+  /newfontname exch def
+  /fontname exch def
+
+  /fontdict fontname findfont def
+  /newfont fontdict maxlength dict def
+
+  fontdict {
+    exch
+    dup /FID eq {
+      % skip FID pair
+      pop pop
+    } {
+      % copy to the new font dictionary
+      exch newfont 3 1 roll put
+    } ifelse
+  } forall
+
+  newfont /FontName newfontname put
+
+  % insert only valid encoding vectors
+  encoding_vector length 256 eq {
+    newfont /Encoding encoding_vector put
+  } if
+
+  newfontname newfont definefont pop
+} def
+
+/MF_PS { % fontname newfontname -> -	make a new font preserving its enc
+  /newfontname exch def
+  /fontname exch def
+
+  /fontdict fontname findfont def
+  /newfont fontdict maxlength dict def
+
+  fontdict {
+    exch
+    dup /FID eq {
+      % skip FID pair
+      pop pop
+    } {
+      % copy to the new font dictionary
+      exch newfont 3 1 roll put
+    } ifelse
+  } forall
+
+  newfont /FontName newfontname put
+
+  newfontname newfont definefont pop
+} def
+
+/SF { % fontname width height -> -	set a new font
+  /height exch def
+  /width exch def
+
+  findfont
+  [width 0 0 height 0 0] makefont setfont
+} def
+
+/SUF { % fontname width height -> -	set a new user font
+  /height exch def
+  /width exch def
+
+  /F-gs-user-font MF
+  /F-gs-user-font width height SF
+} def
+
+/SUF_PS { % fontname width height -> -	set a new user font preserving its enc
+  /height exch def
+  /width exch def
+
+  /F-gs-user-font MF_PS
+  /F-gs-user-font width height SF
+} def
+
+/M {moveto} bind def
+/s {show} bind def
+
+/Box {	% x y w h -> -			define box path
+  /d_h exch def /d_w exch def /d_y exch def /d_x exch def
+  d_x d_y  moveto
+  d_w 0 rlineto
+  0 d_h rlineto
+  d_w neg 0 rlineto
+  closepath
+} def
+
+/bgs {	% x y height blskip gray str -> -	show string with bg color
+  /str exch def
+  /gray exch def
+  /blskip exch def
+  /height exch def
+  /y exch def
+  /x exch def
+
+  gsave
+    x y blskip sub str stringwidth pop height Box
+    gray setgray
+    fill
+  grestore
+  x y M str s
+} def
+
+/bgcs { % x y height blskip red green blue str -> -  show string with bg color
+  /str exch def
+  /blue exch def
+  /green exch def
+  /red exch def
+  /blskip exch def
+  /height exch def
+  /y exch def
+  /x exch def
+
+  gsave
+    x y blskip sub str stringwidth pop height Box
+    red green blue setrgbcolor
+    fill
+  grestore
+  x y M str s
+} def
+
+% Highlight bars.
+/highlight_bars {	% nlines lineheight output_y_margin gray -> -
+  gsave
+    setgray
+    /ymarg exch def
+    /lineheight exch def
+    /nlines exch def
+
+    % This 2 is just a magic number to sync highlight lines to text.
+    0 d_header_y ymarg sub 2 sub translate
+
+    /cw d_output_w cols div def
+    /nrows d_output_h ymarg 2 mul sub lineheight div cvi def
+
+    % for each column
+    0 1 cols 1 sub {
+      cw mul /xp exch def
+
+      % for each rows
+      0 1 nrows 1 sub {
+        /rn exch def
+        rn lineheight mul neg /yp exch def
+        rn nlines idiv 2 mod 0 eq {
+	  % Draw highlight bar.  4 is just a magic indentation.
+	  xp 4 add yp cw 8 sub lineheight neg Box fill
+	} if
+      } for
+    } for
+
+  grestore
+} def
+
+% Line highlight bar.
+/line_highlight {	% x y width height gray -> -
+  gsave
+    /gray exch def
+    Box gray setgray fill
+  grestore
+} def
+
+% Column separator lines.
+/column_lines {
+  gsave
+    .1 setlinewidth
+    0 d_footer_h translate
+    /cw d_output_w cols div def
+    1 1 cols 1 sub {
+      cw mul 0 moveto
+      0 d_output_h rlineto stroke
+    } for
+  grestore
+} def
+
+% Column borders.
+/column_borders {
+  gsave
+    .1 setlinewidth
+    0 d_footer_h moveto
+    0 d_output_h rlineto
+    d_output_w 0 rlineto
+    0 d_output_h neg rlineto
+    closepath stroke
+  grestore
+} def
+
+% Do the actual underlay drawing
+/draw_underlay {
+  ul_style 0 eq {
+    ul_str true charpath stroke
+  } {
+    ul_str show
+  } ifelse
+} def
+
+% Underlay
+/underlay {	% - -> -
+  gsave
+    0 d_page_h translate
+    d_page_h neg d_page_w atan rotate
+
+    ul_gray setgray
+    ul_font setfont
+    /dw d_page_h dup mul d_page_w dup mul add sqrt def
+    ul_str stringwidth pop dw exch sub 2 div ul_h_ptsize -2 div moveto
+    draw_underlay
+  grestore
+} def
+
+/user_underlay {	% - -> -
+  gsave
+    ul_x ul_y translate
+    ul_angle rotate
+    ul_gray setgray
+    ul_font setfont
+    0 0 ul_h_ptsize 2 div sub moveto
+    draw_underlay
+  grestore
+} def
+
+% Page prefeed
+/page_prefeed {		% bool -> -
+  statusdict /prefeed known {
+    statusdict exch /prefeed exch put
+  } {
+    pop
+  } ifelse
+} def
+
+% Wrapped line markers
+/wrapped_line_mark {	% x y charwith charheight type -> -
+  /type exch def
+  /h exch def
+  /w exch def
+  /y exch def
+  /x exch def
+
+  type 2 eq {
+    % Black boxes (like TeX does)
+    gsave
+      0 setlinewidth
+      x w 4 div add y M
+      0 h rlineto w 2 div 0 rlineto 0 h neg rlineto
+      closepath fill
+    grestore
+  } {
+    type 3 eq {
+      % Small arrows
+      gsave
+        .2 setlinewidth
+        x w 2 div add y h 2 div add M
+        w 4 div 0 rlineto
+        x w 4 div add y lineto stroke
+
+        x w 4 div add w 8 div add y h 4 div add M
+        x w 4 div add y lineto
+	w 4 div h 8 div rlineto stroke
+      grestore
+    } {
+      % do nothing
+    } ifelse
+  } ifelse
+} def
+
+% EPSF import.
+
+/BeginEPSF {
+  /b4_Inc_state save def    		% Save state for cleanup
+  /dict_count countdictstack def	% Count objects on dict stack
+  /op_count count 1 sub def		% Count objects on operand stack
+  userdict begin
+  /showpage { } def
+  0 setgray 0 setlinecap
+  1 setlinewidth 0 setlinejoin
+  10 setmiterlimit [ ] 0 setdash newpath
+  /languagelevel where {
+    pop languagelevel
+    1 ne {
+      false setstrokeadjust false setoverprint
+    } if
+  } if
+} bind def
+
+/EndEPSF {
+  count op_count sub { pos } repeat	% Clean up stacks
+  countdictstack dict_count sub { end } repeat
+  b4_Inc_state restore
+} bind def
+
+% Check PostScript language level.
+/languagelevel where {
+  pop /gs_languagelevel languagelevel def
+} {
+  /gs_languagelevel 1 def
+} ifelse
+%%EndResource
+%%BeginResource: procset Enscript-Encoding-88591 1.6 4
+/encoding_vector [
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/space        	/exclam       	/quotedbl     	/numbersign   	
+/dollar       	/percent      	/ampersand    	/quoteright   	
+/parenleft    	/parenright   	/asterisk     	/plus         	
+/comma        	/hyphen       	/period       	/slash        	
+/zero         	/one          	/two          	/three        	
+/four         	/five         	/six          	/seven        	
+/eight        	/nine         	/colon        	/semicolon    	
+/less         	/equal        	/greater      	/question     	
+/at           	/A            	/B            	/C            	
+/D            	/E            	/F            	/G            	
+/H            	/I            	/J            	/K            	
+/L            	/M            	/N            	/O            	
+/P            	/Q            	/R            	/S            	
+/T            	/U            	/V            	/W            	
+/X            	/Y            	/Z            	/bracketleft  	
+/backslash    	/bracketright 	/asciicircum  	/underscore   	
+/quoteleft    	/a            	/b            	/c            	
+/d            	/e            	/f            	/g            	
+/h            	/i            	/j            	/k            	
+/l            	/m            	/n            	/o            	
+/p            	/q            	/r            	/s            	
+/t            	/u            	/v            	/w            	
+/x            	/y            	/z            	/braceleft    	
+/bar          	/braceright   	/tilde        	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/space        	/exclamdown   	/cent         	/sterling     	
+/currency     	/yen          	/brokenbar    	/section      	
+/dieresis     	/copyright    	/ordfeminine  	/guillemotleft	
+/logicalnot   	/hyphen       	/registered   	/macron       	
+/degree       	/plusminus    	/twosuperior  	/threesuperior	
+/acute        	/mu           	/paragraph    	/bullet       	
+/cedilla      	/onesuperior  	/ordmasculine 	/guillemotright	
+/onequarter   	/onehalf      	/threequarters	/questiondown 	
+/Agrave       	/Aacute       	/Acircumflex  	/Atilde       	
+/Adieresis    	/Aring        	/AE           	/Ccedilla     	
+/Egrave       	/Eacute       	/Ecircumflex  	/Edieresis    	
+/Igrave       	/Iacute       	/Icircumflex  	/Idieresis    	
+/Eth          	/Ntilde       	/Ograve       	/Oacute       	
+/Ocircumflex  	/Otilde       	/Odieresis    	/multiply     	
+/Oslash       	/Ugrave       	/Uacute       	/Ucircumflex  	
+/Udieresis    	/Yacute       	/Thorn        	/germandbls   	
+/agrave       	/aacute       	/acircumflex  	/atilde       	
+/adieresis    	/aring        	/ae           	/ccedilla     	
+/egrave       	/eacute       	/ecircumflex  	/edieresis    	
+/igrave       	/iacute       	/icircumflex  	/idieresis    	
+/eth          	/ntilde       	/ograve       	/oacute       	
+/ocircumflex  	/otilde       	/odieresis    	/divide       	
+/oslash       	/ugrave       	/uacute       	/ucircumflex  	
+/udieresis    	/yacute       	/thorn        	/ydieresis    	
+] def
+%%EndResource
+%%EndProlog
+%%BeginSetup
+%%IncludeResource: font Courier-Bold
+%%IncludeResource: font Courier
+/HFpt_w 10 def
+/HFpt_h 10 def
+/Courier-Bold /HF-gs-font MF
+/HF /HF-gs-font findfont [HFpt_w 0 0 HFpt_h 0 0] makefont def
+/Courier /F-gs-font MF
+/F-gs-font 10 10 SF
+/#copies 1 def
+% Pagedevice definitions:
+gs_languagelevel 1 gt {
+  <<
+    /PageSize [612 792] 
+  >> setpagedevice
+} if
+%%BeginResource: procset Enscript-Header-enscript 1.6 4
+%%IncludeResource: font Times-Bold
+%%IncludeResource: font Times-Roman
+
+% Fonts.
+/Times-Bold /HeaderFont-Bold MF
+/HeaderDateF /HeaderFont-Bold findfont 12 scalefont def
+
+/Times-Roman /HeaderFont-Times MF
+/HeaderHDRF /HeaderFont-Times findfont 14 scalefont def
+
+/HeaderPageNumF /Helvetica-Bold findfont 28.8 scalefont def
+
+/do_header {	% print enscript header
+  gsave
+    d_header_x d_header_y translate
+
+    % light bar
+    0 0 d_header_w d_header_h 2 div Box
+    .95 setgray fill
+
+    % dark gray boxes
+    /dbw d_header_h 2 mul def	% dark box width
+    /dbc .7 def			% dark box color
+
+    % left dark box.
+    0 0 dbw d_header_h Box
+    dbc setgray fill
+
+    0 setgray 
+    HeaderDateF setfont
+    moddatestr dup stringwidth pop dbw exch sub 2 div 
+    d_header_h 2 div 2 add moveto show
+    modtimestr dup stringwidth pop dbw exch sub 2 div 
+    d_header_h 5 div moveto show
+
+    % right dark box
+    d_header_w dbw sub 0 dbw d_header_h Box
+    dbc setgray fill
+
+    HeaderPageNumF setfont
+    1 setgray
+    pagenumstr dup
+    stringwidth pop dbw exch sub 2 div d_header_w dbw sub add
+    d_header_h .2 mul moveto show
+
+    % filename
+    0 setgray 
+    HeaderHDRF setfont
+    d_header_w fname stringwidth pop sub 2 div d_header_h 8 div moveto
+    fname show
+
+    % user supplied header string.
+    user_header_p {
+      /h d_header_h 8 div 5 mul def
+
+      % Implement strict enscript compatibility.
+      user_header_center_str () eq user_header_right_str () eq and {
+        d_header_w user_header_left_str stringwidth pop sub 2 div 
+        h moveto user_header_left_str show
+      } {
+        dbw 5 add h moveto user_header_left_str show
+
+        d_header_w user_header_center_str stringwidth pop sub 2 div 
+        h moveto user_header_center_str show
+
+	d_header_w dbw sub 5 sub user_header_right_str stringwidth pop
+	sub h moveto user_header_right_str show
+      } ifelse
+    } if
+
+  grestore
+} def
+%%EndResource
+/d_page_w 536 def
+/d_page_h 744 def
+/d_header_x 0 def
+/d_header_y 708 def
+/d_header_w 536 def
+/d_header_h 36 def
+/d_footer_x 0 def
+/d_footer_y 0 def
+/d_footer_w 536 def
+/d_footer_h 0 def
+/d_output_w 536 def
+/d_output_h 708 def
+/cols 1 def
+%%EndSetup
+%%Page: (1) 1
+%%BeginPageSetup
+_S
+38 24 translate
+/pagenum 1 def
+/fname (oclib.oh) def
+/fdir () def
+/ftail (oclib.oh) def
+% User defined strings:
+/pagenumstr (1) def
+/moddatestr (11/16/12) def
+/modtimestr (21:10:41) def
+/user_header_p true def
+/user_header_left_str ($cmps104a-wm/Assignments/oil-examples/) def
+/user_header_center_str () def
+/user_header_right_str () def
+/user_footer_p false def
+%%EndPageSetup
+column_borders
+do_header
+30 695 M (1:) s
+48 695 M
+(// $Id: oclib.oh,v 1.24 2011-11-18 17:34:29-08 - - $) s
+30 684 M (2:) s
+30 673 M (3:) s
+48 673 M
+(#ifndef __OCLIB_OH__) s
+30 662 M (4:) s
+48 662 M
+(#define __OCLIB_OH__) s
+30 651 M (5:) s
+30 640 M (6:) s
+48 640 M
+(#ifdef __OCLIB_C__) s
+30 629 M (7:) s
+48 629 M
+(#   define __\(ID\)         __##ID) s
+30 618 M (8:) s
+48 618 M
+(#   define NONE__         void) s
+30 607 M (9:) s
+48 607 M
+(#   define VOID__\(ID\)     void __##ID) s
+24 596 M (10:) s
+48 596 M
+(#   define BOOL__\(ID\)     ubyte __##ID) s
+24 585 M (11:) s
+48 585 M
+(#   define CHAR__\(ID\)     ubyte __##ID) s
+24 574 M (12:) s
+48 574 M
+(#   define INT__\(ID\)      int __##ID) s
+24 563 M (13:) s
+48 563 M
+(#   define STRING__\(ID\)   ubyte *__##ID) s
+24 552 M (14:) s
+48 552 M
+(#   define STRINGS__\(ID\)  ubyte **__##ID) s
+24 541 M (15:) s
+48 541 M
+(#   define null           0) s
+24 530 M (16:) s
+48 530 M
+(#   define false          0) s
+24 519 M (17:) s
+48 519 M
+(#   define true           1) s
+24 508 M (18:) s
+48 508 M
+(typedef unsigned char ubyte;) s
+24 497 M (19:) s
+48 497 M
+(void *xcalloc \(int nelem, int size\);) s
+24 486 M (20:) s
+48 486 M
+(#else) s
+24 475 M (21:) s
+48 475 M
+(#   define EOF            \(-1\)) s
+24 464 M (22:) s
+48 464 M
+(#   define __\(ID\)         ID) s
+24 453 M (23:) s
+48 453 M
+(#   define NONE__) s
+24 442 M (24:) s
+48 442 M
+(#   define VOID__\(ID\)     void ID) s
+24 431 M (25:) s
+48 431 M
+(#   define BOOL__\(ID\)     bool ID) s
+24 420 M (26:) s
+48 420 M
+(#   define CHAR__\(ID\)     char ID) s
+24 409 M (27:) s
+48 409 M
+(#   define INT__\(ID\)      int ID) s
+24 398 M (28:) s
+48 398 M
+(#   define STRING__\(ID\)   string ID) s
+24 387 M (29:) s
+48 387 M
+(#   define STRINGS__\(ID\)  string[] ID) s
+24 376 M (30:) s
+48 376 M
+(VOID__\(__assert_fail\) \(STRING__\(expr\), STRING__\(file\), INT__\(line\)\);) s
+24 365 M (31:) s
+48 365 M
+(#endif) s
+24 354 M (32:) s
+24 343 M (33:) s
+48 343 M
+(VOID__\(putb\) \(BOOL__\(b\)\);) s
+24 332 M (34:) s
+48 332 M
+(VOID__\(putc\) \(CHAR__\(c\)\);) s
+24 321 M (35:) s
+48 321 M
+(VOID__\(puti\) \(INT__\(i\)\);) s
+24 310 M (36:) s
+48 310 M
+(VOID__\(puts\) \(STRING__\(s\)\);) s
+24 299 M (37:) s
+48 299 M
+(VOID__\(endl\) \(NONE__\);) s
+24 288 M (38:) s
+48 288 M
+(INT__\(getc\) \(NONE__\);) s
+24 277 M (39:) s
+48 277 M
+(STRING__\(getw\) \(NONE__\);) s
+24 266 M (40:) s
+48 266 M
+(STRING__\(getln\) \(NONE__\);) s
+24 255 M (41:) s
+48 255 M
+(STRINGS__ \(getargv\) \(NONE__\);) s
+24 244 M (42:) s
+48 244 M
+(VOID__\(exit\) \(int status\);) s
+24 233 M (43:) s
+48 233 M
+(#define assert\(expr\) \\) s
+24 222 M (44:) s
+48 222 M
+(        {if \(! \(expr\)\) __\(__assert_fail\) \(#expr, __FILE__, __LINE__\);}) s
+24 211 M (45:) s
+24 200 M (46:) s
+48 200 M
+(#endif) s
+24 189 M (47:) s
+_R
+S
+%%Page: (1) 2
+%%BeginPageSetup
+_S
+38 24 translate
+/pagenum 1 def
+/fname (oclib.oh-c-header) def
+/fdir () def
+/ftail (oclib.oh-c-header) def
+% User defined strings:
+/pagenumstr (1) def
+/moddatestr (11/16/12) def
+/modtimestr (21:10:51) def
+/user_header_p true def
+/user_header_left_str ($cmps104a-wm/Assignments/oil-examples/) def
+/user_header_center_str () def
+/user_header_right_str () def
+/user_footer_p false def
+%%EndPageSetup
+column_borders
+do_header
+30 695 M (1:) s
+48 695 M
+(# 1 "oclib.oh") s
+30 684 M (2:) s
+48 684 M
+(# 1 "<built-in>") s
+30 673 M (3:) s
+48 673 M
+(# 1 "<command-line>") s
+30 662 M (4:) s
+48 662 M
+(# 1 "oclib.oh") s
+30 651 M (5:) s
+48 651 M
+(# 18 "oclib.oh") s
+30 640 M (6:) s
+48 640 M
+(typedef unsigned char ubyte;) s
+30 629 M (7:) s
+48 629 M
+(void *xcalloc \(int nelem, int size\);) s
+30 618 M (8:) s
+48 618 M
+(# 33 "oclib.oh") s
+30 607 M (9:) s
+48 607 M
+(void __putb \(ubyte __b\);) s
+24 596 M (10:) s
+48 596 M
+(void __putc \(ubyte __c\);) s
+24 585 M (11:) s
+48 585 M
+(void __puti \(int __i\);) s
+24 574 M (12:) s
+48 574 M
+(void __puts \(ubyte *__s\);) s
+24 563 M (13:) s
+48 563 M
+(void __endl \(void\);) s
+24 552 M (14:) s
+48 552 M
+(int __getc \(void\);) s
+24 541 M (15:) s
+48 541 M
+(ubyte *__getw \(void\);) s
+24 530 M (16:) s
+48 530 M
+(ubyte *__getln \(void\);) s
+24 519 M (17:) s
+48 519 M
+(ubyte **__getargv \(void\);) s
+24 508 M (18:) s
+48 508 M
+(void __exit \(int status\);) s
+_R
+S
+%%Page: (1) 3
+%%BeginPageSetup
+_S
+38 24 translate
+/pagenum 1 def
+/fname (oclib.oh-oc-header) def
+/fdir () def
+/ftail (oclib.oh-oc-header) def
+% User defined strings:
+/pagenumstr (1) def
+/moddatestr (11/16/12) def
+/modtimestr (21:10:51) def
+/user_header_p true def
+/user_header_left_str ($cmps104a-wm/Assignments/oil-examples/) def
+/user_header_center_str () def
+/user_header_right_str () def
+/user_footer_p false def
+%%EndPageSetup
+column_borders
+do_header
+30 695 M (1:) s
+48 695 M
+(# 1 "oclib.oh") s
+30 684 M (2:) s
+48 684 M
+(# 1 "<built-in>") s
+30 673 M (3:) s
+48 673 M
+(# 1 "<command-line>") s
+30 662 M (4:) s
+48 662 M
+(# 1 "oclib.oh") s
+30 651 M (5:) s
+48 651 M
+(# 30 "oclib.oh") s
+30 640 M (6:) s
+48 640 M
+(void __assert_fail \(string expr, string file, int line\);) s
+30 629 M (7:) s
+30 618 M (8:) s
+30 607 M (9:) s
+48 607 M
+(void putb \(bool b\);) s
+24 596 M (10:) s
+48 596 M
+(void putc \(char c\);) s
+24 585 M (11:) s
+48 585 M
+(void puti \(int i\);) s
+24 574 M (12:) s
+48 574 M
+(void puts \(string s\);) s
+24 563 M (13:) s
+48 563 M
+(void endl \(\);) s
+24 552 M (14:) s
+48 552 M
+(int getc \(\);) s
+24 541 M (15:) s
+48 541 M
+(string getw \(\);) s
+24 530 M (16:) s
+48 530 M
+(string getln \(\);) s
+24 519 M (17:) s
+48 519 M
+(string[] getargv \(\);) s
+24 508 M (18:) s
+48 508 M
+(void exit \(int status\);) s
+_R
+S
+%%Page: (1) 4
+%%BeginPageSetup
+_S
+38 24 translate
+/pagenum 1 def
+/fname (oclib.c) def
+/fdir () def
+/ftail (oclib.c) def
+% User defined strings:
+/pagenumstr (1) def
+/moddatestr (11/16/12) def
+/modtimestr (21:10:41) def
+/user_header_p true def
+/user_header_left_str ($cmps104a-wm/Assignments/oil-examples/) def
+/user_header_center_str () def
+/user_header_right_str () def
+/user_footer_p false def
+%%EndPageSetup
+column_borders
+do_header
+30 695 M (1:) s
+48 695 M
+(// $Id: oclib.c,v 1.45 2012-11-16 21:10:41-08 - - $) s
+30 684 M (2:) s
+30 673 M (3:) s
+48 673 M
+(#include <ctype.h>) s
+30 662 M (4:) s
+48 662 M
+(#include <libgen.h>) s
+30 651 M (5:) s
+48 651 M
+(#include <stdio.h>) s
+30 640 M (6:) s
+48 640 M
+(#include <stdlib.h>) s
+30 629 M (7:) s
+48 629 M
+(#include <string.h>) s
+30 618 M (8:) s
+30 607 M (9:) s
+48 607 M
+(#define __OCLIB_C__) s
+24 596 M (10:) s
+48 596 M
+(#include "oclib.oh") s
+24 585 M (11:) s
+24 574 M (12:) s
+48 574 M
+(ubyte **oc_argv;) s
+24 563 M (13:) s
+24 552 M (14:) s
+48 552 M
+(void ____assert_fail \(char *expr, char *file, int line\) {) s
+24 541 M (15:) s
+48 541 M
+(   fflush \(NULL\);) s
+24 530 M (16:) s
+48 530 M
+(   fprintf \(stderr, "%s: %s:%d: assert \(%s\) failed.\\n",) s
+24 519 M (17:) s
+48 519 M
+(            basename \(\(char *\) oc_argv[0]\), file, line, expr\);) s
+24 508 M (18:) s
+48 508 M
+(   fflush \(NULL\);) s
+24 497 M (19:) s
+48 497 M
+(   abort\(\);) s
+24 486 M (20:) s
+48 486 M
+(}) s
+24 475 M (21:) s
+24 464 M (22:) s
+48 464 M
+(void *xcalloc \(int nelem, int size\) {) s
+24 453 M (23:) s
+48 453 M
+(   void *result = calloc \(nelem, size\);) s
+24 442 M (24:) s
+48 442 M
+(   assert \(result != NULL\);) s
+24 431 M (25:) s
+48 431 M
+(   return result;) s
+24 420 M (26:) s
+48 420 M
+(}) s
+24 409 M (27:) s
+24 398 M (28:) s
+48 398 M
+(void __ocmain \(void\);) s
+24 387 M (29:) s
+48 387 M
+(int main \(int argc, char **argv\) {) s
+24 376 M (30:) s
+48 376 M
+(   argc = argc; // warning: unused parameter 'argc') s
+24 365 M (31:) s
+48 365 M
+(   oc_argv = \(ubyte **\) argv;) s
+24 354 M (32:) s
+48 354 M
+(   __ocmain\(\);) s
+24 343 M (33:) s
+48 343 M
+(   return EXIT_SUCCESS;) s
+24 332 M (34:) s
+48 332 M
+(}) s
+24 321 M (35:) s
+_R
+S
+%%Page: (2) 5
+%%BeginPageSetup
+_S
+38 24 translate
+/pagenum 2 def
+/fname (oclib.c) def
+/fdir () def
+/ftail (oclib.c) def
+% User defined strings:
+/pagenumstr (2) def
+/moddatestr (11/16/12) def
+/modtimestr (21:10:41) def
+/user_header_p true def
+/user_header_left_str ($cmps104a-wm/Assignments/oil-examples/) def
+/user_header_center_str () def
+/user_header_right_str () def
+/user_footer_p false def
+%%EndPageSetup
+column_borders
+do_header
+24 695 M (36:) s
+24 684 M (37:) s
+48 684 M
+(ubyte *scan \(int \(*skipover\) \(int\), int \(*stopat\) \(int\)\) {) s
+24 673 M (38:) s
+48 673 M
+(   int byte;) s
+24 662 M (39:) s
+48 662 M
+(   do {) s
+24 651 M (40:) s
+48 651 M
+(      byte = getchar\(\);) s
+24 640 M (41:) s
+48 640 M
+(      if \(byte == EOF\) return NULL;) s
+24 629 M (42:) s
+48 629 M
+(   } while \(skipover \(byte\)\);) s
+24 618 M (43:) s
+48 618 M
+(   ubyte buffer[0x1000];) s
+24 607 M (44:) s
+48 607 M
+(   ubyte *end = buffer;) s
+24 596 M (45:) s
+48 596 M
+(   do {) s
+24 585 M (46:) s
+48 585 M
+(      *end++ = byte;) s
+24 574 M (47:) s
+48 574 M
+(      assert \(end < buffer + sizeof buffer\);) s
+24 563 M (48:) s
+48 563 M
+(      *end = '\\0';) s
+24 552 M (49:) s
+48 552 M
+(      byte = getchar\(\);) s
+24 541 M (50:) s
+48 541 M
+(   }while \(byte != EOF && ! stopat \(byte\)\);) s
+24 530 M (51:) s
+48 530 M
+(   ubyte *result = \(ubyte *\) strdup \(\(char *\) buffer\);) s
+24 519 M (52:) s
+48 519 M
+(   assert \(result != NULL\);) s
+24 508 M (53:) s
+48 508 M
+(   return result;) s
+24 497 M (54:) s
+48 497 M
+(}) s
+24 486 M (55:) s
+24 475 M (56:) s
+48 475 M
+(int isfalse \(int byte\)   { return 0 & byte; } ) s
+24 464 M (57:) s
+48 464 M
+(int isnl \(int byte\)      { return byte == '\\n'; }) s
+24 453 M (58:) s
+48 453 M
+(void __putb \(ubyte byte\) { printf \("%s", byte ? "true" : "false"\); } ) s
+24 442 M (59:) s
+48 442 M
+(void __putc \(ubyte byte\) { printf \("%c", byte\); } ) s
+24 431 M (60:) s
+48 431 M
+(void __puti \(int val\)    { printf \("%d", val\); }) s
+24 420 M (61:) s
+48 420 M
+(void __puts \(ubyte *str\) { printf \("%s", str\); }) s
+24 409 M (62:) s
+48 409 M
+(void __endl \(void\)       { printf \("%c", '\\n'\); fflush \(NULL\); }) s
+24 398 M (63:) s
+48 398 M
+(int __getc \(void\)        { return getchar\(\); } ) s
+24 387 M (64:) s
+48 387 M
+(ubyte *__getw \(void\)     { return scan \(isspace, isspace\); }) s
+24 376 M (65:) s
+48 376 M
+(ubyte *__getln \(void\)    { return scan \(isfalse, isnl\); } ) s
+24 365 M (66:) s
+48 365 M
+(ubyte **__getargv \(void\) { return oc_argv; }) s
+24 354 M (67:) s
+48 354 M
+(void __exit \(int status\) { exit \(status\); }) s
+24 343 M (68:) s
+_R
+S
+%%Page: (1) 6
+%%BeginPageSetup
+_S
+38 24 translate
+/pagenum 1 def
+/fname (echoc.oc) def
+/fdir () def
+/ftail (echoc.oc) def
+% User defined strings:
+/pagenumstr (1) def
+/moddatestr (11/16/12) def
+/modtimestr (21:10:50) def
+/user_header_p true def
+/user_header_left_str ($cmps104a-wm/Assignments/oil-examples/) def
+/user_header_center_str () def
+/user_header_right_str () def
+/user_footer_p false def
+%%EndPageSetup
+column_borders
+do_header
+30 695 M (1:) s
+48 695 M
+(// $Id: echoc.oc,v 1.1 2011-11-18 17:18:35-08 - - $) s
+30 684 M (2:) s
+30 673 M (3:) s
+48 673 M
+(#include "oclib.oh") s
+30 662 M (4:) s
+30 651 M (5:) s
+48 651 M
+(string[] argv = getargv \(\);) s
+30 640 M (6:) s
+48 640 M
+(int argi = 1;) s
+30 629 M (7:) s
+48 629 M
+(while \(argv[argi] != null\) {) s
+30 618 M (8:) s
+48 618 M
+(   if \(argi > 1\) putc \(' '\);) s
+30 607 M (9:) s
+48 607 M
+(   puts \(argv[argi]\);) s
+24 596 M (10:) s
+48 596 M
+(}) s
+24 585 M (11:) s
+48 585 M
+(endl \(\);) s
+24 574 M (12:) s
+_R
+S
+%%Page: (1) 7
+%%BeginPageSetup
+_S
+38 24 translate
+/pagenum 1 def
+/fname (facloop.oc) def
+/fdir () def
+/ftail (facloop.oc) def
+% User defined strings:
+/pagenumstr (1) def
+/moddatestr (11/16/12) def
+/modtimestr (21:10:51) def
+/user_header_p true def
+/user_header_left_str ($cmps104a-wm/Assignments/oil-examples/) def
+/user_header_center_str () def
+/user_header_right_str () def
+/user_footer_p false def
+%%EndPageSetup
+column_borders
+do_header
+30 695 M (1:) s
+48 695 M
+(// $Id: facloop.oc,v 1.2 2011-11-18 17:18:35-08 - - $) s
+30 684 M (2:) s
+48 684 M
+(//) s
+30 673 M (3:) s
+48 673 M
+(// Function uses a loop to compute factorial.) s
+30 662 M (4:) s
+48 662 M
+(//) s
+30 651 M (5:) s
+30 640 M (6:) s
+48 640 M
+(#include "oclib.oh") s
+30 629 M (7:) s
+30 618 M (8:) s
+48 618 M
+(int fac \(int n\) {) s
+30 607 M (9:) s
+48 607 M
+(   int f = 1;) s
+24 596 M (10:) s
+48 596 M
+(   while \(n > 1\) {) s
+24 585 M (11:) s
+48 585 M
+(      f = f * n;) s
+24 574 M (12:) s
+48 574 M
+(      n = n - 1;) s
+24 563 M (13:) s
+48 563 M
+(   }) s
+24 552 M (14:) s
+48 552 M
+(   return f;) s
+24 541 M (15:) s
+48 541 M
+(}) s
+24 530 M (16:) s
+24 519 M (17:) s
+48 519 M
+(int n = 1;) s
+24 508 M (18:) s
+48 508 M
+(while \(n <= 5\) {) s
+24 497 M (19:) s
+48 497 M
+(   puti \(fac \(n\)\);) s
+24 486 M (20:) s
+48 486 M
+(}) s
+24 475 M (21:) s
+_R
+S
+%%Page: (1) 8
+%%BeginPageSetup
+_S
+38 24 translate
+/pagenum 1 def
+/fname (facrec.oc) def
+/fdir () def
+/ftail (facrec.oc) def
+% User defined strings:
+/pagenumstr (1) def
+/moddatestr (11/16/12) def
+/modtimestr (21:10:51) def
+/user_header_p true def
+/user_header_left_str ($cmps104a-wm/Assignments/oil-examples/) def
+/user_header_center_str () def
+/user_header_right_str () def
+/user_footer_p false def
+%%EndPageSetup
+column_borders
+do_header
+30 695 M (1:) s
+48 695 M
+(// $Id: facrec.oc,v 1.1 2011-11-18 17:18:35-08 - - $) s
+30 684 M (2:) s
+48 684 M
+(//) s
+30 673 M (3:) s
+48 673 M
+(// Function uses a loop to compute factorial.) s
+30 662 M (4:) s
+48 662 M
+(//) s
+30 651 M (5:) s
+30 640 M (6:) s
+48 640 M
+(#include "oclib.oh") s
+30 629 M (7:) s
+30 618 M (8:) s
+48 618 M
+(int fac \(int n\) {) s
+30 607 M (9:) s
+48 607 M
+(   if \(n < 2\) return 1;) s
+24 596 M (10:) s
+48 596 M
+(   return n * fac \(n - 1\);) s
+24 585 M (11:) s
+48 585 M
+(}) s
+24 574 M (12:) s
+24 563 M (13:) s
+48 563 M
+(int n = 1;) s
+24 552 M (14:) s
+48 552 M
+(while \(n <= 5\) {) s
+24 541 M (15:) s
+48 541 M
+(   puti \(fac \(n\)\);) s
+24 530 M (16:) s
+48 530 M
+(   endl \(\);) s
+24 519 M (17:) s
+48 519 M
+(   n = n + 1;) s
+24 508 M (18:) s
+48 508 M
+(}) s
+24 497 M (19:) s
+_R
+S
+%%Page: (1) 9
+%%BeginPageSetup
+_S
+38 24 translate
+/pagenum 1 def
+/fname (echoc.oil) def
+/fdir () def
+/ftail (echoc.oil) def
+% User defined strings:
+/pagenumstr (1) def
+/moddatestr (10/04/12) def
+/modtimestr (19:14:40) def
+/user_header_p true def
+/user_header_left_str ($cmps104a-wm/Assignments/oil-examples/) def
+/user_header_center_str () def
+/user_header_right_str () def
+/user_footer_p false def
+%%EndPageSetup
+column_borders
+do_header
+30 695 M (1:) s
+48 695 M
+(/*) s
+30 684 M (2:) s
+48 684 M
+(     1  // $Id: echoc.oil,v 1.1 2012-10-04 19:14:40-07 - - $) s
+30 673 M (3:) s
+48 673 M
+(     2  ) s
+30 662 M (4:) s
+48 662 M
+(     3  #include "oclib.oh") s
+30 651 M (5:) s
+48 651 M
+(     4  ) s
+30 640 M (6:) s
+48 640 M
+(     5  string[] argv = getargv \(\);) s
+30 629 M (7:) s
+48 629 M
+(     6  int argi = 1;) s
+30 618 M (8:) s
+48 618 M
+(     7  while \(argv[argi] != null\) {) s
+30 607 M (9:) s
+48 607 M
+(     8     if \(argi > 1\) putc \(' '\);) s
+24 596 M (10:) s
+48 596 M
+(     9     puts \(argv[argi]\);) s
+24 585 M (11:) s
+48 585 M
+(    10     argi = argi + 1;) s
+24 574 M (12:) s
+48 574 M
+(    11  }) s
+24 563 M (13:) s
+48 563 M
+(    12  endl \(\);) s
+24 552 M (14:) s
+48 552 M
+(    13  ) s
+24 541 M (15:) s
+48 541 M
+(*/) s
+24 530 M (16:) s
+24 519 M (17:) s
+48 519 M
+(#define __OCLIB_C__) s
+24 508 M (18:) s
+48 508 M
+(#include "oclib.oh") s
+24 497 M (19:) s
+24 486 M (20:) s
+48 486 M
+(ubyte **__argv;) s
+24 475 M (21:) s
+48 475 M
+(int __argi;) s
+24 464 M (22:) s
+24 453 M (23:) s
+48 453 M
+(void __ocmain \(\)) s
+24 442 M (24:) s
+48 442 M
+({) s
+24 431 M (25:) s
+48 431 M
+(        ubyte **p1 = __getargv \(\);) s
+24 420 M (26:) s
+48 420 M
+(        __argv = p1;) s
+24 409 M (27:) s
+48 409 M
+(        __argi = 1;) s
+24 398 M (28:) s
+48 398 M
+(while_5_7_0:;) s
+24 387 M (29:) s
+48 387 M
+(        ubyte *p2 = __argv[__argi];) s
+24 376 M (30:) s
+48 376 M
+(        ubyte b3 = p2 != 0;) s
+24 365 M (31:) s
+48 365 M
+(        if \(!b3\) goto break_5_7_0;) s
+24 354 M (32:) s
+48 354 M
+(        ubyte b4 = __argi > 1;) s
+24 343 M (33:) s
+48 343 M
+(        if \(!b4\) goto fi_5_8_3;) s
+24 332 M (34:) s
+48 332 M
+(        __putc \(' '\);) s
+24 321 M (35:) s
+48 321 M
+(fi_5_8_3:;) s
+24 310 M (36:) s
+48 310 M
+(        ubyte *p4 = __argv[__argi];) s
+24 299 M (37:) s
+48 299 M
+(        __puts \(p4\);) s
+24 288 M (38:) s
+48 288 M
+(        int i5 = __argi + 1;) s
+24 277 M (39:) s
+48 277 M
+(        __argi = i5;) s
+24 266 M (40:) s
+48 266 M
+(        goto while_5_7_0;) s
+24 255 M (41:) s
+48 255 M
+(break_5_7_0:;) s
+24 244 M (42:) s
+48 244 M
+(        __endl \(\);) s
+24 233 M (43:) s
+48 233 M
+(}) s
+24 222 M (44:) s
+_R
+S
+%%Page: (1) 10
+%%BeginPageSetup
+_S
+38 24 translate
+/pagenum 1 def
+/fname (facloop.oil) def
+/fdir () def
+/ftail (facloop.oil) def
+% User defined strings:
+/pagenumstr (1) def
+/moddatestr (10/04/12) def
+/modtimestr (19:14:40) def
+/user_header_p true def
+/user_header_left_str ($cmps104a-wm/Assignments/oil-examples/) def
+/user_header_center_str () def
+/user_header_right_str () def
+/user_footer_p false def
+%%EndPageSetup
+column_borders
+do_header
+30 695 M (1:) s
+48 695 M
+(/*) s
+30 684 M (2:) s
+48 684 M
+(     1  // $Id: facloop.oil,v 1.1 2012-10-04 19:14:40-07 - - $) s
+30 673 M (3:) s
+48 673 M
+(     2  //) s
+30 662 M (4:) s
+48 662 M
+(     3  // Function uses a loop to compute factorial.) s
+30 651 M (5:) s
+48 651 M
+(     4  //) s
+30 640 M (6:) s
+48 640 M
+(     5  ) s
+30 629 M (7:) s
+48 629 M
+(     6  #include "oclib.oh") s
+30 618 M (8:) s
+48 618 M
+(     7  ) s
+30 607 M (9:) s
+48 607 M
+(     8  int fac \(int n\) {) s
+24 596 M (10:) s
+48 596 M
+(     9     int f = 1;) s
+24 585 M (11:) s
+48 585 M
+(    10     while \(n > 1\) {) s
+24 574 M (12:) s
+48 574 M
+(    11        f = f * n;) s
+24 563 M (13:) s
+48 563 M
+(    12        n = n - 1;) s
+24 552 M (14:) s
+48 552 M
+(    13     }) s
+24 541 M (15:) s
+48 541 M
+(    14     return f;) s
+24 530 M (16:) s
+48 530 M
+(    15  }) s
+24 519 M (17:) s
+48 519 M
+(    16  ) s
+24 508 M (18:) s
+48 508 M
+(    17  int n = 1;) s
+24 497 M (19:) s
+48 497 M
+(    18  while \(n <= 5\) {) s
+24 486 M (20:) s
+48 486 M
+(    19     puti \(fac \(n\)\);) s
+24 475 M (21:) s
+48 475 M
+(    20     endl \(\);) s
+24 464 M (22:) s
+48 464 M
+(    21     n = n + 1;) s
+24 453 M (23:) s
+48 453 M
+(    22  }) s
+24 442 M (24:) s
+48 442 M
+(    23  ) s
+24 431 M (25:) s
+48 431 M
+(*/) s
+24 420 M (26:) s
+24 409 M (27:) s
+48 409 M
+(#define __OCLIB_C__) s
+24 398 M (28:) s
+48 398 M
+(#include "oclib.oh") s
+24 387 M (29:) s
+24 376 M (30:) s
+48 376 M
+(int __n;) s
+24 365 M (31:) s
+24 354 M (32:) s
+48 354 M
+(int __fac \() s
+24 343 M (33:) s
+48 343 M
+(        int _1_n\)) s
+24 332 M (34:) s
+48 332 M
+({) s
+24 321 M (35:) s
+48 321 M
+(        int _2_f = 1;) s
+24 310 M (36:) s
+48 310 M
+(while_5_10_3:;) s
+24 299 M (37:) s
+48 299 M
+(        ubyte b1 = _1_n > 1;) s
+24 288 M (38:) s
+48 288 M
+(        if \(!b1\) goto break_5_10_3;) s
+24 277 M (39:) s
+48 277 M
+(        int i2 = _2_f * _1_n;) s
+24 266 M (40:) s
+48 266 M
+(        _2_f = i2;) s
+24 255 M (41:) s
+48 255 M
+(        int i3 = _1_n - 1;) s
+24 244 M (42:) s
+48 244 M
+(        _1_n = i3;) s
+24 233 M (43:) s
+48 233 M
+(        goto while_5_10_3;) s
+24 222 M (44:) s
+48 222 M
+(break_5_10_3:;) s
+24 211 M (45:) s
+48 211 M
+(        return _2_f;) s
+24 200 M (46:) s
+48 200 M
+(}) s
+24 189 M (47:) s
+24 178 M (48:) s
+48 178 M
+(void __ocmain \(\)) s
+24 167 M (49:) s
+48 167 M
+({) s
+24 156 M (50:) s
+48 156 M
+(        __n = 1;) s
+24 145 M (51:) s
+48 145 M
+(while_5_18_0:;) s
+24 134 M (52:) s
+48 134 M
+(        ubyte b4 = __n <= 5;) s
+24 123 M (53:) s
+48 123 M
+(        if \(!b4\) goto break_5_18_0;) s
+24 112 M (54:) s
+48 112 M
+(        int i5 = __fac \(__n\);) s
+24 101 M (55:) s
+48 101 M
+(        __puti \(i5\);) s
+24 90 M (56:) s
+48 90 M
+(        __endl \(\);) s
+24 79 M (57:) s
+48 79 M
+(        int i6 = __n + 1;) s
+24 68 M (58:) s
+48 68 M
+(        __n = i6;) s
+24 57 M (59:) s
+48 57 M
+(        goto while_5_18_0;) s
+24 46 M (60:) s
+48 46 M
+(break_5_18_0:;) s
+24 35 M (61:) s
+48 35 M
+(}) s
+24 24 M (62:) s
+_R
+S
+%%Page: (1) 11
+%%BeginPageSetup
+_S
+38 24 translate
+/pagenum 1 def
+/fname (facrec.oil) def
+/fdir () def
+/ftail (facrec.oil) def
+% User defined strings:
+/pagenumstr (1) def
+/moddatestr (10/04/12) def
+/modtimestr (19:14:40) def
+/user_header_p true def
+/user_header_left_str ($cmps104a-wm/Assignments/oil-examples/) def
+/user_header_center_str () def
+/user_header_right_str () def
+/user_footer_p false def
+%%EndPageSetup
+column_borders
+do_header
+30 695 M (1:) s
+48 695 M
+(/*) s
+30 684 M (2:) s
+48 684 M
+(     1  // $Id: facrec.oil,v 1.1 2012-10-04 19:14:40-07 - - $) s
+30 673 M (3:) s
+48 673 M
+(     2  //) s
+30 662 M (4:) s
+48 662 M
+(     3  // Function uses a loop to compute factorial.) s
+30 651 M (5:) s
+48 651 M
+(     4  //) s
+30 640 M (6:) s
+48 640 M
+(     5  ) s
+30 629 M (7:) s
+48 629 M
+(     6  #include "oclib.oh") s
+30 618 M (8:) s
+48 618 M
+(     7  ) s
+30 607 M (9:) s
+48 607 M
+(     8  int fac \(int n\) {) s
+24 596 M (10:) s
+48 596 M
+(     9     if \(n < 2\) return 1;) s
+24 585 M (11:) s
+48 585 M
+(    10     return n * fac \(n - 1\);) s
+24 574 M (12:) s
+48 574 M
+(    11  }) s
+24 563 M (13:) s
+48 563 M
+(    12  ) s
+24 552 M (14:) s
+48 552 M
+(    13  int n = 1;) s
+24 541 M (15:) s
+48 541 M
+(    14  while \(n <= 5\) {) s
+24 530 M (16:) s
+48 530 M
+(    15     puti \(fac \(n\)\);) s
+24 519 M (17:) s
+48 519 M
+(    16     endl \(\);) s
+24 508 M (18:) s
+48 508 M
+(    17     n = n + 1;) s
+24 497 M (19:) s
+48 497 M
+(    16  }) s
+24 486 M (20:) s
+48 486 M
+(    17  ) s
+24 475 M (21:) s
+48 475 M
+(*/) s
+24 464 M (22:) s
+24 453 M (23:) s
+48 453 M
+(#define __OCLIB_C__) s
+24 442 M (24:) s
+48 442 M
+(#include "oclib.oh") s
+24 431 M (25:) s
+24 420 M (26:) s
+48 420 M
+(int __n;) s
+24 409 M (27:) s
+24 398 M (28:) s
+48 398 M
+(int __fac \() s
+24 387 M (29:) s
+48 387 M
+(        int _1_n\)) s
+24 376 M (30:) s
+48 376 M
+({) s
+24 365 M (31:) s
+48 365 M
+(        ubyte b1 = _1_n < 2;) s
+24 354 M (32:) s
+48 354 M
+(        if \(!b1\) goto fi_5_9_3;) s
+24 343 M (33:) s
+48 343 M
+(        return 1;) s
+24 332 M (34:) s
+48 332 M
+(fi_5_9_3:;) s
+24 321 M (35:) s
+48 321 M
+(        int i2 = _1_n - 1;) s
+24 310 M (36:) s
+48 310 M
+(        int i3 = __fac \(i2\);) s
+24 299 M (37:) s
+48 299 M
+(        int i4 = _1_n * i3;) s
+24 288 M (38:) s
+48 288 M
+(        return i4;) s
+24 277 M (39:) s
+48 277 M
+(}) s
+24 266 M (40:) s
+24 255 M (41:) s
+48 255 M
+(void __ocmain \(\)) s
+24 244 M (42:) s
+48 244 M
+({) s
+24 233 M (43:) s
+48 233 M
+(        __n = 1;) s
+24 222 M (44:) s
+48 222 M
+(while_5_14_0:;) s
+24 211 M (45:) s
+48 211 M
+(        ubyte b5 = __n <= 5;) s
+24 200 M (46:) s
+48 200 M
+(        if \(!b5\) goto break_5_14_0;) s
+24 189 M (47:) s
+48 189 M
+(        int i6 = __fac \(__n\);) s
+24 178 M (48:) s
+48 178 M
+(        __puti \(i6\);) s
+24 167 M (49:) s
+48 167 M
+(        __endl \(\);) s
+24 156 M (50:) s
+48 156 M
+(        int i7 = __n + 1;) s
+24 145 M (51:) s
+48 145 M
+(        __n = i7;) s
+24 134 M (52:) s
+48 134 M
+(        goto while_5_14_0;) s
+24 123 M (53:) s
+48 123 M
+(break_5_14_0:;) s
+24 112 M (54:) s
+48 112 M
+(}) s
+_R
+S
+%%Page: (1) 12
+%%BeginPageSetup
+_S
+38 24 translate
+/pagenum 1 def
+/fname (strcmp.oil) def
+/fdir () def
+/ftail (strcmp.oil) def
+% User defined strings:
+/pagenumstr (1) def
+/moddatestr (11/16/12) def
+/modtimestr (21:00:41) def
+/user_header_p true def
+/user_header_left_str ($cmps104a-wm/Assignments/oil-examples/) def
+/user_header_center_str () def
+/user_header_right_str () def
+/user_footer_p false def
+%%EndPageSetup
+column_borders
+do_header
+30 695 M (1:) s
+48 695 M
+(/*) s
+30 684 M (2:) s
+48 684 M
+(     8  int strcmp \(string s1, string s2\) {) s
+30 673 M (3:) s
+48 673 M
+(     9     int index = 0;) s
+30 662 M (4:) s
+48 662 M
+(    10     bool contin = true;) s
+30 651 M (5:) s
+48 651 M
+(    11     while \(contin\) {) s
+30 640 M (6:) s
+48 640 M
+(    12        char s1c = s1[index];) s
+30 629 M (7:) s
+48 629 M
+(    13        char s2c = s2[index];) s
+30 618 M (8:) s
+48 618 M
+(    14        int cmp = ord s1c - ord s2c;) s
+30 607 M (9:) s
+48 607 M
+(    15        if \(cmp != 0\) return cmp;) s
+24 596 M (10:) s
+48 596 M
+(    16        if \(s1c == '\\0'\) contin = false;) s
+24 585 M (11:) s
+48 585 M
+(    17        index = index + 1;) s
+24 574 M (12:) s
+48 574 M
+(    18     }) s
+24 563 M (13:) s
+48 563 M
+(    19     return 0;) s
+24 552 M (14:) s
+48 552 M
+(    20  }) s
+24 541 M (15:) s
+48 541 M
+(*/) s
+24 530 M (16:) s
+24 519 M (17:) s
+48 519 M
+(#define __OCLIB_C__) s
+24 508 M (18:) s
+48 508 M
+(#include "oclib.oh") s
+24 497 M (19:) s
+24 486 M (20:) s
+48 486 M
+(int __strcmp \() s
+24 475 M (21:) s
+48 475 M
+(        ubyte *_1_s1,) s
+24 464 M (22:) s
+48 464 M
+(        ubyte *_1_s2\)) s
+24 453 M (23:) s
+48 453 M
+({) s
+24 442 M (24:) s
+48 442 M
+(        int _2_index = 0;) s
+24 431 M (25:) s
+48 431 M
+(        ubyte _2_contin = 1;) s
+24 420 M (26:) s
+48 420 M
+(while_5_11_3:;) s
+24 409 M (27:) s
+48 409 M
+(        if \(!_2_contin\) goto break_5_11_3;) s
+24 398 M (28:) s
+48 398 M
+(        ubyte b1 = _1_s1[_2_index];) s
+24 387 M (29:) s
+48 387 M
+(        ubyte _2_s1c = b1;) s
+24 376 M (30:) s
+48 376 M
+(        ubyte b2 = _1_s2[_2_index];) s
+24 365 M (31:) s
+48 365 M
+(        ubyte _2_s2c = b2;) s
+24 354 M (32:) s
+48 354 M
+(        int i3 = \(int\) _2_s1c;) s
+24 343 M (33:) s
+48 343 M
+(        int i4 = \(int\) _2_s2c;) s
+24 332 M (34:) s
+48 332 M
+(        int i5 = i3 - i4;) s
+24 321 M (35:) s
+48 321 M
+(        int _2_cmp = i5;) s
+24 310 M (36:) s
+48 310 M
+(        ubyte b6 = _2_cmp != 0;) s
+24 299 M (37:) s
+48 299 M
+(        if \(!b6\) goto fi_5_15_6;) s
+24 288 M (38:) s
+48 288 M
+(        return _2_cmp;) s
+24 277 M (39:) s
+48 277 M
+(fi_5_15_6:;) s
+24 266 M (40:) s
+48 266 M
+(        ubyte b7 = _2_s1c == '\\0';) s
+24 255 M (41:) s
+48 255 M
+(        if \(!b7\) goto fi_5_16_6;) s
+24 244 M (42:) s
+48 244 M
+(        _2_contin = 0;) s
+24 233 M (43:) s
+48 233 M
+(fi_5_16_6:;) s
+24 222 M (44:) s
+48 222 M
+(        int i8 = _2_index + 1;) s
+24 211 M (45:) s
+48 211 M
+(        _2_index = i8;) s
+24 200 M (46:) s
+48 200 M
+(        goto while_5_11_3;) s
+24 189 M (47:) s
+48 189 M
+(break_5_11_3:;) s
+24 178 M (48:) s
+48 178 M
+(        return 0;) s
+24 167 M (49:) s
+48 167 M
+(}) s
+24 156 M (50:) s
+_R
+S
+%%Trailer
+%%Pages: 12
+%%DocumentNeededResources: font Times-Roman Courier-Bold Courier 
+%%+ font Times-Bold 
+%%EOF

@@ -1,0 +1,47 @@
+head	1.1;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.1
+date	2011.11.19.01.18.35;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@-
+@
+text
+@# 1 "oclib.oh"
+# 1 "<built-in>"
+# 1 "<command line>"
+# 1 "oclib.oh"
+
+
+
+
+
+
+    typedef unsigned char ubyte;
+# 20 "oclib.oh"
+    void *xcalloc (int nelem, int size);
+# 35 "oclib.oh"
+void __putb (unsigned char __b);
+void __putc (unsigned char __c);
+void __puti (int __i);
+void __puts (unsigned char *__s);
+void __endl (void);
+int __getc (void);
+unsigned char *__getw (void);
+unsigned char *__getln (void);
+unsigned char **__getargv (void);
+void __exit (int status);
+@

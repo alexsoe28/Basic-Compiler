@@ -1,0 +1,6 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ mkc: starting addresses.c
+addresses.c:
+     $Id: addresses.c,v 1.2 2017-11-08 16:46:14-08 - - $
+gcc -g -O0 -Wall -Wextra -fdiagnostics-color=never -std=gnu11 addresses.c -o addresses -lm
+rm -f addresses.o
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ mkc: finished addresses.c

@@ -1,0 +1,112 @@
+head	1.2;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.2
+date	2016.09.06.23.25.16;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2016.03.22.21.26.10;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@-
+@
+text
+@<HEAD>
+<TITLE>[104A] lab0-intro-unix.html</TITLE>
+<STYLE>
+body {
+   color: #2FFF2F !important;
+   background-color: #2F2F2F !important;
+}
+A:link {color: #2FFFFF}
+A:visited {color: #FFFF2F}
+A:hover {color: #FF2F2F}
+</STYLE>
+</HEAD>
+<BODY>
+<PRE>
+
+lab0 - Introduction to Unix
+
+It is assumed that everyone in class is familiar with Unix
+(Linux), the UCSC submit command, and using Makefiles.
+
+TAs should review the use of the Linux command line for those
+few students who might not be familiar with it.  All programming
+projects in this course will be done on the unix.ucsc.edu
+servers or the workstations in BE/105.
+
+Most students will, of course, develop on their own computers.
+However, the production environment will be the Linux servers,
+and all code must run there.
+
+1. Use of the submit command.
+
+All programs will be submitted via submit on the campus
+Linux hosts:
+
+submit cmps104a-wm.f16 lab0 files...
+
+Substitute for lab0 the names of later assignments.  Facilities
+such as eCommons will not be used.
+
+2. Accessing the command line from home.
+
+ssh -X username@@unix.ucsc.edu
+
+The option -X works if you are doing X11 forwarding.
+
+3. Using make
+
+Write a simple program in C++ using several modules, header
+files, and separate compilation.  Write a Makefile that can
+build it.
+
+Submit the source code and Makefile as lab0.
+
+While we will be using C++ in this course, all students are
+expected to know C (prerequisite), and may use their own
+discretion as to how much of C++ to use and how much just to
+code in C.
+
+Simplified, source code files should have the suffices .h or
+.cpp, and we use g++ to compile source code.  It is recommended
+that the containers from the STL be used instead of coding
+containers yourself.
+
+4. Not graded.
+
+This lab will not be graded.  There is no credit for it.  If the
+above interaction with Linux is not completely obvious, attend
+the first couple of labs to be brought up to speed by the TA.
+
+$Id: lab0-intro-unix.html,v 1.1 2016-03-22 14:26:10-07 - - $
+@
+
+
+1.1
+log
+@-
+@
+text
+@d35 1
+a35 1
+submit cmps104a-wm.s16 lab0 files...
+d70 1
+a70 1
+$Id: lab0-intro-unix.html,v 1.4 2016-03-22 14:25:29-07 - - $
+@

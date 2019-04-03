@@ -1,0 +1,38 @@
+head	1.1;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.1
+date	2011.10.04.03.21.58;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@-
+@
+text
+@class test {
+   char[][] na = new char[10][];
+   //error: char[][] an = new char[][10];
+   char[][][][][][][][][][][][][][][][][][][][][][][][][][] m
+      = new char[10][][][][][][][][][][][][][][][][][][][][][][][][][];
+   public static void main (String[] args) {
+      int i = 3;
+      char c = 'x';
+      i = c;
+      //error: c = i;
+      c = (char)i;
+      i = i = i;
+      (i = i) = i;
+   }
+}
+@

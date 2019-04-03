@@ -1,0 +1,67 @@
+head	1.1;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.1
+date	2011.11.19.01.18.35;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@-
+@
+text
+@/*
+     1	// $Id: 14-ocecho.oc,v 1.1 2011-11-16 20:29:54-08 - - $
+     2	
+     3	#include "oclib.oh"
+     4	
+     5	string[] argv = getargv ();
+     6	int argi = 1;
+     7	while (argv[argi] != null) {
+     8	   if (argi > 1) putc (' ');
+     9	   puts (argv[argi]);
+    10     argi = argi + 1;
+    11	}
+    12	endl ();
+    13	
+*/
+
+#define __OCLIB_C__
+#include "oclib.oh"
+
+ubyte **__argv;
+int __argi;
+
+void __ocmain ()
+{
+	ubyte **p1 = __getargv ();
+	__argv = p1;
+	__argi = 1;
+while_5_7_0:;
+	ubyte *p2 = __argv[__argi];
+	ubyte b3 = p2 != 0;
+	if (!b3) goto break_5_7_0;
+	ubyte b4 = __argi > 1;
+	if (!b4) goto fi_5_8_3;
+	__putc (' ');
+fi_5_8_3:;
+	ubyte *p4 = __argv[__argi];
+	__puts (p4);
+	int i5 = __argi + 1;
+	__argi = i5;
+	goto while_5_7_0;
+break_5_7_0:;
+	__endl ();
+}
+
+@

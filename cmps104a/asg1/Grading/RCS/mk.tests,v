@@ -1,0 +1,67 @@
+head	1.2;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.2
+date	2018.10.10.20.05.36;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2015.03.17.22.42.29;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@-
+@
+text
+@#!/bin/bash
+# $Id: mk.tests,v 1.1 2015-03-17 15:42:29-07 - - $
+export PATH=$PATH:/afs/cats.ucsc.edu/courses/cmps012b-wm/bin
+PROG=oc
+
+OCDIR=/afs/cats.ucsc.edu/courses/cmps104a-wm/Assignments/oc-programs
+cp $OCDIR/*.h $OCDIR/*.oc .
+
+for ocfile in *.oc
+do
+   $PROG $ocfile 1>$ocfile.out 2>$ocfile.err
+done
+
+$PROG nosuch.oc 1>nosuch.oc.out 2>nosuch.oc.err
+
+if [ -f 11-numbers.tok ]
+then
+   # Proj 2 ignores but does not complain about the -y flag.
+   # Proj 3, but not proj 2, outputs yyparse trace as well.
+   $PROG -ly 11-numbers.oc 2>11-numbers.lexyacctrace
+fi
+@
+
+
+1.1
+log
+@-
+@
+text
+@d2 1
+a2 1
+# $Id: mk.tests,v 1.8 2014-10-03 15:38:24-07 - - $
+d7 1
+a7 1
+cp $OCDIR/*.oh $OCDIR/*.oc .
+d9 1
+a9 1
+for ocfile in *.oc nosuch.oc
+d13 2
+@

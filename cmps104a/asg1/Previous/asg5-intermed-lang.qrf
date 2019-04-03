@@ -1,0 +1,37 @@
+.\" references for ./asg5-intermed-lang
+.ds qrf*ref-OIL_GRAMMAR-hn 1.
+.ds qrf*ref-OIL_GRAMMAR-pn 1
+.ds qrf*ref-OIL_GRAMMAR-xx 1
+.ds qrf*ref-TYPE_DECLS-hn 1.
+.ds qrf*ref-TYPE_DECLS-pn 1
+.ds qrf*ref-TYPE_DECLS-xx 2
+.ds qrf*ref-NAME_MANGLING-hn 2.3
+.ds qrf*ref-NAME_MANGLING-pn 4
+.ds qrf*ref-NAME_MANGLING-xx 3
+.ds qrf*ref-OCL_GCC-hn 2.4
+.ds qrf*ref-OCL_GCC-pn 4
+.ds qrf*ref-OCL_GCC-xx 4
+.ds qrf*ref-OCLIB_H-hn 4.
+.ds qrf*ref-OCLIB_H-pn 7
+.ds qrf*ref-OCLIB_H-xx 5
+.ds qrf*ref-OCLIB_H_OC-hn 4.
+.ds qrf*ref-OCLIB_H_OC-pn 9
+.ds qrf*ref-OCLIB_H_OC-xx 6
+.ds qrf*ref-OCLIB_H_C-hn 4.
+.ds qrf*ref-OCLIB_H_C-pn 9
+.ds qrf*ref-OCLIB_H_C-xx 7
+.ds qrf*ref-OCLIB_C_1-hn 4.
+.ds qrf*ref-OCLIB_C_1-pn 9
+.ds qrf*ref-OCLIB_C_1-xx 8
+.ds qrf*ref-OCLIB_C_2-hn 4.
+.ds qrf*ref-OCLIB_C_2-pn 10
+.ds qrf*ref-OCLIB_C_2-xx 9
+.ds qrf*ref-SAMPLE_FAC_OC-hn 4.
+.ds qrf*ref-SAMPLE_FAC_OC-pn 11
+.ds qrf*ref-SAMPLE_FAC_OC-xx 10
+.ds qrf*ref-SAMPLE_FAC_OIL-hn 4.
+.ds qrf*ref-SAMPLE_FAC_OIL-pn 11
+.ds qrf*ref-SAMPLE_FAC_OIL-xx 11
+.ds qrf*ref-END-PNR-hn 
+.ds qrf*ref-END-PNR-pn 12
+.ds qrf*ref-END-PNR-xx 12

@@ -1,0 +1,57 @@
+head	1.3;
+access;
+symbols;
+locks;
+comment	@ * @;
+
+
+1.3
+date	2018.04.03.22.53.52;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2018.04.03.22.53.39;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2018.04.03.22.53.29;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@-
+@
+text
+@#include <assert.h>
+int main() {
+   assert (0 && "foo");
+}
+@
+
+
+1.2
+log
+@-
+@
+text
+@d3 1
+a3 1
+   assert (0 & "foo");
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 1
+@

@@ -1,0 +1,77 @@
+head	1.1;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.1
+date	2011.11.19.01.18.35;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@-
+@
+text
+@/*
+     1	// $Id: 30-fac-fnloop.oc,v 1.2 2011-10-20 21:41:55-07 - - $
+     2	//
+     3	// Function uses a loop to compute factorial.
+     4	//
+     5	
+     6	#include "oclib.oh"
+     7	
+     8	int fac (int n) {
+     9	   if (n < 2) return 1;
+    10	   return n * fac (n - 1);
+    11	}
+    12	
+    13	int n = 1;
+    14	while (n <= 5) {
+    15	   puti (fac (n));
+    16     endl ();
+    17     n = n + 1;
+    16	}
+    17	
+*/
+
+#define __OCLIB_C__
+#include "oclib.oh"
+
+int __n;
+
+int __fac (
+	int _1_n)
+{
+	ubyte b1 = _1_n < 2;
+	if (!b1) goto fi_5_9_3;
+	return 1;
+fi_5_9_3:;
+	int i2 = _1_n - 1;
+	int i3 = __fac (i2);
+	int i4 = _1_n * i3;
+	return i4;
+}
+
+void __ocmain ()
+{
+	__n = 1;
+while_5_14_0:;
+        ubyte b5 = __n <= 5;
+        if (!b5) goto break_5_14_0;
+        int i6 = __fac (__n);
+        __puti (i6);
+        __endl ();
+        int i7 = __n + 1;
+        __n = i7;
+        goto while_5_14_0;
+break_5_14_0:;
+}
+@

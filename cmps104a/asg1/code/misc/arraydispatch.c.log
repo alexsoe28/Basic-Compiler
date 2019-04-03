@@ -1,0 +1,6 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ mkc: starting arraydispatch.c
+arraydispatch.c:
+     $Id: arraydispatch.c,v 1.1 2018-01-22 14:07:14-08 - - $
+gcc -g -O0 -Wall -Wextra -fdiagnostics-color=never -std=gnu11 arraydispatch.c -o arraydispatch -lm
+rm -f arraydispatch.o
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ mkc: finished arraydispatch.c

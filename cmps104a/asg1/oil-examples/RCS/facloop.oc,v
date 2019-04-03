@@ -1,0 +1,62 @@
+head	1.2;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.2
+date	2011.11.19.01.18.35;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2011.11.17.03.59.55;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@-
+@
+text
+@// $Id: 30-fac-fnloop.oc,v 1.2 2011-10-20 21:41:55-07 - - $
+//
+// Function uses a loop to compute factorial.
+//
+
+#include "oclib.oh"
+
+int fac (int n) {
+   int f = 1;
+   while (n > 1) {
+      f = f * n;
+      n = n - 1;
+   }
+   return f;
+}
+
+int n = 1;
+while (n <= 5) {
+   puti (fac (n));
+}
+
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 1
+a1 2
+// $Id: 30-fac-fnloop.oc,v 1.2 2011-10-20 21:41:55-07 - - $ */
+
+d17 5
+@
