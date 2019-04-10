@@ -85,8 +85,6 @@ void cpplines (FILE* pipe, const char* filename) {
       ++linenr;
    }
 }
-
-int main (int argc, char** argv) {
    const char* execname = basename (argv[0]);
    int exit_status = EXIT_SUCCESS;
    for (int argi = 1; argi < argc; ++argi) {

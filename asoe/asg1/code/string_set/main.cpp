@@ -64,7 +64,7 @@ int main (int argc, char** argv) {
    int exit_status = EXIT_SUCCESS;
 
    int flagOption;
-   while((flagOption = getopt(argc, argv, "@Dly:")) != -1){
+   while((flagOption = getopt(argc, argv, "@:D:ly")) != -1){
       switch(flagOption){
          case '@': set_debugflags(optarg); break; //Help
          case 'D': CPP = CPP + "-D" + optarg; break; //Help
@@ -78,25 +78,29 @@ int main (int argc, char** argv) {
       exit(exit_status);
    }
 
-
-   for (int argi = 1; argi < argc; ++argi) {
-      char* filename = argv[argi];
-      string command = CPP + " " + filename;
-      printf ("command=\"%s\"\n", command.c_str());
-      
-      FILE* pipe = popen (command.c_str(), "r");
-      if (pipe == nullptr){
-         exit_status = EXIT_FAILURE;
-         fprintf (stderr, "%s: %s: %s\n",
-                  execname, command.c_str(), strerror (errno));
-      }
-      else{
-         cpplines (pipe, filename);
-         int pclose_rc = pclose (pipe);
-         eprint_status (command.c_str(), pclose_rc);
-         if (pclose_rc != 0) exit_status = EXIT_FAILURE;
-      }
+   string fileSuffix = basename(argv[optind]);
+   if(fileSuffix.find(".oc") == string::npos){
+      perror("Usage: oc [-ly] [-@ flag ...] [-D string] program.oc\n");
+      exit(exit_status);
    }
+
+   char* filename = argv[optind];
+   string command = CPP + " " + filename;
+   printf ("command=\"%s\"\n", command.c_str());
+   
+   FILE* pipe = popen (command.c_str(), "r");
+   if (pipe == nullptr){
+      exit_status = EXIT_FAILURE;
+      fprintf (stderr, "%s: %s: %s\n",
+               execname, command.c_str(), strerror (errno));
+   }
+   else{
+      cpplines (pipe, filename);
+      int pclose_rc = pclose (pipe);
+      eprint_status (command.c_str(), pclose_rc);
+      if (pclose_rc != 0) exit_status = EXIT_FAILURE;
+   }
+   
    return exit_status;
 }
 
