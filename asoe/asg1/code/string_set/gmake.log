@@ -1,0 +1,6 @@
+g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wold-style-cast string_set.o main.o -o test_string_set
+main.o: In function `main':
+/afs/cats.ucsc.edu/users/z/asoe/CMPS104a/asoe/asg1/code/string_set/main.cpp:69: undefined reference to `set_debugflags(char const*)'
+/afs/cats.ucsc.edu/users/z/asoe/CMPS104a/asoe/asg1/code/string_set/main.cpp:100: undefined reference to `eprint_status(char const*, int)'
+collect2: error: ld returned 1 exit status
+gmake: *** [Makefile:17: test_string_set] Error 1
