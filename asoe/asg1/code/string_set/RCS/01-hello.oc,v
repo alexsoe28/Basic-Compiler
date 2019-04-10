@@ -1,0 +1,159 @@
+head	1.7;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.7
+date	2018.04.17.23.55.18;	author -;	state -;
+branches;
+next	1.6;
+
+1.6
+date	2018.04.06.20.13.08;	author -;	state -;
+branches;
+next	1.5;
+
+1.5
+date	2018.04.03.21.55.47;	author -;	state -;
+branches;
+next	1.4;
+
+1.4
+date	2018.03.30.17.19.09;	author -;	state -;
+branches;
+next	1.3;
+
+1.3
+date	2018.03.30.00.46.39;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2018.03.30.00.44.54;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2011.09.16.01.50.16;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.7
+log
+@-
+@
+text
+@// $Id: 01-hello.oc,v 1.6 2018-04-06 13:13:08-07 - - $
+// Simple hello world program.
+
+#include "oclib.h"
+
+int main() {
+   putstr ("Hello, world!\n");
+   return EXIT_SUCCESS;
+}
+
+@
+
+
+1.6
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: 01-hello.oc,v 1.5 2018-04-03 14:55:47-07 - - $
+d4 1
+a4 1
+#include "oclib.oh"
+d8 1
+@
+
+
+1.5
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: 01-hello.oc,v 1.4 2018-03-30 10:19:09-07 - - $
+d7 1
+a7 1
+   puts ("Hello, world!\n");
+@
+
+
+1.4
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: 01-hello.oc,v 1.1 2011-09-15 18:50:16-07 - - $
+d6 1
+a6 1
+void main() {
+@
+
+
+1.3
+log
+@-
+@
+text
+@d1 2
+a2 2
+//()$Id: 01-hello.oc,v 1.2 2018-03-29 17:44:54-07 - - $
+//()Simple hello world program.
+d4 1
+a4 1
+#include()"oclib.oh"
+d6 2
+a7 2
+void()main() {
+()  puts ("Hello, world!\n");
+d9 1
+@
+
+
+1.2
+log
+@-
+@
+text
+@d1 2
+a2 2
+// $Id: 01-hello.oc,v 1.1 2011-09-15 18:50:16-07 - - $
+// Simple hello world program.
+d4 1
+a4 1
+#include "oclib.oh"
+d6 2
+a7 2
+void main() {
+   puts ("Hello, world!\n");
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: 01-hello.oc,v 1.1 2011-09-15 15:30:10-07 - - $
+d6 3
+a8 1
+puts ("Hello, world!\n");
+@

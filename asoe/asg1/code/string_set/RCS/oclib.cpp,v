@@ -1,0 +1,164 @@
+head	1.5;
+access;
+symbols;
+locks;
+comment	@// @;
+
+
+1.5
+date	2018.04.03.23.26.10;	author -;	state -;
+branches;
+next	1.4;
+
+1.4
+date	2018.04.03.23.24.24;	author -;	state -;
+branches;
+next	1.3;
+
+1.3
+date	2018.04.03.23.21.16;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2018.04.03.23.00.10;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2018.04.03.22.58.40;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.5
+log
+@-
+@
+text
+@// $Id: oclib.cpp,v 1.4 2018-04-03 16:24:24-07 - - $
+
+#include <assert.h>
+#include <ctype.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+extern "C" {
+
+#define __OCLIB_C__
+#include "oclib.h"
+
+void* xcalloc (int nelem, int size) {
+   void* result = calloc (nelem, size);
+   assert (result != NULL);
+   return result;
+}
+
+char* scan (int (*skipover) (int), int (*stopat) (int)) {
+   int byte;
+   do {
+      byte = getchar();
+      if (byte == EOF) return NULL;
+   } while (skipover (byte));
+   char buffer[0x1000];
+   char* end = buffer;
+   do {
+      *end++ = byte;
+      assert (end < &buffer[sizeof buffer]);
+      *end = '\0';
+      byte = getchar();
+   }while (byte != EOF && ! stopat (byte));
+   char* result = strdup (buffer);
+   assert (result != NULL);
+   return result;
+}
+
+int isfalse (int byte)      { return 0 & byte; } 
+int isnl (int byte)         { return byte == '\n'; }
+void putint (int val)       { printf ("%d", val); }
+void putstr (const char* s) { puts (s); }
+char* getword (void)        { return scan (isspace, isspace); }
+char* getline (void)        { return scan (isfalse, isnl); } 
+
+}
+
+@
+
+
+1.4
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: oclib.c,v 1.64 2018-04-03 16:21:06-07 - - $
+d39 6
+a44 5
+int isfalse (int byte) { return 0 & byte; } 
+int isnl (int byte)    { return byte == '\n'; }
+void putint (int val)  { printf ("%d", val); }
+char* getword (void)   { return scan (isspace, isspace); }
+char* getline (void)   { return scan (isfalse, isnl); } 
+@
+
+
+1.3
+log
+@-
+@
+text
+@d9 2
+d41 1
+a41 1
+void puti (int val)    { printf ("%d", val); }
+d43 3
+a45 1
+char* getln (void)     { return scan (isfalse, isnl); } 
+@
+
+
+1.2
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: oclib.c,v 1.58 2018-04-03 15:57:24-07 - - $
+a11 7
+void ____assert_fail (const char* expr, const char* file, int line,
+                      const char *func) {
+   fprintf (stderr, "%s:%d: %s: Assertion \"%s\" failed.\n",
+            file, line, func, expr);
+   abort();
+}
+
+d37 5
+a41 9
+int isfalse (int byte)   { return 0 & byte; } 
+int isnl (int byte)      { return byte == '\n'; }
+void __putc (char byte)  { printf ("%c", byte); } 
+void __puti (int val)    { printf ("%d", val); }
+void __puts (char* str)  { printf ("%s", str); }
+int __getc (void)        { return getchar(); } 
+char* __getw (void)      { return scan (isspace, isspace); }
+char* __getln (void)     { return scan (isfalse, isnl); } 
+void __exit (int status) { exit (status); }
+@
+
+
+1.1
+log
+@-
+@
+text
+@d39 1
+a39 1
+   char* result = (char*) strdup ((char*) buffer);
+@
