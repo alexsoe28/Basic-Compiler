@@ -1,4 +1,4 @@
-// $Id: 31-fib-2supn.oc,v 1.10 2018-04-17 16:55:18-07 - - $
+// $Id: 31-fib-2supn.oc,v 1.11 2019-04-09 16:41:36-07 - - $
 //
 // Very slow program, computes Fibonacci numbers with O(2^n) speed.
 //
@@ -17,7 +17,7 @@ int main() {
       putint (n);
       putstr (") = ");
       putint (fibonacci (n));
-      putchar ('\n');
+      putchr ('\n');
       n = n + 1;
    }
    return EXIT_SUCCESS;

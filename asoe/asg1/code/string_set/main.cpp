@@ -38,12 +38,12 @@ void cpplines (FILE* pipe, const char* filename) {
       char* fgets_rc = fgets (buffer, LINESIZE, pipe);
       if (fgets_rc == nullptr) break;
       chomp (buffer, '\n');
-      printf ("%s:line %d: [%s]\n", filename, linenr, buffer);
+      //printf ("%s:line %d: [%s]\n", filename, linenr, buffer);
       // http://gcc.gnu.org/onlinedocs/cpp/Preprocessor-Output.html
       int sscanf_rc = sscanf (buffer, "# %d \"%[^\"]\"",
                               &linenr, inputname);
       if (sscanf_rc == 2) {
-         printf ("DIRECTIVE: line %d file \"%s\"\n", linenr, inputname);
+      //printf ("DIRECTIVE: line %d file \"%s\"\n", linenr, inputname);
          continue;
       }
       char* savepos = nullptr;
@@ -52,8 +52,8 @@ void cpplines (FILE* pipe, const char* filename) {
          char* token = strtok_r (bufptr, " \t\n", &savepos);
          bufptr = nullptr;
          if (token == nullptr) break;
-         printf ("token %d.%d: [%s]\n",
-                 linenr, tokenct, token);
+         //printf ("token %d.%d: [%s]\n",linenr, tokenct, token);
+         string_set::intern(token);
       }
       ++linenr;
    }
@@ -70,25 +70,27 @@ int main (int argc, char** argv) {
          case 'D': CPP = CPP + "-D" + optarg; break; //Help
          case 'l': yy_flex_debug = 1; break; 
          case 'y': yydebug = 1; break;
-         default: perror("Usage: oc [-ly] [-@ flag ...] [-D string] program.oc\n"); break;
+         default:
+         perror("Usage: oc [-ly] [-@ flag] [-D string] program.oc\n");
+         break;
       }
    }
    if(optind > argc){
-      perror("Usage: oc [-ly] [-@ flag ...] [-D string] program.oc\n");
+      perror("Usage: oc [-ly] [-@ flag] [-D string] program.oc\n");
       exit(exit_status);
    }
 
-   string fileSuffix = basename(argv[optind]);
-   if(fileSuffix.find(".oc") == string::npos){
-      perror("Usage: oc [-ly] [-@ flag ...] [-D string] program.oc\n");
+   string targetFile = basename(argv[optind]);
+   if(targetFile.find(".oc") == string::npos){
+      perror("Usage: oc [-ly] [-@ flag] [-D string] program.oc\n");
       exit(exit_status);
    }
 
    char* filename = argv[optind];
    string command = CPP + " " + filename;
-   printf ("command=\"%s\"\n", command.c_str());
-   
    FILE* pipe = popen (command.c_str(), "r");
+   string strFile = targetFile.substr(0,targetFile.size()-3)+".str"; 
+   FILE* out = fopen(strFile.c_str(), "w");
    if (pipe == nullptr){
       exit_status = EXIT_FAILURE;
       fprintf (stderr, "%s: %s: %s\n",
@@ -100,7 +102,8 @@ int main (int argc, char** argv) {
       eprint_status (command.c_str(), pclose_rc);
       if (pclose_rc != 0) exit_status = EXIT_FAILURE;
    }
-   
+   string_set::dump(out);
+   fclose(out);
    return exit_status;
 }
 

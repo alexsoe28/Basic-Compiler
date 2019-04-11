@@ -1,4 +1,4 @@
-// $Id: 41-linkedstack.oc,v 1.19 2018-05-16 15:40:20-07 - - $
+// $Id: 41-linkedstack.oc,v 1.23 2019-04-10 17:18:20-07 - - $
 
 #include "oclib.h"
 
@@ -11,20 +11,20 @@ struct stack {
    node top;
 }
 
-bool empty (stack stack) {
-   assert (stack != null);
-   return stack->top == null;
+int empty (stack stack) {
+   assert (stack != nullptr);
+   return stack->top == nullptr;
 }
 
 stack new_stack() {
    stack stack = new stack;
-   stack->top = null;
+   stack->top = nullptr;
    return stack;
 }
 
 void push (stack stack, string str) {
    node tmp = new node;
-   assert (stack != null);
+   assert (stack != nullptr);
    tmp->data = str;
    tmp->link = stack->top;
    stack->top = tmp;
@@ -32,7 +32,7 @@ void push (stack stack, string str) {
 
 string pop (stack stack) {
    string tmp = stack->top->data;
-   assert (stack != null);
+   assert (stack != nullptr);
    assert (not empty (stack));
    stack->top = stack->top->link;
    return tmp;
@@ -49,7 +49,7 @@ int main (int argc, string[] argv) {
 
    while (not empty (stack)) {
       putstr (pop (stack));
-      putchar ('\n');
+      putchr ('\n');
    }
    return EXIT_SUCCESS;
 }

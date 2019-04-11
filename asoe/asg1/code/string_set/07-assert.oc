@@ -3,7 +3,7 @@
 #include "oclib.h"
 
 int main() {
-   assert ("null" == null);
+   assert ("nullptr" == nullptr);
    return 0;
 }
 

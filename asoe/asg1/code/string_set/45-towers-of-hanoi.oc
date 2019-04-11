@@ -1,4 +1,4 @@
-// $Id: 45-towers-of-hanoi.oc,v 1.9 2018-04-17 16:55:18-07 - - $
+// $Id: 45-towers-of-hanoi.oc,v 1.10 2019-04-10 11:55:07-07 - - $
 
 #include "oclib.h"
 
@@ -19,6 +19,6 @@ void towers (int ndisks, string src, string tmp, string dst) {
 
 int main() {
    towers (4, "Source", "Temporary", "Destination");
-   return 0;
+   return EXIT_SUCCESS;
 }
 

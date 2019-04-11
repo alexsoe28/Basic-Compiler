@@ -1,11 +1,11 @@
-// $Id: 14-ocecho.oc,v 1.9 2018-04-17 16:55:18-07 - - $
+// $Id: 14-ocecho.oc,v 1.10 2019-04-09 16:41:36-07 - - $
 
 #include "oclib.h"
 
 int main(int argc, string[] argv) {
    int argi = 1;
    while (argi < argc) {
-      if (argi > 1) putchar (' ');
+      if (argi > 1) putchr (' ');
       putstr (argv[argi]);
       argi = argi + 1;
    }

@@ -1,4 +1,4 @@
-// $Id: 04-test4.oc,v 1.10 2018-04-17 16:55:18-07 - - $
+// $Id: 04-test4.oc,v 1.12 2019-04-10 11:44:36-07 - - $
 
 #include "oclib.h"
 
@@ -12,9 +12,9 @@ int main() {
    b->a = 8;
    a = a * b->a + 6;;
    putint (a);
-   putchar (' ');
+   putchr (' ');
    putint (b->a);
-   putchar ('\n');
+   putchr ('\n');
    return 0;
 }
 

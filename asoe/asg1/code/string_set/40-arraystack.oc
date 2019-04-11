@@ -1,4 +1,4 @@
-// $Id: 40-arraystack.oc,v 1.19 2018-05-16 15:38:03-07 - - $
+// $Id: 40-arraystack.oc,v 1.24 2019-04-10 18:38:50-07 - - $
 
 #include "oclib.h"
 
@@ -11,8 +11,8 @@ struct stack {
 }
 
 stack new_stack (int size) {
-   stack stack = new stack; // Zeros out both fields
-   stack->data = new string[size]; // Array of null pointers
+   stack stack = new stack;
+   stack->data = new string[size];
    stack->size = size;
    stack->top = EMPTY;
    return stack;
@@ -31,7 +31,7 @@ string pop (stack stack) {
    return tmp;
 }
 
-bool empty (stack stack) {
+int empty (stack stack) {
    return stack->top == EMPTY;
 }
 
@@ -46,7 +46,7 @@ int main (int argc, string[] argv) {
 
    while (not empty (stack)) {
       putstr (pop (stack));
-      putchar ('\n');
+      putchr ('\n');
    }
 }
 

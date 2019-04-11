@@ -1,4 +1,4 @@
-// $Id: 20-fib-array.oc,v 1.12 2018-11-26 15:38:20-08 - - $
+// $Id: 20-fib-array.oc,v 1.13 2019-04-09 16:41:36-07 - - $
 //
 // Put Fibonacci numbers in an array, then print them.
 //
@@ -6,7 +6,7 @@
 #include "oclib.h"
 
 #define FIB_SIZE 30
-int[] fibonacci = null;
+int[] fibonacci = nullptr;
 
 int main() {
    int index = 2;
@@ -26,7 +26,7 @@ int main() {
       putint (index);
       putstr ("] = ");
       putint (fibonacci[index]);
-      putchar ('\n');
+      putchr ('\n');
       index = index + 1;
    }
 }

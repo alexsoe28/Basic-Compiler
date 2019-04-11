@@ -1,4 +1,4 @@
-// $Id: 12-elseif.oc,v 1.10 2018-11-26 15:37:46-08 - - $
+// $Id: 12-elseif.oc,v 1.11 2019-04-09 16:41:36-07 - - $
 
 #include "oclib.h"
 
@@ -7,7 +7,7 @@ int main (int argc) {
    else if (argc == 2) putstr ("two");
    else if (argc == 3) putstr ("three");
    else putstr ("many");
-   putchar ('\n');
+   putchr ('\n');
    return EXIT_SUCCESS;
 }
 

@@ -1,0 +1,4 @@
+partnercheck: partner = ""
+partnercheck: ./PARTNER: no such username: ""
+0000000
+error: invalid file format for partner file

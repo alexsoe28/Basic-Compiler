@@ -1,4 +1,4 @@
-// $Id: cppstrtok.cpp,v 1.8 2017-09-21 15:51:23-07 - - $
+// $Id: cppstrtok.cpp,v 1.3 2019-04-05 14:28:09-07 - - $
 
 // Use cpp to scan a file and print line numbers.
 // Print out each input line read in, then strtok it for
@@ -58,15 +58,14 @@ void eprint_status (const char* command, int status) {
 // Run cpp against the lines of the file.
 void cpplines (FILE* pipe, const char* filename) {
    int linenr = 1;
-   char inputname[LINESIZE];
-   strcpy (inputname, filename);
    for (;;) {
       char buffer[LINESIZE];
-      char* fgets_rc = fgets (buffer, LINESIZE, pipe);
+      const char* fgets_rc = fgets (buffer, LINESIZE, pipe);
       if (fgets_rc == nullptr) break;
       chomp (buffer, '\n');
       printf ("%s:line %d: [%s]\n", filename, linenr, buffer);
       // http://gcc.gnu.org/onlinedocs/cpp/Preprocessor-Output.html
+      char inputname[LINESIZE];
       int sscanf_rc = sscanf (buffer, "# %d \"%[^\"]\"",
                               &linenr, inputname);
       if (sscanf_rc == 2) {
@@ -79,12 +78,15 @@ void cpplines (FILE* pipe, const char* filename) {
          char* token = strtok_r (bufptr, " \t\n", &savepos);
          bufptr = nullptr;
          if (token == nullptr) break;
+	\\ instead of printing, put the token in the stringset
          printf ("token %d.%d: [%s]\n",
                  linenr, tokenct, token);
       }
       ++linenr;
    }
 }
+
+int main (int argc, char** argv) {
    const char* execname = basename (argv[0]);
    int exit_status = EXIT_SUCCESS;
    for (int argi = 1; argi < argc; ++argi) {

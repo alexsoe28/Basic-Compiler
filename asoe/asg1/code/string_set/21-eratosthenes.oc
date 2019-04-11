@@ -1,4 +1,4 @@
-// $Id: 21-eratosthenes.oc,v 1.11 2018-05-18 14:47:41-07 - - $
+// $Id: 21-eratosthenes.oc,v 1.13 2019-04-10 12:24:33-07 - - $
 
 #include "oclib.h"
 
@@ -11,7 +11,7 @@ int main() {
    string[] sieve = new string[SIZE];
 
    while (index < SIZE) {
-      sieve[index] = true;
+      sieve[index] = TRUE;
       index = index + 1;
    }
 
@@ -19,7 +19,7 @@ int main() {
       if (sieve[prime]) {
          index = prime * 2;
          while (index < SIZE) {
-            sieve[index] = false;
+            sieve[index] = FALSE;
             index = index + prime;
          }
       }
@@ -30,7 +30,7 @@ int main() {
    while (index < SIZE) {
       if (sieve[index]) {
          putint (index);
-         putchar ('\n');
+         putchr ('\n');
       }
       index = index + 1;
    }

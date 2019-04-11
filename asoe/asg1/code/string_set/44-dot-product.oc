@@ -1,4 +1,4 @@
-// $Id: 44-dot-product.oc,v 1.12 2018-04-17 16:55:18-07 - - $
+// $Id: 44-dot-product.oc,v 1.13 2019-04-09 16:41:36-07 - - $
 
 #include "oclib.h"
 
@@ -24,7 +24,7 @@ int main() {
       i = i + 1;
    }
    putint (dot_product (SIZE, vec1, vec2));
-   putchar ('\n');
+   putchr ('\n');
    return 0;
 }
 

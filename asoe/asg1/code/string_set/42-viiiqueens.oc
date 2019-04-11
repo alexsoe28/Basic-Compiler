@@ -1,30 +1,30 @@
-// $Id: 42-viiiqueens.oc,v 1.14 2018-05-16 15:44:34-07 - - $
+// $Id: 42-viiiqueens.oc,v 1.17 2019-04-10 17:18:20-07 - - $
 
 #include "oclib.h"
 
 #define BOARD_SIZE 8
-int[] board = null;
+int[] board = nullptr;
 
-bool is_safe (int newcol) {
+int is_safe (int newcol) {
    int col = 0;
    int diagonal = 0;
    while (col < newcol) {
-      if (board[col] == board[newcol]) return false;
+      if (board[col] == board[newcol]) return FALSE;
       diagonal = board[col] - board[newcol];
-      if (diagonal == col - newcol) return false;
-      if (diagonal == newcol - col) return false;
+      if (diagonal == col - newcol) return FALSE;
+      if (diagonal == newcol - col) return FALSE;
       col = col + 1;
    }
-   return true;
+   return TRUE;
 }
 
 void printqueens() {
    int col = 0;
    while (col < BOARD_SIZE) {
-      putchar (board[col] + '1');
+      putchr (board[col] + '1');
       col = col + 1;
    }
-   putchar ('\n');
+   putchr ('\n');
 }
 
 void queens (int newcol) {

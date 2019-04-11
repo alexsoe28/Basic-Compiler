@@ -1,4 +1,4 @@
-// $Id: 91-typecheck.oc,v 1.7 2018-04-17 16:55:18-07 - - $
+// $Id: 91-typecheck.oc,v 1.8 2019-04-10 12:24:33-07 - - $
 //
 // This file should scan and parse correctly, 
 // but fail to type check, except for the global
@@ -6,7 +6,7 @@
 // or a semantic error.
 //
 
-int[] a = null;
+int[] a = nullptr;
 reference[] a = new string[10];
 void foo();
 void foo (int a);
@@ -25,7 +25,7 @@ int main() {
    return 3 + 4;
    a[i] = b[j];
    return;
-   while (true) {a = 3; b = 4; }
+   while (TRUE) {a = 3; b = 4; }
    if (a == b) f (x);
    if (a != b) y = 3; else f (y, z);
 }

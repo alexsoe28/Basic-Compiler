@@ -1,4 +1,4 @@
-// $Id: 53-insertionsort.oc,v 1.17 2018-05-16 15:43:13-07 - - $
+// $Id: 53-insertionsort.oc,v 1.21 2019-04-10 17:18:20-07 - - $
 //
 // Use insertion sort to print argv in sorted order.
 //
@@ -7,16 +7,16 @@
 
 int strcmp (string s1, string s2) {
    int index = 0;
-   bool contin = true;
-   char s1c = 0;
-   char s2c = 0;
+   int contin = TRUE;
+   int s1c = 0;
+   int s2c = 0;
    int cmp = 0;
    while (contin) {
       s1c = s1[index];
       s2c = s2[index];
       cmp = s1c - s2c;
       if (cmp != 0) return cmp;
-      if (s1c == '\0') contin = false;
+      if (s1c == '\0') contin = FALSE;
       index = index + 1;
    }
    return 0;
@@ -25,17 +25,17 @@ int strcmp (string s1, string s2) {
 void insertion_sort (int size, string[] array) {
    int sorted = 1;
    int slot = 0;
-   string element = null;
-   bool contin = false;
+   string element = nullptr;
+   int contin = FALSE;
    while (sorted < size) {
       slot = sorted;
       element = array[slot];
-      contin = true;
+      contin = TRUE;
       while (contin) {
          if (slot == 0) {
-            contin = false;
+            contin = FALSE;
          }else if (strcmp (array[slot - 1], element) <= 0) {
-            contin = false;
+            contin = FALSE;
          }else {
             array[slot] = array[slot - 1];
             slot = slot - 1;
@@ -48,12 +48,12 @@ void insertion_sort (int size, string[] array) {
 
 void print_array (string label, int size, string[] array) {
    int index = 0;
-   putchar ('\n');
+   putchr ('\n');
    putstr (label);
    putstr (":\n");
    while (index < size) {
       putstr (array[index]);
-      putchar ('\n');
+      putchr ('\n');
       index = index + 1;
    }
 }
