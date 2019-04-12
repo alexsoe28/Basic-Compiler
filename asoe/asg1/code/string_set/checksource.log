@@ -1,3 +1,0 @@
-checksource: line length > 72 characters
-   file "oclib.h": 1 errors: line 12
-checksource: TOTAL COMPLAINTS: 1

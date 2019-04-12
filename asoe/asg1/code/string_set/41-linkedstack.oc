@@ -1,4 +1,4 @@
-// $Id: 41-linkedstack.oc,v 1.23 2019-04-10 17:18:20-07 - - $
+// $Id: 41-linkedstack.oc,v 1.24 2019-04-11 12:35:54-07 - - $
 
 #include "oclib.h"
 

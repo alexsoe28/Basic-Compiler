@@ -1,4 +1,4 @@
-// $Id: 42-viiiqueens.oc,v 1.17 2019-04-10 17:18:20-07 - - $
+// $Id: 42-viiiqueens.oc,v 1.18 2019-04-11 12:35:54-07 - - $
 
 #include "oclib.h"
 

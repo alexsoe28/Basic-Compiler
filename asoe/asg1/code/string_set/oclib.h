@@ -1,4 +1,4 @@
-// $Id: oclib.h,v 1.30 2019-04-10 17:29:19-07 - - $
+// $Id: oclib.h,v 1.31 2019-04-11 12:36:19-07 - - $
 
 #ifndef __OCLIB_H__
 #define __OCLIB_H__
@@ -9,7 +9,8 @@
 #define TRUE 1
 #define FALSE 0
 
-#define assert(expr) if (not (expr)) assert_fail (#expr, __FILE__, __LINE__); 
+#define assert(expr) \
+        if (not (expr)) assert_fail (#expr, __FILE__, __LINE__); 
 
 void assert_fail (string expr, string file, int line);
 

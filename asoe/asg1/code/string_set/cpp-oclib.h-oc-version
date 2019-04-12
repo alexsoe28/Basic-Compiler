@@ -5,13 +5,15 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
 # 1 "oclib.h"
-# 30 "oclib.h"
-void __assert_fail (string expr, string file, int line, string func);
-void putchar (int c);
+# 14 "oclib.h"
+void assert_fail (string expr, string file, int line);
+
+void putchr (int c);
 void putint (int i);
 void putstr (string s);
-int getchar();
-string getword();
+
+int getchr();
+string getstr();
 string getln();
-void endl();
+
 void exit (int status);

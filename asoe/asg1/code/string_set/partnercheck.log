@@ -1,4 +1,62 @@
-partnercheck: partner = ""
-partnercheck: ./PARTNER: no such username: ""
-0000000
+partnercheck: partner = "This program was completed using pair programming.
+Partner:  Alexander Soe (asoe@ucsc.edu)
+Partner:  Ashley Lavizadeh (alavizadeh@ucsc.edu)
+
+We acknowledge that each partner in a programming pair is
+responsible for the work performed bythe other partner,
+and has been reviewed by both partners working together.
+
+Alexander Soe spent _4__ hours working alone.
+Ashley Lavizadeh spent _4__ hours working alone.
+We spent _6__ hours working together.
+Alexander Soe spent _3__ hours driving.
+Ashley Lavizadeh spent _3__ hours driving."
+partnercheck: ./PARTNER: no such username: "This program was completed using pair programming.
+Partner:  Alexander Soe (asoe@ucsc.edu)
+Partner:  Ashley Lavizadeh (alavizadeh@ucsc.edu)
+
+We acknowledge that each partner in a programming pair is
+responsible for the work performed bythe other partner,
+and has been reviewed by both partners working together.
+
+Alexander Soe spent _4__ hours working alone.
+Ashley Lavizadeh spent _4__ hours working alone.
+We spent _6__ hours working together.
+Alexander Soe spent _3__ hours driving.
+Ashley Lavizadeh spent _3__ hours driving."
+0000000   T   h   i   s       p   r   o   g   r   a   m       w   a   s
+0000020       c   o   m   p   l   e   t   e   d       u   s   i   n   g
+0000040       p   a   i   r       p   r   o   g   r   a   m   m   i   n
+0000060   g   .  \n   P   a   r   t   n   e   r   :           A   l   e
+0000100   x   a   n   d   e   r       S   o   e       (   a   s   o   e
+0000120   @   u   c   s   c   .   e   d   u   )  \n   P   a   r   t   n
+0000140   e   r   :           A   s   h   l   e   y       L   a   v   i
+0000160   z   a   d   e   h       (   a   l   a   v   i   z   a   d   e
+0000200   h   @   u   c   s   c   .   e   d   u   )  \n  \n   W   e    
+0000220   a   c   k   n   o   w   l   e   d   g   e       t   h   a   t
+0000240       e   a   c   h       p   a   r   t   n   e   r       i   n
+0000260       a       p   r   o   g   r   a   m   m   i   n   g       p
+0000300   a   i   r       i   s  \n   r   e   s   p   o   n   s   i   b
+0000320   l   e       f   o   r       t   h   e       w   o   r   k    
+0000340   p   e   r   f   o   r   m   e   d       b   y   t   h   e    
+0000360   o   t   h   e   r       p   a   r   t   n   e   r   ,  \n   a
+0000400   n   d       h   a   s       b   e   e   n       r   e   v   i
+0000420   e   w   e   d       b   y       b   o   t   h       p   a   r
+0000440   t   n   e   r   s       w   o   r   k   i   n   g       t   o
+0000460   g   e   t   h   e   r   .  \n  \n   A   l   e   x   a   n   d
+0000500   e   r       S   o   e       s   p   e   n   t       _   4   _
+0000520   _       h   o   u   r   s       w   o   r   k   i   n   g    
+0000540   a   l   o   n   e   .  \n   A   s   h   l   e   y       L   a
+0000560   v   i   z   a   d   e   h       s   p   e   n   t       _   4
+0000600   _   _       h   o   u   r   s       w   o   r   k   i   n   g
+0000620       a   l   o   n   e   .  \n   W   e       s   p   e   n   t
+0000640       _   6   _   _       h   o   u   r   s       w   o   r   k
+0000660   i   n   g       t   o   g   e   t   h   e   r   .  \n   A   l
+0000700   e   x   a   n   d   e   r       S   o   e       s   p   e   n
+0000720   t       _   3   _   _       h   o   u   r   s       d   r   i
+0000740   v   i   n   g   .  \n   A   s   h   l   e   y       L   a   v
+0000760   i   z   a   d   e   h       s   p   e   n   t       _   3   _
+0001000   _       h   o   u   r   s       d   r   i   v   i   n   g   .
+0001020  \n
+0001021
 error: invalid file format for partner file

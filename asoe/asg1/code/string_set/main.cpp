@@ -63,6 +63,8 @@ int main (int argc, char** argv) {
    const char* execname = basename (argv[0]);
    int exit_status = EXIT_SUCCESS;
 
+   /*Getopt switch case checks the user input in console 
+   for which flags they call during compiler call*/
    int flagOption;
    while((flagOption = getopt(argc, argv, "@:D:ly")) != -1){
       switch(flagOption){
@@ -75,22 +77,26 @@ int main (int argc, char** argv) {
          break;
       }
    }
+
    if(optind > argc){
       perror("Usage: oc [-ly] [-@ flag] [-D string] program.oc\n");
       exit(exit_status);
    }
-
+   
+   //check if the file ends in .oc
    string targetFile = basename(argv[optind]);
    if(targetFile.find(".oc") == string::npos){
       perror("Usage: oc [-ly] [-@ flag] [-D string] program.oc\n");
       exit(exit_status);
    }
 
+   //Rename file with .str
+   string strFile = targetFile.substr(0,targetFile.size()-3)+".str"; 
+   FILE* out = fopen(strFile.c_str(), "w");
+
    char* filename = argv[optind];
    string command = CPP + " " + filename;
    FILE* pipe = popen (command.c_str(), "r");
-   string strFile = targetFile.substr(0,targetFile.size()-3)+".str"; 
-   FILE* out = fopen(strFile.c_str(), "w");
    if (pipe == nullptr){
       exit_status = EXIT_FAILURE;
       fprintf (stderr, "%s: %s: %s\n",
@@ -102,6 +108,7 @@ int main (int argc, char** argv) {
       eprint_status (command.c_str(), pclose_rc);
       if (pclose_rc != 0) exit_status = EXIT_FAILURE;
    }
+   //Dump into new file with .str suffix and close file
    string_set::dump(out);
    fclose(out);
    return exit_status;
