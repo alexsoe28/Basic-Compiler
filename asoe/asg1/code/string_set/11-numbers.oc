@@ -1,16 +1,16 @@
-// $Id: 11-numbers.oc,v 1.8 2019-04-09 16:41:36-07 - - $
+// $Id: 11-numbers.oc,v 1.9 2019-04-12 14:33:00-07 - - $
 
 #include "oclib.h"
 
 int main() {
    int number = 1;
-   while (number > 0) {
+   int done = FALSE;
+   while (not done) {
       putint (number);
       putchr ('\n');
+      if (number <= 0) done = TRUE;
       number = number + number;
    }
-   putint (number);
-   putchr ('\n');
    return EXIT_SUCCESS;
 }
 

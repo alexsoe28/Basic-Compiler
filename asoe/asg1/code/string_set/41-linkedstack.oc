@@ -1,15 +1,15 @@
-// $Id: 41-linkedstack.oc,v 1.24 2019-04-11 12:35:54-07 - - $
+// $Id: 41-linkedstack.oc,v 1.27 2019-04-12 14:48:28-07 - - $
 
 #include "oclib.h"
 
 struct node {
    string data;
    node link;
-}
+};
 
 struct stack {
    node top;
-}
+};
 
 int empty (stack stack) {
    assert (stack != nullptr);

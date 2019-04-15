@@ -1,10 +1,10 @@
-// $Id: 04-test4.oc,v 1.12 2019-04-10 11:44:36-07 - - $
+// $Id: 04-test4.oc,v 1.13 2019-04-12 13:08:07-07 - - $
 
 #include "oclib.h"
 
 struct foo {
    int a;
-}
+};
 
 int main() {
    int a = 6;

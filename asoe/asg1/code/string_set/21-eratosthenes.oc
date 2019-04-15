@@ -1,4 +1,4 @@
-// $Id: 21-eratosthenes.oc,v 1.13 2019-04-10 12:24:33-07 - - $
+// $Id: 21-eratosthenes.oc,v 1.14 2019-04-12 13:47:50-07 - - $
 
 #include "oclib.h"
 
@@ -8,7 +8,7 @@
 int main() {
    int prime = LOWPRIME;
    int index = LOWPRIME;
-   string[] sieve = new string[SIZE];
+   int[] sieve = new int[SIZE];
 
    while (index < SIZE) {
       sieve[index] = TRUE;

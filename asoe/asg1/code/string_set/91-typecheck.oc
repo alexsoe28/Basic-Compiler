@@ -1,4 +1,4 @@
-// $Id: 91-typecheck.oc,v 1.9 2019-04-11 12:35:54-07 - - $
+// $Id: 91-typecheck.oc,v 1.10 2019-04-12 13:08:07-07 - - $
 //
 // This file should scan and parse correctly, 
 // but fail to type check, except for the global
@@ -11,7 +11,7 @@ reference[] a = new string[10];
 void foo();
 void foo (int a);
 void foo (int[] a, int[] b) {int x = a + b;}
-struct foo { int a; int b; }
+struct foo { int a; int b; };
 
 int main() {
    a + b;

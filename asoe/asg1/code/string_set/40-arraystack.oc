@@ -1,4 +1,4 @@
-// $Id: 40-arraystack.oc,v 1.24 2019-04-10 18:38:50-07 - - $
+// $Id: 40-arraystack.oc,v 1.27 2019-04-12 14:48:28-07 - - $
 
 #include "oclib.h"
 
@@ -8,7 +8,7 @@ struct stack {
    string[] data;
    int size;
    int top;
-}
+};
 
 stack new_stack (int size) {
    stack stack = new stack;
