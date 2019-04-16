@@ -1,4 +1,9 @@
 // $Id: main.cpp,v 1.2 2016-08-18 15:13:48-07 - - $
+//Alexander Soe
+//asoe
+//Ashley Lavizadeh
+//alavizad
+
 #include <unistd.h>
 #include <iostream>
 #include <string>

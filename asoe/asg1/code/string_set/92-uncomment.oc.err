@@ -1,4 +1,4 @@
 92-uncomment.oc:1:1: error: unterminated comment
  /*
  ^
-oc: auxlib.cpp:49: void veprintf(const char*, __va_list_tag*): Assertion `exec::execname.size() != 0' failed.
+oc: auxlib.cpp:52: void veprintf(const char*, __va_list_tag*): Assertion `exec::execname.size() != 0' failed.

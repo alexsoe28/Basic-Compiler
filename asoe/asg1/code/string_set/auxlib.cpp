@@ -1,5 +1,8 @@
 // $Id: auxlib.cpp,v 1.5 2017-10-11 14:28:23-07 - - $
-
+//Alexander Soe
+//asoe
+//Ashley Lavizadeh
+//alavizad
 #include <assert.h>
 #include <errno.h>
 #include <libgen.h>

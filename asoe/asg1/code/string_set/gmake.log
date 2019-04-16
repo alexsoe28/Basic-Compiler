@@ -1,1 +1,5 @@
-gmake: Nothing to be done for 'all'.
+g++ -std=gnu++17 -MM string_set.cpp main.cpp auxlib.cpp >Makefile.dep
+g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wold-style-cast -c string_set.cpp
+g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wold-style-cast -c main.cpp
+g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wold-style-cast -c auxlib.cpp
+g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wold-style-cast string_set.o main.o auxlib.o -o oc
