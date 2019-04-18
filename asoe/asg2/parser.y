@@ -47,4 +47,3 @@ const char *parser::get_tname (int symbol) {
 bool is_defined_token (int symbol) {
    return YYTRANSLATE (symbol) > YYUNDEFTOK;
 }
-
