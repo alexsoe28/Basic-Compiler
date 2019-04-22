@@ -48,10 +48,9 @@ void cpplines (FILE* pipe, const char* filename) {
        char* fgets_rc = fgets (buffer, LINESIZE, pipe);
        if (fgets_rc == nullptr) break;
        chomp (buffer, '\n');
-       //printf ("%s:line %d: [%s]\n", filename, linenr, buffer);
-       // http://gcc.gnu.org/onlinedocs/cpp/Preprocessor-Output.html
        sscanf (buffer, "# %d \"%[^\"]\"",
           &linenr, inputname);
+
        char* savepos = nullptr;
        char* bufptr = buffer;
        for (int tokenct = 1;; ++tokenct) {
@@ -61,6 +60,7 @@ void cpplines (FILE* pipe, const char* filename) {
           //printf ("token %d.%d: [%s]\n",linenr, tokenct, token);
              string_set::intern(token);
        }
+       
        const char* tokFile = (
           targetFile.substr(0,targetFile.size()-3) + ".tok").c_str();
        outFile = fopen(tokFile, "w");
@@ -72,8 +72,8 @@ void cpplines (FILE* pipe, const char* filename) {
              break;
           }
        }
-          fclose(outFile);
-          ++linenr;
+       fclose(outFile);
+       ++linenr;
    }
 }
 
