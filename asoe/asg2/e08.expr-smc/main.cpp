@@ -28,8 +28,9 @@ string CPP = "/usr/bin/cpp -nostdinc";
 constexpr size_t LINESIZE = 1024;
 extern int yydebug;
 extern int yy_flex_debug;
-extern FILE* outFile;
+FILE* outFile;
 string targetFile;
+int exit_status;
 
 void chomp (char* string, char delim) {
    size_t len = strlen (string);
@@ -39,30 +40,40 @@ void chomp (char* string, char delim) {
 }
 
 void cpplines (FILE* pipe, const char* filename) {
-   int linenr = 1;
-   char inputname[LINESIZE];
-   strcpy (inputname, filename);
-   for (;;) {
-      char buffer[LINESIZE];
-      char* fgets_rc = fgets (buffer, LINESIZE, pipe);
-      if (fgets_rc == nullptr) break;
-      chomp (buffer, '\n');
-      //printf ("%s:line %d: [%s]\n", filename, linenr, buffer);
-      // http://gcc.gnu.org/onlinedocs/cpp/Preprocessor-Output.html
-      sscanf (buffer, "# %d \"%[^\"]\"",
-            &linenr, inputname);
-      const char* tokFile = (
-         targetFile.substr(0,targetFile.size()-3) + ".tok").c_str();
-      char* savepos = nullptr;
-      char* bufptr = buffer;
-      for (int tokenct = 1;; ++tokenct) {
-         char* token = strtok_r (bufptr, " \t\n", &savepos);
-         bufptr = nullptr;
-         if (token == nullptr) break;
-         //printf ("token %d.%d: [%s]\n",linenr, tokenct, token);
-         string_set::intern(token);
-      }
-      ++linenr;
+    int linenr = 1;
+    char inputname[LINESIZE];
+    strcpy (inputname, filename);
+    for (;;) {
+       char buffer[LINESIZE];
+       char* fgets_rc = fgets (buffer, LINESIZE, pipe);
+       if (fgets_rc == nullptr) break;
+       chomp (buffer, '\n');
+       //printf ("%s:line %d: [%s]\n", filename, linenr, buffer);
+       // http://gcc.gnu.org/onlinedocs/cpp/Preprocessor-Output.html
+       sscanf (buffer, "# %d \"%[^\"]\"",
+          &linenr, inputname);
+       char* savepos = nullptr;
+       char* bufptr = buffer;
+       for (int tokenct = 1;; ++tokenct) {
+          char* token = strtok_r (bufptr, " \t\n", &savepos);
+          bufptr = nullptr;
+          if (token == nullptr) break;
+          //printf ("token %d.%d: [%s]\n",linenr, tokenct, token);
+             string_set::intern(token);
+       }
+       const char* tokFile = (
+          targetFile.substr(0,targetFile.size()-3) + ".tok").c_str();
+       outFile = fopen(tokFile, "w");
+       int token;
+       while((token == yylex()) != YYEOF){
+          if(token == -1){
+             perror("Encountered bad set of characters\n");
+             exit_status = EXIT_FAILURE;
+             break;
+          }
+       }
+          fclose(outFile);
+          ++linenr;
    }
 }
 
@@ -70,7 +81,7 @@ int main (int argc, char** argv) {
    const char* execname = basename (argv[0]);
    yy_flex_debug = 0;
    yydebug = 0;
-   int exit_status = EXIT_SUCCESS;
+   exit_status = EXIT_SUCCESS;
 
    /*Getopt switch case checks the user input in console 
    for which flags they call during compiler call*/
