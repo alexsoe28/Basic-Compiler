@@ -1,18 +1,28 @@
-// $Id: oclib.h,v 1.31 2019-04-11 12:36:19-07 - - $
+// $Id: oclib.h,v 1.8 2019-04-22 18:04:42-07 - - $
+
+// Bilingual file useable as a header file for both oc and c++.
 
 #ifndef __OCLIB_H__
 #define __OCLIB_H__
 
-#define EXIT_SUCCESS 0
-#define EXIT_FAILURE 1
-#define EOF (-1)
+#ifdef __cplusplus
+   using string = char*;
+   extern "C" {
+   #define END_EXTERN_C }
+#else
+   #define END_EXTERN_C
+#endif
+
+#define SUCCESS 0
+#define FAILURE 1
+#define BOOL int
 #define TRUE 1
 #define FALSE 0
+#define EOF (-1)
 
-#define assert(expr) \
-        if (not (expr)) assert_fail (#expr, __FILE__, __LINE__); 
+#define assert(expr) {if (not (expr)) fail (#expr, __FILE__, __LINE__);}
 
-void assert_fail (string expr, string file, int line);
+void fail (string expr, string file, int line);
 
 void putchr (int c);
 void putint (int i);
@@ -22,7 +32,7 @@ int getchr();
 string getstr();
 string getln();
 
-void exit (int status);
+END_EXTERN_C
 
 #endif
 

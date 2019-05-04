@@ -1,8 +1,8 @@
-// $Id: 14-ocecho.oc,v 1.10 2019-04-09 16:41:36-07 - - $
+// $Id: 14-ocecho.oc,v 1.1 2019-04-16 12:14:45-07 - - $
 
 #include "oclib.h"
 
-int main(int argc, string[] argv) {
+int main(int argc, array<string> argv) {
    int argi = 1;
    while (argi < argc) {
       if (argi > 1) putchr (' ');
@@ -10,6 +10,6 @@ int main(int argc, string[] argv) {
       argi = argi + 1;
    }
    putstr ("\n");
-   return EXIT_SUCCESS;
+   return SUCCESS;
 }
 

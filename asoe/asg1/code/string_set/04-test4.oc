@@ -1,4 +1,4 @@
-// $Id: 04-test4.oc,v 1.13 2019-04-12 13:08:07-07 - - $
+// $Id: 04-test4.oc,v 1.1 2019-04-16 12:14:45-07 - - $
 
 #include "oclib.h"
 
@@ -8,13 +8,13 @@ struct foo {
 
 int main() {
    int a = 6;
-   foo b = new foo;
+   ptr<struct foo> b = alloc<struct foo>();
    b->a = 8;
    a = a * b->a + 6;;
    putint (a);
    putchr (' ');
    putint (b->a);
    putchr ('\n');
-   return 0;
+   return SUCCESS;
 }
 

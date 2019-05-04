@@ -1,9 +1,9 @@
-// $Id: 42-viiiqueens.oc,v 1.18 2019-04-11 12:35:54-07 - - $
+// $Id: 42-viiiqueens.oc,v 1.1 2019-04-16 12:14:45-07 - - $
 
 #include "oclib.h"
 
 #define BOARD_SIZE 8
-int[] board = nullptr;
+array<int> board = nullptr;
 
 int is_safe (int newcol) {
    int col = 0;
@@ -40,8 +40,8 @@ void queens (int newcol) {
 }
 
 int main() {
-   board = new int[BOARD_SIZE];
+   board = alloc<array<int>> (BOARD_SIZE);
    queens (0);
-   return 0;
+   return SUCCESS;
 }
 

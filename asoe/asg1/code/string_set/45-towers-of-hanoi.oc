@@ -1,11 +1,11 @@
-// $Id: 45-towers-of-hanoi.oc,v 1.10 2019-04-10 11:55:07-07 - - $
+// $Id: 45-towers-of-hanoi.oc,v 1.1 2019-04-16 12:14:45-07 - - $
 
 #include "oclib.h"
 
 void move (string src, string dst) {
-   putstr ("Move a disk from ");
+   putstr ("Move a disk from the ");
    putstr (src);
-   putstr (" to ");
+   putstr (" to the ");
    putstr (dst);
    putstr (".\n");
 }
@@ -18,7 +18,7 @@ void towers (int ndisks, string src, string tmp, string dst) {
 }
 
 int main() {
-   towers (4, "Source", "Temporary", "Destination");
-   return EXIT_SUCCESS;
+   towers (4, "source", "temporary", "distination");
+   return SUCCESS;
 }
 

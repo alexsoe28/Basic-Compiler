@@ -1,4 +1,8 @@
 // $Id: lyutils.h,v 1.7 2019-04-18 13:33:21-07 - - $
+//Alexander Soe
+//asoe
+//Ashley Lavizadeh
+//alavizad
 
 #ifndef __UTILS_H__
 #define __UTILS_H__

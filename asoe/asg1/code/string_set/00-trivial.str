@@ -1,3 +1,5 @@
-load_factor = 0.000
-bucket_count = 1
-max_bucket_size = 0
+string_set[   2]:   12597418120160561823 0x93f498->"int"
+string_set[   6]:    7019575824533966140 0x93f508->"main(){}"
+load_factor = 0.286
+bucket_count = 7
+max_bucket_size = 1

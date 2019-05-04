@@ -1,4 +1,8 @@
 // $Id: auxlib.cpp,v 1.4 2019-04-10 15:50:29-07 - - $
+//Alexander Soe
+//asoe
+//Ashley Lavizadeh
+//alavizad
 
 #include <assert.h>
 #include <errno.h>

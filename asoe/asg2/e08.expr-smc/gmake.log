@@ -2,8 +2,4 @@
 Done processing main.cpp
 /afs/cats.ucsc.edu/courses/cmps104a-wm/bin//checksource main.cpp
 g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wpedantic -Wshadow -Wold-style-cast -fdiagnostics-color=never -c main.cpp
-main.cpp: In function ‘void cpplines(FILE*, const char*)’:
-main.cpp:69:11: warning: ‘token’ may be used uninitialized in this function [-Wmaybe-uninitialized]
-           if(token == -1){
-           ^~
-g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wpedantic -Wshadow -Wold-style-cast -fdiagnostics-color=never -ozexprsm astree.o lyutils.o string_set.o emitter.o auxlib.o main.o yylex.o yyparse.o
+g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wpedantic -Wshadow -Wold-style-cast -fdiagnostics-color=never -ooc astree.o lyutils.o string_set.o auxlib.o main.o yylex.o yyparse.o

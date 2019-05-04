@@ -1,4 +1,4 @@
-// $Id: 06-test6.oc,v 1.12 2019-04-12 13:08:07-07 - - $
+// $Id: 06-test6.oc,v 1.1 2019-04-16 12:14:45-07 - - $
 
 #include "oclib.h"
 
@@ -9,11 +9,11 @@ int f0();
 int f1 (int a);
 int f2 (int a, int b);
 int f3 (string a, string b, string c);
-int f4 (foo a, bar b);
+int f4 (ptr<struct foo> a, ptr<struct bar> b);
 
 int main() {
    string s = "a";
-   string[] sa = new string[10];
-   return 0;
+   array<string> sa = alloc<array<string>>(10);
+   return SUCCESS;
 }
 

@@ -1,4 +1,8 @@
 // $Id: auxlib.h,v 1.5 2017-10-11 14:33:45-07 - - $
+//Alexander Soe
+//asoe
+//Ashley Lavizadeh
+//alavizad
 
 #ifndef __AUXLIB_H__
 #define __AUXLIB_H__

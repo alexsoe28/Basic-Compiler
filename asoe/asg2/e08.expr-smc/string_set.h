@@ -1,4 +1,8 @@
 // $Id: string_set.h,v 1.2 2016-08-18 15:12:57-07 - - $
+//Alexander Soe
+//asoe
+//Ashley Lavizadeh
+//alavizad
 
 #ifndef __STRING_SET__
 #define __STRING_SET__

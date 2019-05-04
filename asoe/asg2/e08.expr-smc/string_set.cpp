@@ -1,4 +1,8 @@
 // $Id: string_set.cpp,v 1.5 2019-03-15 14:32:40-07 - - $
+//Alexander Soe
+//asoe
+//Ashley Lavizadeh
+//alavizad
 
 #include <string>
 #include <unordered_set>

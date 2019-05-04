@@ -1,4 +1,8 @@
 // $Id: astree.h,v 1.10 2016-10-06 16:42:35-07 - - $
+//Alexander Soe
+//asoe
+//Ashley Lavizadeh
+//alavizad
 
 #ifndef __ASTREE_H__
 #define __ASTREE_H__

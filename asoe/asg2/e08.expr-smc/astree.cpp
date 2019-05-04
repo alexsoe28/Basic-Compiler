@@ -1,4 +1,8 @@
 // $Id: astree.cpp,v 1.17 2019-03-15 14:32:40-07 - - $
+//Alexander Soe
+//asoe
+//Ashley Lavizadeh
+//alavizad
 
 #include <assert.h>
 #include <inttypes.h>

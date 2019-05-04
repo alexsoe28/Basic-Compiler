@@ -1,9 +1,7 @@
-/* $Id: lexer.l,v 1.9 2019-04-18 13:33:21-07 - - $ */
-
 %{
 
 #include "lyutils.h"
-
+#include "auxlib.h"
 #define YY_USER_ACTION  { lexer::advance(); }
 
 %}
@@ -25,39 +23,39 @@ EXPONENT        ([Ee][+-]?{DIGIT}+)
 NUMBER          ({MANTISSA}{EXPONENT}?)
 NOTNUMBER       ({MANTISSA}[Ee][+-]?)
 IDENT           ({LETTER}({LETTER}|{DIGIT})*)
-
+INTEGER         ({DIGIT}+)
 STRING          (\"([^\\"\n]|\\[\\'"0nt])*\")
 CHAR            ('([^\\'\n]|\\[\\'"0nt])')
 %%
 
-"#".*           { lexer::include(); }
-[ \t]+          { }
-\n              { lexer::newline(); }
+"#".*               { lexer::include(); }
+[ \t]+              { }
+\n                  { lexer::newline(); }
 
-"if"            { return yylval_token (TOK_IF); }
-"else"          { return yylval_token (TOK_ELSE); }
-"while"         { return yylval_token (TOK_WHILE); }
-"return"        { return yylval_token (TOK_RETURN); }
-"alloc"         { return yylval_token (TOK_ALLOC); }
-"nullptr"       { return yylval_token (TOK_NULLPTR); }
-"not"           { return yylval_token (TOK_NOT); }
-"int"           { return yylval_token (TOK_INT); }
-"string"        { return yylval_token (TOK_STRING); }
-"struct"        { return yylval_token (TOK_STRUCT); }
-"array"         { return yylval_token (TOK_ARRAY); }
-"ptr"           { return yylval_token (TOK_PTR); }
-"void"          { return yylval_token (TOK_VOID); }
+"if"                { return lexer::token (TOK_IF); }
+"else"              { return lexer::token (TOK_ELSE); }
+"while"             { return lexer::token (TOK_WHILE); }
+"return"            { return lexer::token (TOK_RETURN); }
+"alloc"             { return lexer::token (TOK_ALLOC); }
+"nullptr"           { return lexer::token (TOK_NULLPTR); }
+"not"               { return lexer::token (TOK_NOT); }
+"int"               { return lexer::token (TOK_INT); }
+"string"            { return lexer::token (TOK_STRING); }
+"struct"            { return lexer::token (TOK_STRUCT); }
+"array"             { return lexer::token (TOK_ARRAY); }
+"ptr"               { return lexer::token (TOK_PTR); }
+"void"              { return lexer::token (TOK_VOID); }
 
-{STRING}        { return yylval_token (TOK_STR_CONST); }
-{CHAR}          { return yylval_token (TOK_CHAR_CONST); }
-(\[\])          { return yylval_token (TOK_ARRAY); }
-{NUMBER}            { return lexer::token (NUMBER); }
-{IDENT}             { return lexer::token (IDENT); }
-"<="            { return yylval_token (TOK_LEQ); }
-">="            { return yylval_token (TOK_GEQ); }
-"==""            { return yylval_token (TOK_EQ); }
-"!=""            { return yylval_token (TOK_NEQ); }
-"->""            { return yylval_token (TOK_PTR); }
+{STRING}            { return lexer::token (TOK_STRINGCON); }
+{CHAR}              { return lexer::token (TOK_CHARCON); }
+(\[\])              { return lexer::token (TOK_ARRAY); }
+{INTEGER}           { return lexer::token (TOK_INT); }
+{IDENT}             { return lexer::token (TOK_IDENT); }
+"<="                { return lexer::token (TOK_LE); }
+">="                { return lexer::token (TOK_GE); }
+"=="                { return lexer::token (TOK_EQ); }
+"!="                { return lexer::token (TOK_NE); }
+"->"                { return lexer::token (TOK_ARROW); }
 "="                 { return lexer::token ('='); }
 "+"                 { return lexer::token ('+'); }
 "-"                 { return lexer::token ('-'); }
@@ -66,16 +64,14 @@ CHAR            ('([^\\'\n]|\\[\\'"0nt])')
 "^"                 { return lexer::token ('^'); }
 "("                 { return lexer::token ('('); }
 ")"                 { return lexer::token (')'); }
-"%"                 { return yylval_token ('%'); }
-"<"                 { return yylval_token ('<'); }
-">"                 { return yylval_token ('>'); }
-";"                 { return yylval_token (';'); }
-"("                 { return yylval_token ('('); }
-")"                 { return yylval_token (')'); }
-"{"                 { return yylval_token ('{'); }
-"}"                 { return yylval_token ('}'); }
-"["                 { return yylval_token ('['); }
-"]"                 { return yylval_token (']'); } 
+"%"                 { return lexer::token ('%'); }
+"<"                 { return lexer::token ('<'); }
+">"                 { return lexer::token ('>'); }
+";"                 { return lexer::token (';'); }
+"{"                 { return lexer::token ('{'); }
+"}"                 { return lexer::token ('}'); }
+"["                 { return lexer::token ('['); }
+"]"                 { return lexer::token (']'); } 
 
 
 {NOTNUMBER}     { return lexer::badtoken (NUMBER); }

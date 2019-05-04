@@ -1,12 +1,12 @@
-// $Id: 23-atoi.oc,v 1.26 2019-04-11 12:35:54-07 - - $
+// $Id: 23-atoi.oc,v 1.2 2019-04-18 14:06:21-07 - - $
 
 #include "oclib.h"
 
 int atoi (string str) {
-   int neg = FALSE;
+   BOOL neg = FALSE;
    int num = 0;
    int digit = 0;
-   int contin = FALSE;
+   BOOL contin = FALSE;
    int c = 0;
    assert (str != nullptr);
    if (str[0] != '\0') {
@@ -31,7 +31,7 @@ int atoi (string str) {
    return num;
 }
 
-int main (int argc, string[] argv) {
+int main (int argc, array<string> argv) {
    int argi = 1;
    string arg = nullptr;
    while (argi < argc) {
@@ -42,6 +42,6 @@ int main (int argc, string[] argv) {
       putchr ('\n');
       argi = argi + 1;
    }
-   return EXIT_SUCCESS;
+   return SUCCESS;
 }
 

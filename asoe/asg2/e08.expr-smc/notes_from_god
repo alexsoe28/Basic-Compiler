@@ -1,0 +1,12 @@
+Append the following loop to your main from asg1
+
+while yylex hasnt return EOF
+	call yylex
+	print yylval to .tok file (using astree::print)
+
+modify lexer.l so that it has regular expressions for the tokens for the oc lang
+
+use the parser from code/utility-code to generate token types
+
+what you need to copy over:
+parser.y, lexer.l, astree.*, lyutils.*
