@@ -79,6 +79,7 @@ void lexer::include() {
 
 int lexer::token (int symbol) {
    yylval = new astree (symbol, lexer::lloc, yytext);
+   // do your printing right here fam
    return symbol;
 }
 

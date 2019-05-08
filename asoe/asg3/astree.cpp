@@ -87,6 +87,10 @@ void destroy (astree* tree1, astree* tree2) {
    if (tree2 != nullptr) delete tree2;
 }
 
+void astree::change_sym (int token) {
+   symbol = token;
+}
+
 void errllocprintf (const location& lloc, const char* format,
                     const char* arg) {
    static char buffer[0x1000];
