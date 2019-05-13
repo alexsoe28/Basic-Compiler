@@ -1084,7 +1084,7 @@ YY_RULE_SETUP
 case 21:
 YY_RULE_SETUP
 #line 53 "scanner.l"
-{ return lexer::token (TOK_IDENT); }
+{ return lexer::token (IDENT); }
 	YY_BREAK
 case 22:
 YY_RULE_SETUP

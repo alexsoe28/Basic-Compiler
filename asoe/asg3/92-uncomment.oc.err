@@ -1,0 +1,26 @@
+92-uncomment.oc:1:1: error: unterminated comment
+ /*
+ ^
+/usr/bin/cpp -nostdinc 92-uncomment.oc: status 0x0100, exit 1
+92-uncomment.oc:1:1: error: unterminated comment
+ /*
+ ^
+--(end of buffer or a NUL)
+--accepting rule at line 31 ("# 1 "92-uncomment.oc"")
+--included # 1 "92-uncomment.oc"
+--accepting rule at line 33 ("
+")
+--accepting rule at line 31 ("# 1 "<built-in>"")
+--included # 1 "<built-in>"
+--accepting rule at line 33 ("
+")
+--accepting rule at line 31 ("# 1 "<command-line>"")
+--included # 1 "<command-line>"
+--accepting rule at line 33 ("
+")
+--accepting rule at line 31 ("# 1 "92-uncomment.oc"")
+--included # 1 "92-uncomment.oc"
+--accepting rule at line 33 ("
+")
+--(end of buffer or a NUL)
+--EOF (start condition 0)

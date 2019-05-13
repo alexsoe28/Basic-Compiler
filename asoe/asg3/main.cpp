@@ -123,17 +123,14 @@ int main (int argc, char** argv) {
    yyin = popen(command.c_str(), "r");
    string tokFile = targetFile.substr(0,targetFile.size()-3)+".tok"; 
    outFile = fopen(tokFile.c_str(), "w");
-   //Keep calling yylex() until it reaches an EOF 
-   while(yylex() != YYEOF){
-      //Print the required info to the tok file
-      fprintf (outFile, "\t%zd  %zd.%zd  %d  %s  (%s)\n",
-      yylval->lloc.filenr, yylval->lloc.linenr, yylval->lloc.offset,
-      yylval->symbol, parser::get_tname (yylval->symbol),
-      yylval->lexinfo->c_str());
-   }
-   //Close the files
+   yyparse();
+   fclose(outFile); 
+   
+   string astFile = targetFile.substr(0,targetFile.size()-3)+".ast";
+   FILE*outfile = fopen(astFile.c_str(), "w");
+   astree::print(outfile, parser::root);
    fclose(out);
-   fclose(outFile);
+   fclose(outfile);
    return exit_status;
 }
 

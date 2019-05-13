@@ -80,6 +80,10 @@ void lexer::include() {
 int lexer::token (int symbol) {
    yylval = new astree (symbol, lexer::lloc, yytext);
    // do your printing right here fam
+   fprintf (outFile, "\t%zd  %zd.%zd  %d  %s  (%s)\n",
+      yylval->lloc.filenr, yylval->lloc.linenr, yylval->lloc.offset,
+      yylval->symbol, parser::get_tname (yylval->symbol),
+      yylval->lexinfo->c_str());
    return symbol;
 }
 
@@ -92,4 +96,3 @@ void yyerror (const char* message) {
    assert (not lexer::filenames.empty());
    errllocprintf (lexer::lloc, "%s\n", message);
 }
-

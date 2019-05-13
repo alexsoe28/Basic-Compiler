@@ -35,9 +35,10 @@ astree::~astree() {
    }
 }
 
-astree* astree::adopt (astree* child1, astree* child2) {
+astree* astree::adopt (astree* child1, astree* child2, astree* child3) {
    if (child1 != nullptr) children.push_back (child1);
    if (child2 != nullptr) children.push_back (child2);
+   if (child2 != nullptr) children.push_back (child3);
    return this;
 }
 
@@ -73,7 +74,9 @@ void astree::dump (FILE* outfile, astree* tree) {
 }
 
 void astree::print (FILE* outfile, astree* tree, int depth) {
-   fprintf (outfile, "; %*s", depth * 3, "");
+   for(int i = 0; i < depth; ++i) {
+      fprintf (outfile, "|  ");
+   }
    fprintf (outfile, "%s \"%s\" (%zd.%zd.%zd)\n",
             parser::get_tname (tree->symbol), tree->lexinfo->c_str(),
             tree->lloc.filenr, tree->lloc.linenr, tree->lloc.offset);
@@ -82,9 +85,10 @@ void astree::print (FILE* outfile, astree* tree, int depth) {
    }
 }
 
-void destroy (astree* tree1, astree* tree2) {
+void destroy (astree* tree1, astree* tree2, astree* tree3) {
    if (tree1 != nullptr) delete tree1;
    if (tree2 != nullptr) delete tree2;
+   if (tree2 != nullptr) delete tree3;
 }
 
 void astree::change_sym (int token) {
