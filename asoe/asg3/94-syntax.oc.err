@@ -35,7 +35,7 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 70 (";")
-ø®§:4.9: syntax error, unexpected ';'
+øÎÏ:4.9: syntax error, unexpected ';'
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 38 ("return")
@@ -47,9 +47,9 @@
 --accepting rule at line 53 ("public")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("static")
+øÎÏ:6.8: syntax error, unexpected IDENT
 --accepting rule at line 32 (" ")
 --accepting rule at line 42 ("int")
-ø®§:6.15: syntax error, unexpected TOK_INT, expecting '(' or '='
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("main")
 --accepting rule at line 32 (" ")
@@ -66,7 +66,7 @@
 --accepting rule at line 32 ("   ")
 --accepting rule at line 53 ("System")
 --accepting rule at line 78 (".")
-ø®§:7.10: invalid source character (.)
+øÎÏ:7.10: invalid source character (.)
 --accepting rule at line 53 ("exit")
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")

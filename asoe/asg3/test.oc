@@ -1,0 +1,4 @@
+while (argi < argc) {
+      push (stack, argv[argi]);
+      argi = argi + 1;
+   }

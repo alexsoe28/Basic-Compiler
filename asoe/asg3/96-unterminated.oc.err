@@ -10,6 +10,7 @@
 96-unterminated.oc:9:8: warning: missing terminating " character [enabled by default]
     s = "abc|\
         ^
+--(end of buffer or a NUL)
 96-unterminated.oc:6:15: warning: missing terminating " character [enabled by default]
     string s = "abc;
                ^
@@ -22,7 +23,6 @@
 96-unterminated.oc:9:8: warning: missing terminating " character [enabled by default]
     s = "abc|\
         ^
---(end of buffer or a NUL)
 --accepting rule at line 31 ("# 1 "96-unterminated.oc"")
 --included # 1 "96-unterminated.oc"
 --accepting rule at line 33 ("
@@ -62,14 +62,14 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 78 (""")
-ˆO?:5.15: invalid source character (")
+ˆï†:5.15: invalid source character (")
 --accepting rule at line 78 ("\")
-ˆO?:5.16: invalid source character (\)
+ˆï†:5.16: invalid source character (\)
 --accepting rule at line 62 ("*")
-ˆO?:5.17: syntax error, unexpected '*'
+ˆï†:5.17: syntax error, unexpected '*'
 --accepting rule at line 63 ("/")
 --accepting rule at line 78 (""")
-ˆO?:5.19: invalid source character (")
+ˆï†:5.19: invalid source character (")
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -81,7 +81,7 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 78 (""")
-ˆO?:6.15: invalid source character (")
+ˆï†:6.15: invalid source character (")
 --accepting rule at line 53 ("abc")
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
@@ -90,11 +90,12 @@
 --accepting rule at line 53 ("char")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("c")
+ˆï†:7.9: syntax error, unexpected IDENT
 --accepting rule at line 32 (" ")
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 78 ("'")
-ˆO?:7.13: invalid source character (')
+ˆï†:7.13: invalid source character (')
 --accepting rule at line 53 ("a")
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
@@ -105,12 +106,12 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 78 (""")
-ˆO?:8.8: invalid source character (")
+ˆï†:8.8: invalid source character (")
 --accepting rule at line 53 ("abcd")
 --accepting rule at line 78 ("\")
-ˆO?:8.13: invalid source character (\)
+ˆï†:8.13: invalid source character (\)
 --accepting rule at line 78 (""")
-ˆO?:8.14: invalid source character (")
+ˆï†:8.14: invalid source character (")
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -120,10 +121,10 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 78 (""")
-ˆO?:9.8: invalid source character (")
+ˆï†:9.8: invalid source character (")
 --accepting rule at line 53 ("abc")
 --accepting rule at line 78 ("|")
-ˆO?:9.12: invalid source character (|)
+ˆï†:9.12: invalid source character (|)
 --accepting rule at line 32 ("   ")
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
@@ -134,7 +135,7 @@
 --accepting rule at line 42 ("int")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("23")
-ˆO?:11.8: syntax error, unexpected TOK_INT, expecting IDENT or TOK_ARRAY
+ˆï†:11.8: syntax error, unexpected TOK_INT, expecting IDENT or TOK_ARRAY
 --accepting rule at line 53 ("foobar")
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("

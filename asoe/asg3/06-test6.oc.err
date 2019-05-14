@@ -36,14 +36,14 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("expr")
 --accepting rule at line 78 (",")
-´”:22.23: invalid source character (,)
+˚é:22.23: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
-´”:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
+˚é:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("file")
 --accepting rule at line 78 (",")
-´”:22.36: invalid source character (,)
+˚é:22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 42 ("int")
 --accepting rule at line 32 (" ")
@@ -129,7 +129,7 @@
 --accepting rule at line 71 ("{")
 --accepting rule at line 72 ("}")
 --accepting rule at line 70 (";")
-Hº”:5.14: syntax error, unexpected ';'
+¯è:5.14: syntax error, unexpected ';'
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 44 ("struct")
@@ -139,7 +139,7 @@ Hº”:5.14: syntax error, unexpected ';'
 --accepting rule at line 71 ("{")
 --accepting rule at line 72 ("}")
 --accepting rule at line 70 (";")
-Hº”:6.14: syntax error, unexpected ';'
+¯è:6.14: syntax error, unexpected ';'
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 33 ("
@@ -173,10 +173,10 @@ Hº”:6.14: syntax error, unexpected ';'
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("a")
 --accepting rule at line 78 (",")
-Hº”:10.14: invalid source character (,)
+¯è:10.14: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 42 ("int")
-Hº”:10.16: syntax error, unexpected TOK_INT, expecting ')' or ','
+¯è:10.16: syntax error, unexpected TOK_INT, expecting ')' or ','
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("b")
 --accepting rule at line 66 (")")
@@ -192,14 +192,14 @@ Hº”:10.16: syntax error, unexpected TOK_INT, expecting ')' or ','
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("a")
 --accepting rule at line 78 (",")
-Hº”:11.17: invalid source character (,)
+¯è:11.17: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
-Hº”:11.19: syntax error, unexpected TOK_STRING, expecting ')' or ','
+¯è:11.19: syntax error, unexpected TOK_STRING, expecting ')' or ','
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("b")
 --accepting rule at line 78 (",")
-Hº”:11.27: invalid source character (,)
+¯è:11.27: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
 --accepting rule at line 32 (" ")
@@ -214,7 +214,6 @@ Hº”:11.27: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 46 ("ptr")
-Hº”:12.9: syntax error, unexpected TOK_PTR
 --accepting rule at line 68 ("<")
 --accepting rule at line 44 ("struct")
 --accepting rule at line 32 (" ")
@@ -223,9 +222,10 @@ Hº”:12.9: syntax error, unexpected TOK_PTR
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("a")
 --accepting rule at line 78 (",")
-Hº”:12.26: invalid source character (,)
+¯è:12.26: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 46 ("ptr")
+¯è:12.28: syntax error, unexpected TOK_PTR, expecting ')' or ','
 --accepting rule at line 68 ("<")
 --accepting rule at line 44 ("struct")
 --accepting rule at line 32 (" ")
@@ -261,7 +261,7 @@ Hº”:12.26: invalid source character (,)
 ")
 --accepting rule at line 32 ("   ")
 --accepting rule at line 45 ("array")
-Hº”:16.4: syntax error, unexpected TOK_ARRAY
+¯è:16.4: syntax error, unexpected TOK_ARRAY
 --accepting rule at line 68 ("<")
 --accepting rule at line 43 ("string")
 --accepting rule at line 69 (">")

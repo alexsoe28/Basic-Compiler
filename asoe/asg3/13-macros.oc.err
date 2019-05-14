@@ -36,14 +36,14 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("expr")
 --accepting rule at line 78 (",")
-7ç:22.23: invalid source character (,)
+◊	:22.23: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
-7ç:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
+◊	:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("file")
 --accepting rule at line 78 (",")
-7ç:22.36: invalid source character (,)
+◊	:22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 42 ("int")
 --accepting rule at line 32 (" ")
@@ -131,10 +131,10 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("argc")
 --accepting rule at line 78 (",")
-Jç:5.19: invalid source character (,)
+»Ê	:5.19: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 45 ("array")
-Jç:5.21: syntax error, unexpected TOK_ARRAY, expecting ')' or ','
+»Ê	:5.21: syntax error, unexpected TOK_ARRAY, expecting ')' or ','
 --accepting rule at line 68 ("<")
 --accepting rule at line 43 ("string")
 --accepting rule at line 69 (">")
@@ -189,7 +189,7 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 52 ("10")
-Jç:10.12: syntax error, unexpected TOK_INT
+»Ê	:10.12: syntax error, unexpected TOK_INT
 --accepting rule at line 66 (")")
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
@@ -225,7 +225,7 @@
 --accepting rule at line 53 ("putstr")
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
---accepting rule at line 49 (""11:17:51"")
+--accepting rule at line 49 (""17:16:42"")
 --accepting rule at line 66 (")")
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
@@ -243,7 +243,7 @@
 --accepting rule at line 38 ("return")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("0")
-Jç:16.11: syntax error, unexpected TOK_INT
+»Ê	:16.11: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")

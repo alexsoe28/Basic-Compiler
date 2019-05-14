@@ -26,7 +26,7 @@ extern int exit_status;
 %token  TOK_IF TOK_ELSE TOK_IFELSE TOK_ALLOC TOK_NULLPTR
 %token  TOK_WHILE TOK_RETURN TOK_RETURNVOID
 %token  TOK_INT TOK_STRING TOK_STRUCT TOK_VOID
-%token  TOK_NEW TOK_NULL TOK_ARRAY TOK_VARDECL 
+%token  TOK_NULL TOK_ARRAY TOK_VARDECL 
 %token  TOK_EQ TOK_NE TOK_LE TOK_GE TOK_NOT TOK_PTR
 %token  TOK_BLOCK TOK_CALL DECLID TOK_FUNCTION TOK_PROTOTYPE
 %token  TOK_POS TOK_NEG TOK_NEWARRAY TOK_TYPEID TOK_FIELD
@@ -62,19 +62,20 @@ program   : program structdef         { $$ = $1->adopt ($2); }
 ;
 
 
-structdef : TOK_STRUCT IDENT '{' '}'  { destroy ($3, $4);
-                                        $2->change_sym (TOK_TYPEID);
-                                        $$ = $1->adopt ($2); }
-          | TOK_STRUCT IDENT '{' structfields '}' 
-                                      { destroy ($3, $5);
-                                        $2->change_sym (TOK_TYPEID);
-                                        $$ = $1->adopt ($2, $4); }
+structdef : TOK_STRUCT IDENT '{' '}'              { 
+            destroy ($3, $4);
+            $2->change_sym (TOK_TYPEID);
+            $$ = $1->adopt ($2); }
+          | TOK_STRUCT IDENT '{' structfields '}' { 
+            destroy ($3, $5);
+            $2->change_sym (TOK_TYPEID);
+            $$ = $1->adopt ($2, $4); }
 ;
 
-structfields    : structfield ';' structfields{ 
+structfields: structfield ';' structfields{ 
             destroy ($2);
             $$ = $1->adopt ($3); }
-          | structfield ';'                   {
+          | structfield ';'               {
             destroy ($2); $$ = $1; }
 ;
 
@@ -87,11 +88,12 @@ structfield     : plaintype IDENT            {
             $$ = $2->adopt ($1, $3); }
 ;
 
-plaintype  : TOK_VOID                 { $$ = $1; }
-          | TOK_INT                   { $$ = $1; }
-          | TOK_STRING                { $$ = $1; }
-          | IDENT                     { $1->change_sym (TOK_TYPEID); 
-                                        $$ = $1; }
+plaintype  : TOK_VOID                       { $$ = $1; }
+          | TOK_INT                         { $$ = $1; }
+          | TOK_STRING                      { $$ = $1; }
+          | TOK_PTR '<' TOK_STRUCT IDENT '>'{
+            destroy($2, $3, $5);
+            $$ = $1->adopt ($4); }
 ;
 
 function  : ident '(' idents ')' block { 
@@ -120,14 +122,15 @@ idents: idents ',' ident  {
              destroy ($2);
              $$ = $1->adopt ($3); }
           |  ident        { $$ = $1; }
-          ;
+;
 
-ident : plaintype TOK_ARRAY IDENT  { $3->change_sym (DECLID);
-                                        $$ = $1->adopt ($2, $3); }
-          | plaintype IDENT            { $2->change_sym (DECLID);
-                                        $$ = $1->adopt ($2); }
-          ;
-
+ident : plaintype TOK_ARRAY IDENT  { 
+            $3->change_sym (DECLID);
+            $$ = $1->adopt ($2, $3); }
+          | plaintype IDENT        { 
+            $2->change_sym (DECLID);
+            $$ = $1->adopt ($2); }
+;
 
 block     : statements '}'            { 
             destroy ($2);
@@ -145,7 +148,7 @@ statements     : statements statement      {
                  $$ = $1->adopt ($2); }
 ;
 
-statement      : block                { $$ = $1; }
+statement : block                     { $$ = $1; }
           | vardecl                   { $$ = $1; }
           | while                     { $$ = $1; }
           | ifelse                    { $$ = $1; }
@@ -153,21 +156,21 @@ statement      : block                { $$ = $1; }
           | expr ';'                  { destroy ($2); $$ = $1; }
 ;
 
-vardecl   : ident '=' expr ';'    { 
+vardecl   : ident '=' expr ';'       { 
             destroy ($4);
             $2->change_sym (TOK_VARDECL);
             $$ = $2->adopt ($1, $3); }
 ;
 
-while     : TOK_WHILE '(' expr ')' statement{ 
+while     : TOK_WHILE '(' expr ')' statements            { 
             destroy ($2, $4);
             $$ = $1->adopt($3, $5); }
 ;
 
-ifelse    : TOK_IF '(' expr ')' statement %prec TOK_IF      { 
+ifelse    : TOK_IF '(' expr ')' statements %prec TOK_IF           { 
             destroy ($2, $4);
             $$ =$1->adopt($3,$5); }
-          | TOK_IF '(' expr ')' statement TOK_ELSE statement{ 
+          | TOK_IF '(' expr ')' statements TOK_ELSE statements    { 
             destroy ($2, $4);
             destroy ($5, $6);
             $1->change_sym (TOK_IFELSE);
@@ -206,24 +209,26 @@ binop       : TOK_EQ          { $$ = $1; }
             | '='             { $$ = $1; }
 ;
 
-unop        : TOK_POS         { $$ = $1; }
-            | TOK_NEG         { $$ = $1; }
-            | '!'             { $$ = $1; }
-            | TOK_NEW         { $$ = $1; }
+unop        : '+' %prec '+'             { $$ = $1; }
+            | '-' %prec '-'             { $$ = $1; }
+            | '!'                           { $$ = $1; }
 ;
 
-alloc     : TOK_NEW IDENT '(' ')'          { 
-            destroy ($3, $4);
-            $2->change_sym (TOK_TYPEID);
-            $$ = $1->adopt ($2); }
-          | TOK_NEW TOK_STRING '(' expr ')'{ 
+alloc     : TOK_ALLOC '<' TOK_STRUCT IDENT '>' '(' ')'          { 
             destroy ($2, $3, $5);
-            $1->change_sym (TOK_NEWSTRING);
+            destroy ($6, $7);
+            $4->change_sym (TOK_TYPEID);
             $$ = $1->adopt ($4); }
-          | TOK_NEW plaintype '[' expr ']' { 
-            destroy ($3, $5);
-            $1->change_sym (TOK_NEWARRAY);
-            $$ = $1->adopt ($2, $4); }
+          | TOK_ALLOC '<' TOK_STRING '>' '(' expr ')'{ 
+            destroy ($2, $4, $5);
+            destroy ($7);
+            $$ = $1->adopt ($3, $6); }
+          | TOK_ALLOC '<' TOK_ARRAY '<' plaintype '>' '>' '(' expr ')'{ 
+            destroy ($2, $4);
+            destroy ($6, $7);
+            destroy ($8, $10);
+            $3->adopt ($5);
+            $$ = $1->adopt ($3, $9); }
 ;
 
 call      : params ')'                { 
@@ -248,7 +253,7 @@ variable  : IDENT                     { $$ = $1; }
             destroy ($4);
             $2->change_sym (TOK_INDEX);
             $$ = $2->adopt ($1, $3); }
-          | expr '.' IDENT            { 
+          | expr TOK_PTR IDENT            { 
             $3->change_sym(TOK_FIELD);
             $$ = $2->adopt ($1, $3); }
 ;

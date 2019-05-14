@@ -36,14 +36,14 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("expr")
 --accepting rule at line 78 (",")
-ØHï:22.23: invalid source character (,)
+ØhD:22.23: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
-ØHï:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
+ØhD:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("file")
 --accepting rule at line 78 (",")
-ØHï:22.36: invalid source character (,)
+ØhD:22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 42 ("int")
 --accepting rule at line 32 (" ")
@@ -145,7 +145,7 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("2")
-¸[ï:9.16: syntax error, unexpected TOK_INT
+h{D:9.16: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -157,7 +157,7 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("2")
-¸[ï:10.16: syntax error, unexpected TOK_INT
+h{D:10.16: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -195,7 +195,7 @@
 --accepting rule at line 68 ("<")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("100")
-¸[ï:13.19: syntax error, unexpected TOK_INT
+h{D:13.19: syntax error, unexpected TOK_INT
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 71 ("{")
@@ -223,7 +223,7 @@
 --accepting rule at line 60 ("+")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
-¸[ï:15.23: syntax error, unexpected TOK_INT
+h{D:15.23: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -242,7 +242,7 @@
 --accepting rule at line 68 ("<")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("100")
-¸[ï:18.19: syntax error, unexpected TOK_INT
+h{D:18.19: syntax error, unexpected TOK_INT
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 71 ("{")
@@ -283,7 +283,7 @@
 --accepting rule at line 68 ("<")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("100")
-¸[ï:21.25: syntax error, unexpected TOK_INT
+h{D:21.25: syntax error, unexpected TOK_INT
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 71 ("{")
@@ -316,7 +316,7 @@
 ")
 --accepting rule at line 32 ("         ")
 --accepting rule at line 72 ("}")
-¸[ï:24.10: syntax error, unexpected '}'
+h{D:24.10: syntax error, unexpected '}'
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 32 ("      ")
@@ -333,7 +333,7 @@
 --accepting rule at line 60 ("+")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
-¸[ï:26.23: syntax error, unexpected TOK_INT
+h{D:26.23: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -349,7 +349,7 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("2")
-¸[ï:29.12: syntax error, unexpected TOK_INT
+h{D:29.12: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -362,7 +362,7 @@
 --accepting rule at line 68 ("<")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("100")
-¸[ï:30.19: syntax error, unexpected TOK_INT
+h{D:30.19: syntax error, unexpected TOK_INT
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 71 ("{")
@@ -401,7 +401,7 @@
 ")
 --accepting rule at line 32 ("      ")
 --accepting rule at line 72 ("}")
-¸[ï:34.7: syntax error, unexpected '}'
+h{D:34.7: syntax error, unexpected '}'
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 32 ("      ")
@@ -414,7 +414,7 @@
 --accepting rule at line 60 ("+")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
-¸[ï:35.23: syntax error, unexpected TOK_INT
+h{D:35.23: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")

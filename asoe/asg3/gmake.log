@@ -1,5 +1,5 @@
 bison --defines=yyparse.h --output=yyparse.cpp parser.y
-parser.y: warning: 27 shift/reduce conflicts [-Wconflicts-sr]
+parser.y: warning: 72 shift/reduce conflicts [-Wconflicts-sr]
 /afs/cats.ucsc.edu/courses/cmps104a-wm/bin//cpplint.py.perl astree.cpp
 Done processing astree.cpp
 /afs/cats.ucsc.edu/courses/cmps104a-wm/bin//checksource astree.cpp

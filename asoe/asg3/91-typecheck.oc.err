@@ -32,6 +32,7 @@
 ")
 --accepting rule at line 53 ("reference")
 --accepting rule at line 51 ("[]")
+ðÿ:10.10: syntax error, unexpected TOK_ARRAY
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("a")
 --accepting rule at line 32 (" ")
@@ -40,7 +41,6 @@
 --accepting rule at line 53 ("new")
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
-@„:10.21: syntax error, unexpected TOK_STRING
 --accepting rule at line 73 ("[")
 --accepting rule at line 52 ("10")
 --accepting rule at line 74 ("]")
@@ -77,10 +77,10 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("a")
 --accepting rule at line 78 (",")
-@„:13.18: invalid source character (,)
+ðÿ:13.18: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 42 ("int")
-@„:13.20: syntax error, unexpected TOK_INT, expecting ')' or ','
+ðÿ:13.20: syntax error, unexpected TOK_INT, expecting ')' or ','
 --accepting rule at line 51 ("[]")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("b")
@@ -154,14 +154,14 @@
 --accepting rule at line 65 ("(")
 --accepting rule at line 53 ("x")
 --accepting rule at line 78 (",")
-@„:19.8: invalid source character (,)
+ðÿ:19.8: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("y")
-@„:19.10: syntax error, unexpected IDENT, expecting ')' or ','
+ðÿ:19.10: syntax error, unexpected IDENT, expecting ')' or ','
 --accepting rule at line 60 ("+")
 --accepting rule at line 52 ("3")
 --accepting rule at line 78 (",")
-@„:19.13: invalid source character (,)
+ðÿ:19.13: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("z")
 --accepting rule at line 66 (")")
@@ -217,7 +217,7 @@
 --accepting rule at line 60 ("+")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("23")
-@„:23.11: syntax error, unexpected TOK_INT
+ðÿ:23.11: syntax error, unexpected TOK_INT
 --accepting rule at line 32 (" ")
 --accepting rule at line 62 ("*")
 --accepting rule at line 32 (" ")
@@ -241,6 +241,7 @@
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("f")
+ðÿ:24.18: syntax error, unexpected IDENT, expecting '{'
 --accepting rule at line 32 (" ")
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
@@ -249,7 +250,6 @@
 --accepting rule at line 60 ("+")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
-@„:24.26: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -297,7 +297,7 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("3")
-@„:28.22: syntax error, unexpected TOK_INT
+ðÿ:28.22: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("b")
@@ -305,7 +305,7 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("4")
-@„:28.29: syntax error, unexpected TOK_INT
+ðÿ:28.29: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 32 (" ")
 --accepting rule at line 72 ("}")
@@ -323,6 +323,7 @@
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("f")
+ðÿ:29.16: syntax error, unexpected IDENT, expecting '{'
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 53 ("x")
@@ -342,11 +343,11 @@
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("y")
+ðÿ:30.16: syntax error, unexpected IDENT, expecting '{'
 --accepting rule at line 32 (" ")
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("3")
-@„:30.20: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 32 (" ")
 --accepting rule at line 36 ("else")
@@ -356,7 +357,7 @@
 --accepting rule at line 65 ("(")
 --accepting rule at line 53 ("y")
 --accepting rule at line 78 (",")
-@„:30.32: invalid source character (,)
+ðÿ:30.32: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("z")
 --accepting rule at line 66 (")")
