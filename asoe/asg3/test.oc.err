@@ -34,10 +34,10 @@
 --accepting rule at line 65 ("(")
 --accepting rule at line 53 ("stack")
 --accepting rule at line 78 (",")
-ËM:2.18: invalid source character (,)
+ËΩ:2.18: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("argv")
-ËM:2.20: syntax error, unexpected IDENT, expecting ')' or ','
+ËΩ:2.20: syntax error, unexpected IDENT, expecting ')' or ','
 --accepting rule at line 73 ("[")
 --accepting rule at line 53 ("argi")
 --accepting rule at line 74 ("]")
@@ -55,7 +55,7 @@
 --accepting rule at line 60 ("+")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
-ËM:3.21: syntax error, unexpected TOK_INT
+ËΩ:3.21: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")

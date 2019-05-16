@@ -86,19 +86,13 @@ extern int yydebug;
     TOK_ORD = 296,
     TOK_CHR = 297,
     TOK_ROOT = 298,
-    TOK_PARAMLIST = 299,
+    TOK_PARAM = 299,
     BAD_TOK = 300,
     TOK_EXC = 301,
     TOK_INTCON = 302,
     TOK_CHARCON = 303,
     TOK_STRINGCON = 304,
-    TOK_ARROW = 305,
-    TOK_NEQ = 306,
-    TOK_LEQ = 307,
-    TOK_GEQ = 308,
-    POS = 309,
-    NEG = 310,
-    TOK_NEW = 311
+    TOK_ARROW = 305
   };
 #endif
 

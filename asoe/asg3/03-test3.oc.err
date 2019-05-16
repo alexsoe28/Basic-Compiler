@@ -36,14 +36,14 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("expr")
 --accepting rule at line 78 (",")
-(ÕC:22.23: invalid source character (,)
+(Õ‰:22.23: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
-(ÕC:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
+(Õ‰:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("file")
 --accepting rule at line 78 (",")
-(ÕC:22.36: invalid source character (,)
+(Õ‰:22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 42 ("int")
 --accepting rule at line 32 (" ")
@@ -139,7 +139,7 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("3")
-8ãC:6.12: syntax error, unexpected TOK_INT
+èŠ‰:6.12: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -151,7 +151,7 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("8")
-8ãC:7.12: syntax error, unexpected TOK_INT
+èŠ‰:7.12: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -205,7 +205,7 @@
 --accepting rule at line 38 ("return")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("0")
-8ãC:12.11: syntax error, unexpected TOK_INT
+èŠ‰:12.11: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")

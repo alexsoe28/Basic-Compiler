@@ -36,14 +36,14 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("expr")
 --accepting rule at line 78 (",")
-ˆdK:22.23: invalid source character (,)
+ˆDö:22.23: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
-ˆdK:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
+ˆDö:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("file")
 --accepting rule at line 78 (",")
-ˆdK:22.36: invalid source character (,)
+ˆDö:22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 42 ("int")
 --accepting rule at line 32 (" ")
@@ -137,7 +137,7 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 41 ("not")
-˜rK:6.9: syntax error, unexpected TOK_NOT
+¸Rö:6.9: syntax error, unexpected TOK_NOT
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 49 (""nullptr"")
@@ -153,11 +153,11 @@
 --accepting rule at line 65 ("(")
 --accepting rule at line 49 (""\"nullptr\" == nullptr"")
 --accepting rule at line 78 (",")
-˜rK:6.67: invalid source character (,)
+¸Rö:6.67: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 49 (""07-assert.oc"")
 --accepting rule at line 78 (",")
-˜rK:6.83: invalid source character (,)
+¸Rö:6.83: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("6")
 --accepting rule at line 66 (")")
@@ -170,6 +170,7 @@
 --accepting rule at line 38 ("return")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
+¸Rö:7.11: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")

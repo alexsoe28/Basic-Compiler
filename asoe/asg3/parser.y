@@ -30,7 +30,7 @@ extern int exit_status;
 %token  TOK_EQ TOK_NE TOK_LE TOK_GE TOK_NOT TOK_PTR
 %token  TOK_BLOCK TOK_CALL DECLID TOK_FUNCTION TOK_PROTOTYPE
 %token  TOK_POS TOK_NEG TOK_NEWARRAY TOK_TYPEID TOK_FIELD
-%token  TOK_ORD TOK_CHR TOK_ROOT TOK_PARAMLIST BAD_TOK TOK_EXC
+%token  TOK_ORD TOK_CHR TOK_ROOT TOK_PARAM BAD_TOK TOK_EXC
 %token  TOK_INTCON TOK_CHARCON TOK_STRINGCON TOK_ARROW
 
 %token  '('  ')'  '['  ']'  '{'  '}'  ';'  ','  '.'
@@ -38,12 +38,11 @@ extern int exit_status;
 
 %right  TOK_IF TOK_ELSE
 %right  '=' 
-%left   TOK_EQ TOK_NEQ '<' TOK_LEQ '>' TOK_GEQ 
+%left   TOK_EQ TOK_NE '<' TOK_LE '>' TOK_GE 
 %left   '+' '-'
 %left   '*' '/' '%'
-%right  POS NEG TOK_EXC TOK_NEW
-%right  '^'
-%left   '[' '.'
+%right  TOK_POS TOK_NEG TOK_NOT
+%left   '[' TOK_ARROW
 
 %nonassoc '('
 
@@ -62,30 +61,30 @@ program   : program structdef         { $$ = $1->adopt ($2); }
 ;
 
 
-structdef : TOK_STRUCT IDENT '{' '}'              { 
-            destroy ($3, $4);
-            $2->change_sym (TOK_TYPEID);
-            $$ = $1->adopt ($2); }
-          | TOK_STRUCT IDENT '{' structfields '}' { 
+structdef : TOK_STRUCT IDENT '{' structfields '}' { 
             destroy ($3, $5);
             $2->change_sym (TOK_TYPEID);
             $$ = $1->adopt ($2, $4); }
+          | TOK_STRUCT IDENT '{' '}'              { 
+            destroy ($3, $4);
+            $2->change_sym (TOK_TYPEID);
+            $$ = $1->adopt ($2); }
 ;
 
-structfields: structfield ';' structfields{ 
+structfields: type ';'               {
+            destroy ($2); $$ = $1; }
+          | type ';' structfields    { 
             destroy ($2);
             $$ = $1->adopt ($3); }
-          | structfield ';'               {
-            destroy ($2); $$ = $1; }
 ;
 
-structfield     : plaintype IDENT            { 
+type       : plaintype IDENT            { 
             $2->change_sym (TOK_FIELD);
             $$ = $1->adopt ($2); }
-          | plaintype TOK_ARRAY IDENT        { 
-            $2->change_sym (TOK_ARRAY);
+          | TOK_ARRAY '<' plaintype '>' {
+            destroy ($2, $4); 
             $3->change_sym (TOK_FIELD);
-            $$ = $2->adopt ($1, $3); }
+            $$ = $1->adopt ($3); }
 ;
 
 plaintype  : TOK_VOID                       { $$ = $1; }
@@ -96,32 +95,34 @@ plaintype  : TOK_VOID                       { $$ = $1; }
             $$ = $1->adopt ($4); }
 ;
 
-function  : ident '(' idents ')' block { 
-            $4->change_sym (TOK_FUNCTION);
-            $2->change_sym (TOK_PARAMLIST);
+function  : ident '(' ')' block       {
+            destroy ($3);  
+            $$ = new astree(TOK_FUNCTION, $1->lloc, "");
+            $2->change_sym(TOK_PARAM);
+            $$ = $$->adopt ($1, $2, $4); }
+          | ident '(' idents ')' block {
+            destroy ($4); 
+            $$ = new astree(TOK_FUNCTION, $1->lloc, "");
+            $2->change_sym (TOK_PARAM);
             $2->adopt ($3);
-            $$ = $4->adopt ($1, $2, $5); }
-          |  ident '(' idents ')' ';'  { 
-            destroy($5);
-            $4->change_sym (TOK_FUNCTION);
-            $2->change_sym (TOK_PARAMLIST);
-            $2->adopt ($3);
-            $$ = $4->adopt ($1, $2); }
+            $$ = $$->adopt ($1, $2, $5); }
           | ident '(' ')' ';'         { 
-            destroy ($4);
-            $3->change_sym (TOK_PROTOTYPE);
-            $2->change_sym (TOK_PARAMLIST);
-            $$ = $3->adopt ($1, $2); }
-          | ident '(' ')' block       { 
-            $3->change_sym(TOK_FUNCTION);
-            $2->change_sym(TOK_PARAMLIST);
-            $$ = $3->adopt ($1, $2, $4); }
+            destroy ($3, $4);
+            $$ = new astree(TOK_PROTOTYPE, $1->lloc, "");
+            $2->change_sym (TOK_PARAM);
+            $$ = $$->adopt ($1, $2); }
+          | ident '(' idents ')' ';'  { 
+            destroy($4, $5);
+            $$ = new astree(TOK_FUNCTION, $1->lloc, "");
+            $2->change_sym (TOK_PARAM);
+            $2->adopt ($3);
+            $$ = $$->adopt ($1, $2); }
 ;
 
-idents: idents ',' ident  { 
-             destroy ($2);
-             $$ = $1->adopt ($3); }
-          |  ident        { $$ = $1; }
+idents: ident        { $$ = $1; }
+          | idents ',' ident  { 
+            destroy ($2);
+            $$ = $1->adopt ($3); }
 ;
 
 ident : plaintype TOK_ARRAY IDENT  { 
@@ -142,24 +143,28 @@ block     : statements '}'            {
             $$ = $1; }
 ;
 
-statements     : statements statement      { 
-                 $$ = $1->adopt ($2); }
-               | '{' statement              { 
-                 $$ = $1->adopt ($2); }
+statements: '{' statement             { 
+            $$ = $1->adopt ($2); }
+          | statements statement      { 
+            $$ = $1->adopt ($2); }
 ;
 
-statement : block                     { $$ = $1; }
-          | vardecl                   { $$ = $1; }
+statement : vardecl                   { $$ = $1; }
+          | block                     { $$ = $1; }
           | while                     { $$ = $1; }
           | ifelse                    { $$ = $1; }
           | return                    { $$ = $1; }
           | expr ';'                  { destroy ($2); $$ = $1; }
+          | ';'                       { $$ = $1; }
 ;
 
 vardecl   : ident '=' expr ';'       { 
             destroy ($4);
             $2->change_sym (TOK_VARDECL);
             $$ = $2->adopt ($1, $3); }
+          | ident ';'                 {
+            destroy ($2);
+            $$ = $1;}
 ;
 
 while     : TOK_WHILE '(' expr ')' statements            { 
@@ -171,8 +176,7 @@ ifelse    : TOK_IF '(' expr ')' statements %prec TOK_IF           {
             destroy ($2, $4);
             $$ =$1->adopt($3,$5); }
           | TOK_IF '(' expr ')' statements TOK_ELSE statements    { 
-            destroy ($2, $4);
-            destroy ($5, $6);
+            destroy ($2, $4, $6);
             $1->change_sym (TOK_IFELSE);
             $$ = $1->adopt ($3, $5, $7); }
 ;
@@ -186,32 +190,27 @@ return    : TOK_RETURN ';'               {
             $$ = $1->adopt ($2); }
 ;
 
-expr        : expr binop expr { $$ = $2->adopt($1, $3); }
-            | unop expr       { $$ = $1->adopt($2); }
-            | alloc           { $$ = $1; }
-            | call            { $$ = $1; }
-            | '(' expr ')'    { destroy($1, $3);
+expr        : expr '=' expr          { $$ = $2->adopt($1, $3); }
+            | expr TOK_EQ expr       { $$ = $2->adopt($1, $3); }
+            | expr TOK_NE expr       { $$ = $2->adopt($1, $3); }
+            | expr '<' expr          { $$ = $2->adopt($1, $3); }
+            | expr TOK_LE  expr      { $$ = $2->adopt($1, $3); }
+            | expr '>' expr          { $$ = $2->adopt($1, $3); }
+            | expr TOK_GE  expr      { $$ = $2->adopt($1, $3); }
+            | expr '+' expr          { $$ = $2->adopt($1, $3); }
+            | expr '-' expr          { $$ = $2->adopt($1, $3); } 
+            | expr '*' expr          { $$ = $2->adopt($1, $3); }
+            | expr '/' expr          { $$ = $2->adopt($1, $3); }
+            | expr '%' expr          { $$ = $2->adopt($1, $3); } 
+            | TOK_POS expr           { $$ = $1->adopt($2); }
+            | TOK_NEG expr           { $$ = $1->adopt($2); }
+            | '!' expr               { $$ = $1->adopt($2); }
+            | alloc                  { $$ = $1; }
+            | call                   { $$ = $1; }
+            | '(' expr ')'           { destroy($1, $3);
               $$ = $2; }
-            | variable       { $$ = $1; }
-            | constant       { $$ = $1; }
-;
-
-binop       : TOK_EQ          { $$ = $1; }
-            | TOK_NE          { $$ = $1; }
-            | '>'             { $$ = $1; }
-            | TOK_LE          { $$ = $1; }
-            | '<'             { $$ = $1; }
-            | TOK_GE          { $$ = $1; }
-            | '+'             { $$ = $1; }
-            | '-'             { $$ = $1; }
-            | '*'             { $$ = $1; }
-            | '/'             { $$ = $1; }
-            | '='             { $$ = $1; }
-;
-
-unop        : '+' %prec '+'             { $$ = $1; }
-            | '-' %prec '-'             { $$ = $1; }
-            | '!'                           { $$ = $1; }
+            | variable        { $$ = $1; }
+            | constant        { $$ = $1; }
 ;
 
 alloc     : TOK_ALLOC '<' TOK_STRUCT IDENT '>' '(' ')'          { 
@@ -261,7 +260,7 @@ variable  : IDENT                     { $$ = $1; }
 constant  : TOK_STRINGCON             { $$ = $1; }
           | TOK_CHARCON               { $$ = $1; }
           | TOK_INTCON                { $$ = $1; }
-          | TOK_NULL                  { $$ = $1; }
+          | TOK_NULLPTR                  { $$ = $1; }
 ;
 
 %%

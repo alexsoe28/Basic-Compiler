@@ -36,14 +36,14 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("expr")
 --accepting rule at line 78 (",")
-Hé:22.23: invalid source character (,)
+HB:22.23: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
-Hé:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
+HB:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("file")
 --accepting rule at line 78 (",")
-Hé:22.36: invalid source character (,)
+HB:22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 42 ("int")
 --accepting rule at line 32 (" ")
@@ -130,10 +130,10 @@ Hé:22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("argc")
 --accepting rule at line 78 (",")
-èé:5.18: invalid source character (,)
+'B:5.18: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 45 ("array")
-èé:5.20: syntax error, unexpected TOK_ARRAY, expecting ')' or ','
+'B:5.20: syntax error, unexpected TOK_ARRAY, expecting ')' or ','
 --accepting rule at line 68 ("<")
 --accepting rule at line 43 ("string")
 --accepting rule at line 69 (">")
@@ -178,7 +178,7 @@ Hé:22.36: invalid source character (,)
 --accepting rule at line 69 (">")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
-èé:8.18: syntax error, unexpected TOK_INT
+'B:8.18: syntax error, unexpected TOK_INT
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("putchr")
@@ -211,7 +211,7 @@ Hé:22.36: invalid source character (,)
 --accepting rule at line 60 ("+")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
-èé:10.21: syntax error, unexpected TOK_INT
+'B:10.21: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -232,7 +232,7 @@ Hé:22.36: invalid source character (,)
 --accepting rule at line 38 ("return")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("0")
-èé:13.11: syntax error, unexpected TOK_INT
+'B:13.11: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")

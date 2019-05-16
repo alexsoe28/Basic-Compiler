@@ -32,7 +32,7 @@
 ")
 --accepting rule at line 53 ("reference")
 --accepting rule at line 51 ("[]")
-ря:10.10: syntax error, unexpected TOK_ARRAY
+р|:10.10: syntax error, unexpected TOK_ARRAY
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("a")
 --accepting rule at line 32 (" ")
@@ -77,10 +77,10 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("a")
 --accepting rule at line 78 (",")
-ря:13.18: invalid source character (,)
+р|:13.18: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 42 ("int")
-ря:13.20: syntax error, unexpected TOK_INT, expecting ')' or ','
+р|:13.20: syntax error, unexpected TOK_INT, expecting ')' or ','
 --accepting rule at line 51 ("[]")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("b")
@@ -154,14 +154,14 @@
 --accepting rule at line 65 ("(")
 --accepting rule at line 53 ("x")
 --accepting rule at line 78 (",")
-ря:19.8: invalid source character (,)
+р|:19.8: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("y")
-ря:19.10: syntax error, unexpected IDENT, expecting ')' or ','
+р|:19.10: syntax error, unexpected IDENT, expecting ')' or ','
 --accepting rule at line 60 ("+")
 --accepting rule at line 52 ("3")
 --accepting rule at line 78 (",")
-ря:19.13: invalid source character (,)
+р|:19.13: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("z")
 --accepting rule at line 66 (")")
@@ -217,7 +217,7 @@
 --accepting rule at line 60 ("+")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("23")
-ря:23.11: syntax error, unexpected TOK_INT
+р|:23.11: syntax error, unexpected TOK_INT
 --accepting rule at line 32 (" ")
 --accepting rule at line 62 ("*")
 --accepting rule at line 32 (" ")
@@ -241,7 +241,7 @@
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("f")
-ря:24.18: syntax error, unexpected IDENT, expecting '{'
+р|:24.18: syntax error, unexpected IDENT, expecting '{'
 --accepting rule at line 32 (" ")
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
@@ -297,7 +297,7 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("3")
-ря:28.22: syntax error, unexpected TOK_INT
+р|:28.22: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("b")
@@ -305,7 +305,7 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("4")
-ря:28.29: syntax error, unexpected TOK_INT
+р|:28.29: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 32 (" ")
 --accepting rule at line 72 ("}")
@@ -323,7 +323,7 @@
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("f")
-ря:29.16: syntax error, unexpected IDENT, expecting '{'
+р|:29.16: syntax error, unexpected IDENT, expecting '{'
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 53 ("x")
@@ -343,7 +343,7 @@
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("y")
-ря:30.16: syntax error, unexpected IDENT, expecting '{'
+р|:30.16: syntax error, unexpected IDENT, expecting '{'
 --accepting rule at line 32 (" ")
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
@@ -357,7 +357,7 @@
 --accepting rule at line 65 ("(")
 --accepting rule at line 53 ("y")
 --accepting rule at line 78 (",")
-ря:30.32: invalid source character (,)
+р|:30.32: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("z")
 --accepting rule at line 66 (")")

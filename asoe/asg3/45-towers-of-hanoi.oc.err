@@ -36,14 +36,14 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("expr")
 --accepting rule at line 78 (",")
-ØY:22.23: invalid source character (,)
+ØV:22.23: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
-ØY:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
+ØV:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("file")
 --accepting rule at line 78 (",")
-ØY:22.36: invalid source character (,)
+ØV:22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 42 ("int")
 --accepting rule at line 32 (" ")
@@ -131,10 +131,10 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("src")
 --accepting rule at line 78 (",")
-(ÄX:5.22: invalid source character (,)
+8k:5.22: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
-(ÄX:5.24: syntax error, unexpected TOK_STRING, expecting ')' or ','
+8k:5.24: syntax error, unexpected TOK_STRING, expecting ')' or ','
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("dst")
 --accepting rule at line 66 (")")
@@ -188,7 +188,7 @@
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 72 ("}")
-(ÄX:11.1: syntax error, unexpected '}'
+8k:11.1: syntax error, unexpected '}'
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 33 ("
@@ -202,20 +202,20 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("ndisks")
 --accepting rule at line 78 (",")
-(ÄX:13.24: invalid source character (,)
+8k:13.24: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
-(ÄX:13.26: syntax error, unexpected TOK_STRING, expecting ')' or ','
+8k:13.26: syntax error, unexpected TOK_STRING, expecting ')' or ','
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("src")
 --accepting rule at line 78 (",")
-(ÄX:13.36: invalid source character (,)
+8k:13.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("tmp")
 --accepting rule at line 78 (",")
-(ÄX:13.48: invalid source character (,)
+8k:13.48: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
 --accepting rule at line 32 (" ")
@@ -249,17 +249,17 @@
 --accepting rule at line 61 ("-")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
-(ÄX:15.21: syntax error, unexpected TOK_INT
+8k:15.21: syntax error, unexpected TOK_INT
 --accepting rule at line 78 (",")
-(ÄX:15.22: invalid source character (,)
+8k:15.22: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("src")
 --accepting rule at line 78 (",")
-(ÄX:15.27: invalid source character (,)
+8k:15.27: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("dst")
 --accepting rule at line 78 (",")
-(ÄX:15.32: invalid source character (,)
+8k:15.32: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("tmp")
 --accepting rule at line 66 (")")
@@ -272,10 +272,10 @@
 --accepting rule at line 65 ("(")
 --accepting rule at line 53 ("src")
 --accepting rule at line 78 (",")
-(ÄX:16.13: invalid source character (,)
+8k:16.13: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("dst")
-(ÄX:16.15: syntax error, unexpected IDENT, expecting ')' or ','
+8k:16.15: syntax error, unexpected IDENT, expecting ')' or ','
 --accepting rule at line 66 (")")
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
@@ -289,17 +289,17 @@
 --accepting rule at line 61 ("-")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
-(ÄX:17.21: syntax error, unexpected TOK_INT
+8k:17.21: syntax error, unexpected TOK_INT
 --accepting rule at line 78 (",")
-(ÄX:17.22: invalid source character (,)
+8k:17.22: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("tmp")
 --accepting rule at line 78 (",")
-(ÄX:17.27: invalid source character (,)
+8k:17.27: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("src")
 --accepting rule at line 78 (",")
-(ÄX:17.32: invalid source character (,)
+8k:17.32: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("dst")
 --accepting rule at line 66 (")")
@@ -320,10 +320,10 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("argc")
 --accepting rule at line 78 (",")
-(ÄX:20.19: invalid source character (,)
+8k:20.19: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 45 ("array")
-(ÄX:20.21: syntax error, unexpected TOK_ARRAY, expecting ')' or ','
+8k:20.21: syntax error, unexpected TOK_ARRAY, expecting ')' or ','
 --accepting rule at line 68 ("<")
 --accepting rule at line 43 ("string")
 --accepting rule at line 69 (">")
@@ -355,11 +355,11 @@
 --accepting rule at line 65 ("(")
 --accepting rule at line 49 (""argc == 2"")
 --accepting rule at line 78 (",")
-(ÄX:21.43: invalid source character (,)
+8k:21.43: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 49 (""45-towers-of-hanoi.oc"")
 --accepting rule at line 78 (",")
-(ÄX:21.68: invalid source character (,)
+8k:21.68: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("21")
 --accepting rule at line 66 (")")
@@ -378,7 +378,7 @@
 --accepting rule at line 53 ("argv")
 --accepting rule at line 73 ("[")
 --accepting rule at line 52 ("1")
-(ÄX:22.21: syntax error, unexpected TOK_INT
+8k:22.21: syntax error, unexpected TOK_INT
 --accepting rule at line 74 ("]")
 --accepting rule at line 73 ("[")
 --accepting rule at line 52 ("0")
@@ -396,7 +396,7 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 41 ("not")
-(ÄX:23.9: syntax error, unexpected TOK_NOT
+8k:23.9: syntax error, unexpected TOK_NOT
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 53 ("count")
@@ -412,11 +412,11 @@
 --accepting rule at line 65 ("(")
 --accepting rule at line 49 (""count > 0"")
 --accepting rule at line 78 (",")
-(ÄX:23.43: invalid source character (,)
+8k:23.43: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 49 (""45-towers-of-hanoi.oc"")
 --accepting rule at line 78 (",")
-(ÄX:23.68: invalid source character (,)
+8k:23.68: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("23")
 --accepting rule at line 66 (")")
@@ -431,7 +431,7 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 41 ("not")
-(ÄX:24.9: syntax error, unexpected TOK_NOT
+8k:24.9: syntax error, unexpected TOK_NOT
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 53 ("count")
@@ -447,11 +447,11 @@
 --accepting rule at line 65 ("(")
 --accepting rule at line 49 (""count < 9"")
 --accepting rule at line 78 (",")
-(ÄX:24.43: invalid source character (,)
+8k:24.43: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 49 (""45-towers-of-hanoi.oc"")
 --accepting rule at line 78 (",")
-(ÄX:24.68: invalid source character (,)
+8k:24.68: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("24")
 --accepting rule at line 66 (")")
@@ -467,7 +467,7 @@
 --accepting rule at line 53 ("argv")
 --accepting rule at line 73 ("[")
 --accepting rule at line 52 ("0")
-(ÄX:25.17: syntax error, unexpected TOK_INT
+8k:25.17: syntax error, unexpected TOK_INT
 --accepting rule at line 74 ("]")
 --accepting rule at line 66 (")")
 --accepting rule at line 70 (";")
@@ -506,16 +506,16 @@
 --accepting rule at line 65 ("(")
 --accepting rule at line 53 ("count")
 --accepting rule at line 78 (",")
-(ÄX:29.17: invalid source character (,)
+8k:29.17: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 49 (""source"")
-(ÄX:29.19: syntax error, unexpected TOK_STRINGCON, expecting ')' or ','
+8k:29.19: syntax error, unexpected TOK_STRINGCON, expecting ')' or ','
 --accepting rule at line 78 (",")
-(ÄX:29.27: invalid source character (,)
+8k:29.27: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 49 (""temporary"")
 --accepting rule at line 78 (",")
-(ÄX:29.40: invalid source character (,)
+8k:29.40: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 49 (""distination"")
 --accepting rule at line 66 (")")
