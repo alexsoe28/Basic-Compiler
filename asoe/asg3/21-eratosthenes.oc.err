@@ -36,14 +36,14 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("expr")
 --accepting rule at line 78 (",")
-ÿ¯Œ:22.23: invalid source character (,)
+ÿ»^:22.23: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
-ÿ¯Œ:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
+ÿ»^:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("file")
 --accepting rule at line 78 (",")
-ÿ¯Œ:22.36: invalid source character (,)
+ÿ»^:22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 42 ("int")
 --accepting rule at line 32 (" ")
@@ -145,7 +145,6 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("2")
-àœ:9.16: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -157,12 +156,12 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("2")
-àœ:10.16: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 32 ("   ")
 --accepting rule at line 45 ("array")
+à€^:11.4: syntax error, unexpected TOK_ARRAY
 --accepting rule at line 68 ("<")
 --accepting rule at line 42 ("int")
 --accepting rule at line 69 (">")
@@ -195,7 +194,6 @@
 --accepting rule at line 68 ("<")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("100")
-àœ:13.19: syntax error, unexpected TOK_INT
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 71 ("{")
@@ -223,7 +221,6 @@
 --accepting rule at line 60 ("+")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
-àœ:15.23: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -242,7 +239,6 @@
 --accepting rule at line 68 ("<")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("100")
-àœ:18.19: syntax error, unexpected TOK_INT
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 71 ("{")
@@ -283,7 +279,6 @@
 --accepting rule at line 68 ("<")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("100")
-àœ:21.25: syntax error, unexpected TOK_INT
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 71 ("{")
@@ -316,7 +311,6 @@
 ")
 --accepting rule at line 32 ("         ")
 --accepting rule at line 72 ("}")
-àœ:24.10: syntax error, unexpected '}'
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 32 ("      ")
@@ -333,7 +327,6 @@
 --accepting rule at line 60 ("+")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
-àœ:26.23: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -349,7 +342,6 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("2")
-àœ:29.12: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -362,7 +354,6 @@
 --accepting rule at line 68 ("<")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("100")
-àœ:30.19: syntax error, unexpected TOK_INT
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 71 ("{")
@@ -401,7 +392,6 @@
 ")
 --accepting rule at line 32 ("      ")
 --accepting rule at line 72 ("}")
-àœ:34.7: syntax error, unexpected '}'
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 32 ("      ")
@@ -414,7 +404,6 @@
 --accepting rule at line 60 ("+")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
-àœ:35.23: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -432,6 +421,7 @@
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 72 ("}")
+à€^:39.1: syntax error, unexpected '}'
 --accepting rule at line 33 ("
 ")
 --(end of buffer or a NUL)

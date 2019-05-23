@@ -36,14 +36,14 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("expr")
 --accepting rule at line 78 (",")
-ÈDû:22.23: invalid source character (,)
+È”:22.23: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
-ÈDû:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
+È”:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("file")
 --accepting rule at line 78 (",")
-ÈDû:22.36: invalid source character (,)
+È”:22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 42 ("int")
 --accepting rule at line 32 (" ")
@@ -143,7 +143,6 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("0")
-8Rû:6.14: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -155,7 +154,6 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("0")
-8Rû:7.14: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -167,7 +165,6 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("0")
-8Rû:8.16: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -177,7 +174,6 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 41 ("not")
-8Rû:9.9: syntax error, unexpected TOK_NOT
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 53 ("str")
@@ -193,11 +189,12 @@
 --accepting rule at line 65 ("(")
 --accepting rule at line 49 (""str != nullptr"")
 --accepting rule at line 78 (",")
-8Rû:9.53: invalid source character (,)
+8¢:9.53: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 49 (""23-atoi.oc"")
+8¢:9.55: syntax error, unexpected TOK_STRINGCON, expecting ')' or ','
 --accepting rule at line 78 (",")
-8Rû:9.67: invalid source character (,)
+8¢:9.67: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("9")
 --accepting rule at line 66 (")")
@@ -213,7 +210,6 @@
 --accepting rule at line 53 ("str")
 --accepting rule at line 73 ("[")
 --accepting rule at line 52 ("0")
-8Rû:10.12: syntax error, unexpected TOK_INT
 --accepting rule at line 74 ("]")
 --accepting rule at line 32 (" ")
 --accepting rule at line 57 ("!=")
@@ -260,7 +256,6 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
-8Rû:13.16: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -276,7 +271,6 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
-8Rû:15.20: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -313,7 +307,6 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("0")
-8Rû:18.22: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -348,7 +341,6 @@
 --accepting rule at line 60 ("+")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
-8Rû:21.29: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -364,7 +356,6 @@
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("contin")
-8Rû:22.28: syntax error, unexpected IDENT, expecting '{'
 --accepting rule at line 32 (" ")
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
@@ -432,11 +423,11 @@
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("num")
-8Rû:27.16: syntax error, unexpected IDENT, expecting '{'
 --accepting rule at line 32 (" ")
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 61 ("-")
+8¢:27.22: syntax error, unexpected '-'
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("num")
 --accepting rule at line 70 (";")
@@ -454,7 +445,7 @@
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 72 ("}")
-8Rû:30.1: syntax error, unexpected '}'
+8¢:30.1: syntax error, unexpected '}'
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 33 ("
@@ -468,10 +459,10 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("argc")
 --accepting rule at line 78 (",")
-8Rû:32.19: invalid source character (,)
+8¢:32.19: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 45 ("array")
-8Rû:32.21: syntax error, unexpected TOK_ARRAY, expecting ')' or ','
+8¢:32.21: syntax error, unexpected TOK_ARRAY, expecting ')' or ','
 --accepting rule at line 68 ("<")
 --accepting rule at line 43 ("string")
 --accepting rule at line 69 (">")
@@ -580,7 +571,6 @@
 --accepting rule at line 60 ("+")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
-8Rû:41.21: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -596,6 +586,7 @@
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 72 ("}")
+8¢:44.1: syntax error, unexpected '}'
 --accepting rule at line 33 ("
 ")
 --(end of buffer or a NUL)

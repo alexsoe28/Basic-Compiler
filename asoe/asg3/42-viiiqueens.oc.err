@@ -36,14 +36,14 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("expr")
 --accepting rule at line 78 (",")
-X`L:22.23: invalid source character (,)
+XPƒ:22.23: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
-X`L:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
+XPƒ:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("file")
 --accepting rule at line 78 (",")
-X`L:22.36: invalid source character (,)
+XPƒ:22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 42 ("int")
 --accepting rule at line 32 (" ")
@@ -125,7 +125,7 @@ X`L:22.36: invalid source character (,)
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 45 ("array")
-xqL:6.1: syntax error, unexpected TOK_ARRAY
+xaƒ:6.1: syntax error, unexpected TOK_ARRAY
 --accepting rule at line 68 ("<")
 --accepting rule at line 42 ("int")
 --accepting rule at line 69 (">")
@@ -161,7 +161,6 @@ xqL:6.1: syntax error, unexpected TOK_ARRAY
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("0")
-xqL:9.14: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -173,7 +172,6 @@ xqL:9.14: syntax error, unexpected TOK_INT
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("0")
-xqL:10.19: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -209,7 +207,6 @@ xqL:10.19: syntax error, unexpected TOK_INT
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 38 ("return")
-xqL:12.40: syntax error, unexpected TOK_RETURN, expecting '{'
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("0")
 --accepting rule at line 70 (";")
@@ -250,7 +247,6 @@ xqL:12.40: syntax error, unexpected TOK_RETURN, expecting '{'
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 38 ("return")
-xqL:14.37: syntax error, unexpected TOK_RETURN, expecting '{'
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("0")
 --accepting rule at line 70 (";")
@@ -272,7 +268,6 @@ xqL:14.37: syntax error, unexpected TOK_RETURN, expecting '{'
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 38 ("return")
-xqL:15.37: syntax error, unexpected TOK_RETURN, expecting '{'
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("0")
 --accepting rule at line 70 (";")
@@ -288,7 +283,6 @@ xqL:15.37: syntax error, unexpected TOK_RETURN, expecting '{'
 --accepting rule at line 60 ("+")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
-xqL:16.19: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -325,7 +319,6 @@ xqL:16.19: syntax error, unexpected TOK_INT
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("0")
-xqL:22.14: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -338,7 +331,6 @@ xqL:22.14: syntax error, unexpected TOK_INT
 --accepting rule at line 68 ("<")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("8")
-xqL:23.17: syntax error, unexpected TOK_INT
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 71 ("{")
@@ -370,7 +362,6 @@ xqL:23.17: syntax error, unexpected TOK_INT
 --accepting rule at line 60 ("+")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
-xqL:25.19: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -388,7 +379,6 @@ xqL:25.19: syntax error, unexpected TOK_INT
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 72 ("}")
-xqL:28.1: syntax error, unexpected '}'
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 33 ("
@@ -414,7 +404,6 @@ xqL:28.1: syntax error, unexpected '}'
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("0")
-xqL:31.14: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -427,7 +416,6 @@ xqL:31.14: syntax error, unexpected TOK_INT
 --accepting rule at line 56 ("==")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("8")
-xqL:32.18: syntax error, unexpected TOK_INT
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("printqueens")
@@ -480,7 +468,6 @@ xqL:32.18: syntax error, unexpected TOK_INT
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("queens")
-xqL:36.32: syntax error, unexpected IDENT, expecting '{'
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 53 ("newcol")
@@ -502,7 +489,6 @@ xqL:36.32: syntax error, unexpected IDENT, expecting '{'
 --accepting rule at line 60 ("+")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
-xqL:37.22: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -543,7 +529,6 @@ xqL:37.22: syntax error, unexpected TOK_INT
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 52 ("8")
-xqL:43.31: syntax error, unexpected TOK_INT
 --accepting rule at line 66 (")")
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
@@ -553,7 +538,6 @@ xqL:43.31: syntax error, unexpected TOK_INT
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 52 ("0")
-xqL:44.12: syntax error, unexpected TOK_INT
 --accepting rule at line 66 (")")
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("

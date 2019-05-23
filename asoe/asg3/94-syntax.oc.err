@@ -35,7 +35,7 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 70 (";")
-øþ:4.9: syntax error, unexpected ';'
+øž:4.9: syntax error, unexpected ';'
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 38 ("return")
@@ -47,7 +47,7 @@
 --accepting rule at line 53 ("public")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("static")
-øþ:6.8: syntax error, unexpected IDENT
+øž:6.8: syntax error, unexpected IDENT
 --accepting rule at line 32 (" ")
 --accepting rule at line 42 ("int")
 --accepting rule at line 32 (" ")
@@ -66,7 +66,7 @@
 --accepting rule at line 32 ("   ")
 --accepting rule at line 53 ("System")
 --accepting rule at line 78 (".")
-øþ:7.10: invalid source character (.)
+øž:7.10: invalid source character (.)
 --accepting rule at line 53 ("exit")
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")

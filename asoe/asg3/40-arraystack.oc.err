@@ -36,14 +36,14 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("expr")
 --accepting rule at line 78 (",")
-x—Ç:22.23: invalid source character (,)
+xÇ©:22.23: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
-x—Ç:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
+xÇ©:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("file")
 --accepting rule at line 78 (",")
-x—Ç:22.36: invalid source character (,)
+xÇ©:22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 42 ("int")
 --accepting rule at line 32 (" ")
@@ -140,7 +140,7 @@ x—Ç:22.36: invalid source character (,)
 --accepting rule at line 69 (">")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("data")
-È«Ç:8.18: syntax error, unexpected IDENT, expecting ';'
+ÈÛ©:8.18: syntax error, unexpected IDENT, expecting ';'
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -159,7 +159,7 @@ x—Ç:22.36: invalid source character (,)
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 72 ("}")
-È«Ç:11.1: syntax error, unexpected '}'
+ÈÛ©:11.1: syntax error, unexpected '}'
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -209,7 +209,6 @@ x—Ç:22.36: invalid source character (,)
 --accepting rule at line 32 ("   ")
 --accepting rule at line 53 ("stack")
 --accepting rule at line 58 ("->")
-È«Ç:15.9: syntax error, unexpected TOK_ARROW
 --accepting rule at line 53 ("data")
 --accepting rule at line 32 (" ")
 --accepting rule at line 59 ("=")
@@ -248,6 +247,7 @@ x—Ç:22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 61 ("-")
+ÈÛ©:17.18: syntax error, unexpected '-'
 --accepting rule at line 52 ("1")
 --accepting rule at line 66 (")")
 --accepting rule at line 70 (";")
@@ -261,7 +261,7 @@ x—Ç:22.36: invalid source character (,)
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 72 ("}")
-È«Ç:19.1: syntax error, unexpected '}'
+ÈÛ©:19.1: syntax error, unexpected '}'
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 33 ("
@@ -280,10 +280,10 @@ x—Ç:22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("stack")
 --accepting rule at line 78 (",")
-È«Ç:21.35: invalid source character (,)
+ÈÛ©:21.35: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
-È«Ç:21.37: syntax error, unexpected TOK_STRING, expecting ')' or ','
+ÈÛ©:21.37: syntax error, unexpected TOK_STRING, expecting ')' or ','
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("str")
 --accepting rule at line 66 (")")
@@ -320,11 +320,11 @@ x—Ç:22.36: invalid source character (,)
 --accepting rule at line 65 ("(")
 --accepting rule at line 49 (""stack->top < stack->size - 1"")
 --accepting rule at line 78 (",")
-È«Ç:22.81: invalid source character (,)
+ÈÛ©:22.81: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 49 (""40-arraystack.oc"")
 --accepting rule at line 78 (",")
-È«Ç:22.101: invalid source character (,)
+ÈÛ©:22.101: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("22")
 --accepting rule at line 66 (")")
@@ -336,7 +336,6 @@ x—Ç:22.36: invalid source character (,)
 --accepting rule at line 32 ("   ")
 --accepting rule at line 53 ("stack")
 --accepting rule at line 58 ("->")
-È«Ç:23.9: syntax error, unexpected TOK_ARROW
 --accepting rule at line 53 ("top")
 --accepting rule at line 32 (" ")
 --accepting rule at line 59 ("=")
@@ -368,6 +367,7 @@ x—Ç:22.36: invalid source character (,)
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 72 ("}")
+ÈÛ©:25.1: syntax error, unexpected '}'
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 33 ("
@@ -399,7 +399,6 @@ x—Ç:22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("stack")
 --accepting rule at line 58 ("->")
-È«Ç:28.22: syntax error, unexpected TOK_ARROW
 --accepting rule at line 53 ("data")
 --accepting rule at line 73 ("[")
 --accepting rule at line 53 ("stack")
@@ -415,7 +414,6 @@ x—Ç:22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 41 ("not")
-È«Ç:29.9: syntax error, unexpected TOK_NOT
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 53 ("stack")
@@ -426,6 +424,7 @@ x—Ç:22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 61 ("-")
+ÈÛ©:29.29: syntax error, unexpected '-'
 --accepting rule at line 52 ("1")
 --accepting rule at line 66 (")")
 --accepting rule at line 66 (")")
@@ -436,11 +435,11 @@ x—Ç:22.36: invalid source character (,)
 --accepting rule at line 65 ("(")
 --accepting rule at line 49 (""stack->top != EMPTY"")
 --accepting rule at line 78 (",")
-È«Ç:29.62: invalid source character (,)
+ÈÛ©:29.62: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 49 (""40-arraystack.oc"")
 --accepting rule at line 78 (",")
-È«Ç:29.82: invalid source character (,)
+ÈÛ©:29.82: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("29")
 --accepting rule at line 66 (")")
@@ -452,7 +451,6 @@ x—Ç:22.36: invalid source character (,)
 --accepting rule at line 32 ("   ")
 --accepting rule at line 53 ("stack")
 --accepting rule at line 58 ("->")
-È«Ç:30.9: syntax error, unexpected TOK_ARROW
 --accepting rule at line 53 ("top")
 --accepting rule at line 32 (" ")
 --accepting rule at line 59 ("=")
@@ -475,7 +473,7 @@ x—Ç:22.36: invalid source character (,)
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 72 ("}")
-È«Ç:32.1: syntax error, unexpected '}'
+ÈÛ©:32.1: syntax error, unexpected '}'
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 33 ("
@@ -503,13 +501,13 @@ x—Ç:22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("stack")
 --accepting rule at line 58 ("->")
-È«Ç:35.16: syntax error, unexpected TOK_ARROW
 --accepting rule at line 53 ("top")
 --accepting rule at line 32 (" ")
 --accepting rule at line 56 ("==")
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 61 ("-")
+ÈÛ©:35.26: syntax error, unexpected '-'
 --accepting rule at line 52 ("1")
 --accepting rule at line 66 (")")
 --accepting rule at line 70 (";")
@@ -529,10 +527,10 @@ x—Ç:22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("argc")
 --accepting rule at line 78 (",")
-È«Ç:38.19: invalid source character (,)
+ÈÛ©:38.19: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 45 ("array")
-È«Ç:38.21: syntax error, unexpected TOK_ARRAY, expecting ')' or ','
+ÈÛ©:38.21: syntax error, unexpected TOK_ARRAY, expecting ')' or ','
 --accepting rule at line 68 ("<")
 --accepting rule at line 43 ("string")
 --accepting rule at line 69 (">")
@@ -571,7 +569,6 @@ x—Ç:22.36: invalid source character (,)
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("0")
-È«Ç:40.15: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -595,10 +592,10 @@ x—Ç:22.36: invalid source character (,)
 --accepting rule at line 65 ("(")
 --accepting rule at line 53 ("stack")
 --accepting rule at line 78 (",")
-È«Ç:42.18: invalid source character (,)
+ÈÛ©:42.18: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("argv")
-È«Ç:42.20: syntax error, unexpected IDENT, expecting ')' or ','
+ÈÛ©:42.20: syntax error, unexpected IDENT, expecting ')' or ','
 --accepting rule at line 73 ("[")
 --accepting rule at line 53 ("argi")
 --accepting rule at line 74 ("]")
@@ -616,12 +613,12 @@ x—Ç:22.36: invalid source character (,)
 --accepting rule at line 60 ("+")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
-È«Ç:43.21: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 32 ("   ")
 --accepting rule at line 72 ("}")
+ÈÛ©:44.4: syntax error, unexpected '}'
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 32 ("   ")
@@ -629,7 +626,6 @@ x—Ç:22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 41 ("not")
-È«Ç:45.11: syntax error, unexpected TOK_NOT
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("empty")
 --accepting rule at line 32 (" ")
@@ -665,7 +661,6 @@ x—Ç:22.36: invalid source character (,)
 ")
 --accepting rule at line 32 ("   ")
 --accepting rule at line 72 ("}")
-È«Ç:48.4: syntax error, unexpected '}'
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 32 ("   ")
@@ -676,6 +671,7 @@ x—Ç:22.36: invalid source character (,)
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 72 ("}")
+ÈÛ©:50.1: syntax error, unexpected '}'
 --accepting rule at line 33 ("
 ")
 --(end of buffer or a NUL)

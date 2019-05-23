@@ -167,15 +167,15 @@ vardecl   : ident '=' expr ';'       {
             $$ = $1;}
 ;
 
-while     : TOK_WHILE '(' expr ')' statements            { 
+while     : TOK_WHILE '(' expr ')' statement            { 
             destroy ($2, $4);
             $$ = $1->adopt($3, $5); }
 ;
 
-ifelse    : TOK_IF '(' expr ')' statements %prec TOK_IF           { 
+ifelse    : TOK_IF '(' expr ')' statement  %prec TOK_IF           { 
             destroy ($2, $4);
             $$ =$1->adopt($3,$5); }
-          | TOK_IF '(' expr ')' statements TOK_ELSE statements    { 
+          | TOK_IF '(' expr ')' statement TOK_ELSE statement    { 
             destroy ($2, $4, $6);
             $1->change_sym (TOK_IFELSE);
             $$ = $1->adopt ($3, $5, $7); }
@@ -204,7 +204,7 @@ expr        : expr '=' expr          { $$ = $2->adopt($1, $3); }
             | expr '%' expr          { $$ = $2->adopt($1, $3); } 
             | TOK_POS expr           { $$ = $1->adopt($2); }
             | TOK_NEG expr           { $$ = $1->adopt($2); }
-            | '!' expr               { $$ = $1->adopt($2); }
+            | TOK_NOT expr               { $$ = $1->adopt($2); }
             | alloc                  { $$ = $1; }
             | call                   { $$ = $1; }
             | '(' expr ')'           { destroy($1, $3);
@@ -252,7 +252,7 @@ variable  : IDENT                     { $$ = $1; }
             destroy ($4);
             $2->change_sym (TOK_INDEX);
             $$ = $2->adopt ($1, $3); }
-          | expr TOK_PTR IDENT            { 
+          | expr TOK_ARROW IDENT            { 
             $3->change_sym(TOK_FIELD);
             $$ = $2->adopt ($1, $3); }
 ;
@@ -260,7 +260,7 @@ variable  : IDENT                     { $$ = $1; }
 constant  : TOK_STRINGCON             { $$ = $1; }
           | TOK_CHARCON               { $$ = $1; }
           | TOK_INTCON                { $$ = $1; }
-          | TOK_NULLPTR                  { $$ = $1; }
+          | TOK_NULLPTR               { $$ = $1; }
 ;
 
 %%

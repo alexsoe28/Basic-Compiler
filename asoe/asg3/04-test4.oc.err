@@ -36,14 +36,14 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("expr")
 --accepting rule at line 78 (",")
-˜X:22.23: invalid source character (,)
+˜Xw:22.23: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
-˜X:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
+˜Xw:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("file")
 --accepting rule at line 78 (",")
-˜X:22.36: invalid source character (,)
+˜Xw:22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 42 ("int")
 --accepting rule at line 32 (" ")
@@ -159,7 +159,6 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("6")
-Xh:10.12: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -189,7 +188,6 @@ Xh:10.12: syntax error, unexpected TOK_INT
 --accepting rule at line 32 ("   ")
 --accepting rule at line 53 ("b")
 --accepting rule at line 58 ("->")
-Xh:12.5: syntax error, unexpected TOK_ARROW
 --accepting rule at line 53 ("a")
 --accepting rule at line 32 (" ")
 --accepting rule at line 59 ("=")
@@ -209,7 +207,6 @@ Xh:12.5: syntax error, unexpected TOK_ARROW
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("b")
 --accepting rule at line 58 ("->")
-Xh:13.13: syntax error, unexpected TOK_ARROW
 --accepting rule at line 53 ("a")
 --accepting rule at line 32 (" ")
 --accepting rule at line 60 ("+")
@@ -243,7 +240,6 @@ Xh:13.13: syntax error, unexpected TOK_ARROW
 --accepting rule at line 65 ("(")
 --accepting rule at line 53 ("b")
 --accepting rule at line 58 ("->")
-Xh:16.13: syntax error, unexpected TOK_ARROW, expecting ')' or ','
 --accepting rule at line 53 ("a")
 --accepting rule at line 66 (")")
 --accepting rule at line 70 (";")
@@ -262,7 +258,6 @@ Xh:16.13: syntax error, unexpected TOK_ARROW, expecting ')' or ','
 --accepting rule at line 38 ("return")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("0")
-Xh:18.11: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")

@@ -42,14 +42,14 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("expr")
 --accepting rule at line 78 (",")
-ØüÆ:22.23: invalid source character (,)
+Øœ¸:22.23: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
-ØüÆ:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
+Øœ¸:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("file")
 --accepting rule at line 78 (",")
-ØüÆ:22.36: invalid source character (,)
+Øœ¸:22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 42 ("int")
 --accepting rule at line 32 (" ")
@@ -143,7 +143,7 @@
 ")
 --accepting rule at line 32 ("   ")
 --accepting rule at line 45 ("array")
-Ç:11.4: syntax error, unexpected TOK_ARRAY
+«¸:11.4: syntax error, unexpected TOK_ARRAY
 --accepting rule at line 68 ("<")
 --accepting rule at line 42 ("int")
 --accepting rule at line 69 (">")
@@ -170,7 +170,6 @@
 --accepting rule at line 53 ("fibonacci")
 --accepting rule at line 73 ("[")
 --accepting rule at line 52 ("0")
-Ç:12.14: syntax error, unexpected TOK_INT
 --accepting rule at line 74 ("]")
 --accepting rule at line 32 (" ")
 --accepting rule at line 59 ("=")
@@ -183,7 +182,6 @@
 --accepting rule at line 53 ("fibonacci")
 --accepting rule at line 73 ("[")
 --accepting rule at line 52 ("1")
-Ç:13.14: syntax error, unexpected TOK_INT
 --accepting rule at line 74 ("]")
 --accepting rule at line 32 (" ")
 --accepting rule at line 59 ("=")
@@ -200,7 +198,6 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("2")
-Ç:14.16: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -213,7 +210,6 @@
 --accepting rule at line 68 ("<")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("30")
-Ç:15.19: syntax error, unexpected TOK_INT
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 71 ("{")
@@ -259,7 +255,6 @@
 --accepting rule at line 60 ("+")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
-Ç:17.23: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -273,7 +268,6 @@
 --accepting rule at line 59 ("=")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("0")
-Ç:19.12: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -295,7 +289,6 @@
 --accepting rule at line 68 ("<")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("30")
-Ç:21.19: syntax error, unexpected TOK_INT
 --accepting rule at line 66 (")")
 --accepting rule at line 32 (" ")
 --accepting rule at line 71 ("{")
@@ -359,7 +352,6 @@
 --accepting rule at line 60 ("+")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("1")
-Ç:27.23: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
@@ -375,6 +367,7 @@
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 72 ("}")
+«¸:30.1: syntax error, unexpected '}'
 --accepting rule at line 33 ("
 ")
 --(end of buffer or a NUL)

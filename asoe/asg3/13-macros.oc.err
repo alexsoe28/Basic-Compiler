@@ -36,14 +36,14 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("expr")
 --accepting rule at line 78 (",")
-�V:22.23: invalid source character (,)
+w :22.23: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
-�V:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
+w :22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("file")
 --accepting rule at line 78 (",")
-�V:22.36: invalid source character (,)
+w :22.36: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 42 ("int")
 --accepting rule at line 32 (" ")
@@ -131,10 +131,10 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("argc")
 --accepting rule at line 78 (",")
-ئV:5.19: invalid source character (,)
+؆ :5.19: invalid source character (,)
 --accepting rule at line 32 (" ")
 --accepting rule at line 45 ("array")
-ئV:5.21: syntax error, unexpected TOK_ARRAY, expecting ')' or ','
+؆ :5.21: syntax error, unexpected TOK_ARRAY, expecting ')' or ','
 --accepting rule at line 68 ("<")
 --accepting rule at line 43 ("string")
 --accepting rule at line 69 (">")
@@ -189,7 +189,6 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 52 ("10")
-ئV:10.12: syntax error, unexpected TOK_INT
 --accepting rule at line 66 (")")
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
@@ -207,7 +206,7 @@
 --accepting rule at line 53 ("putstr")
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
---accepting rule at line 49 (""May 15 2019"")
+--accepting rule at line 49 (""May 19 2019"")
 --accepting rule at line 66 (")")
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
@@ -225,7 +224,7 @@
 --accepting rule at line 53 ("putstr")
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
---accepting rule at line 49 (""15:29:58"")
+--accepting rule at line 49 (""17:00:10"")
 --accepting rule at line 66 (")")
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
@@ -243,11 +242,11 @@
 --accepting rule at line 38 ("return")
 --accepting rule at line 32 (" ")
 --accepting rule at line 52 ("0")
-ئV:16.11: syntax error, unexpected TOK_INT
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 72 ("}")
+؆ :17.1: syntax error, unexpected '}'
 --accepting rule at line 33 ("
 ")
 --(end of buffer or a NUL)

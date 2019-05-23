@@ -1079,7 +1079,7 @@ YY_RULE_SETUP
 case 20:
 YY_RULE_SETUP
 #line 52 "scanner.l"
-{ return lexer::token (TOK_INT); }
+{ return lexer::token (TOK_INTCON); }
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
