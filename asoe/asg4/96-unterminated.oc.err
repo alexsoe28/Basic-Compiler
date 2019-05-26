@@ -1,0 +1,147 @@
+96-unterminated.oc:6:15: warning: missing terminating " character [enabled by default]
+    string s = "abc;
+               ^
+96-unterminated.oc:7:13: warning: missing terminating ' character [enabled by default]
+    char c = 'a;
+             ^
+96-unterminated.oc:8:8: warning: missing terminating " character [enabled by default]
+    s = "abcd\";
+        ^
+96-unterminated.oc:9:8: warning: missing terminating " character [enabled by default]
+    s = "abc|\
+        ^
+--(end of buffer or a NUL)
+96-unterminated.oc:6:15: warning: missing terminating " character [enabled by default]
+    string s = "abc;
+               ^
+96-unterminated.oc:7:13: warning: missing terminating ' character [enabled by default]
+    char c = 'a;
+             ^
+96-unterminated.oc:8:8: warning: missing terminating " character [enabled by default]
+    s = "abcd\";
+        ^
+96-unterminated.oc:9:8: warning: missing terminating " character [enabled by default]
+    s = "abc|\
+        ^
+--accepting rule at line 31 ("# 1 "96-unterminated.oc"")
+--included # 1 "96-unterminated.oc"
+--accepting rule at line 33 ("
+")
+--accepting rule at line 31 ("# 1 "<built-in>"")
+--included # 1 "<built-in>"
+--accepting rule at line 33 ("
+")
+--accepting rule at line 31 ("# 1 "<command-line>"")
+--included # 1 "<command-line>"
+--accepting rule at line 33 ("
+")
+--accepting rule at line 31 ("# 1 "96-unterminated.oc"")
+--included # 1 "96-unterminated.oc"
+--accepting rule at line 33 ("
+")
+--accepting rule at line 33 ("
+")
+--accepting rule at line 33 ("
+")
+--accepting rule at line 33 ("
+")
+--accepting rule at line 42 ("int")
+--accepting rule at line 32 (" ")
+--accepting rule at line 53 ("main")
+--accepting rule at line 65 ("(")
+--accepting rule at line 66 (")")
+--accepting rule at line 32 (" ")
+--accepting rule at line 71 ("{")
+--accepting rule at line 33 ("
+")
+--accepting rule at line 32 ("   ")
+--accepting rule at line 43 ("string")
+--accepting rule at line 32 (" ")
+--accepting rule at line 53 ("t")
+--accepting rule at line 32 (" ")
+--accepting rule at line 59 ("=")
+--accepting rule at line 32 (" ")
+--accepting rule at line 78 (""")
+ˆO„:5.15: invalid source character (")
+--accepting rule at line 78 ("\")
+ˆO„:5.16: invalid source character (\)
+--accepting rule at line 62 ("*")
+ˆO„:5.17: syntax error, unexpected '*'
+--accepting rule at line 63 ("/")
+--accepting rule at line 78 (""")
+ˆO„:5.19: invalid source character (")
+--accepting rule at line 70 (";")
+--accepting rule at line 33 ("
+")
+--accepting rule at line 32 ("   ")
+--accepting rule at line 43 ("string")
+--accepting rule at line 32 (" ")
+--accepting rule at line 53 ("s")
+--accepting rule at line 32 (" ")
+--accepting rule at line 59 ("=")
+--accepting rule at line 32 (" ")
+--accepting rule at line 78 (""")
+ˆO„:6.15: invalid source character (")
+--accepting rule at line 53 ("abc")
+--accepting rule at line 70 (";")
+--accepting rule at line 33 ("
+")
+--accepting rule at line 32 ("   ")
+--accepting rule at line 53 ("char")
+--accepting rule at line 32 (" ")
+--accepting rule at line 53 ("c")
+ˆO„:7.9: syntax error, unexpected IDENT
+--accepting rule at line 32 (" ")
+--accepting rule at line 59 ("=")
+--accepting rule at line 32 (" ")
+--accepting rule at line 78 ("'")
+ˆO„:7.13: invalid source character (')
+--accepting rule at line 53 ("a")
+--accepting rule at line 70 (";")
+--accepting rule at line 33 ("
+")
+--accepting rule at line 32 ("   ")
+--accepting rule at line 53 ("s")
+--accepting rule at line 32 (" ")
+--accepting rule at line 59 ("=")
+--accepting rule at line 32 (" ")
+--accepting rule at line 78 (""")
+ˆO„:8.8: invalid source character (")
+--accepting rule at line 53 ("abcd")
+--accepting rule at line 78 ("\")
+ˆO„:8.13: invalid source character (\)
+--accepting rule at line 78 (""")
+ˆO„:8.14: invalid source character (")
+--accepting rule at line 70 (";")
+--accepting rule at line 33 ("
+")
+--accepting rule at line 32 ("   ")
+--accepting rule at line 53 ("s")
+--accepting rule at line 32 (" ")
+--accepting rule at line 59 ("=")
+--accepting rule at line 32 (" ")
+--accepting rule at line 78 (""")
+ˆO„:9.8: invalid source character (")
+--accepting rule at line 53 ("abc")
+--accepting rule at line 78 ("|")
+ˆO„:9.12: invalid source character (|)
+--accepting rule at line 32 ("   ")
+--accepting rule at line 70 (";")
+--accepting rule at line 33 ("
+")
+--accepting rule at line 33 ("
+")
+--accepting rule at line 32 ("   ")
+--accepting rule at line 42 ("int")
+--accepting rule at line 32 (" ")
+--accepting rule at line 52 ("23")
+ˆO„:11.8: syntax error, unexpected TOK_INTCON, expecting IDENT or TOK_ARRAY
+--accepting rule at line 53 ("foobar")
+--accepting rule at line 70 (";")
+--accepting rule at line 33 ("
+")
+--accepting rule at line 72 ("}")
+--accepting rule at line 33 ("
+")
+--(end of buffer or a NUL)
+--EOF (start condition 0)
