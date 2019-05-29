@@ -1,0 +1,3 @@
+checksource: improper character \x0D = ^M (carriage return)
+   file "symtable.h": 45 errors: lines 1--45
+checksource: TOTAL COMPLAINTS: 45

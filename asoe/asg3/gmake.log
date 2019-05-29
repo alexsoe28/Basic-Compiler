@@ -1,1 +1,27 @@
-gmake: Nothing to be done for 'all'.
+gmake --no-print-directory deps
+flex --outfile=yylex.cpp scanner.l
+bison --defines=yyparse.h --output=yyparse.cpp parser.y
+g++ -std=gnu++17 -MM astree.cpp lyutils.cpp string_set.cpp auxlib.cpp main.cpp yylex.cpp yyparse.cpp >>Makefile.deps
+/afs/cats.ucsc.edu/courses/cmps104a-wm/bin//cpplint.py.perl astree.cpp
+Done processing astree.cpp
+/afs/cats.ucsc.edu/courses/cmps104a-wm/bin//checksource astree.cpp
+g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wpedantic -Wshadow -Wold-style-cast -fdiagnostics-color=never -c astree.cpp
+/afs/cats.ucsc.edu/courses/cmps104a-wm/bin//cpplint.py.perl lyutils.cpp
+Done processing lyutils.cpp
+/afs/cats.ucsc.edu/courses/cmps104a-wm/bin//checksource lyutils.cpp
+g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wpedantic -Wshadow -Wold-style-cast -fdiagnostics-color=never -c lyutils.cpp
+/afs/cats.ucsc.edu/courses/cmps104a-wm/bin//cpplint.py.perl string_set.cpp
+Done processing string_set.cpp
+/afs/cats.ucsc.edu/courses/cmps104a-wm/bin//checksource string_set.cpp
+g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wpedantic -Wshadow -Wold-style-cast -fdiagnostics-color=never -c string_set.cpp
+/afs/cats.ucsc.edu/courses/cmps104a-wm/bin//cpplint.py.perl auxlib.cpp
+Done processing auxlib.cpp
+/afs/cats.ucsc.edu/courses/cmps104a-wm/bin//checksource auxlib.cpp
+g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wpedantic -Wshadow -Wold-style-cast -fdiagnostics-color=never -c auxlib.cpp
+/afs/cats.ucsc.edu/courses/cmps104a-wm/bin//cpplint.py.perl main.cpp
+Done processing main.cpp
+/afs/cats.ucsc.edu/courses/cmps104a-wm/bin//checksource main.cpp
+g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wpedantic -Wshadow -Wold-style-cast -fdiagnostics-color=never -c main.cpp
+g++ -std=gnu++17 -g -O0 -Wno-sign-compare -Wno-register -c yylex.cpp
+g++ -std=gnu++17 -g -O0 -Wno-sign-compare -Wno-register -c yyparse.cpp
+g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wpedantic -Wshadow -Wold-style-cast -fdiagnostics-color=never -ooc astree.o lyutils.o string_set.o auxlib.o main.o yylex.o yyparse.o
