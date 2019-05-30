@@ -202,9 +202,9 @@ expr        : expr '=' expr          { $$ = $2->adopt($1, $3); }
             | expr '*' expr          { $$ = $2->adopt($1, $3); }
             | expr '/' expr          { $$ = $2->adopt($1, $3); }
             | expr '%' expr          { $$ = $2->adopt($1, $3); } 
-            | TOK_POS expr           { $$ = $1->adopt($2); }
-            | TOK_NEG expr           { $$ = $1->adopt($2); }
-            | TOK_NOT expr               { $$ = $1->adopt($2); }
+            | '+' expr %prec '+'     { $$ = $1->adopt($2); }
+            | '-' expr %prec '-'     { $$ = $1->adopt($2); }
+            | TOK_NOT expr           { $$ = $1->adopt($2); }
             | alloc                  { $$ = $1; }
             | call                   { $$ = $1; }
             | '(' expr ')'           { destroy($1, $3);

@@ -10,7 +10,7 @@
 #include <string>
 #include <vector>
 using namespace std;
-
+#include "symtable.h"
 #include "auxlib.h"
 
 struct location {
@@ -20,7 +20,7 @@ struct location {
 };
 
 struct astree {
-
+   attr_bitset attributes;
    // Fields.
    int symbol;               // token code
    location lloc;            // source location

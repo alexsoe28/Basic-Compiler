@@ -14,6 +14,7 @@
 #include "astree.h"
 #include "string_set.h"
 #include "lyutils.h"
+#include "symtable.h"
 
 astree::astree (int symbol_, const location& lloc_, const char* info) {
    symbol = symbol_;
@@ -77,9 +78,10 @@ void astree::print (FILE* outfile, astree* tree, int depth) {
    for(int i = 0; i < depth; ++i) {
       fprintf (outfile, "|  ");
    }
-   fprintf (outfile, "%s \"%s\" (%zd.%zd.%zd)\n",
+   fprintf (outfile, "%s \"%s\" (%zd.%zd.%zd) %s\n",
             parser::get_tname (tree->symbol), tree->lexinfo->c_str(),
-            tree->lloc.filenr, tree->lloc.linenr, tree->lloc.offset);
+            tree->lloc.filenr, tree->lloc.linenr, tree->lloc.offset, 
+            bitset_to_string(tree->attributes).c_str());
    for (astree* child: tree->children) {
       astree::print (outfile, child, depth + 1);
    }

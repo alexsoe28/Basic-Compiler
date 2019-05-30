@@ -7,43 +7,64 @@
 
 using namespace std;
 #include "lyutils.h"
-#include "symbol_table.h"
-symbol_table struct_table;
+#include "symtable.h"
+#include "astree.h"
+symbol_table local_table;
 symbol_table global_table;
+symbol_table struct_table;
 int next_block = 1;
 vector<int> block_stack;
 vector<symbol_table*> symStack;
 
-
-symbol* new_symbol(astree* node){
-    symStack.push_back(new symbol_table)
+const string to_string (attr attribute) {
+   static const unordered_map<attr,string> hash {
+      {attr::ATTR_void       , "void"       },
+      {attr::ATTR_int        , "int"        },
+      {attr::ATTR_nullptr_t  , "null"       },
+      {attr::ATTR_string     , "string"     },
+      {attr::ATTR_struct     , "struct"     },
+      {attr::ATTR_array      , "array"      },
+      {attr::ATTR_function   , "function"   },
+      {attr::ATTR_variable   , "variable"   },
+      {attr::ATTR_field      , "field"      },
+      {attr::ATTR_typeid     , "typeid"     },
+      {attr::ATTR_param      , "param"      },
+      {attr::ATTR_lval       , "lval"       },
+      {attr::ATTR_const      , "const"      },
+      {attr::ATTR_vreg       , "vreg"       },
+      {attr::ATTR_vaddr      , "vaddr"      },
+      {attr::ATTR_bitset_size,"bitset_size"},
+   };
+   auto str = hash.find (attribute);
+   if (str == hash.end()) {
+      throw invalid_argument (string (__PRETTY_FUNCTION__) + ": "
+                              + to_string (unsigned (attribute)));
+   }
+   return str->second;
 }
 
-string set_attributes (astree* node, symbol* sym){
+const string bitset_to_string(attr_bitset attributes){
+      
+   string result = "";
+   for(unsigned i = 0; i < unsigned(
+      attr::ATTR_bitset_size); i++){
+      if(attributes[i]){
+          result = result + " " + to_string(static_cast<attr>(i));
+      }
+   }
+   return result;
+}
+
+/*symbol* new_sym(astree *node){
+    symbol* sym = new symbol();
     sym->filenr = node->lloc.filenr;
     sym->linenr = node->lloc.linenr;
     sym->offset = node->lloc.offset;
-    sym->filenr = node->lloc.filenr;
-    sym->blocknr = block_stack.back();
-    switch(node->symbol){
-        case TOK_VOID: {
-            sym->attributes[ATTR_void] = 1;
-        }
-        case TOK_INT: {
-            sym->attributes[ATTR_int] = 1;
-        }
-        case TOK_NULL: {
-            sym->attributes[ATTR_null] = 1;
-        }
-        case
-        case TOK_STRING: {
-            sym->attributes[ATTR_string] = 1;
-        }
-    }
-}
+    sym->blocknr = static_cast<size_t>(next_block);
+    set_attributes(node, sym);
+    sym->attributes[ATTR_lval] = 1;
+    sym->attributes[ATTR_variable] = 1;   
+    return sym;
+}*/
 
 
-
-void typecheck(FILE *out, astree *node){
-
-}

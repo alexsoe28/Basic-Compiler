@@ -1,1 +1,9 @@
-gmake: Nothing to be done for 'all'.
+/afs/cats.ucsc.edu/courses/cmps104a-wm/bin//cpplint.py.perl astree.cpp
+Done processing astree.cpp
+/afs/cats.ucsc.edu/courses/cmps104a-wm/bin//checksource astree.cpp
+g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wpedantic -Wshadow -Wold-style-cast -fdiagnostics-color=never -c astree.cpp
+In file included from astree.cpp:14:
+astree.h:23:4: error: ‘attr_bitset’ does not name a type
+    attr_bitset attributes;
+    ^~~~~~~~~~~
+gmake: *** [Makefile:50: astree.o] Error 1

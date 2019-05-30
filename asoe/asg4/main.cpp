@@ -22,6 +22,7 @@ using namespace std;
 #include "auxlib.h"
 #include "lyutils.h"
 #include "astree.h"
+#include "generateTable.h"
 
 string CPP = "/usr/bin/cpp -nostdinc";
 constexpr size_t LINESIZE = 1024;
@@ -125,10 +126,14 @@ int main (int argc, char** argv) {
    outFile = fopen(tokFile.c_str(), "w");
    yyparse();
    fclose(outFile); 
-   
+
+   postOrderTraversal(parser::root);
+      
+
    string astFile = targetFile.substr(0,targetFile.size()-3)+".ast";
    FILE*outfile = fopen(astFile.c_str(), "w");
    astree::print(outfile, parser::root);
+   
    fclose(out);
    fclose(outfile);
    return exit_status;

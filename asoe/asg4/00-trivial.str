@@ -1,5 +1,9 @@
-string_set[   0]:    7019575824533966140 0x77d2b8->"main(){}"
-string_set[   3]:   12597418120160561823 0x77d248->"int"
-load_factor = 0.400
-bucket_count = 5
-max_bucket_size = 1
+string_set[   1]:   13686721134187162920 0x1f4f438->"}"
+string_set[   3]:   12597418120160561823 0x1f4f248->"int"
+                   14736352883882276958 0x1f4f368->"=="
+                   16413985602691816230 0x1f4f2b8->"main(){"
+string_set[   9]:   17981640719855367817 0x1f4f3b8->""ast"){}"
+string_set[  10]:    8584505004168989873 0x1f4f268->"if(nullptr"
+load_factor = 0.545
+bucket_count = 11
+max_bucket_size = 3
