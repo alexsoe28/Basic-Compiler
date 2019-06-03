@@ -7,5 +7,5 @@
 
 void postOrderTraversal(astree* node);
 
-void typecheck(FILE *out, astree *node);
+//void typecheck(FILE *out, astree *node);
 #endif

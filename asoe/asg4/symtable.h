@@ -23,17 +23,22 @@ using attr_bitset = bitset<unsigned(attr::ATTR_bitset_size)>;
 using symbol_table = unordered_map<const string*, symbol*>;
 using symbol_entry = pair<const string*,symbol*>;
 
+struct location{
+    size_t filenr;
+    size_t linenr;
+    size_t offset;
+};
+
 struct symbol {
     attr_bitset attributes;
     symbol_table *fields;
-    size_t filenr;
-    size_t linenr;
-    size_t offset;      
+    location lloc;
     size_t block_nr;
     vector<symbol *> *parameters;
 };
-const string bitset_to_string(attr_bitset attributes);
 
+
+const string bitset_to_string(attr_bitset attributes);
 
 
 #endif

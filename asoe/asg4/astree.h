@@ -13,11 +13,13 @@ using namespace std;
 #include "symtable.h"
 #include "auxlib.h"
 
+/*
 struct location {
    size_t filenr;
    size_t linenr;
    size_t offset;
 };
+*/
 
 struct astree {
    attr_bitset attributes;

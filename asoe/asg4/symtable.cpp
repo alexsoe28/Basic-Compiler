@@ -8,13 +8,8 @@
 using namespace std;
 #include "lyutils.h"
 #include "symtable.h"
+#include "yyparse.h"
 #include "astree.h"
-symbol_table local_table;
-symbol_table global_table;
-symbol_table struct_table;
-int next_block = 1;
-vector<int> block_stack;
-vector<symbol_table*> symStack;
 
 const string to_string (attr attribute) {
    static const unordered_map<attr,string> hash {
@@ -54,17 +49,4 @@ const string bitset_to_string(attr_bitset attributes){
    }
    return result;
 }
-
-/*symbol* new_sym(astree *node){
-    symbol* sym = new symbol();
-    sym->filenr = node->lloc.filenr;
-    sym->linenr = node->lloc.linenr;
-    sym->offset = node->lloc.offset;
-    sym->blocknr = static_cast<size_t>(next_block);
-    set_attributes(node, sym);
-    sym->attributes[ATTR_lval] = 1;
-    sym->attributes[ATTR_variable] = 1;   
-    return sym;
-}*/
-
 
