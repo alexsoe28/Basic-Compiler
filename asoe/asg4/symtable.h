@@ -38,6 +38,8 @@ struct symbol {
 };
 
 
+string to_string(symbol_table* table, int depth);
+
 const string bitset_to_string(attr_bitset attributes);
 
 

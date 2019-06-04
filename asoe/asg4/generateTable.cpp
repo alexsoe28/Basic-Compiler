@@ -157,8 +157,13 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
             for(astree* child: node->children){
                 type_check(child);
             }
-            const string* key = node->children[0]->children[0]->lexinfo;
+            int declid = 0;
+            if(node->children[0]->symbol == TOK_ARRAY ||
+                node->children[0]->symbol == TOK_PTR) declid++;
+            const string* key = 
+                node->children[0]->children[declid]->lexinfo;
             symbol* var_sym = new_sym(node);
+            var_sym->attributes = node->children[0]->attributes;
             symbol_entry var_entry (key, var_sym);
             assert(node->children.size() == 2);
 
@@ -201,6 +206,7 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
             for(astree* child: node->children){
                 type_check(child);
             }
+            node->attributes = node->children[0]->attributes;
             node->attributes.set(unsigned(attr::ATTR_array));
             return;
         }
@@ -216,6 +222,10 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
 
 
    //}
+}
+
+void printTable(FILE* outfile) {
+   fprintf(outfile, "%s\n", to_string(&global_table, 0).c_str()); 
 }
 /*
 void postOrderTraversal(astree* node){

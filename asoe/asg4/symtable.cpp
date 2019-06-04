@@ -50,3 +50,19 @@ const string bitset_to_string(attr_bitset attributes){
    return result;
 }
 
+string to_string(symbol_table* table, int depth) {
+    if(table == nullptr) return "";
+    string ret = "";
+    ret += "size = " + to_string(table->size())+ "\n";
+    for(auto x : *table) {
+       const string* ident = x.first;
+       symbol* entry = x.second;
+       for(int i = 0; i < depth; i++) {
+           ret += "   ";
+       }
+       ret += *ident + bitset_to_string(entry->attributes);
+       ret += "\n";
+       ret += to_string(entry->fields, depth+1);
+    }        
+    return ret;
+}

@@ -133,7 +133,12 @@ int main (int argc, char** argv) {
    string astFile = targetFile.substr(0,targetFile.size()-3)+".ast";
    FILE*outfile = fopen(astFile.c_str(), "w");
    astree::print(outfile, parser::root);
-   
+
+   string symFile = targetFile.substr(0,targetFile.size()-3)+".sym";
+   FILE*symfile = fopen(symFile.c_str(), "w");
+
+   printTable(symfile);
+   fclose(symfile);
    fclose(out);
    fclose(outfile);
    return exit_status;

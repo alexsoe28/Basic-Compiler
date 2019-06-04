@@ -4,6 +4,6 @@
 int y = 4; 
 int main(){
     array<int> fibonacci = alloc<array<int>> (3);
-    
+    int x = 4;
+    ptr<struct wtf> stuff;
 }
-

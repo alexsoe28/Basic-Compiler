@@ -8,4 +8,7 @@
 void type_check(astree* node);
 
 //void typecheck(FILE *out, astree *node);
+
+void printTable(FILE* outfile);
+
 #endif
