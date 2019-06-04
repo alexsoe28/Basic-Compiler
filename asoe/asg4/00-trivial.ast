@@ -1,7 +1,7 @@
 ROOT "<>" (0.0.0) 
 |  TOK_VARDECL "=" (3.4.7) 
 |  |  TOK_INT "int" (3.4.1)  int
-|  |  |  DECLID "x" (3.4.5)  int
+|  |  |  DECLID "y" (3.4.5)  int
 |  |  TOK_INTCON "4" (3.4.9)  int const
 |  TOK_FUNCTION "" (3.5.1) 
 |  |  TOK_INT "int" (3.5.1)  int
@@ -12,12 +12,3 @@ ROOT "<>" (0.0.0)
 |  |  |  |  TOK_STRING "string" (3.6.5)  string
 |  |  |  |  |  DECLID "x" (3.6.12)  string
 |  |  |  |  TOK_STRINGCON ""string"" (3.6.16)  string const
-|  TOK_FUNCTION "" (3.9.1) 
-|  |  TOK_VOID "void" (3.9.1)  void
-|  |  |  DECLID "dood" (3.9.6) 
-|  |  TOK_PARAM "(" (3.9.10) 
-|  |  TOK_BLOCK "{" (3.9.12) 
-|  |  |  TOK_VARDECL "=" (3.10.11) 
-|  |  |  |  TOK_INT "int" (3.10.5)  int
-|  |  |  |  |  DECLID "x" (3.10.9)  int
-|  |  |  |  TOK_INTCON "3" (3.10.13)  int const

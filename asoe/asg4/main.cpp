@@ -127,7 +127,7 @@ int main (int argc, char** argv) {
    yyparse();
    fclose(outFile); 
 
-   postOrderTraversal(parser::root);
+   type_check(parser::root);
       
 
    string astFile = targetFile.substr(0,targetFile.size()-3)+".ast";

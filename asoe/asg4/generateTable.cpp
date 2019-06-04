@@ -59,7 +59,7 @@ bool isMatching(astree* node1, astree* node2){
 
 void type_check (astree* node){
 printf("recursive call: %s\n", node->lexinfo->c_str()); 
- for(unsigned int i = 0; i < node->children.size(); i++){
+   //for(unsigned int i = 0; i < node->children.size(); i++){
     switch(node->symbol){
         case ROOT: {
             for(astree* child: node->children){
@@ -99,7 +99,10 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
 
         case TOK_NOT:
         case '-':{
-
+            for(astree* child: node->children){
+                type_check(child);
+            }
+ 
             if(node->children.size() == 2){
                 assert(node->children[0]->
                        attributes[unsigned(attr::ATTR_int)]);
@@ -117,7 +120,7 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
                return;
             }
             
-            type_check(node->children[i]);
+            //type_check(node->children[i]);
             return;
         }
         case '+':
@@ -128,6 +131,9 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
         case TOK_LE:
         case TOK_GE:
         case '<': {
+            for(astree* child: node->children){
+                type_check(child);
+            }
             assert(node->children.size() == 2);
             assert(node->children[0]->
                    attributes[unsigned(attr::ATTR_int)]);
@@ -137,7 +143,7 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
             node->attributes.set(unsigned(attr::ATTR_vreg));
             
             //recursive call
-            type_check(node->children[i]);
+            //type_check(node->children[i]);
             return;
         }
         case TOK_NE:
@@ -149,7 +155,7 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
             node->attributes.set(unsigned(attr::ATTR_vreg));
             
             //recursive call
-            type_check(node->children[i]);
+            //type_check(node->children[i]);
             return;
         }
         case TOK_VARDECL: {
@@ -174,8 +180,11 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
             return;
         }
         case TOK_FUNCTION: {
+            for(astree* child: node->children){
+                type_check(child);
+            }
+
             in_func = 1;
-            type_check(node->children[i]);
             block_nr++;
 
             in_func = 0; 
@@ -187,11 +196,17 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
             return;
         }
         default:
-            break;
+            if(node->children.size() > 0){
+                for(astree* child: node->children){
+                    type_check(child);
+                }
+
+            }
+            return;
     }
 
 
- }
+   //}
 }
 /*
 void postOrderTraversal(astree* node){
