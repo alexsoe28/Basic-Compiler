@@ -5,7 +5,8 @@
 #include "astree.h"
 symbol_table local_table;                                      
 symbol_table global_table;                                     
-symbol_table struct_table;                                     
+symbol_table struct_table; 
+bool in_func = 0;                                    
 int block_nr = 0;
 
 symbol* new_sym (astree* node) {
@@ -57,39 +58,48 @@ bool isMatching(astree* node1, astree* node2){
 }
 
 void type_check (astree* node){
+printf("recursive call: %s\n", node->lexinfo->c_str()); 
+ for(unsigned int i = 0; i < node->children.size(); i++){
     switch(node->symbol){
+        case ROOT: {
+            for(astree* child: node->children){
+                type_check(child);
+            }
+            return;
+        }
         case TOK_VOID: {
             node->attributes.set(unsigned(attr::ATTR_void)); 
-            break;
+            return;
         }
         case TOK_INT: {
             node->attributes.set(unsigned(attr::ATTR_int));
-            break;
+            return;
         }
         case TOK_NULLPTR: {
             node->attributes.set(unsigned(attr::ATTR_nullptr_t));
             node->attributes.set(unsigned(attr::ATTR_const));
-            break;
+            return;
         }
         case TOK_STRING: {
             node->attributes.set(unsigned(attr::ATTR_string));
-            break;                                                    
+            return;                                                   
         }
         case TOK_INTCON:
         
         case TOK_CHARCON: {
             node->attributes.set(unsigned(attr::ATTR_int));
             node->attributes.set(unsigned(attr::ATTR_const));
-            break;
+            return;
         }
         case TOK_STRINGCON: {
             node->attributes.set(unsigned(attr::ATTR_string));
             node->attributes.set(unsigned(attr::ATTR_const));
-            break;
+            return;
         }
 
         case TOK_NOT:
-        case '-': {
+        case '-':{
+
             if(node->children.size() == 2){
                 assert(node->children[0]->
                        attributes[unsigned(attr::ATTR_int)]);
@@ -97,16 +107,18 @@ void type_check (astree* node){
                        attributes[unsigned(attr::ATTR_int)]);
                 node->attributes.set(unsigned(attr::ATTR_int));
                 node->attributes.set(unsigned(attr::ATTR_vreg));
-                break;
+                return;
             }
             else if(node->children.size() == 1){
                 assert(node->children[0]->
                        attributes[unsigned(attr::ATTR_int)]);
                 node->attributes.set(unsigned(attr::ATTR_int));
                 node->attributes.set(unsigned(attr::ATTR_vreg));
-                break;
+               return;
             }
-            break;
+            
+            type_check(node->children[i]);
+            return;
         }
         case '+':
         case '*':
@@ -123,17 +135,29 @@ void type_check (astree* node){
                    attributes[unsigned(attr::ATTR_int)]);
             node->attributes.set(unsigned(attr::ATTR_int));
             node->attributes.set(unsigned(attr::ATTR_vreg));
-            break;
+            
+            //recursive call
+            type_check(node->children[i]);
+            return;
         }
         case TOK_NE:
         case TOK_EQ: {
+            
             assert(node->children.size() == 2);
             assert(isMatching(node->children[0], node->children[1]));
             node->attributes.set(unsigned(attr::ATTR_int));
             node->attributes.set(unsigned(attr::ATTR_vreg));
-            break;
+            
+            //recursive call
+            type_check(node->children[i]);
+            return;
         }
         case TOK_VARDECL: {
+            
+            for(astree* child: node->children){
+                type_check(child);
+            }
+
             const string* key = node->children[0]->children[0]->lexinfo;
             symbol* var_sym = new_sym(node);
             symbol_entry var_entry (key, var_sym);
@@ -141,31 +165,39 @@ void type_check (astree* node){
             assert(isMatching(node->children[0], node->children[1]));
             node->children[0]->children[0]->attributes 
             = node->children[0]->attributes;
-            if(block_nr != 0){
+            if(in_func != 0){
                local_table.insert(var_entry); 
             }
             else{
                global_table.insert(var_entry);
             }
-            break;
+            return;
         }
         case TOK_FUNCTION: {
+            in_func = 1;
+            type_check(node->children[i]);
             block_nr++;
-            break;
+
+            in_func = 0; 
+            return;
         }
+        
         case TOK_PROTOTYPE: { 
             block_nr++;
-            break;
+            return;
         }
         default:
             break;
     }
-}
 
+
+ }
+}
+/*
 void postOrderTraversal(astree* node){
     for(unsigned int i = 0; i < node->children.size(); i++){
         postOrderTraversal(node->children[i]);
     }
     type_check(node);
 }
-
+*/

@@ -5,7 +5,7 @@
 #include "symtable.h"
 #include "astree.h"
 
-void postOrderTraversal(astree* node);
+void type_check(astree* node);
 
 //void typecheck(FILE *out, astree *node);
 #endif
