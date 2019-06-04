@@ -60,7 +60,11 @@ string to_string(symbol_table* table, int depth) {
        for(int i = 0; i < depth; i++) {
            ret += "   ";
        }
-       ret += *ident + bitset_to_string(entry->attributes);
+       std::string filenr = std::to_string(entry->lloc.filenr);
+       std::string linenr = std::to_string(entry->lloc.linenr);
+       std::string offset = std::to_string(entry->lloc.offset);
+       ret += *ident + " (" + filenr + "." + linenr + "." 
+           + offset + ") " + bitset_to_string(entry->attributes);
        ret += "\n";
        ret += to_string(entry->fields, depth+1);
     }        

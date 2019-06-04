@@ -187,14 +187,13 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
         }
         
         case TOK_FUNCTION: {
+            in_func = 1;
             for(astree* child: node->children){
                 type_check(child);
             }
 
-            in_func = 1;
             block_nr++;
-
-            in_func = 0; 
+            in_func = 0;
             return;
         }
         
@@ -211,7 +210,7 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
             return;
         }
 
-        default:
+        default:{
             if(node->children.size() > 0){
                 for(astree* child: node->children){
                     type_check(child);
@@ -219,14 +218,14 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
             }
             return;
         }
-
-
-   //}
+  
+     }
 }
-
 void printTable(FILE* outfile) {
    fprintf(outfile, "%s\n", to_string(&global_table, 0).c_str()); 
 }
+
+
 /*
 void postOrderTraversal(astree* node){
     for(unsigned int i = 0; i < node->children.size(); i++){
