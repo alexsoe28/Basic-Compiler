@@ -1,0 +1,43 @@
+ Structure of a function node
+	 Function Node
+	 	[0] - return type
+	 	[1] - Param 1 
+	 		[0] - type
+	 		[1] - name
+	    [2] - Param 2
+	    	[0] - type
+	    	[1] - name 
+	    [n] - Param n
+	    	[0] - type
+	    	[1] - name
+	    [n+1] - block
+	    	[0] 
+	    	[1]
+	    	.
+	    	.
+	    	.
+	    	[k]
+	    	[k+1] - return type.
+
+
+Pseudocode:
+	Set in_func to true
+	recurse on all the children of the function
+	after the recursion returns, 
+	set the first child to be the return type of the function
+	iterate over the children vector of the function, beginning at index 1
+		if the child is a parameter, enter it into the parameter vector
+		stop iterating when the child is no longer a parameter
+	enter the parameter vector into the symbol 
+
+	The index preceeding the last parameter node is the block node
+		iterate over all its children to check the return type
+
+	add to symbol table
+
+	Ser in_func to false
+
+
+Coming across a function call
+
+
