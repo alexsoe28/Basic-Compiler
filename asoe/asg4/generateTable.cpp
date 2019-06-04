@@ -61,12 +61,6 @@ void type_check (astree* node){
 printf("recursive call: %s\n", node->lexinfo->c_str()); 
    //for(unsigned int i = 0; i < node->children.size(); i++){
     switch(node->symbol){
-        case ROOT: {
-            for(astree* child: node->children){
-                type_check(child);
-            }
-            return;
-        }
         case TOK_VOID: {
             node->attributes.set(unsigned(attr::ATTR_void)); 
             return;
@@ -163,14 +157,21 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
             for(astree* child: node->children){
                 type_check(child);
             }
-
             const string* key = node->children[0]->children[0]->lexinfo;
             symbol* var_sym = new_sym(node);
             symbol_entry var_entry (key, var_sym);
             assert(node->children.size() == 2);
-            assert(isMatching(node->children[0], node->children[1]));
-            node->children[0]->children[0]->attributes 
-            = node->children[0]->attributes;
+
+            if(node->children[0]->symbol != TOK_ARRAY){
+                assert(isMatching(node->children[0],
+                       node->children[1]));
+                node->children[0]->children[0]->attributes 
+                = node->children[0]->attributes;
+            }
+            else{
+                 assert(isMatching(node->children[0]->children[0],
+                 node->children[1]->children[0]->children[0])); 
+            }
             if(in_func != 0){
                local_table.insert(var_entry); 
             }
@@ -179,6 +180,7 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
             }
             return;
         }
+        
         case TOK_FUNCTION: {
             for(astree* child: node->children){
                 type_check(child);
@@ -195,15 +197,22 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
             block_nr++;
             return;
         }
+        case TOK_ARRAY:{
+            for(astree* child: node->children){
+                type_check(child);
+            }
+            node->attributes.set(unsigned(attr::ATTR_array));
+            return;
+        }
+
         default:
             if(node->children.size() > 0){
                 for(astree* child: node->children){
                     type_check(child);
-                }
-
+                }   
             }
             return;
-    }
+        }
 
 
    //}
