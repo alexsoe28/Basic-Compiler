@@ -119,15 +119,16 @@ function  : ident '(' ')' block       {
             $$ = $$->adopt ($1, $2); }
 ;
 
-idents: ident        { $$ = $1; }
+idents:     ident        { $$ = $1; }
           | idents ',' ident  { 
             destroy ($2);
             $$ = $1->adopt ($3); }
 ;
 
-ident : plaintype TOK_ARRAY IDENT  { 
-            $3->change_sym (DECLID);
-            $$ = $1->adopt ($2, $3); }
+ident :   TOK_ARRAY '<' plaintype '>' IDENT {
+            destroy($2, $4); 
+            $5->change_sym (DECLID);
+            $$ = $1->adopt ($3, $5); }
           | plaintype IDENT        { 
             $2->change_sym (DECLID);
             $$ = $1->adopt ($2); }
@@ -223,6 +224,7 @@ alloc     : TOK_ALLOC '<' TOK_STRUCT IDENT '>' '(' ')'          {
             destroy ($7);
             $$ = $1->adopt ($3, $6); }
           | TOK_ALLOC '<' TOK_ARRAY '<' plaintype '>' '>' '(' expr ')'{ 
+            printf("\n WE IN HERE");
             destroy ($2, $4);
             destroy ($6, $7);
             destroy ($8, $10);
