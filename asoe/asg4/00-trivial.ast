@@ -8,7 +8,11 @@ ROOT "<>" (0.0.0)
 |  |  |  DECLID "main" (3.5.5) 
 |  |  TOK_PARAM "(" (3.5.9) 
 |  |  TOK_BLOCK "{" (3.5.11) 
-|  |  |  TOK_VARDECL "=" (3.6.14) 
-|  |  |  |  TOK_STRING "string" (3.6.5)  string
-|  |  |  |  |  DECLID "x" (3.6.12)  string
-|  |  |  |  TOK_STRINGCON ""string"" (3.6.16)  string const
+|  |  |  TOK_VARDECL "=" (3.6.26) 
+|  |  |  |  TOK_ARRAY "array" (3.6.5)  array
+|  |  |  |  |  TOK_INT "int" (3.6.11)  int
+|  |  |  |  |  DECLID "fibonacci" (3.6.16) 
+|  |  |  |  TOK_ALLOC "alloc" (3.6.28) 
+|  |  |  |  |  TOK_ARRAY "array" (3.6.34)  array
+|  |  |  |  |  |  TOK_INT "int" (3.6.40)  int
+|  |  |  |  |  TOK_INTCON "3" (3.6.47)  int const

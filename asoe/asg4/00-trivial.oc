@@ -3,6 +3,7 @@
 
 int y = 4; 
 int main(){
-    string x  = "string";
+    array<int> fibonacci = alloc<array<int>> (3);
+    
 }
 
