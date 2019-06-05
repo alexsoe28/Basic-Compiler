@@ -8,7 +8,7 @@ symbol_table global_table;
 symbol_table struct_table; 
 bool in_func = 0;                                    
 int block_nr = 0;
-
+int next_block = 1;
 symbol* new_sym (astree* node) {
     symbol* new_symbol = new symbol();
     new_symbol->attributes = node->attributes;
@@ -157,18 +157,26 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
             for(astree* child: node->children){
                 type_check(child);
             }
+            //Check if the variable is an array or  ptr
             int declid = 0;
             if(node->children[0]->symbol == TOK_ARRAY ||
                 node->children[0]->symbol == TOK_PTR) declid++;
+ 
+            //Create a new symbol entry to put into table
             const string* key = 
                 node->children[0]->children[declid]->lexinfo;
             symbol* var_sym = new_sym(node);
             var_sym->attributes = node->children[0]->attributes;
             symbol_entry var_entry (key, var_sym);
-
+         
+            //Check if the vardecl has two children
             assert(node->children.size() == 2);
+            
+            //Change the DECLID to have the same type as the type
             node->children[0]->children[0]->attributes 
                 = node->children[0]->attributes;
+    
+            //
             if(node->children[0]->symbol != TOK_ARRAY){
                 assert(isMatching(node->children[0],
                        node->children[1]));
@@ -176,6 +184,7 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
                 = node->children[0]->attributes;
             }
             
+            //Check symbol table for ident
             else if(node->children[1]->symbol == IDENT){
                 if(global_table.find(key) != global_table.end()){
                     assert(global_table[key]->attributes !=
@@ -203,6 +212,13 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
         
         case TOK_FUNCTION: {
             in_func = 1;
+            
+            //const string* key = 
+            //    node->children[0]->children[declid]->lexinfo;
+            //symbol* var_sym = new_sym(node);
+            //var_sym->attributes = node->children[0]->attributes;
+            //symbol_entry var_entry (key, var_sym);
+ 
             for(astree* child: node->children){
                 type_check(child);
             }
