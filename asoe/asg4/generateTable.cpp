@@ -165,19 +165,34 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
             symbol* var_sym = new_sym(node);
             var_sym->attributes = node->children[0]->attributes;
             symbol_entry var_entry (key, var_sym);
-            assert(node->children.size() == 2);
 
+            assert(node->children.size() == 2);
+            node->children[0]->children[0]->attributes 
+                = node->children[0]->attributes;
             if(node->children[0]->symbol != TOK_ARRAY){
                 assert(isMatching(node->children[0],
                        node->children[1]));
                 node->children[0]->children[0]->attributes 
                 = node->children[0]->attributes;
             }
+            
+            else if(node->children[1]->symbol == IDENT){
+                if(global_table.find(key) != global_table.end()){
+                    assert(global_table[key]->attributes !=
+                           var_sym->attributes);
+                }
+                if(local_table.find(key) != local_table.end()){
+                    assert(local_table[key]->attributes !=
+                           var_sym->attributes);
+                }
+            }
             else{
                  assert(isMatching(node->children[0]->children[0],
                  node->children[1]->children[0]->children[0])); 
             }
             if(in_func != 0){
+               //node->children[0]->children[declid]->attributes.set
+               //(unsigned(attr::ATTR_local));
                local_table.insert(var_entry); 
             }
             else{
@@ -191,9 +206,15 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
             for(astree* child: node->children){
                 type_check(child);
             }
+            
+            const string* key = 
+            node->children[0]->children[0]->lexinfo;
+            symbol* sym_func = new_sym(node);
+            symbol_entry func_entry (key, sym_func);
+            
+            
 
-            block_nr++;
-            in_func = 0;
+            //block_nr++;
             return;
         }
         
@@ -222,7 +243,9 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
      }
 }
 void printTable(FILE* outfile) {
-   fprintf(outfile, "%s\n", to_string(&global_table, 0).c_str()); 
+   fprintf(outfile, "%s\n", to_string(&global_table, 0).c_str());
+   fprintf(outfile, "%s\n", to_string(&local_table, 0).c_str());
+   fprintf(outfile, "%s\n", to_string(&struct_table, 0).c_str());  
 }
 
 

@@ -1,9 +1,6 @@
 // $Id: 00-trivial.oc,v 1.1 2019-04-16 12:14:45-07 - - $
 
-
-int y = 4; 
+int y = 4;
 int main(){
-    array<int> fibonacci = alloc<array<int>> (3);
-    int x = 4;
-    ptr<struct wtf> stuff;
+    int x = 5;
 }

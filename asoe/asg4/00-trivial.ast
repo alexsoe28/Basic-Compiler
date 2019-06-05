@@ -1,25 +1,14 @@
 ROOT "<>" (0.0.0) 
-|  TOK_VARDECL "=" (3.4.7) 
+|  TOK_VARDECL "=" (3.3.7) 
+|  |  TOK_INT "int" (3.3.1)  int
+|  |  |  DECLID "y" (3.3.5)  int
+|  |  TOK_INTCON "4" (3.3.9)  int const
+|  TOK_FUNCTION "" (3.4.1) 
 |  |  TOK_INT "int" (3.4.1)  int
-|  |  |  DECLID "y" (3.4.5)  int
-|  |  TOK_INTCON "4" (3.4.9)  int const
-|  TOK_FUNCTION "" (3.5.1) 
-|  |  TOK_INT "int" (3.5.1)  int
-|  |  |  DECLID "main" (3.5.5) 
-|  |  TOK_PARAM "(" (3.5.9) 
-|  |  TOK_BLOCK "{" (3.5.11) 
-|  |  |  TOK_VARDECL "=" (3.6.26) 
-|  |  |  |  TOK_ARRAY "array" (3.6.5)  int array
-|  |  |  |  |  TOK_INT "int" (3.6.11)  int
-|  |  |  |  |  DECLID "fibonacci" (3.6.16) 
-|  |  |  |  TOK_ALLOC "alloc" (3.6.28) 
-|  |  |  |  |  TOK_ARRAY "array" (3.6.34)  int array
-|  |  |  |  |  |  TOK_INT "int" (3.6.40)  int
-|  |  |  |  |  TOK_INTCON "3" (3.6.47)  int const
-|  |  |  TOK_VARDECL "=" (3.7.11) 
-|  |  |  |  TOK_INT "int" (3.7.5)  int
-|  |  |  |  |  DECLID "x" (3.7.9)  int
-|  |  |  |  TOK_INTCON "4" (3.7.13)  int const
-|  |  |  TOK_PTR "ptr" (3.8.5) 
-|  |  |  |  IDENT "wtf" (3.8.16) 
-|  |  |  |  DECLID "stuff" (3.8.21) 
+|  |  |  DECLID "main" (3.4.5) 
+|  |  TOK_PARAM "(" (3.4.9) 
+|  |  TOK_BLOCK "{" (3.4.11) 
+|  |  |  TOK_VARDECL "=" (3.5.11) 
+|  |  |  |  TOK_INT "int" (3.5.5)  int
+|  |  |  |  |  DECLID "x" (3.5.9)  int
+|  |  |  |  TOK_INTCON "5" (3.5.13)  int const

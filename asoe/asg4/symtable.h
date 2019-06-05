@@ -14,7 +14,7 @@ enum class attr: unsigned {
     ATTR_void, ATTR_int, ATTR_nullptr_t, ATTR_string,
     ATTR_struct, ATTR_array, ATTR_function, ATTR_variable,
     ATTR_field, ATTR_typeid, ATTR_param, ATTR_lval, ATTR_const, 
-    ATTR_vreg, ATTR_vaddr, ATTR_ptr, ATTR_bitset_size
+    ATTR_vreg, ATTR_vaddr, ATTR_ptr, ATTR_local, ATTR_bitset_size
 };
 struct symbol;
 
