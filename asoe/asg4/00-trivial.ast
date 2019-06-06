@@ -3,12 +3,3 @@ ROOT "<>" (0.0.0)
 |  |  TOK_INT "int" (3.3.1)  int
 |  |  |  DECLID "y" (3.3.5)  int
 |  |  TOK_INTCON "4" (3.3.9)  int const
-|  TOK_FUNCTION "" (3.4.1) 
-|  |  TOK_INT "int" (3.4.1)  int
-|  |  |  DECLID "main" (3.4.5) 
-|  |  TOK_PARAM "(" (3.4.9) 
-|  |  TOK_BLOCK "{" (3.4.11) 
-|  |  |  TOK_VARDECL "=" (3.5.11) 
-|  |  |  |  TOK_INT "int" (3.5.5)  int
-|  |  |  |  |  DECLID "x" (3.5.9)  int
-|  |  |  |  TOK_INTCON "5" (3.5.13)  int const

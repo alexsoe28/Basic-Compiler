@@ -213,21 +213,67 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
         case TOK_FUNCTION: {
             in_func = 1;
             
-            //const string* key = 
-            //    node->children[0]->children[declid]->lexinfo;
-            //symbol* var_sym = new_sym(node);
-            //var_sym->attributes = node->children[0]->attributes;
-            //symbol_entry var_entry (key, var_sym);
- 
-            for(astree* child: node->children){
-                type_check(child);
-            }
-            
             const string* key = 
-            node->children[0]->children[0]->lexinfo;
-            symbol* sym_func = new_sym(node);
-            symbol_entry func_entry (key, sym_func);
-            
+                   node->children[0]->children[0]->lexinfo;
+            symbol* var_sym = new_sym(node);
+            symbol_entry var_entry (key, var_sym);
+         
+           astree* type = node->children[0];
+           astree* params = node->children[1];
+	   
+           //Switch case to set attribute of function and and node
+           switch(type->symbol){
+                case TOK_INT:{
+                     type->attributes.set(unsigned(attr::ATTR_int));
+                     node->attributes.set(unsigned(attr::ATTR_int)); 
+                     break; 
+                }
+                case TOK_VOID:{
+                     type->attributes.set(unsigned(attr::ATTR_void));
+                     node->attributes.set(unsigned(attr::ATTR_void));
+                     break; 
+                }
+                case TOK_PTR:{
+                     type->attributes.set(unsigned(attr::ATTR_ptr));
+                     node->attributes.set(unsigned(attr::ATTR_ptr));    
+                     break; 
+                }
+		case TOK_STRING:{
+                     type->attributes.set(unsigned(attr::ATTR_string));
+                     node->attributes.set(unsigned(attr::ATTR_int));
+                     break;    
+                }
+	   }
+
+           
+           for(unsigned i = 0; i < params->children.size(); i++){
+                type_check(params->children[i]);
+                //add to vector param
+           }
+	   
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             
 
             //block_nr++;
@@ -273,3 +319,26 @@ void postOrderTraversal(astree* node){
     type_check(node);
 }
 */
+
+void set_variables(astree* node, symbol* sym){
+	sym->attributes.set(unsigned(attr::ATTR_variable));
+        sym->attributes.set(unsigned(attr::ATTR_variable));
+        switch(node->symbol){
+          case TOK_INT:
+             sym->attributes.set(unsigned(attr::ATTR_variable));
+             sym->attributes.set(unsigned(attr::ATTR_int));
+          }
+          case TOK_PTR:{
+             type->attributes.set(unsigned(attr::ATTR_ptr));
+             node->attributes.set(unsigned(attr::ATTR_ptr));    
+             break; 
+          }
+	  case TOK_STRING:{
+             type->attributes.set(unsigned(attr::ATTR_string));
+             node->attributes.set(unsigned(attr::ATTR_int));
+             break;    
+         }
+        }
+
+
+}
