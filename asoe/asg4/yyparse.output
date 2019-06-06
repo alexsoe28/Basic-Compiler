@@ -8,6 +8,7 @@ Terminals unused in grammar
    TOK_INDEX
    TOK_IFELSE
    TOK_RETURNVOID
+   TOK_FIELDLIST
    TOK_NULL
    TOK_VARDECL
    TOK_PARAMLIST
@@ -172,91 +173,92 @@ TOK_NULLPTR (269) 77
 TOK_WHILE (270) 39
 TOK_RETURN (271) 42 43
 TOK_RETURNVOID (272)
-TOK_INT (273) 15
-TOK_STRING (274) 16 65
-TOK_STRUCT (275) 8 9 17 64
-TOK_VOID (276) 14
-TOK_NULL (277)
-TOK_ARRAY (278) 13 24 66
-TOK_VARDECL (279)
-TOK_PARAMLIST (280)
-TOK_EQ (281) 45
-TOK_NE (282) 46
-TOK_LE (283) 48
-TOK_GE (284) 50
-TOK_NOT (285) 58
-TOK_PTR (286) 17
-TOK_BLOCK (287)
-TOK_CALL (288)
-DECLID (289)
-TOK_FUNCTION (290)
-TOK_PROTOTYPE (291)
-TOK_POS (292)
-TOK_NEG (293)
-TOK_NEWARRAY (294)
-TOK_TYPEID (295)
-TOK_FIELD (296)
-TOK_ORD (297)
-TOK_CHR (298)
-TOK_ROOT (299)
-TOK_PARAM (300)
-BAD_TOK (301)
-TOK_EXC (302)
-TOK_INTCON (303) 76
-TOK_CHARCON (304) 75
-TOK_STRINGCON (305) 74
-TOK_ARROW (306) 73
+TOK_FIELDLIST (273)
+TOK_INT (274) 15
+TOK_STRING (275) 16 65
+TOK_STRUCT (276) 8 9 17 64
+TOK_VOID (277) 14
+TOK_NULL (278)
+TOK_ARRAY (279) 13 24 66
+TOK_VARDECL (280)
+TOK_PARAMLIST (281)
+TOK_EQ (282) 45
+TOK_NE (283) 46
+TOK_LE (284) 48
+TOK_GE (285) 50
+TOK_NOT (286) 58
+TOK_PTR (287) 17
+TOK_BLOCK (288)
+TOK_CALL (289)
+DECLID (290)
+TOK_FUNCTION (291)
+TOK_PROTOTYPE (292)
+TOK_POS (293)
+TOK_NEG (294)
+TOK_NEWARRAY (295)
+TOK_TYPEID (296)
+TOK_FIELD (297)
+TOK_ORD (298)
+TOK_CHR (299)
+TOK_ROOT (300)
+TOK_PARAM (301)
+BAD_TOK (302)
+TOK_EXC (303)
+TOK_INTCON (304) 76
+TOK_CHARCON (305) 75
+TOK_STRINGCON (306) 74
+TOK_ARROW (307) 73
 
 
 Nonterminals, with rules where they appear
 
-$accept (70)
+$accept (71)
     on left: 0
-start (71)
+start (72)
     on left: 1, on right: 0
-program (72)
+program (73)
     on left: 2 3 4 5 6 7, on right: 1 2 3 4 5 6
-structdef (73)
+structdef (74)
     on left: 8 9, on right: 2
-structfields (74)
+structfields (75)
     on left: 10 11, on right: 8 11
-type (75)
+type (76)
     on left: 12 13, on right: 10 11
-plaintype (76)
+plaintype (77)
     on left: 14 15 16 17, on right: 12 13 24 25 66
-function (77)
+function (78)
     on left: 18 19 20 21, on right: 3
-idents (78)
+idents (79)
     on left: 22 23, on right: 19 21 23
-ident (79)
+ident (80)
     on left: 24 25, on right: 18 19 20 21 22 23 37 38
-block (80)
+block (81)
     on left: 26 27, on right: 18 19 31
-statements (81)
+statements (82)
     on left: 28 29, on right: 26 29
-statement (82)
+statement (83)
     on left: 30 31 32 33 34 35 36, on right: 4 28 29 39 40 41
-vardecl (83)
+vardecl (84)
     on left: 37 38, on right: 30
-while (84)
+while (85)
     on left: 39, on right: 32
-ifelse (85)
+ifelse (86)
     on left: 40 41, on right: 33
-return (86)
+return (87)
     on left: 42 43, on right: 34
-expr (87)
+expr (88)
     on left: 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61
     62 63, on right: 35 37 39 40 41 43 44 45 46 47 48 49 50 51 52 53
     54 55 56 57 58 61 65 66 69 70 72 73
-alloc (88)
+alloc (89)
     on left: 64 65 66, on right: 59
-call (89)
+call (90)
     on left: 67 68, on right: 60
-params (90)
+params (91)
     on left: 69 70, on right: 67 70
-variable (91)
+variable (92)
     on left: 71 72 73, on right: 62
-constant (92)
+constant (93)
     on left: 74 75 76 77, on right: 63
 
 

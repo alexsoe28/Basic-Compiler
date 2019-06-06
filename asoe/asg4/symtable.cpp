@@ -28,6 +28,7 @@ const string to_string (attr attribute) {
       {attr::ATTR_const      , "const"      },
       {attr::ATTR_vreg       , "vreg"       },
       {attr::ATTR_vaddr      , "vaddr"      },
+      {attr::ATTR_local      , "local"      },
       {attr::ATTR_bitset_size,"bitset_size"},
    };
    auto str = hash.find (attribute);
@@ -50,7 +51,7 @@ const string bitset_to_string(attr_bitset attributes){
    return result;
 }
 
-string to_string(symbol_table* table, int depth) {
+string table_to_string(symbol_table* table, int depth) {
     if(table == nullptr) return "";
     string ret = "";
     ret += "size = " + to_string(table->size())+ "\n";
@@ -66,7 +67,7 @@ string to_string(symbol_table* table, int depth) {
        ret += *ident + " (" + filenr + "." + linenr + "." 
            + offset + ") " + bitset_to_string(entry->attributes);
        ret += "\n";
-       ret += to_string(entry->fields, depth+1);
+       ret += table_to_string(entry->fields, depth+1);
     }        
     return ret;
 }

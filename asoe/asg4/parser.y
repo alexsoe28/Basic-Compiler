@@ -24,7 +24,7 @@ extern int exit_status;
 
 %token  ROOT IDENT NUMBER UNOP BINOP TOK_NEWSTRING TOK_INDEX
 %token  TOK_IF TOK_ELSE TOK_IFELSE TOK_ALLOC TOK_NULLPTR
-%token  TOK_WHILE TOK_RETURN TOK_RETURNVOID
+%token  TOK_WHILE TOK_RETURN TOK_RETURNVOID TOK_FIELDLIST
 %token  TOK_INT TOK_STRING TOK_STRUCT TOK_VOID
 %token  TOK_NULL TOK_ARRAY TOK_VARDECL TOK_PARAMLIST
 %token  TOK_EQ TOK_NE TOK_LE TOK_GE TOK_NOT TOK_PTR
@@ -72,15 +72,17 @@ structdef : TOK_STRUCT IDENT '{' structfields '}' {
 ;
 
 structfields: type ';'               {
-            destroy ($2); $$ = $1; }
+            $$ = new astree(TOK_FIELDLIST, $1->lloc, "");
+            destroy ($2); 
+            $$ = $$->adopt($1); }
           | type ';' structfields    { 
             destroy ($2);
-            $$ = $1->adopt ($3); }
+            $$ = $3->adopt ($1); }
 ;
 
-type       : plaintype IDENT            { 
+type       : plaintype IDENT            {
             $2->change_sym (TOK_FIELD);
-            $$ = $1->adopt ($2); }
+            $$ = $1->adopt ($2);}
           | TOK_ARRAY '<' plaintype '>' {
             destroy ($2, $4); 
             $3->change_sym (TOK_FIELD);

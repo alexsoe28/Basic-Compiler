@@ -14,7 +14,7 @@ symbol* new_sym (astree* node) {
     new_symbol->attributes = node->attributes;
     new_symbol->fields = nullptr;
     new_symbol->lloc = node->lloc;
-    new_symbol->parameters = nullptr;
+    new_symbol->parameters = new vector<symbol*>();
     return new_symbol;
 }
 
@@ -57,7 +57,7 @@ bool isMatching(astree* node1, astree* node2){
      return true;
 }
 
-void type_check (astree* node){
+void type_check (astree* node ){
 printf("recursive call: %s\n", node->lexinfo->c_str()); 
    //for(unsigned int i = 0; i < node->children.size(); i++){
     switch(node->symbol){
@@ -203,11 +203,11 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
             
             const string* key = 
                    node->children[0]->children[0]->lexinfo;
-            symbol* var_sym = new_sym(node);
-            symbol_entry var_entry (key, var_sym);
+            symbol* func_sym = new_sym(node);
+            symbol_entry func_entry (key, func_sym);
          
             astree* type = node->children[0];
-            astree* params = node->children[1];
+            astree* paramList = node->children[1]->children[0];
  
            //Switch case to set attribute of function and and node
             switch(type->symbol){
@@ -234,13 +234,25 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
            }
 
            
-           for(unsigned i = 0; i < params->children.size(); i++){
-                type_check(params->children[i]);
+           for(unsigned int i = 0; i < paramList->children.size(); i++){
+                type_check(paramList->children[i]);
            }
+           
+           for(unsigned i = 0; i < paramList->children.size(); i++){
+                 const string* paramkey = 
+                 paramList->children[i]->children[0]->lexinfo;
+                 symbol* param_sym = new_sym(paramList->children[i]
+                                   ->children[0]);
+                 symbol_entry param_entry(paramkey, param_sym);
+                 local_table.insert(param_entry);
+                 func_sym->parameters->push_back(param_sym);
+
+           }
+
            for(astree* child: node->children){
                 type_check(child);
-           }   
-           
+           } 
+         
            in_func = 0;
 
             //block_nr++;
@@ -269,7 +281,31 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
             }   
             return;
         }
-
+        case TOK_STRUCT: {
+            const string* key = 
+                   node->children[0]->lexinfo;
+            symbol* struct_sym = new_sym(node);
+            struct_sym->fields = new symbol_table();
+            symbol_entry struct_entry (key, struct_sym);
+            struct_table.insert(struct_entry);
+            
+            astree* fieldList = node->children[1]; 
+            for(unsigned i = 0; i < fieldList->children.size(); i++){
+                const string* fieldkey = 
+                      fieldList->children[i]->children[0]->lexinfo;
+                type_check(fieldList->children[i]);
+                //fieldList->children[i]->attributes = 
+                //     fieldList->children[i]->children[0]->attributes;
+                symbol* field_sym = new_sym(fieldList->children[i]
+                                   ->children[0]);
+                symbol_entry field_entry(fieldkey, field_sym);
+                struct_sym->fields->insert(field_entry);
+            }
+            return;
+        }
+        case TOK_ARROW: {
+           return; 
+        }
         default:{
             if(node->children.size() > 0){
                 for(astree* child: node->children){
@@ -282,9 +318,9 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
      }
 }
 void printTable(FILE* outfile) {
-   fprintf(outfile, "%s\n", to_string(&global_table, 0).c_str());
-   fprintf(outfile, "%s\n", to_string(&local_table, 0).c_str());
-   fprintf(outfile, "%s\n", to_string(&struct_table, 0).c_str());  
+   fprintf(outfile, "%s\n", table_to_string(&global_table, 0).c_str());
+   fprintf(outfile, "%s\n", table_to_string(&local_table, 0).c_str());
+   fprintf(outfile, "%s\n", table_to_string(&struct_table, 0).c_str()); 
 }
 
 
@@ -297,27 +333,4 @@ void postOrderTraversal(astree* node){
 }
 */
 
-/*
-void set_variables(astree* node, symbol* sym){
-     sym->attributes.set(unsigned(attr::ATTR_variable));
-        sym->attributes.set(unsigned(attr::ATTR_variable));
-        switch(node->symbol){
-          case TOK_INT:{
-             sym->attributes.set(unsigned(attr::ATTR_variable));
-             sym->attributes.set(unsigned(attr::ATTR_int));
-          }
-          case TOK_PTR:{
-             node->attributes.set(unsigned(attr::ATTR_ptr));
-             node->attributes.set(unsigned(attr::ATTR_ptr));    
-             break; 
-          }
-      case TOK_STRING:{
-             node->attributes.set(unsigned(attr::ATTR_string));
-             node->attributes.set(unsigned(attr::ATTR_int));
-             break;    
-         }
-        }
 
-
-}
-*/

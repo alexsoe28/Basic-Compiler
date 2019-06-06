@@ -1,5 +1,11 @@
 // $Id: 00-trivial.oc,v 1.1 2019-04-16 12:14:45-07 - - $
-int x = 4;
-int main(int a, int b){
-    int y = x;
-}
+struct hello {
+    int x;
+    string y;
+    string y;
+};
+
+struct goodbye {
+    int x;
+    int y;
+};
