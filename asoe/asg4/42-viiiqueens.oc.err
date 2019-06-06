@@ -35,15 +35,12 @@
 --accepting rule at line 43 ("string")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("expr")
---accepting rule at line 78 (",")
-XPƒ:22.23: invalid source character (,)
+--accepting rule at line 75 (",")
 --accepting rule at line 32 (" ")
 --accepting rule at line 43 ("string")
-XPƒ:22.25: syntax error, unexpected TOK_STRING, expecting ')' or ','
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("file")
---accepting rule at line 78 (",")
-XPƒ:22.36: invalid source character (,)
+--accepting rule at line 75 (",")
 --accepting rule at line 32 (" ")
 --accepting rule at line 42 ("int")
 --accepting rule at line 32 (" ")
@@ -125,7 +122,6 @@ XPƒ:22.36: invalid source character (,)
 --accepting rule at line 33 ("
 ")
 --accepting rule at line 45 ("array")
-xaƒ:6.1: syntax error, unexpected TOK_ARRAY
 --accepting rule at line 68 ("<")
 --accepting rule at line 42 ("int")
 --accepting rule at line 69 (">")
@@ -554,3 +550,5 @@ xaƒ:6.1: syntax error, unexpected TOK_ARRAY
 ")
 --(end of buffer or a NUL)
 --EOF (start condition 0)
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  const string to_string(attr): 16

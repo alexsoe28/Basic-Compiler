@@ -1,6 +1,5 @@
 // $Id: 00-trivial.oc,v 1.1 2019-04-16 12:14:45-07 - - $
-
-int y = 4;
-int main(int c, int b){
-    int x = 5;
+int x = 4;
+int main(int a, int b){
+    int y = x;
 }

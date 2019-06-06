@@ -1,13 +1,1 @@
-/afs/cats.ucsc.edu/courses/cmps104a-wm/bin//cpplint.py.perl astree.cpp
-Done processing astree.cpp
-/afs/cats.ucsc.edu/courses/cmps104a-wm/bin//checksource astree.cpp
-g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wpedantic -Wshadow -Wold-style-cast -fdiagnostics-color=never -c astree.cpp
-/afs/cats.ucsc.edu/courses/cmps104a-wm/bin//cpplint.py.perl lyutils.cpp
-Done processing lyutils.cpp
-/afs/cats.ucsc.edu/courses/cmps104a-wm/bin//checksource lyutils.cpp
-g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wpedantic -Wshadow -Wold-style-cast -fdiagnostics-color=never -c lyutils.cpp
-/afs/cats.ucsc.edu/courses/cmps104a-wm/bin//cpplint.py.perl generateTable.cpp
-Done processing generateTable.cpp
-/afs/cats.ucsc.edu/courses/cmps104a-wm/bin//checksource generateTable.cpp
-g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wpedantic -Wshadow -Wold-style-cast -fdiagnostics-color=never -c generateTable.cpp
-g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wpedantic -Wshadow -Wold-style-cast -fdiagnostics-color=never -ooc astree.o lyutils.o string_set.o auxlib.o generateTable.o symtable.o main.o yylex.o yyparse.o
+gmake: Nothing to be done for 'all'.

@@ -2,7 +2,13 @@ Done processing astree.cpp
 Done processing astree.h
 Done processing auxlib.cpp
 Done processing auxlib.h
+generateTable.cpp:175:  Lines should be <= 72 characters long  [whitespace/line_length] [2]
+generateTable.cpp:210:  Tab found; better to use spaces  [whitespace/tab] [1]
+generateTable.cpp:228:  Tab found; better to use spaces  [whitespace/tab] [1]
+generateTable.cpp:233:  Tab found; better to use spaces  [whitespace/tab] [1]
+generateTable.cpp:240:  Tab found; better to use spaces  [whitespace/tab] [1]
 Done processing generateTable.cpp
+Total errors found: 5
 Done processing generateTable.h
 Done processing lyutils.cpp
 Done processing lyutils.h

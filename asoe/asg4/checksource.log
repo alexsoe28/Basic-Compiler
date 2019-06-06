@@ -1,3 +1,8 @@
+checksource: improper character \x09 = ^I (tab)
+   file "generateTable.cpp": 7 errors: lines 210, 228--228, 233, 240, 
+        289, 301
 checksource: improper character \x0D = ^M (carriage return)
-   file "symtable.h": 46 errors: lines 1--46
-checksource: TOTAL COMPLAINTS: 46
+   file "symtable.h": 48 errors: lines 1--48
+checksource: line length > 72 characters
+   file "generateTable.cpp": 1 errors: line 175
+checksource: TOTAL COMPLAINTS: 56

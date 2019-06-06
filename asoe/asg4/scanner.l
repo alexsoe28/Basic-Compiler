@@ -72,7 +72,7 @@ CHAR            ('([^\\'\n]|\\[\\'"0nt])')
 "}"                 { return lexer::token ('}'); }
 "["                 { return lexer::token ('['); }
 "]"                 { return lexer::token (']'); } 
-
+","                 { return lexer::token (','); }
 
 {NOTNUMBER}     { return lexer::badtoken (NUMBER); }
 .               { lexer::badchar (*yytext); }

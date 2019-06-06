@@ -23,6 +23,7 @@
 ")
 --accepting rule at line 42 ("int")
 --accepting rule at line 51 ("[]")
+ËQm:4.4: syntax error, unexpected TOK_ARRAY, expecting IDENT
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("a")
 --accepting rule at line 32 (" ")

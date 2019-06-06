@@ -21,6 +21,7 @@
 ")
 --accepting rule at line 42 ("int")
 --accepting rule at line 51 ("[]")
+`ñ:9.4: syntax error, unexpected TOK_ARRAY, expecting IDENT
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("a")
 --accepting rule at line 32 (" ")
@@ -32,7 +33,6 @@
 ")
 --accepting rule at line 53 ("reference")
 --accepting rule at line 51 ("[]")
- B:10.10: syntax error, unexpected TOK_ARRAY
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("a")
 --accepting rule at line 32 (" ")
@@ -74,13 +74,12 @@
 --accepting rule at line 65 ("(")
 --accepting rule at line 42 ("int")
 --accepting rule at line 51 ("[]")
+`ñ:13.14: syntax error, unexpected TOK_ARRAY, expecting IDENT
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("a")
---accepting rule at line 78 (",")
- B:13.18: invalid source character (,)
+--accepting rule at line 75 (",")
 --accepting rule at line 32 (" ")
 --accepting rule at line 42 ("int")
- B:13.20: syntax error, unexpected TOK_INT, expecting ')' or ','
 --accepting rule at line 51 ("[]")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("b")
@@ -153,15 +152,12 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 53 ("x")
---accepting rule at line 78 (",")
- B:19.8: invalid source character (,)
+--accepting rule at line 75 (",")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("y")
- B:19.10: syntax error, unexpected IDENT, expecting ')' or ','
 --accepting rule at line 60 ("+")
 --accepting rule at line 52 ("3")
---accepting rule at line 78 (",")
- B:19.13: invalid source character (,)
+--accepting rule at line 75 (",")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("z")
 --accepting rule at line 66 (")")
@@ -350,11 +346,9 @@
 --accepting rule at line 32 (" ")
 --accepting rule at line 65 ("(")
 --accepting rule at line 53 ("y")
---accepting rule at line 78 (",")
- B:30.32: invalid source character (,)
+--accepting rule at line 75 (",")
 --accepting rule at line 32 (" ")
 --accepting rule at line 53 ("z")
- B:30.34: syntax error, unexpected IDENT, expecting ')' or ','
 --accepting rule at line 66 (")")
 --accepting rule at line 70 (";")
 --accepting rule at line 33 ("

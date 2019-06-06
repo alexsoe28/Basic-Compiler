@@ -1,5 +1,19 @@
 ROOT "<>" (0.0.0) 
-|  TOK_VARDECL "=" (3.3.7) 
-|  |  TOK_INT "int" (3.3.1)  int
-|  |  |  DECLID "y" (3.3.5)  int
-|  |  TOK_INTCON "4" (3.3.9)  int const
+|  TOK_VARDECL "=" (3.2.7) 
+|  |  TOK_INT "int" (3.2.1) 
+|  |  |  DECLID "x" (3.2.5) 
+|  |  TOK_INTCON "4" (3.2.9) 
+|  TOK_FUNCTION "" (3.3.1) 
+|  |  TOK_INT "int" (3.3.1) 
+|  |  |  DECLID "main" (3.3.5) 
+|  |  TOK_PARAM "(" (3.3.9) 
+|  |  |  TOK_PARAMLIST "" (3.3.10) 
+|  |  |  |  TOK_INT "int" (3.3.10) 
+|  |  |  |  |  DECLID "a" (3.3.14) 
+|  |  |  |  TOK_INT "int" (3.3.17) 
+|  |  |  |  |  DECLID "b" (3.3.21) 
+|  |  TOK_BLOCK "{" (3.3.23) 
+|  |  |  TOK_VARDECL "=" (3.4.11) 
+|  |  |  |  TOK_INT "int" (3.4.5) 
+|  |  |  |  |  DECLID "y" (3.4.9) 
+|  |  |  |  IDENT "x" (3.4.13) 

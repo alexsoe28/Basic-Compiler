@@ -153,7 +153,6 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
             return;
         }
         case TOK_VARDECL: {
-            
             for(astree* child: node->children){
                 type_check(child);
             }
@@ -168,40 +167,17 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
             symbol* var_sym = new_sym(node);
             var_sym->attributes = node->children[0]->attributes;
             symbol_entry var_entry (key, var_sym);
-         
-            //Check if the vardecl has two children
-            assert(node->children.size() == 2);
-            
+           
             //Change the DECLID to have the same type as the type
             node->children[0]->children[0]->attributes 
                 = node->children[0]->attributes;
-    
-            //
-            if(node->children[0]->symbol != TOK_ARRAY){
-                assert(isMatching(node->children[0],
-                       node->children[1]));
-                node->children[0]->children[0]->attributes 
-                = node->children[0]->attributes;
-            }
-            
-            //Check symbol table for ident
-            else if(node->children[1]->symbol == IDENT){
-                if(global_table.find(key) != global_table.end()){
-                    assert(global_table[key]->attributes !=
-                           var_sym->attributes);
-                }
-                if(local_table.find(key) != local_table.end()){
-                    assert(local_table[key]->attributes !=
-                           var_sym->attributes);
-                }
-            }
-            else{
-                 assert(isMatching(node->children[0]->children[0],
-                 node->children[1]->children[0]->children[0])); 
+            if(node->children.size() == 2) {
+                assert(isMatching
+                (node->children[0], node->children[1]));
             }
             if(in_func != 0){
-               //node->children[0]->children[declid]->attributes.set
-               //(unsigned(attr::ATTR_local));
+               node->children[0]->children[declid]->attributes.set
+               (unsigned(attr::ATTR_local));
                local_table.insert(var_entry); 
             }
             else{
@@ -210,6 +186,18 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
             return;
         }
         
+        case IDENT: {
+            
+            auto entry = local_table.find(node->lexinfo);
+            if(entry == local_table.end()) {
+                entry = global_table.find(node->lexinfo);
+                assert(entry != global_table.end());
+            }
+            symbol* symbolPointer = entry->second;
+            assert(symbolPointer != nullptr);
+            node->attributes = symbolPointer->attributes;
+            return;
+        }
         case TOK_FUNCTION: {
             in_func = 1;
             
@@ -218,11 +206,11 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
             symbol* var_sym = new_sym(node);
             symbol_entry var_entry (key, var_sym);
          
-           astree* type = node->children[0];
-           astree* params = node->children[1];
-	   
+            astree* type = node->children[0];
+            astree* params = node->children[1];
+ 
            //Switch case to set attribute of function and and node
-           switch(type->symbol){
+            switch(type->symbol){
                 case TOK_INT:{
                      type->attributes.set(unsigned(attr::ATTR_int));
                      node->attributes.set(unsigned(attr::ATTR_int)); 
@@ -238,48 +226,28 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
                      node->attributes.set(unsigned(attr::ATTR_ptr));    
                      break; 
                 }
-		case TOK_STRING:{
+                case TOK_STRING:{
                      type->attributes.set(unsigned(attr::ATTR_string));
                      node->attributes.set(unsigned(attr::ATTR_int));
                      break;    
                 }
-	   }
+           }
 
            
            for(unsigned i = 0; i < params->children.size(); i++){
                 type_check(params->children[i]);
-                //add to vector param
            }
-	   
-              
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
+           for(astree* child: node->children){
+                type_check(child);
+           }   
+           
+           in_func = 0;
 
             //block_nr++;
             return;
         }
         
+
         case TOK_PROTOTYPE: { 
             block_nr++;
             return;
@@ -290,6 +258,15 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
             }
             node->attributes = node->children[0]->attributes;
             node->attributes.set(unsigned(attr::ATTR_array));
+            return;
+        }
+
+        case TOK_BLOCK:{
+            printf("In block \n");
+            fflush(stdin);
+            for(astree* child: node->children){
+                type_check(child);
+            }   
             return;
         }
 
@@ -320,21 +297,22 @@ void postOrderTraversal(astree* node){
 }
 */
 
+/*
 void set_variables(astree* node, symbol* sym){
-	sym->attributes.set(unsigned(attr::ATTR_variable));
+     sym->attributes.set(unsigned(attr::ATTR_variable));
         sym->attributes.set(unsigned(attr::ATTR_variable));
         switch(node->symbol){
-          case TOK_INT:
+          case TOK_INT:{
              sym->attributes.set(unsigned(attr::ATTR_variable));
              sym->attributes.set(unsigned(attr::ATTR_int));
           }
           case TOK_PTR:{
-             type->attributes.set(unsigned(attr::ATTR_ptr));
+             node->attributes.set(unsigned(attr::ATTR_ptr));
              node->attributes.set(unsigned(attr::ATTR_ptr));    
              break; 
           }
-	  case TOK_STRING:{
-             type->attributes.set(unsigned(attr::ATTR_string));
+      case TOK_STRING:{
+             node->attributes.set(unsigned(attr::ATTR_string));
              node->attributes.set(unsigned(attr::ATTR_int));
              break;    
          }
@@ -342,3 +320,4 @@ void set_variables(astree* node, symbol* sym){
 
 
 }
+*/

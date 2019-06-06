@@ -26,7 +26,7 @@ extern int exit_status;
 %token  TOK_IF TOK_ELSE TOK_IFELSE TOK_ALLOC TOK_NULLPTR
 %token  TOK_WHILE TOK_RETURN TOK_RETURNVOID
 %token  TOK_INT TOK_STRING TOK_STRUCT TOK_VOID
-%token  TOK_NULL TOK_ARRAY TOK_VARDECL 
+%token  TOK_NULL TOK_ARRAY TOK_VARDECL TOK_PARAMLIST
 %token  TOK_EQ TOK_NE TOK_LE TOK_GE TOK_NOT TOK_PTR
 %token  TOK_BLOCK TOK_CALL DECLID TOK_FUNCTION TOK_PROTOTYPE
 %token  TOK_POS TOK_NEG TOK_NEWARRAY TOK_TYPEID TOK_FIELD
@@ -119,8 +119,11 @@ function  : ident '(' ')' block       {
             $$ = $$->adopt ($1, $2); }
 ;
 
-idents:     ident        { $$ = $1; }
+idents:     ident        { 
+            $$ = new astree(TOK_PARAMLIST, $1->lloc, "");
+            $$ = $$->adopt ($1); }
           | idents ',' ident  { 
+            
             destroy ($2);
             $$ = $1->adopt ($3); }
 ;
@@ -164,8 +167,9 @@ vardecl   : ident '=' expr ';'       {
             $2->change_sym (TOK_VARDECL);
             $$ = $2->adopt ($1, $3); }
           | ident ';'                 {
+            $$ = new astree(TOK_VARDECL, $1->lloc, "");
             destroy ($2);
-            $$ = $1;}
+            $$ = $$->adopt($1);}
 ;
 
 while     : TOK_WHILE '(' expr ')' statement            { 

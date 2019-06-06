@@ -1,0 +1,29 @@
+
+ WE IN HERErecursive call: <>
+In defaultrecursive call: 
+recursive call: string
+recursive call: 
+recursive call: int
+recursive call: 
+recursive call: int
+recursive call: 
+recursive call: string
+recursive call: 
+recursive call: 
+recursive call: 
+recursive call: struct
+In defaultrecursive call: foo
+In defaultrecursive call: ;
+In defaultrecursive call: struct
+In defaultrecursive call: bar
+In defaultrecursive call: ;
+In defaultrecursive call: 
+recursive call: 
+recursive call: int
+recursive call: 
+recursive call: int
+recursive call: 
+recursive call: string
+recursive call: 
+recursive call: ptr
+In defaultrecursive call: foo
