@@ -1,4 +1,12 @@
 // $Id: 00-trivial.oc,v 1.1 2019-04-16 12:14:45-07 - - $
+int xy = 0;
+int xz = 5;
+int main(int a, int b){
+    int z = a + b;
+    int xyz = xy * xz;
+
+}
+
 struct hello {
     int x;
     string y;

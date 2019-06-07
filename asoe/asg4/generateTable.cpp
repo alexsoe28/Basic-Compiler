@@ -200,7 +200,8 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
         }
         case TOK_FUNCTION: {
             in_func = 1;
-            
+            node->attributes.set(unsigned(attr::ATTR_function));
+
             const string* key = 
                    node->children[0]->children[0]->lexinfo;
             symbol* func_sym = new_sym(node);
@@ -240,7 +241,11 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
            
            for(unsigned i = 0; i < paramList->children.size(); i++){
                  const string* paramkey = 
-                 paramList->children[i]->children[0]->lexinfo;
+                       paramList->children[i]->children[0]->lexinfo;
+
+                 paramList->children[i]->children[0]->attributes = 
+                       paramList->children[i]->attributes;
+
                  symbol* param_sym = new_sym(paramList->children[i]
                                    ->children[0]);
                  symbol_entry param_entry(paramkey, param_sym);
@@ -274,14 +279,14 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
         }
 
         case TOK_BLOCK:{
-            printf("In block \n");
-            fflush(stdin);
             for(astree* child: node->children){
                 type_check(child);
             }   
             return;
         }
         case TOK_STRUCT: {
+            node->attributes.set(unsigned(attr::ATTR_struct));
+
             const string* key = 
                    node->children[0]->lexinfo;
             symbol* struct_sym = new_sym(node);
@@ -294,8 +299,9 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
                 const string* fieldkey = 
                       fieldList->children[i]->children[0]->lexinfo;
                 type_check(fieldList->children[i]);
-                //fieldList->children[i]->attributes = 
-                //     fieldList->children[i]->children[0]->attributes;
+                fieldList->children[i]->children[0]->attributes
+                        = fieldList->children[i]->attributes;
+                
                 symbol* field_sym = new_sym(fieldList->children[i]
                                    ->children[0]);
                 symbol_entry field_entry(fieldkey, field_sym);
@@ -318,19 +324,11 @@ printf("recursive call: %s\n", node->lexinfo->c_str());
      }
 }
 void printTable(FILE* outfile) {
-   fprintf(outfile, "%s\n", table_to_string(&global_table, 0).c_str());
-   fprintf(outfile, "%s\n", table_to_string(&local_table, 0).c_str());
-   fprintf(outfile, "%s\n", table_to_string(&struct_table, 0).c_str()); 
+   fprintf(outfile, "Global Table \n%s\n", 
+           table_to_string(&global_table, 0).c_str());
+   fprintf(outfile, "Local Table \n%s\n",
+           table_to_string(&local_table, 0).c_str());
+   fprintf(outfile, "Struct Table \n%s\n",
+           table_to_string(&struct_table, 0).c_str()); 
 }
-
-
-/*
-void postOrderTraversal(astree* node){
-    for(unsigned int i = 0; i < node->children.size(); i++){
-        postOrderTraversal(node->children[i]);
-    }
-    type_check(node);
-}
-*/
-
 

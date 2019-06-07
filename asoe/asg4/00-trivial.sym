@@ -1,14 +1,23 @@
-size = 0
+Global Table 
+size = 2
+xz (3.3.8)  int
+xy (3.2.8)  int
 
-size = 0
+Local Table 
+size = 4
+xyz (3.6.13)  int
+b (3.4.21)  int
+z (3.5.11)  int
+a (3.4.14)  int
 
+Struct Table 
 size = 2
-goodbye (3.8.1) 
+goodbye (3.16.1)  struct
 size = 2
-   x (3.9.9) 
-   y (3.10.9) 
-hello (3.2.1) 
+   x (3.17.9)  int
+   y (3.18.9)  int
+hello (3.10.1)  struct
 size = 2
-   x (3.3.9) 
-   y (3.5.12) 
+   x (3.11.9)  int
+   y (3.13.12)  string
 
